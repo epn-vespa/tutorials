@@ -5,6 +5,10 @@ Please follow the template on [template](template) and use simple, meaningful im
 
 A [sample](sample) formatted tutorial based on the existing one on the [VESPA wiki](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=564111)
 
+* [Embedding content](#Embedding-content)
+  * [Images](#Images)
+  * [Images](#Videos)
+
 ##  Embedding content
 
 ### Images
