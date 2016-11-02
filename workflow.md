@@ -5,10 +5,10 @@ Please follow the template on [template](template) and use simple, meaningful im
 
 A [sample](sample) formatted tutorial based on the existing one on the [VESPA wiki](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=564111)
 
-* [Embedding content](#Embedding-content)
-  * [Images](#Images)
-  * [Videos](#Videos)
-* [GitHub & VESPA wiki](GitHub-&-VESPA-wiki)
+* [Embedding content](#embedding-content)
+  * [Images](#images)
+  * [Videos](#videos)
+* [GitHub & VESPA wiki](github--vespa-wiki)
 
 ##  Embedding content
 Images embedded in a tutorial should be in the [img][template/img] subdirectory of each tutorial.
