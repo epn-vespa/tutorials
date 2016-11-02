@@ -4,6 +4,7 @@
 * [Change log](#change-log)
 * [Requirements](#requirements-and-dependencies)
 * [Use case](#use-case)
+* [Keywords](#keywords)
 * [Summary](#summary)
 * [Introduction](#introduction)
 * [Steps](#steps)
@@ -26,6 +27,10 @@ M. Gangloff et al.
 
 ## Use case
 exoplanets TBA
+
+## Keywords
+* term 1
+* term 2 
 
 ## Summary
 TBA
