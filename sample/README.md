@@ -117,7 +117,7 @@ is viewed as from within the planetary body, not from outside.
 
 ### Extension of use case to Mars
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/sample/img/mars.jpg" width="350">
+<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/sample/img/Mars.jpg" width="350">
 
 * Using Mars IRTM albedo (Viking): 
 * with imagemagick ```convert alb_.09.tif alb_.09.jpg```
