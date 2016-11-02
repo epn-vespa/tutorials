@@ -38,6 +38,7 @@ TBA
 ## Introduction
 
 ## Steps
+Please document steps, including some description, not only screenshots.
 
 ### First step
 * step description
