@@ -8,6 +8,7 @@ A [sample](sample) formatted tutorial based on the existing one on the [VESPA wi
 * [Embedding content](#Embedding-content)
   * [Images](#Images)
   * [Videos](#Videos)
+* [GitHub & VESPA wiki](GitHub-&-VESPA-wiki)
 
 ##  Embedding content
 Images embedded in a tutorial should be in the [img][template/img] subdirectory of each tutorial.
