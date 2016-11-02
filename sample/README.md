@@ -111,9 +111,20 @@ Defaut orientation of RA or longitudes in Aladin is different
 from the one used in planetary science, therefore the surface
 is viewed as from within the planetary body, not from outside.
 
-### resulting image on Aladin
+### Resulting image on Aladin
 
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/sample/img/aladin.png" width="350">
+
+### Extension of use case to Mars
+
+<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/sample/img/mars.jpg" width="350">
+
+* Using Mars IRTM albedo (Viking): 
+* with imagemagick ```convert alb_.09.tif alb_.09.jpg```
+
+resolution = 1°/pixel
+size= 2 * pi * R / nb pix = pi * 3390. *2 / 360. = 59.2'
+Can be enlarged to 60' ?
 
 ## References
 
