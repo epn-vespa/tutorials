@@ -113,7 +113,7 @@ is viewed as from within the planetary body, not from outside.
 
 ### resulting image on Aladin
 
-<img src="" width="350">
+<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/sample/img/aladin.png" width="350">
 
 ## References
 
