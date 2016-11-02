@@ -19,7 +19,7 @@ S. Earard, et al.
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 1             | S. Erard      | **draft** version  from VESPA wiki   |
+| 1             | [S. Erard](https://github.com/Erard)| **draft** version  from VESPA wiki   |
 
 
 ## Requirements and dependencies
