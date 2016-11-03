@@ -1,5 +1,7 @@
 ## Naming of tutorial directory
 
+The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](cassini-titan-flyby)
+
 ## Creation / migration of content 
 
 Please follow the template on [template](template) and use simple, meaningful image names without spaces in the filename.
