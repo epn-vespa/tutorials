@@ -1,3 +1,4 @@
+## Naming of tutorial directory
 
 ## Creation / migration of content 
 
