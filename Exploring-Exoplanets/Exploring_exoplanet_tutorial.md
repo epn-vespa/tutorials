@@ -3,7 +3,7 @@
 ![cover_page](https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/1_Cover_Image.png)
 
 * [Authors](#Authors)
-* [Log](#Log)
+* [Change Log](#Change Log)
 * [Steps](#Steps)
 * [References](#References)
 
@@ -12,11 +12,13 @@
 
 Jean Schneider; Pierre Le Sidanner; Cyril Chauvin; Stephane Erard; Francoise Roques; Ivan Zolotukhin; Marco Mancini; Danielle Briot  
 
-<h2 id="Log">Log</h2>
+
+<h2 id="Change Log">Change Log</h2>
 
 
-First Converted by Keyuan Yin on Nov. 2016 from obspm.fr's pdf file and webpage tutorial.  
+First Converted by Keyuan Yin on 10th Nov. 2016 from *obspm.fr*'s pdf file and webpage tutorial.  
 [His Github Link](https://github.com/megadiesel705)
+
 
 <h2 id="Steps">Step</h2>
 
