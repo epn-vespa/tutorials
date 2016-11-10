@@ -12,7 +12,7 @@
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[The Venus Impact](#3b)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[The Earth Impact](#3c)  
 &ensp;&ensp;&ensp;&ensp;[Fourth Step](#4)  
-&ensp;&ensp;&ensp;&ensp;[References](#5)
+[References](#5)
 
 
 
@@ -23,7 +23,7 @@ To be updated...
 
 <h2 id="Change Log">Change Log</h2>
 
-First converted by Keyuan Yin on 10th, Nov. 2016 from Vespa tutorial site.
+First converted by [Keyuan Yin](https://github.com/megadiesel705) on 10th, Nov. 2016 from Vespa tutorial site.
 
 <h2 id="Introduction">Introduction</h2>
 This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IMPEx functionality and 3DView/IMPEx functionality. The AMDA/IMPEx, as well as the 3DView/IMPEXpart show new features in AMDA, which were implemented within the IMPEx FP7 project, i.e. the possibility of plotting simulation runs for given spacecraft side by side with observational data.  
