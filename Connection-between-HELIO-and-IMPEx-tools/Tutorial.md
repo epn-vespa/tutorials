@@ -65,7 +65,7 @@ Selected Parameters Illustration:
 ![Parameter Input for AMDA Plot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Parameter_Input.png)  
 
 
-Output Plot:
+Output Plot:  
 ![Parameter Output for AMDA Plot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Plot_Output.png)  
 
 <h4 id="3b">b)  The Venus Impact</h4>
