@@ -54,23 +54,31 @@ The data is now in TOPCAT and you should be able to see it.
 ### Fifth Step
 Using two circled buttons available on top of TOPCAT to display table and plot interface respectively.  
 Below shows you which button opens table view.  
+
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/5_TableView.png" width="500" alt="Table View">  
+
 Below shows you how to open plot interface.  
+
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/5_PlotView.png" width="500" alt="Plot View">  
+
 In case that your TOPCAT shows different configuration of buttons on the top, move your mouse on each button longer and choose the one called *sky plotting window*.   
 
 ### Sixth Step
 On plotting interface, please set up **Longitude Axis** to **c1min** and **Latitude Axis** to **c2min**. Then plot.   
 
 After that, click from the table whatever element you want and see the selected element in the plot with circled in black.  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/6_Select_Element_Plot.png" width="500" alt=Select & Plot>
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/6_Select_Element_Plot.png" width="500" alt=Select & Plot>  
 
 ### Seventh Step
 Choose again from TOPCAT's interface for specific information on Kepler-359b. Select Kepler-359b from table view.    
 This time is the *plane plotting window*, shown below. In case icon is different from time to time, use the method mentioned in **fifth** step.  
+
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/7_Plane_Plot.png" width="500" alt="Kepler_359b Plane Plot">  
+
 Choose Axis like below:  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/7_X_Y_Axis_Select.png" alt"Choose Axis">  
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/7_X_Y_Axis_Select.png" width="500" alt="Choose Axis">  
 You should be able to see the plot now looks like following:  
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Exploring-Exoplanets/img/7_plane_Plot_outcome.png" width="500" alt"Plane Plot Output">  
 
