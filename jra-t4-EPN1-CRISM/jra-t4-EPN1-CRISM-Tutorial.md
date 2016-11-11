@@ -5,7 +5,8 @@ CRISM data has been published at [this site](http://epn1.epn-vespa.jacobs-univer
 [Change Log](#Log)  
 [Preview CRISM in TOPCAT](#Preview)  
 [Displaying CRISM footprint in Aladin](#Display)  
-[Accessing subgranule data and importing to CASSIS](#Access)
+[Accessing subgranule data and importing to CASSIS](#Access)  
+[References](#References)
 
 <h2 id="Authors">Authors</h2>
 Mikhail Minin et al.
