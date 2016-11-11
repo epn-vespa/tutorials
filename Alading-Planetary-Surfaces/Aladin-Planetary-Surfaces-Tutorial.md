@@ -9,7 +9,7 @@
 * [Introduction](#introduction)
 * [Steps](#steps)
 * [References](#references)
-* [Improvements and Notes](#Improvements-and-Notes)
+* [Improvements and Notes](#Notes)
 * [Links](#links)
 
 ## Authors:
@@ -134,7 +134,7 @@ Can be enlarged to 60' ?
 
 TBA + URL
 
-##Improvements and Notes
+<h2 id="Notes">Improvements and Notes</h2>
 1. "Save image" does not include the projected image (only the sphere frame)!  
 2. [Application by Mikhail Minin with Aladin Lite](http://epn1.epn-vespa.jacobs-university.de:8080/MARS/)   
 3. Messages from Pierre Fernique:  
