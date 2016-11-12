@@ -1,6 +1,10 @@
 #Atmospheric profiles
 
-[Authors](#Authors)
+[Introduction](#Intro)  
+[Authors](#Authors)  
+[Change Log](#Log)  
+[Steps](#Steps)  
+[References](#References)
 
 <h2 id="Intro">Introduction</h2>
 
@@ -49,21 +53,51 @@ Open TopCat
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/7_Sky_Plot_Open.png" width="500" alt="7">  
 
+**Next step**  
 
-Next step
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/8_Select_Column_Displayed.png" width="500" alt="8">  
 
-<img scr="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/8_Select_Column_Displayed.png" width="500" alt="8">  
-  
+**Next step**
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/9_.png" width="500" alt="9">  
+
+**Next step**  
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/10_Select_Subset.png" width="500" alt="10">  
+
+**Next step**
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/11_Activation_Window.png" width="500" alt="11">  
 
 
 **Next step**
 
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/12_.png" width="500" alt="12">  
 
-<img scr="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/9_.png" width="500" alt="9">  
+**Next step**  
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/13_.png" width="500" alt="13">  
+
+**Next step**  
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/14_.png" width="500" alt="14">  
+
+**Next step**
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/15_Table_Browser.png" width="500" alt="15">  
+
+**Next step**  
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/16_Publication_Ready_Form_Saving.png" width="500" alt="16">
+
+**Next step**
+
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/17_Save.png" width="500" alt="17">  
 
 
+<h2 id="References">References</h2>
 
-
+Please refer this tutorial to original version edited by Gangloff Michel on [this site](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)
 
 
 
