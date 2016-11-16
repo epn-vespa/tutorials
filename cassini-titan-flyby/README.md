@@ -43,10 +43,10 @@ Please document steps, including some description, not only screenshots.
 ### First step
 * step description
 * step description
-![1](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png)
+![1](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
 ### First step with sized image
-<img src="https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png" width="200">
+<img src="https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png" width="200">
 
 ### Second step
 * step description
