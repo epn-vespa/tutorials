@@ -19,14 +19,14 @@ M. Gangloff et al.
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 0             | name          | test   |
+| 0             | Gangloff      | test   |
 
 
 ## Requirements and dependencies
  Not applicable
 
 ## Use case
-exoplanets TBA
+T117
 
 ## Keywords
 * term 1
