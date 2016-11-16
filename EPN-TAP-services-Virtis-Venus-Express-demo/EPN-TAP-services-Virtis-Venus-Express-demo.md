@@ -1,20 +1,25 @@
 #Virtis / Venus Express demo
 
-[Authors](Authors)  
-[Change Log](Log)  
-[Steps](Steps)  
-[Reference](Reference)  
+* [Authors](#Authors)  
+* [Change Log](#Log)  
+* [Steps](#Steps)  
+* [Reference](#Reference)  
+
 
 <h2 id="Authors">Authors</h2>
 
+
 S. Erard, B. Cecconi, P. Le Sidaner, F. Henry, R. Savalle, C. Chauvin  
 
+
 <h2 id="Log">Change Log</h2>
+
 
 Firstly converted from PDF file provided by VESPA website by [Keyuan Yin](https://github.com/megadiesel705) 
 
 
 <h2 id="Steps">Steps</h2>
+
 
 Go to [VESPA web site](http://vespa.obspm.fr)  
 
@@ -158,13 +163,17 @@ VESPA sends queries to several data services in parallel. In the long term it wi
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/21_Search_other_datasets.png" width="500" alt="21">  
 
+
+
 **Possible extension to the Virtis VEx data service**  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/22_possible_extension.png" width="500" alt="22">  
 
 ****
 
+
 <h2 id="Reference">Reference</h2>
+
 
 Please refer this tutorial to PDF file uploaded on VESPA wiki and also the [website](http://vespa.obspm.fr)  
 
