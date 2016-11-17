@@ -26,7 +26,7 @@ M. Gangloff et al.
  Not applicable
 
 ## Use case
-T117
+Search and display data around a Titan fly-by with VESPA
 
 ## Keywords
 * term 1
@@ -36,6 +36,12 @@ T117
 TBA
 
 ## Introduction
+
+For this use case, we use 3DView and another tool called TopCat to display data searched by 3DView among VESPA services.
+We want to search for data provided by VESPA around a Titan flyby by the CASSINI spacecraft described below (source PDS):
+
+
+![0](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/T117atPDS.png)
 
 ## Steps
 
