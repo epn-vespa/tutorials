@@ -42,6 +42,7 @@ Please document steps, including some description, not only screenshots.
 
 ### First step
 Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** button, save the file as launch3dview.jnlp and run the application
+
 ![1](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
 ### First step with sized image
@@ -49,6 +50,7 @@ Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** but
 
 ### Second step
 In the desktop bar, select “File/New" to open a new 3D scene
+
 ![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/open3Dscene.png)
 
 ## References
