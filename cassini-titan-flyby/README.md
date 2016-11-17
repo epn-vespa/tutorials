@@ -73,6 +73,10 @@ Launch the animation and stop it at about 23:16,and click on the Select Region b
 
 ![6](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/launchAnimation.png)
 
+
+![7](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/time.png)
+
+## References
 ## References
 
 TBA + URL
