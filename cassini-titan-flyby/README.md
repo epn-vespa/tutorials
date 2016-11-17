@@ -76,11 +76,15 @@ Launch the animation and stop it at about 23:16,and click on the Select Region b
 
 ## Next step
 click on the Select Region button to add a new search keyword. The following pop-up window is opened.
-Then select a region To increase
 
 ![8](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion1.png)
 
+Then select a region 
+
 ![9](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion2.png)
+
+To increase the number of possible responses, change the start date to
+2010-02-16T21:00:00  and click on Search
 
 ## References
 
