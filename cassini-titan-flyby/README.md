@@ -13,7 +13,7 @@
 
 ## Authors:
 
-V. Génot et al.
+V. Genot et al.
 
 ## Change log
 
