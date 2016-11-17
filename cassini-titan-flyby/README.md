@@ -41,7 +41,7 @@ We want to search for data provided by VESPA around a Titan flyby by the CASSINI
 The Titan fly by is described below (source PDS):
 
 
-![0](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/T117atPDS.png)
+![0](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/T117atPDS.png)
 
 ## Steps
 
