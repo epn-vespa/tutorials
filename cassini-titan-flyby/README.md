@@ -98,6 +98,10 @@ Click on titan to display the results of this database.
 
 ![10](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/titanResults.png)
 
+## Next step
+Launch TopCat. This will automatically start the SAMP HUB hosted by TopCat.Right click on a raw displays several options
+depending on the data format.Select send via SAMP to topcat.
+This option is available for data of mime type equal to application/x-votable+xml only.
 
 ## References
 
