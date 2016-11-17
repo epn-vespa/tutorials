@@ -120,10 +120,4 @@ In the plane plot window, Select temperature on X-axis and altitude on Y-axis.
 
 ![13](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/planePlotting.png)
 
-## References
 
-TBA + URL
-
-
-## Links
-e.g. to working mybinder version where relevant, repos, jupyter notebooks, desktop tools/plugins or alike.
