@@ -89,6 +89,8 @@ To increase the number of possible responses, change the start date to
 The list of services is displayed in the left part of the window. The name of each service is displayed with the corresponding
 number of results.
 
+![10](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/listOfServices.png)
+
 ## References
 
 TBA + URL
