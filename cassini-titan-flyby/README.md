@@ -73,10 +73,12 @@ Launch the animation and stop it at about 23:16,and click on the Select Region b
 
 ![6](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/launchAnimation.png)
 
-
 ![7](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/time.png)
 
-## References
+## Next step
+click on the Select Region button to add a new search keyword. The following pop-up window is opened.
+Then select a region To increase
+
 ## References
 
 TBA + URL
