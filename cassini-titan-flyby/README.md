@@ -79,6 +79,10 @@ Launch the animation and stop it at about 23:16,and click on the Select Region b
 click on the Select Region button to add a new search keyword. The following pop-up window is opened.
 Then select a region To increase
 
+![8](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion1.png)
+
+![9](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion2.png)
+
 ## References
 
 TBA + URL
