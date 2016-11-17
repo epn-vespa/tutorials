@@ -69,7 +69,9 @@ This opens the VESPA pop-up window,with Target,StartTime and StopTime already se
 ![5](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/EPNTAPWindow.png)
 
 ### Next step
+Launch the animation and stop it at about 23:16,and click on the Select Region button to add a new search keyword.
 
+![6](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/animationBar.png)
 
 ## References
 
