@@ -48,16 +48,19 @@ Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** but
 ### First step with sized image
 <img src="https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png" width="200">
 
-### Second step
+### Next step
 In the desktop bar, select “File/New" to open a new 3D scene
 
 ![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/open3Dscene.png)
 
-### Third step
+### Next step
 With the File/Manage scene menu,create a scene with Titan as central body, CASSINI as spacecraft and TIIS as coordinate system
 from 2016-02-16T21:00:00 to 2016-02-17T03:00:00
 ![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/manageScene.png)
 
+### Next step
+Select the VESPA option in the Science Menu
+![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/manageScene.png)
 ## References
 
 TBA + URL
