@@ -86,6 +86,9 @@ Then select a region
 To increase the number of possible responses, change the start date to
 2010-02-16T21:00:00  and click on Search
 
+The list of services is displayed in the left part of the window. The name of each service is displayed with the corresponding
+number of results.
+
 ## References
 
 TBA + URL
