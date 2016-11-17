@@ -79,10 +79,12 @@ click on the Select Region button to add a new search keyword. The following pop
 
 ![8](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion1.png)
 
+## Next step
 Then select a region 
 
 ![9](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/selectRegion2.png)
 
+## Next step
 To increase the number of possible responses, change the start date to
 2010-02-16T21:00:00  and click on Search
 
@@ -90,6 +92,12 @@ The list of services is displayed in the left part of the window. The name of ea
 number of results.
 
 ![10](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/ListOfServices.png)
+
+## Next step
+Click on titan to display the results of this database.
+
+![10](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/titanResults.png)
+
 
 ## References
 
