@@ -110,6 +110,13 @@ This option is available for data of mime type equal to application/x-votable+xm
 The table is loaded by TopCat, and visible in the Table List after a few seconds. Open the plane plotting window to display the contents of the table.
 
 ![12](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/topcatView.png)
+
+## Next step
+
+In the plane plot window, Select temperature on X-axis and altitude on Y-axis.
+
+![13](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/planePlotting.png)
+
 ## References
 
 TBA + URL
