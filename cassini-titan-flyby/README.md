@@ -41,7 +41,7 @@ TBA
 Please document steps, including some description, not only screenshots.
 
 ### First step
-Start 3Dview : goto http://3dview.cdpp.eu and click on the __Launch 3DView__ button
+Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** button
 ![1](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
 ### First step with sized image
