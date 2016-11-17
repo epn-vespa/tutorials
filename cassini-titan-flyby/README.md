@@ -50,7 +50,7 @@ Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** but
 ### Second step
 * step description
 * step description
-![7](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/7.png)
+![7](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/open3Dscene.png)
 
 ## References
 
