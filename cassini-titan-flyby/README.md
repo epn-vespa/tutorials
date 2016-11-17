@@ -56,11 +56,14 @@ In the desktop bar, select “File/New" to open a new 3D scene
 ### Next step
 With the File/Manage scene menu,create a scene with Titan as central body, CASSINI as spacecraft and TIIS as coordinate system
 from 2016-02-16T21:00:00 to 2016-02-17T03:00:00
-![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/manageScene.png)
+
+![3](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/manageScene.png)
 
 ### Next step
 Select the VESPA option in the Science Menu
-![2](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/sciencemenu.png)
+
+![4](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/sciencemenu.png)
+
 ## References
 
 TBA + URL
