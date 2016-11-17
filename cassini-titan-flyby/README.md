@@ -50,9 +50,6 @@ Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** but
 
 ![1](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
-### First step with sized image
-<img src="https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png" width="200">
-
 ### Next step
 In the desktop bar, select “File/New" to open a new 3D scene
 
