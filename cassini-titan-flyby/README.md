@@ -100,7 +100,7 @@ Click on titan to display the results of this database.
 
 ## Next step
 Launch TopCat. This will automatically start the SAMP HUB hosted by TopCat.Right click on a raw displays several options
-depending on the data format.Select send via SAMP to topcat.
+depending on the data format.Select send via SAMP to TopCat.
 This option is available for data of mime type equal to application/x-votable+xml only.
 
 ## References
