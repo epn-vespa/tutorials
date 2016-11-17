@@ -103,6 +103,7 @@ Launch TopCat. This will automatically start the SAMP HUB hosted by TopCat.Right
 depending on the data format.Select send via SAMP to TopCat.
 This option is available for data of mime type equal to application/x-votable+xml only.
 
+![11](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/sendToTopCat.png)
 ## References
 
 TBA + URL
