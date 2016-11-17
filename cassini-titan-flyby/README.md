@@ -52,9 +52,6 @@ Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** but
 * step description
 ![7](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/7.png)
 
-[http://exoplanet.eu](http://exoplanet.eu)
-
-
 ## References
 
 TBA + URL
