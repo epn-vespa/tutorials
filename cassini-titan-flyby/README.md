@@ -104,6 +104,11 @@ depending on the data format.Select send via SAMP to TopCat.
 This option is available for data of mime type equal to application/x-votable+xml only.
 
 ![11](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/sendToTopCat.png)
+
+## Next step
+
+The table is loaded by TopCat, and visible in the Table List after a few seconds.
+
 ## References
 
 TBA + URL
