@@ -48,7 +48,7 @@ The Titan fly by is described below (source PDS):
 ### First step
 Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** button, save the file as launch3dview.jnlp and run the application
 
-![1](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
+![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
 ### Next step
 In the desktop bar, select “File/New" to open a new 3D scene
