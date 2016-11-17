@@ -109,6 +109,7 @@ This option is available for data of mime type equal to application/x-votable+xm
 
 The table is loaded by TopCat, and visible in the Table List after a few seconds.
 
+![12](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/topcatView.png)
 ## References
 
 TBA + URL
