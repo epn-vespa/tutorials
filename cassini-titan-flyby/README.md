@@ -107,7 +107,7 @@ This option is available for data of mime type equal to application/x-votable+xm
 
 ## Next step
 
-The table is loaded by TopCat, and visible in the Table List after a few seconds.
+The table is loaded by TopCat, and visible in the Table List after a few seconds. Open the plane plotting window to display the contents of the table.
 
 ![12](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/topcatView.png)
 ## References
