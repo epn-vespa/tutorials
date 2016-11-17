@@ -66,6 +66,10 @@ Select the VESPA option in the Science Menu
 
 This opens the VESPA pop-up window,with Target,StartTime and StopTime already selected from the scene.
 
+ect the VESPA option in the Science Menu
+
+![5](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/img/EPNTAPwindow.png)
+
 
 ## References
 
