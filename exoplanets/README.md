@@ -50,7 +50,7 @@
 
 ### Next step
 
-![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/sciencemenu.png)
+![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/CatalogInTopCat.png)
 
 ![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/EPNTAPWindow.png)
 
