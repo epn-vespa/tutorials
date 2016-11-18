@@ -30,21 +30,26 @@
 ## Keywords
 
 ## Summary
-
+http://exoplanet.eu
 
 ## Steps
 
 ### First step
+Prepare a query on the VESPA portal
 
 ![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/QueryVespa.png)
 
 ### Next step
+Start TopCat
 
 ![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/StartTopCat.png)
 
 ### Next step
+Send the catalogue of exoplanets to SAMP
 
 ![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/CatalogToSAMP.png)
+
+click on Oui in the scurity pop-up window
 
 ### Next step
 
