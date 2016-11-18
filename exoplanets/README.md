@@ -42,7 +42,7 @@
 ### Next step
 
 
-![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/open3Dscene.png)
+![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/startTopCat.png)
 
 ### Next step
 
