@@ -68,11 +68,11 @@
 
 ## Next step
 
-![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/selectRegion2.png)
+![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/KeplerLaw.png)
 
 ## Next step
 
-![10](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/ListOfServices.png)
+![10](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/ListOfServices.png)
 
 ## Next step
 Click on titan to display the results of this database.
