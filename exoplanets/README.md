@@ -1,5 +1,5 @@
 
-## Exoplanets
+## Exploring exoplanets
 
 * [Authors](#authors)
 * [Change log](#change-log)
