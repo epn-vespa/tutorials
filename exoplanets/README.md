@@ -46,7 +46,7 @@
 
 ### Next step
 
-![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/manageScene.png)
+![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/CatalogToSAMP.png)
 
 ### Next step
 
