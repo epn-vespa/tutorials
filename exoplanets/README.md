@@ -59,24 +59,18 @@
 
 ![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/OpenSkyPlotWindow.png)
 
-![7](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/time.png)
+
 
 ## Next step
 
 
-![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/selectRegion1.png)
+![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/SelectKepler.png)
 
 ## Next step
-Then select a region 
 
-![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/selectRegion2.png)
+![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/selectRegion2.png)
 
 ## Next step
-To increase the number of possible responses, change the start date to
-2010-02-16T21:00:00  and click on Search
-
-The list of services is displayed in the left part of the window. The name of each service is displayed with the corresponding
-number of results.
 
 ![10](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/ListOfServices.png)
 
