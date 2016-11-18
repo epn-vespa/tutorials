@@ -37,7 +37,7 @@
 ### First step
 
 
-![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/3DviewLaunchPage.png)
+![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/QueryVespa.png)
 
 ### Next step
 
