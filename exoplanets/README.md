@@ -35,7 +35,7 @@ http://exoplanet.eu
 ## Steps
 
 ### First step
-Prepare a query on the VESPA portal; select exoplanets as Target_class
+Prepare a query on the VESPA portal(vespa.obspm.fr); select exoplanets as Target Class
 
 ![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/QueryVespa.png)
 
