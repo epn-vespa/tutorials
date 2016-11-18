@@ -14,8 +14,6 @@
 
 ## Authors:
 
-V. Genot et al.
-
 ## Change log
 
 | Version       | Author        | Notes  |
@@ -27,47 +25,32 @@ V. Genot et al.
  Not applicable
 
 ## Use case
-Search and display data around a Titan fly-by with VESPA
+
 
 ## Keywords
-* 3DView
-* TopCat
 
 ## Summary
-For this use case, we use 3DView and another tool called TopCat to display data searched by 3DView among VESPA services.
-We want to search for data provided by VESPA around a Titan flyby by the CASSINI spacecraft
 
-## Introduction
-
-The Titan fly by is described below (source PDS):
-
-
-![0](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/T117atPDS.png)
 
 ## Steps
 
 ### First step
-Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** button, save the file as launch3dview.jnlp and run the application
 
-![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
-### Next step
-In the desktop bar, select File/New to open a new 3D scene
-
-![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/open3Dscene.png)
+![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/3DviewLaunchPage.png)
 
 ### Next step
-With the File/Manage scene menu,create a scene with Titan as central body, CASSINI as spacecraft and TIIS as coordinate system
-from 2016-02-16T21:00:00 to 2016-02-17T03:00:00
 
-![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/manageScene.png)
+
+![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/open3Dscene.png)
 
 ### Next step
-Select the VESPA option in the Science Menu
+
+![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/manageScene.png)
+
+### Next step
 
 ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/sciencemenu.png)
-
-This opens the VESPA pop-up window,with Target,StartTime and StopTime already selected from the scene.
 
 ![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/EPNTAPWindow.png)
 
