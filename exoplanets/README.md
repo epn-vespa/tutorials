@@ -52,19 +52,19 @@
 
 ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/CatalogInTopCat.png)
 
-![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/EPNTAPWindow.png)
+
 
 ### Next step
-Launch the animation and stop it at about 23:16,and click on the Select Region button to add a new search keyword.
 
-![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/launchAnimation.png)
+
+![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/OpenSkyPlotWindow.png)
 
 ![7](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/time.png)
 
 ## Next step
-click on the Select Region button to add a new search keyword. The following pop-up window is opened.
 
-![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/selectRegion1.png)
+
+![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/exoplanets/img/selectRegion1.png)
 
 ## Next step
 Then select a region 
