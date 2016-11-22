@@ -105,7 +105,7 @@ Outputs include the magnetospheric plasma parameters (atomic mass unit density N
 
 We see in figure 3 how simulation data can be used in AMDA. Data can be selected in the workspace explorer of AMDA and plotted. We can see in the figure the plot of a BATSRUS run along the trajectory of Cluster-1: Magnetic Field, Current, Velocity, Density, Pressure and Position.  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/IMPEx_FP7/CCMC-IMPEx-Connections-Demonstrator/img/5_figure_3.png" width="500" alt="5">  
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/IMPEx_FP7/CCMC-IMPEx-Connections-Demonstrator/img/5_figure_3.png" width="500" alt="5" style="border-width:25px;border-color:red">  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/IMPEx_FP7/CCMC-IMPEx-Connections-Demonstrator/img/6_figure_4.png" width="500" alt="6">  
 
