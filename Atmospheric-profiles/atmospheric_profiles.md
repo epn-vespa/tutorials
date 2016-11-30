@@ -18,7 +18,9 @@ Edited by Gangloff Michel on VESPA wiki.
 
 <h2 id="Log">Change Log</h2>
 
-This tutorial is converted by [Keyuan Yin](https://github.com/megadiesel705)
+|Version|Name|Note|
+|---|---|---|
+|1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [VESPA wiki](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)|
 
 <h2 id="Steps">Steps</h2>
 
