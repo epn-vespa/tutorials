@@ -21,8 +21,9 @@
 To be updated...
 
 <h2 id="Log">Change Log</h2>
-
-This markdown tutorial was converted by [Keyuan Yin](https://github.com/megadiesel705). Some of figures are not in right form, hence update is needed once the original file is updated.  
+|Version|Name|Note|
+|---|---|---|
+|1|[Keyuan Yin](https://github.com/megadiesel705)|Some of figures are not in right form, hence update is needed once the original file is updated.|
 
 <h2 id="1">1. Introduction & Reference Document</h2>
 
