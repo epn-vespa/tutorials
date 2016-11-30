@@ -26,7 +26,7 @@ Click picture to open selected video.
 [![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/7_Analyzing_Pluto_Surface.png)](https://youtu.be/I4lRFQqOhQs?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
 
 
-**IMPEx Tutorial Video**
+**IMPEx Tutorial Video**  
 [![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/IMPEx_FP7/SINP-Model-Demonstrators/img/Video_Tutorial_Cover.png)](http://youtu.be/vt5fpE0bzSY)  
 
 #References
