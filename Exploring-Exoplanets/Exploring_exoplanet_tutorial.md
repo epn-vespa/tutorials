@@ -17,9 +17,9 @@ Jean Schneider; Pierre Le Sidanner; Cyril Chauvin; Stephane Erard; Francoise Roq
 
 <h2 id="Change Log">Change Log</h2>
 
-
-First Converted by Keyuan Yin on 10th Nov. 2016 from *obspm.fr*'s pdf file and webpage tutorial.  
-[His Github Link](https://github.com/megadiesel705)
+|Version|Name|Note|
+|---|---|---|
+|1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [VESPA's wiki](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-Exploring-Exoplanets.pdf)|
 
 
 <h2 id="Steps">Step</h2>
@@ -93,7 +93,7 @@ There's another trick you can play: plotting history plot using X and Y axis for
 <h2 id="References">References</h2> 
 
    
-Please refer this tutorial to original version on [this site](http://typhon.obspm.fr/VESPA-tutorials/)
+Please refer this tutorial to original version on [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-Exploring-Exoplanets.pdf)
 
 
 
