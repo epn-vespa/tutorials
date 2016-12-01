@@ -1,5 +1,10 @@
 #EPN-TAP services: Using TopCat as a client
 
+[Authors](#Authors)  
+[Change Log](#log)  
+[Steps](#Steps)  
+[References](#References)
+
 
 <h2 id="Authors">Authors</h2>
 S. Erard, B. Cecconi, P. Le Sidaner  
