@@ -1,0 +1,1 @@
+For image storage.
