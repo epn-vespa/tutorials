@@ -13,6 +13,10 @@ A [sample](sample) formatted tutorial based on the existing one on the [VESPA wi
   * [Videos](#videos)
 * [GitHub & VESPA wiki](#github--vespa-wiki)
 
+## Update of content
+
+Once a tutorial exists, can be updated either directly (if added to the right team, please get in touch with [@arosp](https://github.com/aprossi). Or, you could fork the repository, make your changes and create a pull request. The procedure is described in several tutorials on the internet, e.g. [GitHub's creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
+
 ##  Embedding content
 Images embedded in a tutorial should be in the [img][template/img] subdirectory of each tutorial.
 
