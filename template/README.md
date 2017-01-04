@@ -21,9 +21,12 @@ M. Gangloff et al.
 | ------------- |:-------------:| -----: |
 | 0             | name          | test   |
 
+* * *
 
 ## Requirements and dependencies
  Not applicable
+
+* * *
 
 ## Use case
 exoplanets TBA
