@@ -13,12 +13,12 @@
 * [Links](#links)
 
 ## Authors:
-
+Jean Schneider; Pierre Le Sidanner; Cyril Chauvin; Stephane Erard; Francoise Roques; Ivan Zolotukhin; Marco Mancini; Danielle Briot
 ## Change log
 
-| Version       | Author        | Notes  |
-| ------------- |:-------------:| -----: |
-| 1             | Gangloff      |    |
+| Version       | Author        | Notes                                                                |
+| ------------- |:-------------:| --------------------------------------------------------------------:|
+| 1             | Gangloff      | Initial version modified to handle the latest version of VESPA portal|
 
 
 ## Requirements and dependencies
