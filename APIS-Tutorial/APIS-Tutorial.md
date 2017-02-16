@@ -1,4 +1,4 @@
-#APIS
+#APIS Tutorial
 
 [Abstract](#Abstract)  
 [Authors](#Authors)  
@@ -46,7 +46,7 @@ atmosphere.
 
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/1_planetary_uv_observations.png " width="500" alt="Planetary UV Observations">  
 
-Fig. 1 *Planetary UV Observations*
+_Fig. 1: Planetary UV Observations_
 
 The [APIS](http://apis.obspm.fr) (Auroral Planetary Imaging and Spectroscopy) 
 service consists in a database of planetary aurora spectro-imaging, archived at 
@@ -56,8 +56,10 @@ course).
 
 The database currently contains more then 6000 individual observations of 
 Jupiter, Saturn, Uranus and their moons, as well as Mars. The data were acquired
-with the two spectro-imagers of the Hubble Space Telescope (HST) in the UV 
-range since 1997. Several processing level with added value are available.
+with the Space Telescope Imaging Spectrograph (STIS) and Advanced Camera for 
+Surveys (ACS) instruments of the Hubble Space Telescope (HST) in the Far UV 
+range (~1100 to 1700 Angström) since 1997. Several processing level with added 
+value are available.
 
 The data are accessible online at [http://apis.obspm.fr](http://apis.obspm.fr). 
 They can be easily ordered and displayed thanks to its dedicated search interface
@@ -73,7 +75,7 @@ The goal of this tutoriel is to get familiar with the APIS features.
 
 <h3 id="part1">Searching for Data</h3>
 
-<h4>Main selection criteria</h4>
+#### Main selection criteria
 
 Data can be quickly ordered and visualized thanks to the conditional search 
 interface (Search for Data), see Figure 2. The default selection parameters are
@@ -81,11 +83,18 @@ generic ones (target, telescope, instrument, observation type, instrumental
 mode, date of observation) and practical (observation campaign name, 
 unique observation identifier). Once a query is done, the corresponding time 
 interval is automatically displayed and is kept for any further queries. 
-Use the *clear" and *Clear Date* buttons to empty the query form fields.
+Use the `Clear` and `Clear Date` buttons to empty the query form fields.
 
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/2_search_for_data.png" width="500" alt="Search for Data">  
 
-Fig. 2 *Search for Data*
+_Fig. 2: Search for Data_
+
+> ##### Test it
+> 
+> After connecting, do a few typical searches. Check HST observations of 
+> Jupiter, Saturne, Uranus and their moons, and how they differ.
+
+
 
 
 <h2 id="References">References</h2>
