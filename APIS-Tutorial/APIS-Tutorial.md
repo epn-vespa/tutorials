@@ -11,7 +11,7 @@
 
 This is user tutorial for the [APIS](http://apis.obspm.fr) (Auroral Planetary
 Images and Spectra) database. Connection on the APIS web interface requires a
-login ([register]{http://apis.obspm.fr/spip.php?page=register&choix=register}). 
+login ([register](http://apis.obspm.fr/spip.php?page=register&choix=register)). 
 The data will be loaded for analysis in [Aladin](http://aladin.u-strasbg.fr) 
 and [Specview](http://www.stsci.edu/institute/software_hardware/specview/).
 
@@ -46,6 +46,8 @@ atmosphere.
 
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/1_planetary_uv_observations.png " width="500" alt="Planetary UV Observations">  
 
+Fig. 1 *Planetary UV Observations*
+
 The [APIS](http://apis.obspm.fr) (Auroral Planetary Imaging and Spectroscopy) 
 service consists in a database of planetary aurora spectro-imaging, archived at 
 [PADC](http://voparis.obspm.fr) (Paris Astronomical Data Centre), coupled with
@@ -57,7 +59,7 @@ Jupiter, Saturn, Uranus and their moons, as well as Mars. The data were acquired
 with the two spectro-imagers of the Hubble Space Telescope (HST) in the UV 
 range since 1997. Several processing level with added value are available.
 
-The data are accessible online through at [http://apis.obspm.fr](http://apis.obspm.fr). 
+The data are accessible online at [http://apis.obspm.fr](http://apis.obspm.fr). 
 They can be easily ordered and displayed thanks to its dedicated search interface
 (conditional search on date, instrumental characteristics, planetary physical
 parameters), as showed in [Part 1](part1) of the tutorial. Once a request is
@@ -74,9 +76,16 @@ The goal of this tutoriel is to get familiar with the APIS features.
 <h4>Main selection criteria</h4>
 
 Data can be quickly ordered and visualized thanks to the conditional search 
-interface (Search for Data), see Figure 2. Les paramètres de sélection généraux visibles par défaut sont standard (cible, télescope, instrument, type d’observation, mode instrumental, date) et pra- tiques (choix direct de la campagne d’observation ou de l’identifiant à 9 caractères - unique - de l’observation). Lorsqu’une requête a été lancée, l’intervalle de dates correspondant s’affiche automatiquement et est pris en compte dans toute recherche ultérieure. Les boutons clear et clear date permettent de vider le champ de recherche.
+interface (Search for Data), see Figure 2. The default selection parameters are
+generic ones (target, telescope, instrument, observation type, instrumental 
+mode, date of observation) and practical (observation campaign name, 
+unique observation identifier). Once a query is done, the corresponding time 
+interval is automatically displayed and is kept for any further queries. 
+Use the *clear" and *Clear Date* buttons to empty the query form fields.
+
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/2_search_for_data.png" width="500" alt="Search for Data">  
 
+Fig. 2 *Search for Data*
 
 
 <h2 id="References">References</h2>
