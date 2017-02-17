@@ -33,8 +33,8 @@ Remote ultraviolet (UV) observations of giant planets and their moons are a
 rich source of informations on those planetary systems. Their various elements
 (rings, moons, atmosphere) reflect solar light and their magnetospheres produce
 intense atmospheric auroral emissions (Figure 1). Aurora are specifically 
-are resulting from the collisions between charged energetic particles -- mainly
-electrons -- accelerated in the magnetosphere and guided along magnetic field 
+are resulting from the collisions between charged energetic particles - mainly
+electrons - accelerated in the magnetosphere and guided along magnetic field 
 lines down to the magnetic poles, and the neutral upper atmosphere. In the case
 of giant planets, the upper atmosphere est mostly composed of atomic and 
 molecular Hydrogen, which electronic transitions are covering the whole UV 
@@ -169,6 +169,67 @@ extracted from the 2D processed spectra.
 > Click on the `JPG` or `PDF` link to get the full resolution image.
 
 <h3 id="part2">Interactive Processing with VO Tools</h3>
+
+Thanks to the underlying VO-compliant database system, another specific feature 
+of APIS is to allow direct online processing or visualisation, without having
+to download the data.
+
+#### Reading and Analyzing Images
+
+In the image search results, the FITS formatted processing levels (levels 1 and 
+2) can be displayed using the `Aladin` link below the thumbnail image. 
+This launches the Aladin tool in another browser window, and displays the image
+directly from APIS. The connection is made through the SAMP (Simple Application
+Messaging Protocol), materialized by a yellow target icon in the menu bar.
+
+> ##### training
+>
+> Examples of processing in Aladin:
+> 
+> + Change image contrast with a right mouse button click and move vertically
+> to adjust the contrast, or horizontally to adjust the cuts;
+> 
+> + The image contrast can also be modified via the `Image`/`Pixel Constrast` 
+> menu item. Various transfer functions can also be select (linear, logarithmic,
+> etc);
+>
+> + Display the histogram of pixel intensity (`pix` option), the full 
+> distribution is available clicking on `all values`. Identify the different
+> components of the image (background, planet, aurora) moving the cursor on the
+> color table;
+> 
+> + Superimpose intensity iso-contours (`cont` option);
+> 
+> + Plot the intensity distribution along a cut going through the auroral oval
+> (`dist` option).
+
+Aladin also allows you to load several images and compare them.
+
+> ##### Training
+> 
+> Load several **processed** images (e.g., 4 to 6 images from the January 2004 
+> Saturn campaing, between January 25th and 30th, during the Saturn approach phase
+> of Cassini). 
+> 
+> Have a look to the various extensions of 1 of those images, and then display
+> all the images simultaneously (`multiview` option). 
+> 
+> Notice the apparition of intense emissions on the dawn side (left-hand side)
+> on January 28th. In order to quantitatively identify the location of active
+> regions, superimpose iso-contours for each image and then look for the pixel
+> locations corresponding to bright regions on the last 2 extensions.
+> 
+> Check that the bright emissions on January 28th are located at higher latitude
+> than the other days.
+
+NB: *Saturn auroral emissions are very sensitive to the Solar Wind conditions. 
+The event observed on January 28th 2004 illustrates the effect of an incoming 
+interplanetary shock at Saturn, which translate into a strong auroral forcing
+on the dawn side.*
+
+#### Reading and Analyzing Spectra
+
+
 
 <h2 id="References">References</h2>
 The Auroral Planetary Imaging and Spectroscopy (APIS) service (2015)
