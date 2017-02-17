@@ -75,7 +75,7 @@ The goal of this tutoriel is to get familiar with the APIS features.
 
 <h3 id="part1">Searching for Data</h3>
 
-#### Main selection criteria
+#### Main Selection Criteria
 
 Data can be quickly ordered and visualized thanks to the conditional search 
 interface (Search for Data), see Figure 2. The default selection parameters are
@@ -89,13 +89,86 @@ Use the `Clear` and `Clear Date` buttons to empty the query form fields.
 
 _Fig. 2: Search for Data_
 
-> ##### Test it
+> ##### Training
 > 
 > After connecting, do a few typical searches. Check HST observations of 
-> Jupiter, Saturne, Uranus and their moons, and how they differ.
+> Jupiter, Saturne, Uranus and their moons, and see how they differ.
+> 
+> What about Mars observations? Can we see aurora?
+
+NB: *Auroral emissions are visible around the magnetic poles, mainly as 
+circumpolar ovals. Their morphology differs from a planet to the other, depending
+on the characteristics of the magnetosphere and its interaction with the solar
+wind.*
+
+#### Secondary Query Parameters
+
+Specific query parameters (instrumental of physical) providing advanced search 
+capabilities are available by clicking on `Advanced research` (bottom-right of
+the search interface, see Figure 2). When the secondary search interface is 
+visible and a query has been issued, the corresponding range of integration time   
+is automatically displayed and is taken into account for any further queries.
+
+> ##### Training
+> 
+> Identify Saturn observations when the Cassini mission was located in the 
+> Solar Wind (sub-solar distance of the magnetopause larger than 30 Rp) and 
+> was able to acquire _in situ_ measurements.
+
+NB: *This type of combined analysis of several space plasma datasets (in situ 
+and remote) is specifically the scope of another VO tool: [AMDA](http://amda.cdpp.eu)
+developed by the [CDPP](http://cdpp.eu) (Centre de Données de Physique des Plasmas)*
+
+#### Processing Levels
+
+The search results are showing several columns, corresponding to different 
+processing levels, each available with various file format. FITS files are 
+aimed at experienced used willing to perform his own data analysis, while 
+graphical formats (PDF and JPEG) are directly usable (e.g., for communications).
+
+Three processing levels are available for images:
+
++ **Raw data** [level 1]: images from the STSci (Space Telescope 
+Science Institute) database. STSci is in charge of the initial calibration of 
+HST observations. The FITS files contain 3 extensions including the science
+data (extension 0), the measurement error (extension 1), and the dead pixel 
+map (extension 2).
+
++ **Processed data** [level 2]: images rotated and centred (corrected for the 
+telescope inclinaison and pointing). The FITS files contain 7 extensions 
+including the science data (extension 0) and the planetocentric coordinates 
+of each pixel (extensions 1 to 6), namely: (1) latitude, (2) local time, (3) 
+solar zenital angle and (4) observer's zenital angle at the cloud altitude 
+(i.e., at limb altitude), (5) latitude and (6) local time at the auroral 
+altitude (above cloud level).
+
++ **Cylindrical projections** [level 3]: images calibrated into physical units 
+and projected into a cylindrical frame at the aurora altitude, after subtraction
+of a modeled background.
+
++ **Polar projections** [level 3]: same as above with polar projections.
+
+Three processing levels are available for spectra:
+
++ **Raw data** [level 1]: 2D spectra from the STSci archive. The X 
+dimension of the spectral axis. The Y dimension is the spatial axis, along the
+slit direction. The FITS files contain the same three extensions as for raw 
+images.
+
++ **Processed data** [level 2]: 2D spectra extracted and calibrated in wavelength.
+
++ **1D spectra** [level 3]: typical 1D spectra (with 3 occurrence levels) 
+extracted from the 2D processed spectra.  
 
 
+> ##### Training
+> 
+> Click on a thumbnail image to display a higher resolution image, and compare
+> with neighboring observation with the `<--` and `-->` keys. 
+>
+> Click on the `JPG` or `PDF` link to get the full resolution image.
 
+<h3 id="part2">Interactive Processing with VO Tools</h3>
 
 <h2 id="References">References</h2>
 The Auroral Planetary Imaging and Spectroscopy (APIS) service (2015)
