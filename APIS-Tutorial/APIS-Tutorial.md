@@ -279,7 +279,7 @@ The data are then transfered from APIS to Specview via SAMP.
 
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/4_1d_spectra_specview.png" width="500" alt="1D Spectra in Specview">  
 
-_Fig. 3: Extracted 1D spectra in 2 bright emission regions of the `o43ba1bnq` 2D 
+_Fig. 4: Extracted 1D spectra in 2 bright emission regions of the `o43ba1bnq` 2D 
 spectrum of Jupiter. The vertical bar at 1216 A indicates H-Lyman α line._
 
 > ##### Training
