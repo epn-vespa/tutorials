@@ -88,7 +88,7 @@ Jelinek et al., JGR 2012
 * download rB and rn on 2007\/03\/01 to 2009\/10\/01 at 60s resolution (all in one file) 
 * in AMDA : in the *Download Results* window choose *Send to TOPCAT*  
 * the table is automatically loaded in TOPCAT  
-* choose « density map » (2D histogram) : rB function of rn  
+* choose *density map* (2D histogram) : rB function of rn  
 * adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
 * do not worry about NaN values !  
 
@@ -99,7 +99,7 @@ Jelinek et al., JGR 2012
   *  pSW=1.67e-6nACEVACE^2  
 * produce a time table T1 when the pSW values are in a restricted band (ex: pSW<4)  
 * define a new (conditional) parameter : flag_msh
-  *flag_msh=1 if rB greater than 4-rn and rB lower than 10rn (see plot), else 0 (for solar wind and magnetosphere)  
+  * flag_msh=1 if rB greater than 4-rn and rB lower than 10rn (see plot), else 0 (for solar wind and magnetosphere)  
 * download XTHA, sqrt(YTHA^2+ZTHA^2), flag_msh at 3600 s resolution (all in one file) for the above T1 time table  
 
 ## Transfer via SAMP (same procedure as before)
@@ -140,7 +140,7 @@ It is computed along the XGSE direction : T=|XACE-XTHEMIS_A|/VSW
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/7_.png" width="500" alt="7">  
 
-Here the delay T varies much more, a « banded » delay could be adopted (not implemented here) with conditional parameters :  
+Here the delay T varies much more, a *banded* delay could be adopted (not implemented here) with conditional parameters :  
 
 ```
 bs_tha(3)/shiftT_(imf(3),2400)  
