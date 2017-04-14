@@ -14,7 +14,7 @@
 
 ## Authors:
 
-S. Earard, et al.
+S. Erard, et al.
 
 ## Change log
 
@@ -22,11 +22,6 @@ S. Earard, et al.
 | -------- |-------- | -----  |
 | 1        | [S. Erard](https://github.com/Erard)| **draft** version  from VESPA wiki   |
 | 2        |Mikhail Minin; [Keyuan Yin](https://github.com/megadiesel705)|Converted original version into markdown file|
-
-| Version  | Author 
-| -------  |-------
-| 1        | [S. Erard](https://github.com/Erard)
-| 2        |Mikhail Minin; [Keyuan Yin](https://github.com/megadiesel705)
 
 ## Requirements and dependencies
 suggested: [ImageMagick](http://www.imagemagick.org/script/index.php)
