@@ -30,11 +30,11 @@ Select Titan as Target Name and click on Send Query
 
 Services which sent a non empty response are displayed in green  
 
-**Next step** : display the description of a service  
+1. display the description of a service  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/2_display_the_description_of_service.png" width="500" alt="2">  
 
-**Next step** : display the response of the selected service  
+2. display the response of the selected service  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/3_display_the_response.png" width="500" alt="3">  
 
@@ -46,11 +46,11 @@ Open TopCat
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/5_Open_TOPCAT.png" width="500" alt="5">  
 
-**Next step** : send the list of granules to SAMP  
+3. send the list of granules to SAMP  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/6_Send_response_via_TOPCAT.png" width="500" alt="6">  
 
-**Next step**  
+4. 
 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/7_Sky_Plot_Open.png" width="500" alt="7">  
