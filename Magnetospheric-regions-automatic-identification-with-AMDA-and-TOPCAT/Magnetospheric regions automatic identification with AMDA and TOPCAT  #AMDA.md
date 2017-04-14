@@ -128,7 +128,7 @@ flag_msh = (n_i_tha/shiftT_(sw(0),4000)+bs_tha(3)/shiftT_(imf(3),4000) > 4.) & (
 
 flag_msh value is either 1 (THEMIS A is in the magnetosheath) or 0  
 
-**Time delay between ACE and THEMIS A**  
+## Time delay between ACE and THEMIS A 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/6_.png" width="500" alt="6">  
 
@@ -136,7 +136,7 @@ flag_msh value is either 1 (THEMIS A is in the magnetosheath) or 0
 It is computed along the XGSE direction : T=|XACE-XTHEMIS_A|/VSW
 ```
 
-**Time Dalay**  
+### Time Dalay 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/7_.png" width="500" alt="7">  
 
@@ -157,22 +157,23 @@ or
 bs_tha(3)/shiftT_(imf(3),4000)  
 ```
 
-*In AMDA a conditional parameter P is such that P=1 if P is true
+* In AMDA a conditional parameter P is such that P=1 if P is true
 Ex: C=A\*(T<3600)+\*(T>3600) is equal to either A or B depending on the value of T*  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/8_.png" width="500" alt="8">  
 
-**Perspectives**  
-• Refine analysis with smaller ram pressure domains  
-• Extend to larger time intervals, and other S/C (all THEMIS, CLUSTER, ...) • Extend to magnetosphere and solar wind region determinations   
-• Use this procedure to deduce bow shock and magnetopause models  
+## Perspectives 
+* Refine analysis with smaller ram pressure domains  
+* Extend to larger time intervals, and other S/C (all THEMIS, CLUSTER, ...) 
+* Extend to magnetosphere and solar wind region determinations   
+* Use this procedure to deduce bow shock and magnetopause models  
 
-**Tool enhancements**  
-• TOPCAT  
-&nbsp;&nbsp;&nbsp;&nbsp;• Bin value on mouse over  
-&nbsp;&nbsp;&nbsp;&nbsp;• Over plot of contours and user defined lines on density maps  
-• AMDA  
-&nbsp;&nbsp;&nbsp;&nbsp;• Delay procedure (continuous instead of constant or « banded »)  
+## Tool enhancements  
+* TOPCAT  
+   * Bin value on mouse over  
+   * Over plot of contours and user defined lines on density maps  
+* AMDA  
+   * Delay procedure (continuous instead of constant or *banded*)  
 
 Using the binning TOPCAT functionality for density map  
 
@@ -182,7 +183,7 @@ Using the binning TOPCAT functionality for density map
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/11_.png" width="500" alt="11">  
 
-<h2 id="References">References</h2>
+## References
 
 Please refer this tutorial to the [original version](http://typhon.obspm.fr/VESPA-tutorials/docs/AMDA-TOPCAT_Magnetospheric_regions_automatic_identification.pdf)
 
