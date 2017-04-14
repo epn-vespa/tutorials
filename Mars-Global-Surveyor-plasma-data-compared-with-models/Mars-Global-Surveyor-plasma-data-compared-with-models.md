@@ -4,11 +4,13 @@
 [Change Log](#Log)
 [Goals](#Goals)
 [Steps](#Steps)  
-[References](#References)  
+[References](#References) 
+
+[Authors](#Authors)
 
 ## Authors
 
-R. Modolo 1), S. Hess 1), B. Cecconi 2), V. Génot 3), and the IMPEx team  
+R. Modolo 1), S. Hess 1), B. Cecconi 2), V. G&eacute;not 3), and the IMPEx team  
 
 1)  LATMOS,Paris,France  
 2)  LESIA,Meudon,France  
