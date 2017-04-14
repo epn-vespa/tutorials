@@ -9,42 +9,41 @@
 
 
 
-<h2 id="Authors">Authors</h2>
+## Authors
 
 V. Génot – October 2012 – V2  
 His email:  
 vincent.genot@irap.omp.eu  
 
-<h2 id="Log">Change Log</h2>
+##Change Log
 
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/AMDA-TOPCAT_Magnetospheric_regions_automatic_identification.pdf)|
 
-<h2 id="Science Use Case">Science Use Case</h2>
+## Science Use Case
 
-•  Based on Jelinek et al., JGR 2012 (paper1)  
-•  Uses AMDA for the analysis  
-•  Uses TOPCAT for visualisations  
-•  Uses IVOA SAMP to exchange data between AMDA and TOPCAT  
+* Based on Jelinek et al., JGR 2012 (paper1)  
+* Uses AMDA for the analysis  
+* Uses TOPCAT for visualisations  
+* Uses IVOA SAMP to exchange data between AMDA and TOPCAT  
 
-<h2 id="Goals">Goals</h2>
+## Goals
 
 Goal :  
 
-•  Reproduce two paper1’s results in a few steps  
+* Reproduce two paper1’s results in a few steps  
 
-–  Identify solar wind / magnetosheah / magnetosphere  
-–  Identify bow shock and magnetopause  
+  * Identify solar wind / magnetosheah / magnetosphere  
+  * Identify bow shock and magnetopause  
 
-•  Explore AMDA/TOPCAT enhanced functionalities  
+* Explore AMDA/TOPCAT enhanced functionalities  
 
-–  AMDA conditional parameters  
-–  TOPCAT weighted density maps  
+  * AMDA conditional parameters  
+  * TOPCAT weighted density maps  
 
-•  Propose new research perspectives  
-
-<h2 id="Steps">Steps</h2>
+* Propose new research perspectives  
+## Steps
 
 **Magnetospheric region identification in Paper1**  
 
