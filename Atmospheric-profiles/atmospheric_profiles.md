@@ -1,4 +1,4 @@
-#Atmospheric profiles
+## Atmospheric profiles
 
 [Introduction](#Intro)  
 [Authors](#Authors)  
