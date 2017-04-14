@@ -92,7 +92,6 @@ Jelinek et al., JGR 2012
 * adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
 * do not worry about NaN values !  
 
-## Step by step AMDA–TOPCAT analysis
 ### Bow shock and magnetopause identification; Use of AMDA conditional parameters  
 
 * define the solar wind ram pressure pSW shifted to THEMIS A  
@@ -110,7 +109,7 @@ Jelinek et al., JGR 2012
 &nbsp;&nbsp;• sqrt(Y^2+Z^2) function of X weighted by flag_msh   
 •  adjust binning as necessary  
 
-**Parameter definition in AMDA**  
+## Parameter definition in AMDA  
 ```
 r_n = n_i_tha/shiftT_(sw(0),4000)  
 ```
