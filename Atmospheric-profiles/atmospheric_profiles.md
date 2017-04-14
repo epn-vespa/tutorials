@@ -59,40 +59,38 @@ Open TopCat
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/8_Select_Column_Displayed.png" width="500" alt="8">  
 
-##6.
+6.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/9_.png" width="500" alt="9">  
 
-**Next step**  
+7. 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/10_Select_Subset.png" width="500" alt="10">  
-
-**Next step**
+8.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/11_Activation_Window.png" width="500" alt="11">  
 
-
-**Next step**
+9.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/12_.png" width="500" alt="12">  
 
-**Next step**  
+10.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/13_.png" width="500" alt="13">  
 
-**Next step**  
+11.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/14_.png" width="500" alt="14">  
 
-**Next step**
+12.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/15_Table_Browser.png" width="500" alt="15">  
 
-**Next step**  
+13.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/16_Publication_Ready_Form_Saving.png" width="500" alt="16">
 
-**Next step**
+14.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/17_Save.png" width="500" alt="17">  
 
