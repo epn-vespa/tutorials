@@ -59,7 +59,7 @@ Open TopCat
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/8_Select_Column_Displayed.png" width="500" alt="8">  
 
-##6.##
+##6.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/9_.png" width="500" alt="9">  
 
