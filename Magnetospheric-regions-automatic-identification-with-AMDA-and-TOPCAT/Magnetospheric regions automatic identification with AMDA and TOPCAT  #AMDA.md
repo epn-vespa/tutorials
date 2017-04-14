@@ -11,7 +11,8 @@
 
 ## Authors
 
-V. G&eacute;not \– October 2012 \– V2  
+V. G&eacute;not , October 2012 , V2  
+
 His email:  
 vincent.genot@irap.omp.eu  
 
