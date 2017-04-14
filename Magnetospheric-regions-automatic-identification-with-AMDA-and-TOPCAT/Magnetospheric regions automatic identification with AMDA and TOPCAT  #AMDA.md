@@ -2,7 +2,6 @@
 
 [Authors](#Authors)  
 [Change Log](#Log)
-
 [Science Use Case](#Science Use Case)  
 [Goals](#Goals)  
 [Steps](#Steps)  
