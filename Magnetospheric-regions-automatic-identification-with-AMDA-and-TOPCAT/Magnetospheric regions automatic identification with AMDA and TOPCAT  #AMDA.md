@@ -16,7 +16,7 @@ vincent.genot@irap.omp.eu
 
 ## Change Log
 * Version : 1
-* Name : Keyuan Yin](https://github.com/megadiesel705)
+* Name : [Keyuan Yin](https://github.com/megadiesel705)
 * Note : First converted from [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/AMDA-TOPCAT_Magnetospheric_regions_automatic_identification.pdf)
 
 ## Science Use Case
