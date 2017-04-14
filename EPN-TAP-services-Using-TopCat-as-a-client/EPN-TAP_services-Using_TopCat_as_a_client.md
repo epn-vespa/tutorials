@@ -1,4 +1,4 @@
-#EPN-TAP services: Using TopCat as a client
+## EPN-TAP services: Using TopCat as a client
 
 [Authors](#Authors)  
 [Change Log](#log)  
@@ -27,14 +27,18 @@ Open Table / query remote database
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/2_Open_Table.png" width="500" alt="2">  
 
-Enter keyword and select service from registry,  or enter EPN-TAP URL  
+Enter keyword and select service from registry,  
+or enter EPN-TAP URL  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/3_.png" width="500" alt="3">  
 
 Select Table  
-Current services:  
+
+Current services:  
 BDIP  
-APISTitan profiles  Mars profiles  
+APIS
+Titan profiles  
+Mars profiles  
 
 Enter ADQL query  
 
@@ -48,11 +52,13 @@ Browse table, select elements
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/6_Browse_Table.png" width="500" alt="6">  
 
-Configure activation  [click on button to invoke action menu]  
+Configure activation  
+[click on button to invoke action menu]  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/7_Configure.png" width="500" alt="7">  
 
-If results = image  previews are available [2 different viewers]  
+If results = image  
+previews are available [2 different viewers]  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/8_Preview.png" width="500" alt="8">  
 
@@ -63,7 +69,8 @@ Check Elements
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/10_Check_Elements.png" width="500" alt="10">  
 
 
-Other options available if FITS  images with WCS coordinates [grid, background sky...]  
+Other options available if FITS  
+images with WCS coordinates [grid, background sky...]  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/11_Other_Options.png" width="500" alt="11">  
 
@@ -78,12 +85,15 @@ Image analysis using Aladin at [this site](http://aladin.u-strasbg.fr/)
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/14_.png" width="500" alt="14">  
 
-If result = spectra  plot / analysis using VOspec, etc... [to be started independently]  
-[Refer this site](http://www.sciops.esa.int/index.php?project=SAT&page=vospec)  
+If result = spectra  
+plot / analysis using VOspec, etc... [to be started independently]  
+
+[Refer this site](http://www.sciops.esa.int/index.php?project=SAT&page=vospec)  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/15_.png" width="500" alt="15">  
 
-If results are numbers  can be viewed as VOTable  
+If results are numbers  
+can be viewed as VOTable  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/16_Numbers_Table.png" width="500" alt="16">  
 
@@ -91,7 +101,8 @@ VOTable can be read [ascii files]
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/17_Copy_link.png" width="500" alt="17">  
 
-The VOTable can be open in TopCat  [paste URL in Open dialog]  
+The VOTable can be open in TopCat  
+[paste URL in Open dialog]  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/18_Table_TopCat.png" width="500" alt="18">  
 
@@ -103,7 +114,8 @@ TopCat can plot a variety of data types
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/20_Plot.png" width="500" alt="20">  
 
-The VOTable can be transmitted to other VO ploting tools  [or paste URL in VOplot's Open dialog]  
+The VOTable can be transmitted to other VO ploting tools  
+[or paste URL in VOplot's Open dialog]  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Using-TopCat-as-a-client/img/21_Transmitted.png" width="500" alt="21">  
 
