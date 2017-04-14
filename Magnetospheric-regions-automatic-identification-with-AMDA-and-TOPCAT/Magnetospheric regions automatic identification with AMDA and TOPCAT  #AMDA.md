@@ -60,20 +60,21 @@ In both cases, the bin/contour represents the number of events
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/3_.png" width="500" alt="3">  
 
-**Magnetospheric Regions**  
+### Magnetospheric Regions  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/4_.png" width="500" alt="4">  
 
-**Bow shock and magnetopause identification**  
+### Bow shock and magnetopause identification 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/5_.png" width="500" alt="5">
 
-In both case, each bin represents the probability (<1) for this location to be in the magnetosheath  
+In both case, each bin represents the probability (less than 1) for this location to be in the magnetosheath  
 In TOPCAT this is automatically computed from the flag_msh values  
-*Jelinek et al., JGR 2012*  
+Jelinek et al., JGR 2012 
 
-**Step by step AMDA–TOPCAT analysis  
-Magnetospheric region identification**  
+## Step by step AMDA TOPCAT analysis 
+
+### Magnetospheric region identification  
 
 * define rB and rn in AMDA (create new parameters, see slide for exact definition)  
   * time delay between ACE and THEMIS A is taken constant  
@@ -81,7 +82,7 @@ Magnetospheric region identification**
   *  here : param=BACE or nACE  
   *  a better approach would use (see plot) : T=|XACE-XTHEMIS_A|/VSW  
   *  a much better approach would use an iterative algorithm to compute T   
-  * forinstancesee http://cdpp-amda.cesr.fr/DDHTML/HELP/delay.html  
+  * for instance see http://cdpp-amda.cesr.fr/DDHTML/HELP/delay.html  
 * launch TOPCAT ; it automatically opens a SAMP hub  
 * in AMDA : click the « interoperability » and open a SAMP connection  
 * download rB and rn on 2007/03/01 – 2009/10/01 at 60s resolution (all in one file) 
@@ -91,22 +92,21 @@ Magnetospheric region identification**
 * adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
 * do not worry about NaN values !  
 
-** Step by step AMDA–TOPCAT analysis
-Bow shock and magnetopause identification**  
-Use of AMDA conditional parameters  
+## Step by step AMDA–TOPCAT analysis
+### Bow shock and magnetopause identification; Use of AMDA conditional parameters  
 
-•  define the solar wind ram pressure pSW shifted to THEMIS A  
-&nbsp;&nbsp;•  time delay may be taken as 4000s as before   
-&nbsp;&nbsp;• pSW=1.67e-6nACEVACE^2  
-•  produce a time table T1 when the pSW values are in a restricted band (ex: pSW<4)  
-•  define a new (conditional) parameter : flag_msh
-&nbsp;&nbsp;&nbsp;&nbsp;•  flag_msh=1 if rB>4-rn and rB<10rn (see plot), else 0 (for solar wind and magnetosphere)  
-•  download XTHA, sqrt(YTHA^2+ZTHA^2), flag_msh at 3600 s resolution (all in one file) for the above T1 time table  
+* define the solar wind ram pressure pSW shifted to THEMIS A  
+  *  time delay may be taken as 4000s as before   
+  *  pSW=1.67e-6nACEVACE^2  
+* produce a time table T1 when the pSW values are in a restricted band (ex: pSW<4)  
+* define a new (conditional) parameter : flag_msh
+  *flag_msh=1 if rB greater than 4-rn and rB lower than 10rn (see plot), else 0 (for solar wind and magnetosphere)  
+* download XTHA, sqrt(YTHA^2+ZTHA^2), flag_msh at 3600 s resolution (all in one file) for the above T1 time table  
 
-￼**Transfer via SAMP (same procedure as before)**  
+## Transfer via SAMP (same procedure as before)
 
-•  the table is loaded into TOPCAT  
-•  choose « density map » (2D histogram) :  
+* the table is loaded into TOPCAT  
+* choose « density map » (2D histogram) :  
 &nbsp;&nbsp;• sqrt(Y^2+Z^2) function of X weighted by flag_msh   
 •  adjust binning as necessary  
 
