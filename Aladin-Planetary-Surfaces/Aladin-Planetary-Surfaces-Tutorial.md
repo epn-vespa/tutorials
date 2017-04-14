@@ -28,7 +28,7 @@ S. Earard, et al.
 suggested: [ImageMagick](http://www.imagemagick.org/script/index.php)
 
 ## Use case
-Use case by S&eacute;bastien Derrière, CDS (June 2015), enlarged with comments and implementation notes
+Use case by S&eacute;bastien Derri&grave;re, CDS (June 2015), enlarged with comments and implementation notes
 
 ## Keywords
 * term 1
