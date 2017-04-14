@@ -33,7 +33,7 @@ vincent.genot@irap.omp.eu
 
 Goal :  
 
-* Reproduce two paper1’s results in a few steps  
+* Reproduce two papers results in a few steps  
 
   * Identify solar wind / magnetosheah / magnetosphere  
   * Identify bow shock and magnetopause  
@@ -76,23 +76,23 @@ In TOPCAT this is automatically computed from the flag_msh values
 **Step by step AMDA–TOPCAT analysis  
 Magnetospheric region identification**  
 
-•  define rB and rn in AMDA (create new parameters, see slide for exact definition)  
-&nbsp;&nbsp;•  time delay between ACE and THEMIS A is taken constant  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  for instance : shift(param,4000) shifts ACE data from 4000s forward  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  here : param=BACE or nACE  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a better approach would use (see plot) : T=|XACE-XTHEMIS_A|/VSW  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•  a much better approach would use an iterative algorithm to compute T   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• forinstancesee http://cdpp-amda.cesr.fr/DDHTML/HELP/delay.html  
-•  launch TOPCAT ; it automatically opens a SAMP hub  
-•  in AMDA : click the « interoperability » and open a SAMP connection  
-•  download rB and rn on 2007/03/01 – 2009/10/01 at 60s resolution (all in one file) 
-•  in AMDA : in the « Download Results » window choose « Send to TOPCAT »  
-•  the table is automatically loaded in TOPCAT  
-•  choose « density map » (2D histogram) : rB function of rn  
-•  adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
-•  do not worry about NaN values !  
+* define rB and rn in AMDA (create new parameters, see slide for exact definition)  
+  * time delay between ACE and THEMIS A is taken constant  
+  *  for instance : shift(param,4000) shifts ACE data from 4000s forward  
+  *  here : param=BACE or nACE  
+  *  a better approach would use (see plot) : T=|XACE-XTHEMIS_A|/VSW  
+  *  a much better approach would use an iterative algorithm to compute T   
+  * forinstancesee http://cdpp-amda.cesr.fr/DDHTML/HELP/delay.html  
+* launch TOPCAT ; it automatically opens a SAMP hub  
+* in AMDA : click the « interoperability » and open a SAMP connection  
+* download rB and rn on 2007/03/01 – 2009/10/01 at 60s resolution (all in one file) 
+* in AMDA : in the « Download Results » window choose « Send to TOPCAT »  
+* the table is automatically loaded in TOPCAT  
+* choose « density map » (2D histogram) : rB function of rn  
+* adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
+* do not worry about NaN values !  
 
-**Step by step AMDA–TOPCAT analysis
+** Step by step AMDA–TOPCAT analysis
 Bow shock and magnetopause identification**  
 Use of AMDA conditional parameters  
 
