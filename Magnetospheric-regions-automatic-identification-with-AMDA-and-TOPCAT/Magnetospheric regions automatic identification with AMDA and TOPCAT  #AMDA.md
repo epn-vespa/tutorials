@@ -105,9 +105,9 @@ Jelinek et al., JGR 2012
 ## Transfer via SAMP (same procedure as before)
 
 * the table is loaded into TOPCAT  
-* choose « density map » (2D histogram) :  
-&nbsp;&nbsp;• sqrt(Y^2+Z^2) function of X weighted by flag_msh   
-•  adjust binning as necessary  
+* choose *density map* (2D histogram) :  
+   * sqrt(Y^2+Z^2) function of X weighted by flag_msh   
+* adjust binning as necessary  
 
 ## Parameter definition in AMDA  
 ```
