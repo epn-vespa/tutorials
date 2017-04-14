@@ -6,23 +6,23 @@
 [Steps](#Steps)  
 [References](#References)
 
-<h2 id="Intro">Introduction</h2>
+## Introduction
 
 Looking for atmospheric profiles with the [VESPA portal](http://vespa.obspm.fr)  
 
 and plot them with TopCat
 
-<h2 id="Authors">Authors</h2>
+## Authors
 
 Edited by Gangloff Michel on VESPA wiki.
 
-<h2 id="Log">Change Log</h2>
+## Change Log
 
-|Version|Name|Note|
-|---|---|---|
-|1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [VESPA wiki](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)|
+* Version : 1
+* Name: [Keyuan Yin](https://github.com/megadiesel705)
+* Notes: First converted from [VESPA wiki](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)
 
-<h2 id="Steps">Steps</h2>
+## Steps
 
 Select Titan as Target Name and click on Send Query  
 
@@ -42,15 +42,13 @@ The response of the selected service : a list of granules with their attributes
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/4_list_of_granules.png" width="500" alt="4">  
 
-Open TopCat  
+3. Open TopCat  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/5_Open_TOPCAT.png" width="500" alt="5">  
 
-3. send the list of granules to SAMP  
+4. send the list of granules to SAMP  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/6_Send_response_via_TOPCAT.png" width="500" alt="6">  
-
-4. 
 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/7_Sky_Plot_Open.png" width="500" alt="7">  
@@ -95,7 +93,7 @@ Open TopCat
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/17_Save.png" width="500" alt="17">  
 
 
-<h2 id="References">References</h2>
+## References
 
 
 
