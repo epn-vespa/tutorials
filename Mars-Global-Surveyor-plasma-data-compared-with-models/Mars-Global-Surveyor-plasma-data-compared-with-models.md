@@ -27,7 +27,7 @@ R. Modolo 1), S. Hess 1), B. Cecconi 2), V. G&eacute;not 3), and the IMPEx team
 
 ## Goals
 
-* Hand’s on LATMOS simula3on database and Visualiza3on tools (AMDA, 3Dview, TopCat)
+* Hands on LATMOS simula3on database and Visualiza3on tools (AMDA, 3Dview, TopCat)
 * Comparison between MGS observa9ons and Hybrid simula9on results
 
 
@@ -38,7 +38,7 @@ R. Modolo 1), S. Hess 1), B. Cecconi 2), V. G&eacute;not 3), and the IMPEx team
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Mars-Global-Surveyor-plasma-data-compared-with-models/img/1_.png" width="500" alt="1">  
 
 Choosing one Martian simulation :  
-LatHyS catalog propose the main characteris1c of the simulation - The ResourceID (Name) :  
+LatHyS catalog propose the main characteristic of the simulation - The ResourceID (Name) :  
 
 LatHyS_Mars-18_01_13@...  
 
