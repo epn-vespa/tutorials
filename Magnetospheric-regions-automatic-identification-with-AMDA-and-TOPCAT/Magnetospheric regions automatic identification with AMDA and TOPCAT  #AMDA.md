@@ -166,7 +166,7 @@ Ex: C=A\*(T<3600)+\*(T>3600) is equal to either A or B depending on the value of
 * Extend to magnetosphere and solar wind region determinations   
 * Use this procedure to deduce bow shock and magnetopause models  
 
-## Tool enhancements  
+## Tools enhancements  
 * TOPCAT  
    * Bin value on mouse over  
    * Over plot of contours and user defined lines on density maps  
