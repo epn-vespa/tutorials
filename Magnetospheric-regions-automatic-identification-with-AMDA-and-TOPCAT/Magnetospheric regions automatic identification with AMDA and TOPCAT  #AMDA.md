@@ -29,9 +29,7 @@ vincent.genot@irap.omp.eu
 * Uses TOPCAT for visualisations  
 * Uses IVOA SAMP to exchange data between AMDA and TOPCAT  
 
-## Goals
-
-Goal :  
+## Goals 
 
 * Reproduce two papers results in a few steps  
 
@@ -43,14 +41,15 @@ Goal :
   * AMDA conditional parameters  
   * TOPCAT weighted density maps  
 
-* Propose new research perspectives  
+* Propose new research perspectives 
+
 ## Steps
 
-**Magnetospheric region identification in Paper1**  
+### Magnetospheric region identification in Paper1  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/1_.png" width="500" alt="1">  
 
-**THEMIS A magnetospheric sampling over ~3 years**  
+### THEMIS A magnetospheric sampling over ~3 years  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/img/2_.png" width="500" alt="2">  
 
