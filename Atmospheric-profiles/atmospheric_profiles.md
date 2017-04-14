@@ -97,7 +97,6 @@ Open TopCat
 
 <h2 id="References">References</h2>
 
-Please refer this tutorial to original version edited by Gangloff Michel on [this site](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)
 
 
 
