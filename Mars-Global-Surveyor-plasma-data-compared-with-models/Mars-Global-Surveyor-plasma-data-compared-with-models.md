@@ -1,7 +1,8 @@
 ## Mars Global Surveyor plasma data compared with models
 
 [Authors](#Authors)  
-[Change Log](#Log)  
+[Change Log](#Log)
+[Goals](#Goals)
 [Steps](#Steps)  
 [References](#References)  
 
