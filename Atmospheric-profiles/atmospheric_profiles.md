@@ -55,11 +55,11 @@ Open TopCat
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/7_Sky_Plot_Open.png" width="500" alt="7">  
 
-**Next step**  
+5. 
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/8_Select_Column_Displayed.png" width="500" alt="8">  
 
-**Next step**
+##6.##
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/9_.png" width="500" alt="9">  
 
