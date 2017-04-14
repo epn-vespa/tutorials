@@ -11,11 +11,11 @@
 
 ## Authors
 
-V. Génot – October 2012 – V2  
+V. G1eacute;not \– October 2012 \– V2  
 His email:  
 vincent.genot@irap.omp.eu  
 
-##Change Log
+## Change Log
 
 |Version|Name|Note|
 |---|---|---|
