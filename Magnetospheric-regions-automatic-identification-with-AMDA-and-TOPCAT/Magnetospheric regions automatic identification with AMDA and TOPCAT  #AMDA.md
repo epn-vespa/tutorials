@@ -1,6 +1,4 @@
 ## Magnetospheric regions automatic identification with AMDA and TOPCAT	
-## AMDA-TOPCAT use case
-## Magnetospheric regions automatic identification
 
 [Authors](#Authors)  
 [Change Log](#Log)  
