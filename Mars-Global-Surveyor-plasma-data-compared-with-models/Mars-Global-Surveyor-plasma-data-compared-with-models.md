@@ -7,6 +7,10 @@
 [References](#References) 
 
 [Authors](#Authors)
+[Change Log](#Log)
+[Goals](#Goals)
+[Steps](#Steps)
+[References](#References)
 
 ## Authors
 
