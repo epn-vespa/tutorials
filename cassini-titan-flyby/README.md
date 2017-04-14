@@ -22,6 +22,10 @@ V. Genot et al.
 | 1             | Gangloff      |    |
 
 
+| Version       | Author        | Notes                                                                |
+| ------------- |:-------------:| --------------------------------------------------------------------:|
+| 1             | Gangloff      | Initial version modified to handle the latest version of VESPA portal|
+
 ## Requirements and dependencies
  Not applicable
 
