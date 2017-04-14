@@ -84,9 +84,9 @@ Jelinek et al., JGR 2012
   *  a much better approach would use an iterative algorithm to compute T   
   * for instance see http://cdpp-amda.cesr.fr/DDHTML/HELP/delay.html  
 * launch TOPCAT ; it automatically opens a SAMP hub  
-* in AMDA : click the  _interoperability_  and open a SAMP connection  \
-* download rB and rn on 2007\/03\/01 \– 2009\/10\/01 at 60s resolution (all in one file) 
-* in AMDA : in the « Download Results » window choose « Send to TOPCAT »  
+* in AMDA click *interoperability*  and open a SAMP connection 
+* download rB and rn on 2007\/03\/01 to 2009\/10\/01 at 60s resolution (all in one file) 
+* in AMDA : in the *Download Results* window choose *Send to TOPCAT*  
 * the table is automatically loaded in TOPCAT  
 * choose « density map » (2D histogram) : rB function of rn  
 * adjust binning and plotting range as necessary (0-8 for rn, 0-22 for rB)  
