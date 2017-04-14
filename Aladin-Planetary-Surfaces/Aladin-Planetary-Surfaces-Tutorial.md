@@ -1,4 +1,4 @@
-## Aladin & planetary surfaces
+# Aladin & planetary surfaces
 
 * [Authors](#authors)
 * [Change log](#change-log)
@@ -18,10 +18,10 @@ S. Earard, et al.
 
 ## Change log
 
-| Version       | Author        | Notes  |
-| ------------- |:-------------:| -----: |
-| 1             | [S. Erard](https://github.com/Erard)| **draft** version  from VESPA wiki   |
-|2|Mikhail Minin; [Keyuan Yin](https://github.com/megadiesel705)|Converted original version into markdown file|
+| Version  | Author  | Notes  |
+| -------- |-------- | -----  |
+| 1        | [S. Erard](https://github.com/Erard)| **draft** version  from VESPA wiki   |
+| 2        |Mikhail Minin; [Keyuan Yin](https://github.com/megadiesel705)|Converted original version into markdown file|
 
 
 ## Requirements and dependencies
@@ -84,17 +84,17 @@ Little cleanup of csv file, and load it in TOPCAT.
     > Remove EOL character <NULL> in TextMate or another handy editor
 
 
-• Filter Io features only by creating subset (io, expression SA=="io")
+* Filter Io features only by creating subset (io, expression SA=="io")
 -> 221 lines out of 8395 in io subset
     > Click on red/violet icon, add a filter
     & "plot subset" io in main window
 
 Choose io Row subset in main TOPCAT window and broadcast to Aladin via SAMP
 
-• Right-click catalogue plane in Aladin, Column Information
+* Right-click catalogue plane in Aladin, Column Information
 Click on Coord for LATITUDE and LONG360, pretending they are DEC and RA, respectively.
 
-• Create dedicated filter :
+* Create dedicated filter :
 In advanced mode, use the following expression :
     > this is Catalogue menu item / create new filter / advanced mode
     
@@ -108,7 +108,7 @@ draw ${NAME} rainbow(${AD},1979,2003)
 
 Displays names and sizes of surface features, color-coded by year of discovery.
 
-• Remaining issues :
+* Remaining issues :
 Defaut orientation of RA or longitudes in Aladin is different
 from the one used in planetary science, therefore the surface
 is viewed as from within the planetary body, not from outside.
