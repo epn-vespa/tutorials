@@ -1,7 +1,4 @@
 ## Mars Global Surveyor plasma data compared with models
-## Hand’s on LATMOS simula3on database and Visualiza3on tools (AMDA, 3Dview, TopCat)
-
-## Comparison between MGS observa9ons and Hybrid simula9on results
 
 [Authors](#Authors)  
 [Change Log](#Log)  
@@ -22,6 +19,12 @@ R. Modolo 1), S. Hess 1), B. Cecconi 2), V. Génot 3), and the IMPEx team
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-MGS-LATHYS.pdf)|
+
+## Goals
+
+* Hand’s on LATMOS simula3on database and Visualiza3on tools (AMDA, 3Dview, TopCat)
+* Comparison between MGS observa9ons and Hybrid simula9on results
+
 
 ## Steps
 
