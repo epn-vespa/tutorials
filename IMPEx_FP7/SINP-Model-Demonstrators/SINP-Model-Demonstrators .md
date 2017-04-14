@@ -1,4 +1,4 @@
-#SINP Model Demonstrators
+## SINP Model Demonstrators
 
 [Authors](#Authors)  
 [Change Log](#log)  
