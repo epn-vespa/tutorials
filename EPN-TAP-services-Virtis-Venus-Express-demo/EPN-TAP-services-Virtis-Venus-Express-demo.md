@@ -198,7 +198,7 @@ statistics
 Check Samp status  
 (if not connected click
 "Register with SAMP HUB")  
-Click on a "Send… via
+Click on a "Send... via
 SAMP" button  
 Images and cubes will display in
 Aladin  
