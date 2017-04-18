@@ -131,7 +131,7 @@ In Form tab, select Mode = *Aux*
 with Local_time_min as parameter
 to get colors  
 (coordinate -c1min should be used to get a correct plot
-in longitude — it is interpreted as a right ascension.
+in longitude; it is interpreted as a right ascension.
 *Sphere plot* from the Graphics menu uses c1min)  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img_updated_1/9_Skyplot_icon.png" width="500" alt="9">
@@ -140,7 +140,7 @@ in longitude — it is interpreted as a right ascension.
 Select parameters C1min & C2min => Cylindrical map  
 Some values are out of bound  
 Select region of correct points  
-(0/360° and -90/90°) with shift-drag andclick "Define subset"  
+(0/360 degree and -90/90 degree) with shift-drag andclick "Define subset"  
 Call it "OK2"  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/8_plane-plotting.png" width="500" alt="10">  
