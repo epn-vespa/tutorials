@@ -87,7 +87,7 @@ Possibly to zoom
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Mars-Global-Surveyor-plasma-data-compared-with-models/img/9_.png" width="500" alt="9">  
 
-**References
+## References
 
 Please refer this markdown tutorial to original version on [this site](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1)  
 
