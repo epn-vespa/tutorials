@@ -58,10 +58,10 @@ impacts at Venus and Earth should be visible (e.g. 2012/06/15 15:00:00 2012/
 06/17 05:00:00)  
 
 * The following parameters may be selected (see screenshot below):  
-** VEXMAG data: Remote Data  
-** (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO]  
-** WINDMFI data: Local Data/WIND/MFI/mfi_high/b_gse  
-** CLUSTER1FGM data: Local Data/fgm_5vps/b_gse  
+  * VEXMAG data: Remote Data  
+  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO]  
+  * WINDMFI data: Local Data/WIND/MFI/mfi_high/b_gse  
+  * CLUSTER1FGM data: Local Data/fgm_5vps/b_gse  
 
 * Plot the data (see screenshot below). One can zoom into different time intervals
 to get a more detailed view on the data at Venus and Earth.  
@@ -83,12 +83,12 @@ at Venus (e.g. 2012/06/15 19:00:00 2012/
 
 * Compare observational data by VEX MAG with FMI HYB simulation run data (please be aware that the FMI HYB simulation runs are by now only for quiet solar wind conditions. The runs are within a range around Venus of x=[3,3],y=[4,4],z=[4,4]  
 Venus radii). Use the following data:  
-** VEXMAG data: Remote Data
-** (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO  
-**  Via Create/Modify parameter one can also create the absolute  
-** value of the observed magnetic field (see screenshot below)  
-** runs for Venus under (Remote Data (Simulations))  
-** VEXMAG ephemeris data: Remote Data
+  * VEXMAG data: Remote Data
+  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO  
+  *  Via Create/Modify parameter one can also create the absolute  
+  * value of the observed magnetic field (see screenshot below)  
+  * runs for Venus under (Remote Data (Simulations))  
+  * VEXMAG ephemeris data: Remote Data
 (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/SC_POS_VSO  
 
 * Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
