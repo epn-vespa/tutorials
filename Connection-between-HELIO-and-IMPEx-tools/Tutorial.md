@@ -31,8 +31,7 @@ Example(with picture attached):
 *Time Range*:  
 20120610Z00:00:00 - 2012-06-15Z00:00:00    
 *Event Catalogue*:  
-SOHO/LASCO CME Event List / pa_width>=270
-→ 1 CME  
+SOHO/LASCO CME Event List / pa_width>=270 : 1 CME  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/1_Factor_Input_Illustration.png" width="500" alt="Input Example for Step 1">  
 
