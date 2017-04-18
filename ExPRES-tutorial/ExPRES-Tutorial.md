@@ -59,11 +59,11 @@ The ExPRES main page is composed of two parts the command panel (left) and the s
 **Command panel**  
 Its main purpose is to permits the user to manage simulation files (Load, save, delete,...) and the simulation runs (submit, follow, get results).  
 The simulation whose parameters are currently on the right simulation panel can be saved by clicking on *Save* and the simulation can be run by clicking on *Submit*.  
-The saved simulations can be displayed by clicking on the expand button ￼ Load. Then, a simulation can be loaded by clicking on the simulation name.  
-The queue can be viewed by clicking on the expand button ￼ Queue. Simulations can be either Running or Waiting.  
+The saved simulations can be displayed by clicking on the expand button *Load*. Then, a simulation can be loaded by clicking on the simulation name.  
+The queue can be viewed by clicking on the expand button *Queue*. Simulations can be either Running or Waiting.  
 
-The results can be accessed by clicking on the expand button ￼ Results. Then the data can be viewed by clicking on their name. The XML outputs, which follows the IVOA VOTable standard can be shared with third-party VO applications though the SAMP protocol by clicking on the ￼ icon. This can be used to display the results in SILFE.  
-To use the SAMP capabilities, it is necessary to connect to a SAMP hub by clicking on the SAMP icon ￼ . It can be disconnected by clicking at the same location on the icon. If no SAMP hub is running, you will be asked whether you want to run one from the astrojs@github repository.  
+The results can be accessed by clicking on the expand button *Results*. Then the data can be viewed by clicking on their name. The XML outputs, which follows the IVOA VOTable standard can be shared with third-party VO applications though the SAMP protocol by clicking on the icon. This can be used to display the results in SILFE.  
+To use the SAMP capabilities, it is necessary to connect to a SAMP hub by clicking on the SAMP icon. It can be disconnected by clicking at the same location on the icon. If no SAMP hub is running, you will be asked whether you want to run one from the astrojs@github repository.  
 
 **Simulation Setup panel**  
 
@@ -75,7 +75,7 @@ The time settings are limited to the times at which the simulation starts and en
 
 It is also possible to define a physical “zero” time by providing a date. This date is particularly used for the generation of the VOTable outputs, but are also used for ephemeris.  
 
-Frequency parameters are of three types that can be selected in a list (click on ￼ ). The linear and logarithmic scales are defined by minimum and maximum frequencies and the number of frequencies to simulate. Predefined frequencies also exist that corresponds to known instruments they can be selected by .  
+Frequency parameters are of three types that can be selected in a list. The linear and logarithmic scales are defined by minimum and maximum frequencies and the number of frequencies to simulate. Predefined frequencies also exist that corresponds to known instruments they can be selected by .  
 
 *Observer*  
 
