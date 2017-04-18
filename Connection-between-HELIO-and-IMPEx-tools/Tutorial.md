@@ -100,9 +100,9 @@ Image illustration for creating the absolute value of the observed magnetic fiel
 Image illustration for zooming into the region:  
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Venus_Impact_Zoom_Into_Region.png" width="500" alt="Zoom Into the Region">  
 
-<h4 id='3c'>c)  The Earth Case</h4>  
+#### The Earth Case  
 
-* The same can be performed for the Earth case within AMDA. One can use e.g. WIND data to obtain the CME outside the magnetoshpere and **e.g. CLUSTER1 within the magnetosphere**. CLUSTER1 data can then be compared with SINP paraboloid model for Earth. The SINP model performs the simularion “on fly” **i.e. the input paramters are parameters measured by the chosen spacecraft at the chosen time**.    
+* The same can be performed for the Earth case within AMDA. One can use e.g. WIND data to obtain the CME outside the magnetoshpere and **e.g. CLUSTER1 within the magnetosphere**. CLUSTER1 data can then be compared with SINP paraboloid model for Earth. The SINP model performs the simulation on the fly **i.e. the input paramters are parameters measured by the chosen spacecraft at the chosen time**.    
 
 * Besides AMDA, one can also go to the 3D visualization tool 3DView and test the
 interconnectivity of AMDA & 3DView (see example in fourth step).  
@@ -118,13 +118,13 @@ b. Choose Cluster1 & Geotail and start scene
 a. Science : Models : Magnetopause models / Shue, and
 b. Science : Impex tree
 4. Within the Impex tree choose
-a. Model data : FMI : GUMICS_Earth:run_000001 → 3DCubes : MagneticField
-: traj interpol Bx,By,Bz and “Add selected data to 3DScene” (make sure that
+a. Model data : FMI : GUMICS_Earth:run_000001 -> 3DCubes : MagneticField
+: traj interpol Bx,By,Bz and *Add selected data to 3DScene* (make sure that
 Geotail is the selected spacecraft)
 b. Observational data : AMDA : Geotail : MGF : mgf_preliminary : b_gsm
-and “Add selected data to 3DScene”
+and *Add selected data to 3DScene*
 c. One may additionally add Cluster1 data in the same way as described above
-5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science → Science data controls. Additionally further spacecrafts can be added via File → Manage Scene. Further data can also be added in the same way as described above.
+5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science -> Science data controls. Additionally further spacecrafts can be added via File -> Manage Scene. Further data can also be added in the same way as described above.
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_Manipulate_different_Parameter.png" width="500" alt="4.5 Manipulating Different Parameters">
 
 6. Within the science control one can also add a 2DPlot by clicking on “2Dplot” on the
