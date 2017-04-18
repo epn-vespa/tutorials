@@ -22,7 +22,9 @@ R. Modolo 1), S. Hess 1), B. Cecconi 2), V. G&eacute;not 3), and the IMPEx team
 ## Change Log
 
 Version : 1
+
 Name : [Keyuan Yin](https://github.com/megadiesel705)
+
 Note : First converted from [original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-MGS-LATHYS.pdf)
 
 ## Goals
