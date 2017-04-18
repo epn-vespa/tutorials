@@ -1,8 +1,8 @@
 ## Connection of Helio Tools, AMDA/IMPEx & 3DView/IMPEx: CME impact on Venus and Earth
 
 
-[Authors](#Authors)  
-[Change Log](#Change Log)  
+[Authors](#Authors)
+[Change Log](#Change Log)
 [Introduction](#Introduction)  
 [Steps](#Steps)  
 &ensp;&ensp;&ensp;&ensp;[First Step](#1)  
