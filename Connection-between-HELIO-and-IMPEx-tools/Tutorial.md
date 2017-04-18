@@ -37,7 +37,7 @@ SOHO/LASCO CME Event List / pa_width>=270 : 1 CME
 
 ## Second Step 
 
-Extraction of time range → use as input for the Helio CME Forward PM  
+Extraction of time range, used as input for the Helio CME Forward PM  
 **Longitude: 1  
 Width: 45  
 Speed:  977  
@@ -52,18 +52,18 @@ Plotting data in AMDA Comparison of model data with insitu data on [this site](h
 
 <h4 id="3a">a)  Verification of CME impacts on Venus and Earth</h4>  
 
-● Open the Plot Manager in AMDA:
+* Open the Plot Manager in AMDA:
 Use the time range as received via HELIO and extend it properly, i.e. the CME
 impacts at Venus and Earth should be visible (e.g. 2012/06/15 15:00:00 2012/
 06/17 05:00:00)  
 
-● The following parameters may be selected (see screenshot below):  
+* The following parameters may be selected (see screenshot below):  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ VEXMAG data: Remote Data  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO]*  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ WINDMFI data: Local Data/WIND/MFI/mfi_high/b_gse  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ CLUSTER1FGM data: Local Data/fgm_5vps/b_gse  
 
-● Plot the data (see screenshot below). One can zoom into different time intervals
+* Plot the data (see screenshot below). One can zoom into different time intervals
 to get a more detailed view on the data at Venus and Earth.  
 
 Selected Parameters Illustration:  
@@ -77,11 +77,11 @@ Output Plot:
 
 <h4 id="3b">b)  The Venus Impact</h4>
 
-● Prepare another plot via the Plot Manager for the time interval of the CME impact
+* Prepare another plot via the Plot Manager for the time interval of the CME impact
 at Venus (e.g. 2012/06/15 19:00:00 2012/
 06/16/ 13:00:00).  
 
-● Compare observational data by VEX MAG with FMI HYB simulation run data (please be aware that the FMI HYB simulation runs are by now only for quiet solar wind conditions. The runs are within a range around Venus of x=[3,3],y=[4,4],z=[4,4]  
+* Compare observational data by VEX MAG with FMI HYB simulation run data (please be aware that the FMI HYB simulation runs are by now only for quiet solar wind conditions. The runs are within a range around Venus of x=[3,3],y=[4,4],z=[4,4]  
 Venus radii). Use the following data:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ VEXMAG data: Remote Data
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO  
@@ -91,7 +91,7 @@ Venus radii). Use the following data:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ VEXMAG ephemeris data: Remote Data
 (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/SC_POS_VSO  
 
-● Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
+* Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
 
 Image illustration for creating the absolute value of the observed magnetic field:  
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_absolute_value_of_the_observed_magnetic_field.png" width="500" alt="Magnetic Field Creation">  
