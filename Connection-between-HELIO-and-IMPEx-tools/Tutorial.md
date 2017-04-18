@@ -16,20 +16,20 @@
 
 
 
-<h2 id="Authors">Authors</h2>
+##Authors
 To be updated...
 
 
-<h2 id="Change Log">Change Log</h2>
+##Change Log
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|[Original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)|
 
-<h2 id="Introduction">Introduction</h2>
+##Introduction
 This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IMPEx functionality and 3DView/IMPEx functionality. The AMDA/IMPEx, as well as the 3DView/IMPEXpart show new features in AMDA, which were implemented within the IMPEx FP7 project, i.e. the possibility of plotting simulation runs for given spacecraft side by side with observational data.  
 
-<h2 id="Steps">Steps</h2>
-<h3 id='1'>First Step</h3>  
+##Steps
+###First Step
 
 Searching for events in [Helio](http://hfe.helio-vo.eu/Helio/). Using *Search Events* button to open new search.   
 
