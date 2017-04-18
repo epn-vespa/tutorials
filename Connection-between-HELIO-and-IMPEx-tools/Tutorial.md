@@ -33,7 +33,7 @@ SOHO/LASCO CME Event List / pa_width>=270
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/1_Factor_Input_Illustration.png" width="500" alt="Input Example for Step 1">  
 
-<h3 id='2'>Second Step</h3>  
+## Second Step 
 
 Extraction of time range → use as input for the Helio CME Forward PM  
 **Longitude: 1  
@@ -44,7 +44,7 @@ CME hits Earth, Venus, Pluto, Voyager1, New Horizons, Rosetta (see screenshot)
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/2_Input_Example_for_the_Helio_CME_Forward_PM.png" width="500" alt="Input Screenshot for Step 2">  
 
-<h3 id='3'>Third Step</h3>  
+## Third Step 
 
 Plotting data in AMDA Comparison of model data with insitu data on [this site](http://amda.cdpp.eu/).  
 
@@ -105,9 +105,8 @@ Image illustration for zooming into the region:
 ● Besides AMDA, one can also go to the 3D visualization tool 3DView and test the
 interconnectivity of AMDA & 3DView (see example in fourth step).  
 
-<h3 id='4'>Fourth Step - Visualization within 3DView: IMPEx functionality within 3DView The
-CME
-impact at Earth (Cluster1 & Geotail)</h3>  
+## Fourth Step - Visualization within 3DView: IMPEx functionality within 3DView 
+### The CME impact at Earth (Cluster1 & Geotail)
 
 1. Download and open [3DView](http://3dview.cdpp.eu/)  
 2. File → New. Open File → Manage Scene within the new scene window and choose
@@ -130,7 +129,7 @@ c. One may additionally add Cluster1 data in the same way as described above
 respective Science Control Panel (see below screenshot)   
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_2DPlot.png" width="500" alt="2D Plot">
 
-<h3 id="5">References</h3>
+## References
 
 PDF File exported from VESPA tutorial site. 
 [This site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)
