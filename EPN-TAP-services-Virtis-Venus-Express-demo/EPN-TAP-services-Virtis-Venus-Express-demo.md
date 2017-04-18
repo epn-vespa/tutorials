@@ -44,7 +44,7 @@ C2\_max (= latitude) < 0 [in Location tab]
 - In line VVEx, click the "Display results" icon to get result list  
 
 You can also click "Advanced query form"
-to access specific parameters (local time…)  
+to access specific parameters (local time...)  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img_updated_1/2_.png" alt="2">  
 
@@ -95,7 +95,7 @@ out, etc
 **Launch VO tools**
 either from buttons or from your system  
 Favorite tools include:  
-Aladin & DS9: images & cubes  
+Aladin and DS9: images and cubes  
 TOPCAT: tables & catalogues  
 CASSIS & SPLAT/Specview/VOspec: spectra  
 
@@ -103,13 +103,13 @@ CASSIS & SPLAT/Specview/VOspec: spectra
 
 **Analysing dataset**  
 
-Click "All Metadata" /
+Click *All Metadata* /
 Send Table
 => TOPCAT will
 receive a description
 of all files  
 You can also select some lines &
-click "Metadata selection"  
+click *Metadata selection*  
 
 In TOPCAT,
 double-click table
@@ -127,12 +127,12 @@ Select parameters c1min & c2min
 (= lon / lat min - this is not the entire cube
 footprints)  
 => Spherical map  
-In Form tab, select Mode = "Aux"
+In Form tab, select Mode = *Aux*
 with Local_time_min as parameter
 to get colors  
 (coordinate -c1min should be used to get a correct plot
 in longitude — it is interpreted as a right ascension.
-"Sphere plot" from the Graphics menu uses c1min)  
+*Sphere plot* from the Graphics menu uses c1min)  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img_updated_1/9_Skyplot_icon.png" width="500" alt="9">
 
@@ -147,8 +147,8 @@ Call it "OK2"
 
 - continue: Click plane-plotting icon  
 Select parameters time_min & C2min  
-Select "OK2" in Subsets tab  
-Select Mode=Aux & "C1min" in Form tab => Coverage through time  
+Select *OK2* in Subsets tab  
+Select Mode=Aux & *C1min* in Form tab => Coverage through time  
 Clicking a point in any plot enlights it in other plots and tables => you can easily track outliers  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/9_plane-plotting_2.png" width="500" alt="11">  
@@ -226,9 +226,9 @@ All these points to be studied during Europlanet H2020
 **Spectral tools: TOPCAT**  
 
 TOPCAT receives spectra from APERICubes, can overplot selections  
-- Use "Plane plot" & check parameters  
-- Click "New line form" to connect spectral channels  
-- Click "Add new plot" to overplot spectra  
+- Use *Plane plot* & check parameters  
+- Click *New line form* to connect spectral channels  
+- Click *Add new plot* to overplot spectra  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/13_Spectral_tools_TOPCAT.png" width="500" alt="16">  
 
@@ -238,7 +238,7 @@ TOPCAT receives spectra from APERICubes, can overplot selections
 Specview receives spectra from APERICubes  
 Includes analysis functions  
 
-- Click on "Measure" to perform continuum and band measurements  
+- Click on *Measure* to perform continuum and band measurements  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/14_Spectral_tools_Specview.png" width="500" alt="17">  
 
@@ -253,16 +253,16 @@ pick uprelevant ones
 
 CASSIS receives spectra from APERICubes, can overplot a selection of spectra and manipulate them  
 
-- Click the "Tools" tab to combine spectra
+- Click the *Tools* tab to combine spectra
 Spectra are resampled to a common wvl vector
 on the fly  
-The "Species" tab accesses internal line databases
+The *Species* tab accesses internal line databases
 (most of them related to the ISM)
 Includes LTE and RADEX modeling  
 
-- Press "shift" to get info on mouse location
-"Alt"-drag to select a region (used in "Fit" tab)
-"Alt"-click to put markers  
+- Press *shift* to get info on mouse location
+*Alt*-drag to select a region (used in *Fit* tab)
+*Alt*-click to put markers  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/16_Spectral_tools_CASSIS.png" width="500" alt="19">  
 
@@ -281,7 +281,7 @@ or reflectance - being discussed with ESA*
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/17_Spectral_tools_VOSpec.png" width="500" alt="20">  
 
-- continue Click "Simple Line Access" button  
+- continue Click *Simple Line Access* button  
 Select area of interest  
 Select spectral databases in new window  
 Once loaded, lines are identified on mouse-over  
@@ -289,7 +289,7 @@ Once loaded, lines are identified on mouse-over
 given range => long and busy  
 Databases mostly related to the ISM (atoms)  
 
-*Fitting functions available in "Operations" menu*  
+_Fitting functions available in *Operations* menu_  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/18_Spectral_tools_VOSpec.png" width="500" alt="21">  
 
@@ -318,9 +318,9 @@ java -jar jsamp-1.3.5.jar hub -web:norestrictmtypes &
 - Go to APERICubes page and register to the SAMP hub as previously  
 
 - Go to VESPA page, select one VIRTIS file as previsouly
-- In menu "SAMP selection as" pick up "cubes PDS VIRTIS" (for the sake of the demo)
+- In menu *SAMP selection as* pick up *cubes PDS VIRTIS* (for the sake of the demo)
 - Validate dialogues (one in pop-up window + one in the browser)
-- Click "Process SAMP cube" in APERICubes page  
+- Click *Process SAMP cube* in APERICubes page  
 - Proceed as previously  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img/19.png" width="500" alt="22">  
@@ -328,7 +328,7 @@ java -jar jsamp-1.3.5.jar hub -web:norestrictmtypes &
 
 **Powerful searches on location**  
 
-In "Direct Query" tab  
+In *Direct Query* tab  
 - Select service  
 - Enter ADQL query on
 s_region footprint  
@@ -366,7 +366,7 @@ VESPA sends queries to several data services in parallel. In the long term it wi
 ****
 
 
-<h2 id="Reference">Reference</h2>
+## References
 
 
 Please refer this tutorial to PDF file uploaded on VESPA wiki and also the [website](http://vespa.obspm.fr)  
