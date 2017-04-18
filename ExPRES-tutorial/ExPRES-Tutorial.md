@@ -58,7 +58,7 @@ The ExPRES main page is composed of two parts the command panel (left) and the s
 
 **Command panel**  
 Its main purpose is to permits the user to manage simulation files (Load, save, delete,...) and the simulation runs (submit, follow, get results).  
-The simulation whose parameters are currently on the right simulation panel can be saved by clicking on “Save” and the simulation can be run by clicking on “Submit”.  
+The simulation whose parameters are currently on the right simulation panel can be saved by clicking on *Save* and the simulation can be run by clicking on *Submit*.  
 The saved simulations can be displayed by clicking on the expand button ￼ Load. Then, a simulation can be loaded by clicking on the simulation name.  
 The queue can be viewed by clicking on the expand button ￼ Queue. Simulations can be either Running or Waiting.  
 
@@ -120,14 +120,14 @@ The profiles must be given a unique name and the profile type can be selected in
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/ExPRES-tutorial/img/satelites.png" width="200" alt="satellites">
 
-￼The body can be made orbiting another one by changing the Motion selection from “Fixed” to “In orbite”. In this case, the body's parent must be set by selecting a parent body in the list (click on).  
+￼The body can be made orbiting another one by changing the Motion selection from *Fixed* to *In orbite*. In this case, the body's parent must be set by selecting a parent body in the list (click on).  
 ( ￼ Notes : 1- The selection is not updated, so if the celestial body is deleted or its name changed, the parent must be manually updated or the simulation will not run. 2- Obviously, the parent celestial body must be created before associating the it to a body.).  
 Satellite orbits are defined by their semi-major and semi-minor axis, the apoapsis sublongitude and declination (in the reference body reference frame and at initialization time) and the inclination of the orbit plane around the semi-major axis.) Finally, the orbiter position requires the definition of its initial phase on the orbit (0deg. is at the apoapsis position).  
 ( ￼ Tips : The trajectories of all objects can be checked by using the 3D movie output).  
 
 **Sources**  
 
-Radio sources can be added by expending the source section (click on the icon in front of the “source” section) and clicking on the ￼ icon. Once created, they can be deleted by clicking on the icon.  
+Radio sources can be added by expending the source section (click on the icon in front of the *source* section) and clicking on the ￼ icon. Once created, they can be deleted by clicking on the icon.  
 They must be given a unique name.  
 Their parent body (body on which field lines the source is located) must be specified by clicking on the
 ( Notes : 1- The selection is not updated, so if the celestial body is deleted or its name changed, the parent must be manually updated or the simulation will not run. 2- Obviously, the parent celestial body must be created before associating the it to a body.).  
@@ -169,7 +169,7 @@ ExPRES standard outputs are dynamic spectra (intensity in the time-frequency dom
 
 ExPRES can also display the polarization (positive for northern sources, negative for southern ones) in the same manner. This can be done be selecting the polarization checkbox.  
 
-The frequency axis unit, the output format, and the frequency scale can be chosen using the “Options” checkboxes.  
+The frequency axis unit, the output format, and the frequency scale can be chosen using the *Options* checkboxes.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/ExPRES-tutorial/img/dynamic-spectra_2.png" width="500" alt="dynamic-spectra-2">  
 
@@ -179,14 +179,14 @@ The frequency axis unit, the output format, and the frequency scale can be chose
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/ExPRES-tutorial/img/2d-movie.png" width="300" alt="2d-movie">  
 
-ExPRES can also display the position of the observed sources in the “field of view” of the instrument. This is done by adding a “2D movie” in the simulation (click on ￼ 2D movie).  
+ExPRES can also display the position of the observed sources in the *field of view* of the instrument. This is done by adding a *2D movie* in the simulation (click on ￼ 2D movie).  
 
 Then, it is needed to specify the Field of view opening in degrees, that is the extent of the part of the sky to be displayed. It is also needed to specify the subcycling for the movie, that is the number of simulation time steps between to successive pictures.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/ExPRES-tutorial/img/2d-movie-2.png" width="300" alt="2d-movie-2">  
 
 *3D movies*  
-ExPRES can also display the celestial bodies and sources position in 3D. This is done by adding a “3D movie” in the simulation (click on ￼ 3D movie).  
+ExPRES can also display the celestial bodies and sources position in 3D. This is done by adding a *3D movie* in the simulation (click on ￼ 3D movie).  
 
 The trajectories of the satellites and observers can be displayed by checking the corresponding checkboxes.  
 ￼
