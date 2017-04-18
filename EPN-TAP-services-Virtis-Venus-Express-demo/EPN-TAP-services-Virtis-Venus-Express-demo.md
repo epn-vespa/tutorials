@@ -38,7 +38,7 @@ For instance:
 time\_min = 3/6/2006 & time_max = 28/8/2006  
 C2\_max (= latitude) < 0 [in Location tab]  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img_updated_1/1_.png" width="500" alt"1">  
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/EPN-TAP-services-Virtis-Venus-Express-demo/img_updated_1/1_.png" width="500" alt="1">  
 
 **Service results**  
 - In line VVEx, click the "Display results" icon to get result list  
