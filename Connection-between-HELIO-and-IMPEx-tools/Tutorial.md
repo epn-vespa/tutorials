@@ -102,26 +102,26 @@ Image illustration for zooming into the region:
 
 <h4 id='3c'>c)  The Earth Case</h4>  
 
-● The same can be performed for the Earth case within AMDA. One can use e.g. WIND data to obtain the CME outside the magnetoshpere and **e.g. CLUSTER1 within the magnetosphere**. CLUSTER1 data can then be compared with SINP paraboloid model for Earth. The SINP model performs the simularion “on fly” **i.e. the input paramters are parameters measured by the chosen spacecraft at the chosen time**.    
+* The same can be performed for the Earth case within AMDA. One can use e.g. WIND data to obtain the CME outside the magnetoshpere and **e.g. CLUSTER1 within the magnetosphere**. CLUSTER1 data can then be compared with SINP paraboloid model for Earth. The SINP model performs the simularion “on fly” **i.e. the input paramters are parameters measured by the chosen spacecraft at the chosen time**.    
 
-● Besides AMDA, one can also go to the 3D visualization tool 3DView and test the
+* Besides AMDA, one can also go to the 3D visualization tool 3DView and test the
 interconnectivity of AMDA & 3DView (see example in fourth step).  
 
 ## Fourth Step - Visualization within 3DView: IMPEx functionality within 3DView 
 ### The CME impact at Earth (Cluster1 & Geotail)
 
 1. Download and open [3DView](http://3dview.cdpp.eu/)  
-2. File → New. Open File → Manage Scene within the new scene window and choose
+2. File : New. Open File : Manage Scene within the new scene window and choose
 a. Time range: Start = 2012/06/16 00:00:00 & Stop = 2012/06/17 00:00:00
 b. Choose Cluster1 & Geotail and start scene
 3. Load
-a. Science → Models → Magnetopause models / Shue, and
-b. Science → Impex tree
+a. Science : Models : Magnetopause models / Shue, and
+b. Science : Impex tree
 4. Within the Impex tree choose
-a. Model data → FMI → GUMICS_Earth:run_000001 → 3DCubes → MagneticField
-→ traj interpol Bx,By,Bz and “Add selected data to 3DScene” (make sure that
+a. Model data : FMI : GUMICS_Earth:run_000001 → 3DCubes : MagneticField
+: traj interpol Bx,By,Bz and “Add selected data to 3DScene” (make sure that
 Geotail is the selected spacecraft)
-b. Observational data → AMDA → Geotail → MGF → mgf_preliminary → b_gsm
+b. Observational data : AMDA : Geotail : MGF : mgf_preliminary : b_gsm
 and “Add selected data to 3DScene”
 c. One may additionally add Cluster1 data in the same way as described above
 5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science → Science data controls. Additionally further spacecrafts can be added via File → Manage Scene. Further data can also be added in the same way as described above.
