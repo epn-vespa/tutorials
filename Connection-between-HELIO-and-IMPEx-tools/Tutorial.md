@@ -113,7 +113,7 @@ interconnectivity of AMDA & 3DView (see example in fourth step).
 1. Download and open [3DView](http://3dview.cdpp.eu/)  
 2. File : New. Open File : Manage Scene within the new scene window and choose
 a. Time range: Start = 2012/06/16 00:00:00 & Stop = 2012/06/17 00:00:00
-b. Choose Cluster1 & Geotail and start scene
+b. Choose Cluster1 and Geotail and start scene
 3. Load
 a. Science : Models : Magnetopause models / Shue, and
 b. Science : Impex tree
@@ -127,7 +127,7 @@ c. One may additionally add Cluster1 data in the same way as described above
 5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science -> Science data controls. Additionally further spacecrafts can be added via File -> Manage Scene. Further data can also be added in the same way as described above.
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_Manipulate_different_Parameter.png" width="500" alt="4.5 Manipulating Different Parameters">
 
-6. Within the science control one can also add a 2DPlot by clicking on “2Dplot” on the
+6. Within the science control one can also add a 2DPlot by clicking on *2Dplot* on the
 respective Science Control Panel (see below screenshot)   
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_2DPlot.png" width="500" alt="2D Plot">
 
