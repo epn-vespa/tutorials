@@ -5,31 +5,20 @@
 [Introduction](#Introduction)
 [Steps](#Steps)
 
-&ensp;&ensp;&ensp;&ensp;[First Step](#1)  
-&ensp;&ensp;&ensp;&ensp;[Second Step](#2)  
-&ensp;&ensp;&ensp;&ensp;[Third Step](#3)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[Verification of CME impacts on Venus and Earth](#3a)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[The Venus Impact](#3b)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[The Earth Impact](#3c)  
-&ensp;&ensp;&ensp;&ensp;[Fourth Step](#4)  
-[References](#5)
-
-
-
-##Authors
+## Authors
 To be updated...
 
 
-##Change Log
+## Change Log
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|[Original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)|
 
-##Introduction
+## Introduction
 This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IMPEx functionality and 3DView/IMPEx functionality. The AMDA/IMPEx, as well as the 3DView/IMPEXpart show new features in AMDA, which were implemented within the IMPEx FP7 project, i.e. the possibility of plotting simulation runs for given spacecraft side by side with observational data.  
 
-##Steps
-###First Step
+## Steps
+### First Step
 
 Searching for events in [Helio](http://hfe.helio-vo.eu/Helio/). Using *Search Events* button to open new search.   
 
