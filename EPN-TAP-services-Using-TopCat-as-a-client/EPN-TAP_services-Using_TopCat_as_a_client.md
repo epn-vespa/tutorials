@@ -11,9 +11,10 @@ S. Erard, B. Cecconi, P. Le Sidaner
 
 <h2 id="Log">Change Log</h2>
 
-|Version|Name|Note|
-|---|---|---|
-|1|[Keyuan Yin](https://github.com/megadiesel705)|First converted from [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-TOPCAT.pdf)|
+Version: 1
+Name: [Keyuan Yin](https://github.com/megadiesel705)
+Note: First converted from [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-TOPCAT.pdf)
+
 
 <h2 id="Steps">Steps</h2>
 
