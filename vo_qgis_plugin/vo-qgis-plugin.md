@@ -2,6 +2,10 @@
 
 In this example we will use data available from epn1.epn-vespa.jacobs-university.de
 
+The tutorial is covered by the following YouTube video:
+
+
+[![video tutorial](https://img.youtube.com/vi/Jlso7MkdwYs/0.jpg)](https://www.youtube.com/watch?v=Jlso7MkdwYs)
 
 This tutorial will demonstrate how to:
 
