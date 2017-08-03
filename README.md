@@ -2,6 +2,7 @@
 #### [User tutorials](#tutorials-for-users)
 #### [Data producer tutorials](#tutorials-for-data-producers)
 #### [Info on how to create VESPA tutorials](#implementing-a-vespa-service)
+#### [Use of external tools](#external-tools)
 
 # tutorials
 VESPA tutorials are available from multiple entry points, pointing to those here which are the working copies. They can be accessed from:
@@ -46,6 +47,9 @@ Tutorials to be created/added:
 
 ...
 
+## External tools
+
+* [ImageJ, Cosmographia, et al.](https://voparis-confluence.obspm.fr/display/VES/External+tools)
 
 # Notes for for tutorial producers
 
