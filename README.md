@@ -7,13 +7,37 @@ VESPA tutorials are available from multiple entry points, pointing to those here
 
 ## Tutorials for users
 
-TBA (status)
+Order / groupings / tagging TBA
+
+* [Aladin & planetary surfaces](https://github.com/epn-vespa/tutorials/blob/master/Aladin-Planetary-Surfaces/Aladin-Planetary-Surfaces-Tutorial.md) - **to be checked** sync with [wiki version](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=564111 ?)
+* [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/APIS-Tutorial/APIS-Tutorial.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/APIS)
+* [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md) - **to be checked** sync with [wiki version](https://voparis-confluence.obspm.fr/display/VES/jra-t4-EPN1-CRISM)
+*
+
+
+Atmospheric profiles
+Connection of HELIO with AMDA and 3Dview
+Exoplanets
+ExPRES
+EPN-TAP services: Using TopCat as a client
+EPN-TAP services: VIRTIS-VENUS EXPRESS
+Cassini Titan fly-by
+Magnetospheric region identification with AMDA and TopCat
+Mars Global Surveyor plasma data compared with models
+
+
+
+Tutorials to be created/added:
+
 
 ## Tutorials for data producers
 
 either in repo or, when not in yet, linked from here
 
 TBA (status)
+
+Tutorials to be created/added:
+
 
 
 # Notes for for tutorial producers
