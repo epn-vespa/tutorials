@@ -198,3 +198,23 @@ Furthermore, this data can then be sent via SAMP to VO spectroscopy tools, such 
 ### 4.6 Change bottom axis to "Wavelength" in "um".
 
 ![4.6](img/Screenshot%20from%202017-04-07%2023-16-24.png)
+
+## Step 5: Sending polygons to Aladin.
+
+### 5.0 Open Mars Heliopix survey in Aladin
+Open Aladin web [to start](aladin.u-strasbg.fr/java/aladin.jnlp) On the main menu click "File" => "Open URL" 
+On the main menu click "File" => "Open URL"  
+
+![5.0.1](img/2_Open_URL.png)
+
+Add HiPS :  
+http://epn1.epn-vespa.jacobs-university.de:8080/marsmola/Mars-ELATLON-ICRS.hpx  
+Click submit.  
+
+![5.0.1](img/2_Add_HIPS.png)
+
+### 5.1 In QGIS select several polygons from a table recieved via SAMP
+
+![5.1](img/.png)
+
+### 5.2 Click on the polyToAladin plugin button
