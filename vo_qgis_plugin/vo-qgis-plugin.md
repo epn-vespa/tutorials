@@ -216,7 +216,7 @@ Click submit.
 
 ### 5.1 In QGIS select several polygons from a table recieved via SAMP and click on the polyToAladin plugin button
 
-![5.1](img/PolyInQGIS.png)
+![5.1](img/PolyInQGISv2.png)
 
 Polygons will now appear in Aladin
 
