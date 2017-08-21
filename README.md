@@ -40,9 +40,24 @@ either in repo or, when not in yet, linked from here
 
 ### Implementing a vespa service
 
-see [wiki page](https://voparis-confluence.obspm.fr/display/VES/Implementing+a+VESPA+service)
+see [wiki page](https://voparis-confluence.obspm.fr/display/VES/Implementing+a+VESPA+service):
 
-also relevant [wiki page](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2017)
+* [Initial set up : EPN-TAP Server Installation for VESPA Data Provider Tutorial](https://voparis-confluence.obspm.fr/display/VES/EPN-TAP+Server+Installation+for+VESPA+Data+Provider+Tutorial)(final)
+* Registration of service and start of VESPA configuration: [Registering your VESPA EPN-TAP Server](https://voparis-confluence.obspm.fr/display/VES/Registering+your+VESPA+EPN-TAP+Server) (draft)
+* Example of VESPA data service: [Setting up a Europlanet-TAP service](https://voparis-confluence.obspm.fr/display/VES/Setting+up+an+EPN-TAP+service) (draft)
+  * [Detailed tutorial with intermediate metadata table](https://voparis-confluence.obspm.fr/display/VES/VESPA+service+tutorial+with+intermediate+metadata+table) (draft).
+  * [Detailed tutorial with Python script generating metadata for each product](https://voparis-confluence.obspm.fr/display/VES/VESPA+service+tutorial+with+Python+script+generating+metadata+for+each+product) (early draft).
+  * Detailed tutorial with Python script connecting to an external database (coming soon).
+  * [Building the resource descriptor for your EPN-TAP service in DaCHS](https://voparis-confluence.obspm.fr/display/VES/Building+the+resource+descriptor+for+your+EPN-TAP+service+in+DaCHS) (early draft).
+
+Other tutorials for specific applications:
+
+* [Retrieval of IMCCE/Miriade ephemeris from DaCHS Resource Descriptor](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=14943257)
+
+also relevant:
+
+* [VESPA implementation workshop 2016](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2016)
+* [VESPA implementation workshop 2017](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2017)
 
 Tutorials to be created/added:
 
