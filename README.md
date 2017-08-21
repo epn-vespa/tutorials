@@ -8,12 +8,10 @@
 VESPA tutorials are available from multiple entry points, pointing to those here which are the working copies. They can be accessed from:
 
 * The present repo
-* [The VESPA wiki](http://discussions.europlanet-vespa.eu) - PAGE TBA
+* [The VESPA wiki](http://discussions.europlanet-vespa.eu)
 * [The VESPA web page](http://europlanet-vespa.eu/tutos.shtml)
 
 ## Tutorials for users
-
-Order / groupings / tagging TBA
 
 * [Aladin & planetary surfaces](https://github.com/epn-vespa/tutorials/blob/master/Aladin-Planetary-Surfaces/Aladin-Planetary-Surfaces-Tutorial.md) - **to be checked** sync with [wiki version](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=564111 ?)
 * [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/APIS-Tutorial/APIS-Tutorial.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/APIS)
@@ -28,11 +26,10 @@ Order / groupings / tagging TBA
 * [Magnetospheric region identification with AMDA and TopCat](https://github.com/epn-vespa/tutorials/blob/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/Magnetospheric%20regions%20automatic%20identification%20with%20AMDA%20and%20TOPCAT%20%20%23AMDA.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/Magnetospheric+regions+identification+with+AMDA+and+TopCat)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/Mars+Global+Surveyor+plasma+data+compared+with+models)
 
-Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1)
+Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1). They have been ported to YouTube and integrated in the present repo on:
 
-Tutorials to be created/added:
+* [VESPA video tutorial ported](https://github.com/epn-vespa/tutorials/blob/master/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md)
 
-...
 
 ## Tutorials for data producers
 
@@ -59,9 +56,6 @@ also relevant:
 * [VESPA implementation workshop 2016](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2016)
 * [VESPA implementation workshop 2017](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2017)
 
-Tutorials to be created/added:
-
-...
 
 ## External tools
 
@@ -74,4 +68,3 @@ directory to format yours and follow the [workflow](workflow.md)
 
 =======
 This includes all tutorials released by VESPA, Virtual European Solar and Planetary Access.
->>>>>>> 109c31a564518663dd0fd1af997b3c3a3fc0addd
