@@ -28,6 +28,7 @@ Order / groupings / tagging TBA
 * [Magnetospheric region identification with AMDA and TopCat](https://github.com/epn-vespa/tutorials/blob/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/Magnetospheric%20regions%20automatic%20identification%20with%20AMDA%20and%20TOPCAT%20%20%23AMDA.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/Magnetospheric+regions+identification+with+AMDA+and+TopCat)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/Mars+Global+Surveyor+plasma+data+compared+with+models)
 
+Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1)
 
 Tutorials to be created/added:
 
