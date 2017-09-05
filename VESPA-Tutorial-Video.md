@@ -10,7 +10,7 @@ Click picture to open selected video.
 **Predicting Solar Wind Disturbances arrival times at planets**  
 [![ScreenShot](https://github.com/megadiesel705/tutorials/raw/master/VESPA-Video-Tutorials/img/2_Predicting_Solar_Wind_Disturbances_arrival_times_at_planets.png)](https://youtu.be/N6IxgPFKOcA?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)  
 
-**Mars, a use case of interoperability**  
+**Martian induced magnetosphere**  
 [![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/3_Mars%2C%20a_use_case_of_interoperability.png)](https://youtu.be/HiSylVOtaKM?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
 
 **Auroral processes on Saturn**  
