@@ -19,7 +19,7 @@ Click picture to open selected video.
 **Exploring exoplanets**
 [![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/5_Exploring_exo.png)](https://youtu.be/ypOBwrXT7mc?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)  
 
-**Mars, evidence of an oxygen ions "plume"**  
+**Mars, evidence of an O+ ions "plume"**  
 [![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/6_Mars%2Cevidence_of_an_oxygen_ions%22plume%22.png)](https://youtu.be/4ekOyAvIh_Q?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
 
 **Analyzing Pluto's surface**  
