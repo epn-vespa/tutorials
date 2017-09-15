@@ -47,8 +47,18 @@ Additional astronomy VO tutorials:
 * [Other tutorials at various levels](http://vo-for-education.oats.inaf.it//eng_download.html)
 * [Selected tutorial lists](http://www.g-vo.org/pmwiki/About/GettingStarted)
   
-Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1). They have been ported to YouTube and integrated in the present repo on:
+Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1). 
+Can be visualized localy :
+* [Tracking asteroids](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Tracking_asteroids.wmv)
+* [Predicting Solar Wind Disturbances arrival times at planets](http://voparis-srv.obspm.fr/vo/planeto/tutorials/HELIO_use_case.mp4)
+* [Martian induced magnetosphere](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Interoperability_AMDA_LatHyS_Topcat.wmv)
+* [Auroral processes on Saturn](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Auroral_processes_Saturn.wmv)
+* [Exploring exoplanets](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Exploring_exoplanets.wmv)
+* [Mars, evidence of an O+ ions "plume"](http://voparis-srv.obspm.fr/vo/planeto/tutorials/O_plus_ions_plume_Mars.wmv)
+* [Analyzing Pluto's surface](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Analyzing_Pluto_surface.wmv)
+* [IMPEx Tutorial Video](http://voparis-srv.obspm.fr/vo/planeto/tutorials/impex_tutorial.mp4)
 
+They have been ported to YouTube and integrated in the present repo on:
 * [VESPA video tutorial ported](https://github.com/epn-vespa/tutorials/blob/master/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md)
 
 
