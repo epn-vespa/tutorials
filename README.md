@@ -96,6 +96,3 @@ also relevant:
 
 Please refer to the [template](https://github.com/epn-vespa/tutorials/tree/master/template)
 directory to format yours and follow the [workflow](workflow.md)
-
-=======
-This includes all tutorials released by VESPA, Virtual European Solar and Planetary Access.
