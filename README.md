@@ -16,7 +16,7 @@ VESPA tutorials are available from multiple entry points, pointing to those here
 * [Aladin & planetary surfaces](https://github.com/epn-vespa/tutorials/blob/master/Aladin-Planetary-Surfaces/Aladin-Planetary-Surfaces-Tutorial.md)
 * [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/APIS-Tutorial/APIS-Tutorial.md)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
-* [Atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/Atmospheric-profiles/atmospheric_profiles.md) - synced with [wiki version](https://voparis-confluence.obspm.fr/display/VES/Atmospheric+profiles)
+* [Atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/Atmospheric-profiles/atmospheric_profiles.md)
   * [pdf version from VESPA web site](http://voparis-europlanet.obspm.fr/utilities/Tuto_Titan_TopCat.pdf)
 * [Connection of HELIO with AMDA and 3Dview](https://github.com/epn-vespa/tutorials/blob/master/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
 * [Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
