@@ -30,7 +30,8 @@ VESPA tutorials are available from multiple entry points, pointing to those here
 * [Magnetospheric region identification with AMDA and TopCat](https://github.com/epn-vespa/tutorials/blob/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/Magnetospheric%20regions%20automatic%20identification%20with%20AMDA%20and%20TOPCAT%20%20%23AMDA.md)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
 
-in addition to the tutorial above, those on the vespa web page (to be ported to GitHub) include:
+in addition to the tutorials above, those on the vespa web page (to be ported to GitHub) include:
+
 * [Accessing spectral data (pdf from VESPA web site)](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
 * [Exercises from VO doctoral training in Paris, 2017](http://voparis-europlanet.obspm.fr/utilities/FormationDoc_2017.pdf)
 * [Plotting exoplanets, pdf from VESPA web site - simple plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
@@ -41,14 +42,16 @@ in addition to the tutorial above, those on the vespa web page (to be ported to 
 * Use cases:
   * [Comparing Mars atmospheric profiles with simulations (MCD vs SPICAM)](http://voparis-europlanet.obspm.fr/utilities/Grenade_2017_abstract_Erard.pdf)
  
-Additional astronomy VO tutorials:
+## Astronomy VO tutorials:
 
 * [Repository of scientific tutorials for VO usage](http://www.euro-vo.org/?q=science/scientific-tutorials)
 * [Other tutorials at various levels](http://vo-for-education.oats.inaf.it//eng_download.html)
 * [Selected tutorial lists](http://www.g-vo.org/pmwiki/About/GettingStarted)
   
+ ## Video tutorials
+  
 Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1). 
-Can be visualized localy :
+Can be donwloaded and visualized localy :
 * [Tracking asteroids](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Tracking_asteroids.wmv)
 * [Predicting Solar Wind Disturbances arrival times at planets](http://voparis-srv.obspm.fr/vo/planeto/tutorials/HELIO_use_case.mp4)
 * [Martian induced magnetosphere](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Interoperability_AMDA_LatHyS_Topcat.wmv)
@@ -64,7 +67,7 @@ They have been ported to YouTube and integrated in the present repo on:
 
 ## Tutorials for data producers
 
-either in repo or, when not in yet, linked from here
+The following tutorials are available from the VESPA wiki:
 
 ### Implementing a vespa service
 
@@ -78,11 +81,11 @@ see [wiki page](https://voparis-confluence.obspm.fr/display/VES/Implementing+a+V
   * Detailed tutorial with Python script connecting to an external database (coming soon).
   * [Building the resource descriptor for your EPN-TAP service in DaCHS](https://voparis-confluence.obspm.fr/display/VES/Building+the+resource+descriptor+for+your+EPN-TAP+service+in+DaCHS) (early draft)
 
-Other tutorials for specific applications:
+### Other tutorials for specific applications:
 
 * [Retrieval of IMCCE/Miriade ephemeris from DaCHS Resource Descriptor](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=14943257)
 
-also relevant:
+### Implementation workshops for VESPA data producers
 
 * [VESPA implementation workshop 2016](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2016)
 * [VESPA implementation workshop 2017](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2017)
