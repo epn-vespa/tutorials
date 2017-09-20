@@ -23,3 +23,12 @@ see [wiki page](https://voparis-confluence.obspm.fr/display/VES/Implementing+a+V
 
 * [VESPA implementation workshop 2016](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2016)
 * [VESPA implementation workshop 2017](https://voparis-confluence.obspm.fr/display/VES/VESPA+implementation+workshop+2017)
+
+## External tools and installation procedures
+
+* [ImageJ, Cosmographia, et al.](https://voparis-confluence.obspm.fr/display/VES/External+tools)
+
+# Notes for for tutorial producers
+
+Please refer to the [template](https://github.com/epn-vespa/tutorials/tree/master/template)
+directory to format yours and follow the [workflow](workflow.md)
