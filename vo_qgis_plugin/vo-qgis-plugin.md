@@ -201,7 +201,7 @@ Furthermore, this data can then be sent via SAMP to VO spectroscopy tools, such 
 
 ## Step 5: Sending polygons to Aladin.
 
-### 5.0 Open Mars Heliopix survey in Aladin
+### 5.0 Open Mars HEALPix survey in Aladin
 Open Aladin web start: aladin.u-strasbg.fr/java/aladin.jnlp 
 
 On the main menu click "File" => "Open URL"  
