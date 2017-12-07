@@ -29,7 +29,7 @@ VESPA tutorials are available from multiple entry points, pointing to those here
 * CASSIS as a spectroscopy tool for VESPA  [vespa web](http://voparis-europlanet.obspm.fr/utilities/Tuto_CASSIS_VESPA.pdf), [local copy](CASSIS_VESPA_tutorial.pdf)
 * [Magnetospheric region identification with AMDA and TopCat](https://github.com/epn-vespa/tutorials/blob/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/Magnetospheric%20regions%20automatic%20identification%20with%20AMDA%20and%20TOPCAT%20%20%23AMDA.md)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
-* [Using QGIS plugin to obtain vector data from VO and place into QGIS.](https://github.com/epn-vespa/tutorials/blob/master/vo_qgis_plugin/vo-qgis-plugin.md)
+* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/vo_qgis_plugin/vo-qgis-plugin.md)
 
 in addition to the tutorials above, those on the vespa web page (to be ported to GitHub) include:
 
