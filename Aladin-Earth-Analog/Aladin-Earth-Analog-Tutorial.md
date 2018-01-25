@@ -20,7 +20,7 @@ M. Minin
 | Version       | Author        | Notes     |
 | ------------- |:-------------:| -----:    |
 | 0             | M. Minin      | template  |
-| 1             | M. Minin      |   |
+| 1             | M. Minin      | release   |
 
 * * *
 
