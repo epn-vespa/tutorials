@@ -70,33 +70,43 @@ TBA
   
   ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/4_Aladin_Earth_Analog_small.png)
 
-### Third step - displaying footprints
+### Third step - displaying footprints and projecting data
 
-* Hover over to view the footprint
-* Click on "FoV" button in the s_region column to display footprint permanently
-* Click on a button in the access_url column to open coverage
-* Open properties, create new projection (under Astronometrical reduction)
-* Open "by WCS header" and change values CRVAL1 to c1min, CRVAL2 to c2min.
-Measure distance across the footprint, divide it by diagonal of xy: 
-Pixel ang. size = distance/(sqrt(x^2+y^2))
-I'm getting 0.30356, then convert it to decimal degrees and divide this value by 2.
-I'm getting 4.2*10^-8.
-Enter this value in CD2_2 and negative of this value into CD1_1 (CDx_x are elements of the transformation matrix). 
-Now the pixture should fit the circle precisely.
+1. Hover over to view the footprint, click on "FoV" button in the s_region column to display footprint permanently
 
+  ![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5_Aladin_Earth_Analog_small.png)
+  
+2. Measure the angular distance across the footprint using a distance tool. Take note of your measurement, also record the c1 and c2 values from the table view.
 
-* step description
-![1](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png)
+  ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5a_Aladin_Earth_Analog_small.png)
+  
+  E.g.: c1min=346.286746, c2min=29.019753, ang. distance = 908.6mas.
+  
+2. Click on a button in the access_url column to open coverage, use mouse wheel to zoom
 
-### First step with sized image
-<img src="https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/1.png" width="200">
+  ![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/6_Aladin_Earth_Analog_small.png)
+  
+3. Open properties and record the size of the image
 
-### Second step
-* step description
-* step description
-![7](https://raw.githubusercontent.com/aprossi/vespa-test-tutorial/master/IMG/7.png)
+  ![7](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/7_Aladin_Earth_Analog.png)
+  
+  E.g.: width = 4000px, height=3000px.
 
-[http://exoplanet.eu](http://exoplanet.eu)
+4. Click on create new projection button (under Astronometrical reduction)
+
+  ![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog.png)
+  
+5. Open "by WCS header" and change values CRVAL1 to c1min, CRVAL2 to c2min.
+   Compute the pixel angular size in degrees = footprint angular distance / sqrt(width^2+height^2)
+   E.g. 908.6 mas / sqrt(4000^2+3000^2) = 0.18172 mas / 3,600,000 mas/deg = 5.048*10^-8
+   
+   Enter this value in CD2_2 and negative of this value into CD1_1. 
+
+  CDx_x are elements of the transformation matrix [[CD1_1,CD1_2],[CD2_1,CD2_2]]. 
+  
+  For an image without distortion a transfomation matrix is the identity matrix [[1,0],[0,1]] multipied by the scale. 
+
+   Now the pixture should fit the circle precisely.
 
 
 ## References
