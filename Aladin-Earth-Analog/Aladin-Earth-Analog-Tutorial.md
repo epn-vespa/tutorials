@@ -25,7 +25,7 @@ M. Minin
 * * *
 
 ## Requirements and dependencies
- JAVA, Aladin 10 (official)
+ JAVA, [Aladin v10.056 (official version)](http://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=downloading)
 
 ## Use case
 Querying data on EPN1 DaCHS server with ADQL from Aladin, plotting table as points and footprints, loading and projecting data lined in access_url.
