@@ -78,7 +78,7 @@ TBA
   
 2. Measure the angular distance across the footprint using a distance tool. Take note of your measurement, also record the c1 and c2 values from the table view.
 
-  ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5a_Aladin_Earth_Analog_small.png)
+  ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5a_Aladin_Earth_Analog.png)
   
   E.g.: c1min=346.286746, c2min=29.019753, ang. distance = 908.6mas.
   
@@ -109,7 +109,7 @@ TBA
 6. Switch the focus to the HiPS basemap layer when updating the projection for an image, and make sure that the global projection is set to Spheric to make Aladin work faster. Update the projection and turn on visibility on the image layer.
 Now the pixture should fit the circle precisely.
 
-  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog.png)
+  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog_small.png)
 
 ## References
 
