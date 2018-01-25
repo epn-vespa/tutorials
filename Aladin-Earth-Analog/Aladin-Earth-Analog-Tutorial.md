@@ -17,23 +17,23 @@ M. Minin
 
 ## Change log
 
-| Version       | Author        | Notes  |
-| ------------- |:-------------:| -----: |
-| 0             | name          | test   |
+| Version       | Author        | Notes     |
+| ------------- |:-------------:| -----:    |
+| 0             | M. Minin      | template  |
+| 1             | M. Minin      |   |
 
 * * *
 
 ## Requirements and dependencies
- Not applicable
-
-* * *
+ JAVA, Aladin 10 (official)
 
 ## Use case
-exoplanets TBA
+Querying data on EPN1 DaCHS server with ADQL from Aladin, plotting table as points and footprints, loading and projecting data lined in access_url.
 
 ## Keywords
-* term 1
-* term 2 
+* Pangaea-X-2017
+* Earth Analog 
+* Aladin
 
 ## Summary
 TBA
@@ -86,13 +86,12 @@ TBA
 
   ![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/6_Aladin_Earth_Analog_small.png)
   
-3. Open properties and record the size of the image
+3. Open properties
 
   ![7](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/7_Aladin_Earth_Analog.png)
   
-  E.g.: width = 4000px, height=3000px.
 
-4. Click on create new projection button (under Astronometrical reduction)
+4. Record the size of the image (E.g.: width = 4000px, height=3000px.) and click on the create new projection button (under Astronometrical reduction)
 
   ![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog.png)
   
@@ -109,7 +108,7 @@ TBA
 6. Switch the focus to the HiPS basemap layer when updating the projection for an image, and make sure that the global projection is set to Spheric to make Aladin work faster. Update the projection and turn on visibility on the image layer.
 Now the pixture should fit the circle precisely.
 
-  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog_small.png)
+  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/9_Aladin_Earth_Analog_small.png)
 
 ## References
 
@@ -117,4 +116,4 @@ TBA + URL
 
 
 ## Links
-e.g. to working mybinder version where relevant, repos, jupyter notebooks, desktop tools/plugins or alike.
+[http://aladin.u-strasbg.fr/](http://aladin.u-strasbg.fr/)
