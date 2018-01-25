@@ -53,19 +53,15 @@ TBA
 ### Second step - send ADQL query to EPN1
 1. In the available data panel, unfold "Others" > "Table (by TAP)" > jacobsuni
 2. Right-click on any table
-![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/2_Aladin_Earth_Analog_small.png)
+ ![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/2_Aladin_Earth_Analog_small.png)
 3. Click "Load" 
 4. Change Mode to "Generic", set Table to "pangaea_x_2017.epn_core", set Max rows to "100".
-
-You should see ADQL query on the bottom panel change to "SELECT TOP 100 * FROM pangaea_x_2017.epn_core"
-
-![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/3_Aladin_Earth_Analog.png)
+ You should see ADQL query on the bottom panel change to "SELECT TOP 100 * FROM pangaea_x_2017.epn_core"
+ ![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/3_Aladin_Earth_Analog.png)
 5. Click "Submit", then close TAP access window.
 6. Double click on the table that appeard on the right hand (layers) panel, use wheel to zoom.
-
-This will center view on the features and open the data explorer panel on the bottom.
-
-![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/4_Aladin_Earth_Analog_small.png)
+ This will center view on the features and open the data explorer panel on the bottom.
+ ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/4_Aladin_Earth_Analog_small.png)
 
 ### Third step - displaying footprints
 
