@@ -102,12 +102,14 @@ TBA
    
    Enter this value in CD2_2 and negative of this value into CD1_1. 
 
-  CDx_x are elements of the transformation matrix [[CD1_1,CD1_2],[CD2_1,CD2_2]]. 
+   CDx_x are elements of the transformation matrix [[CD1_1,CD1_2],[CD2_1,CD2_2]]. 
   
-  For an image without distortion a transfomation matrix is the identity matrix [[1,0],[0,1]] multipied by the scale. 
+   For an image without distortion a transfomation matrix is the identity matrix [[1,0],[0,1]] multipied by the scale. 
 
-   Now the pixture should fit the circle precisely.
+6. Switch the focus to the HiPS basemap layer when updating the projection for an image, and make sure that the global projection is set to Spheric to make Aladin work faster. Update the projection and turn on visibility on the image layer.
+Now the pixture should fit the circle precisely.
 
+  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8_Aladin_Earth_Analog.png)
 
 ## References
 
