@@ -99,7 +99,7 @@ TBA
    Compute the pixel angular size in degrees = footprint angular distance / sqrt(width^2+height^2)
    E.g. 908.6 mas / sqrt(4000^2+3000^2) = 0.18172 mas / 3,600,000 mas/deg = 5.048*10^-8
    
-   Enter this value in CD2_2 and negative of this value into CD1_1. 
+   Enter this value in CD1_1 and CD2_2. 
 
    CDx_x are elements of the transformation matrix [[CD1_1,CD1_2],[CD2_1,CD2_2]]. 
   
