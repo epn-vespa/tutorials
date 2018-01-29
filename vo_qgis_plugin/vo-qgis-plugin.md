@@ -21,7 +21,20 @@ This tutorial will demonstrate how to:
 
 ## Step 0: Plugins installation
 
-### 0.0 Prerequesites: you must have astropy installed.
+### 0.0 Prerequesites: 
+The following python modules are required:
+
+* PyQt4
+* os
+* qgis
+* astropy
+* shapefile
+* numpy
+* tempfile
+* geojson
+* urllib
+* threading
+* time
 
 ### 0.1 Download github release from this link: 
 https://github.com/epn-vespa/VO_QGIS_plugin/archive/v0.2.zip
