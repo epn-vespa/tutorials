@@ -110,7 +110,7 @@ The workflow follows as such:
 
 ### 2.0 Query DaCHS with ADQL.
 
-Suppose we are interested in CRISM coverages from senson L that cover craters of diameter between 50 and 80 km. We can do this with an ADQL query. Simply paste this request into browser:
+Suppose we are interested in CRISM coverages from sensor L that cover craters of diameter between 50 and 80 km. We can do this with an ADQL query. Simply paste this request into browser:
 
     http://epn1.epn-vespa.jacobs-university.de/__system__/adql/query/form?__nevow_form__=genForm&
     query=select cra.granule_uid, cri.*, cra.diameter, cra.feature_name, cra.crater_morphology_3 FROM (select * from mars_craters.epn_core as cra2 where cra2.diameter > 50 and  cra2.diameter < 80) as cra INNER JOIN (select * from crism.epn_core as cri2 where cri2.sensor_id='L') as cri  ON (1=INTERSECTS(
