@@ -62,50 +62,50 @@
 
 
 # Set Project CRS from layer
-![17_SetProjectCRS.png](17_SetProjectCRS.png)
+![17_SetProjectCRS.png](img/17_SetProjectCRS.png)
 
 
 # Open Temporal/Spectral Profile Tool
-![18_ProfileTool.png](18_ProfileTool.png)
+![18_ProfileTool.png](img/18_ProfileTool.png)
 
 
 # Use identify tool on the coverage footprint to find the wavelengths
-![19_Wavelengths.png](19_Wavelengths.png)
+![19_Wavelengths.png](img/19_Wavelengths.png)
 
 
 # Switch to settings of the Profile tool and paste the wavelengths
-![20_SetWavelengths.png](20_SetWavelengths.png)
+![20_SetWavelengths.png](img/20_SetWavelengths.png)
 
 
 # Use Profile tool to plot spectrum
-![21_PlotProfile.png](21_PlotProfile.png)
+![21_PlotProfile.png](img/21_PlotProfile.png)
 
 # Use identify button then open feature form
-![22_ViewFeatForm.png](22_ViewFeatForm.png)
+![22_ViewFeatForm.png](img/22_ViewFeatForm.png)
 
 # Get value of ‘external_link’
-![23_ExternalLink.png](23_ExternalLink.png)
+![23_ExternalLink.png](img/23_ExternalLink.png)
 
 
 # Open external link in firefox
-![24_ExternalLinkFf.png](24_ExternalLinkFf.png)
+![24_ExternalLinkFf.png](img/24_ExternalLinkFf.png)
 
 
 # Zoom with mousewheel and select spectra by clicking on a pixel
-![25_SpectraAtPoint.png](25_SpectraAtPoint.png)
+![25_SpectraAtPoint.png](img/25_SpectraAtPoint.png)
 
 
 # Start CASSIS by webstart
-![26_runCASSIS.png](26_runCASSIS.png)
+![26_runCASSIS.png](img/26_runCASSIS.png)
 
 
 # Disconnect QGIS SAMP Client
-![27_QGISSampDisc.png](27_QGISSampDisc.png)
+![27_QGISSampDisc.png](img/27_QGISSampDisc.png)
 
 
 # Switch to the ‘external_link’ and click “Broadcast via SAMP!”
-![28_SAMPBroadcast.png](28_SAMPBroadcast.png)
+![28_SAMPBroadcast.png](img/28_SAMPBroadcast.png)
 
 
 # The spectra will load to CASSIS
-![29_CASSISspectra.png](29_CASSISspectra.png)
+![29_CASSISspectra.png](img/29_CASSISspectra.png)
