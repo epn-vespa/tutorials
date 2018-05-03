@@ -57,28 +57,28 @@ TBA
   ![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-2_Aladin_Earth_Analog_small.png)
   
 3. Click "Load" 
-4. Change Mode to "Generic", set Table to "pangaea_x_2017.epn_core", set Max rows to "100".
+4. Set Max rows to "100".
 
   You should see ADQL query on the bottom panel change to "SELECT TOP 100 * FROM pangaea_x_2017.epn_core"
   
-  ![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/3_Aladin_Earth_Analog.png)
+  ![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-3_Aladin_Earth_Analog.png)
   
 5. Click "Submit", then close TAP access window.
 6. Double click on the table that appeard on the right hand (layers) panel, use wheel to zoom.
 
   This will center view on the features and open the data explorer panel on the bottom.
   
-  ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/4_Aladin_Earth_Analog_small.png)
+  ![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-4_Aladin_Earth_Analog_small.png)
 
 ### Third step - displaying footprints and projecting data
 
 1. Hover over to view the footprint, click on "FoV" button in the s_region column to display footprint permanently
 
-  ![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5_Aladin_Earth_Analog_small.png)
+  ![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-5_Aladin_Earth_Analog_small.png)
   
 2. Measure the angular distance across the footprint using a distance tool. Take note of your measurement, also record the c1 and c2 values from the table view.
 
-  ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/5a_Aladin_Earth_Analog.png)
+  ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-5a_Aladin_Earth_Analog.png)
   
   E.g.: c1min=346.286746, c2min=29.019753, ang. distance = 908.6mas.
   
@@ -106,11 +106,30 @@ TBA
    For an image without distortion a transfomation matrix is the identity matrix [[1,0],[0,1]] multipied by the scale. 
    
   ![8a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8a_Aladin_Earth_Analog.png)
+   
+6. Now that the image is correctly positioned, a rotation transformation matrix needs to be applied to it.
+   The rotation matrix is [[cosθ, sinθ], [sinθ, -cosθ]], where angle θ is the camera yaw.
+   The previous transformation matix needs to be multiplied by a rotation matrix using dot product.
+   This can be done using python code as follows:
+```
+TranslationMtrx=np.matrix([[2.8327*10**-8,0],[2.8327*10**-8,0]])
+Theta=-165.7*np.pi / 180
+RotationMtrx = np.matrix([[np.cos(Theta), np.sin(Theta)], [-np.sin(Theta), np.cos(Theta)]])
+Transformation=TranslationMtrx*RotationMtrx
+CD1_1=-Transformation[0,1]
+CD1_2=-Transformation[0,0]
+CD2_1=Transformation[1,0]
+CD2_2=-Transformation[1,1]
+print ([CD1_1,CD1_2,CD2_1,CD2_2])
+```
+Note that since the WCS transformation uses the celestial sphere, the values in the final transformation matrix need to be rearranged before writing them to WCS header.
+
+  ![8b](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-8b_Aladin_Earth_Analog.png)
 
 6. Switch the focus to the HiPS basemap layer when updating the projection for an image, and make sure that the global projection is set to Spheric to make Aladin work faster. Update the projection and turn on visibility on the image layer.
 Now the pixture should fit the circle precisely.
 
-  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/9_Aladin_Earth_Analog_small.png)
+  ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-9_Aladin_Earth_Analog_small.png)
 
 ## References
 
