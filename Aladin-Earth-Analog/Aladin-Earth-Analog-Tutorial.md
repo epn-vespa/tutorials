@@ -80,7 +80,7 @@ TBA
 
   ![5a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-5a_Aladin_Earth_Analog.png)
   
-  E.g.: c1min=346.286746, c2min=29.019753, ang. distance = 908.6mas.
+  E.g.: c1min=346.286746, c2min=29.019753, ang. distance = 509.9mas.
   
 2. Click on a button in the access_url column to open coverage, use mouse wheel to zoom
 
@@ -97,7 +97,7 @@ TBA
   
 5. Open "by WCS header" and change values CRVAL1 to c1min, CRVAL2 to c2min.
    Compute the pixel angular size in degrees = footprint angular distance / sqrt(width^2+height^2)
-   E.g. 908.6 mas / sqrt(4000^2+3000^2) = 0.18172 mas / 3,600,000 mas/deg = 5.048*10^-8
+   E.g. 509.9 mas / sqrt(4000^2+3000^2) = 0.079633 mas / 3,600,000 mas/deg = 2.8327*10^-8
    
    Enter this value in CD1_1 and CD2_2. 
 
@@ -108,26 +108,28 @@ TBA
   ![8a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8a_Aladin_Earth_Analog.png)
    
 6. Now that the image is correctly positioned, a rotation transformation matrix needs to be applied to it.
-   The rotation matrix is [[cosθ, sinθ], [sinθ, -cosθ]], where angle θ is the camera yaw.
+   The clockwise rotation matrix is [[cosθ, sinθ], [sinθ, -cosθ]], where angle θ is the camera yaw.
    The previous transformation matix needs to be multiplied by a rotation matrix using dot product.
-   This can be done using python code as follows:
+   This can be done with python code as follows:
 ```
 TranslationMtrx=np.matrix([[2.8327*10**-8,0],[2.8327*10**-8,0]])
 Theta=-165.7*np.pi / 180
 RotationMtrx = np.matrix([[np.cos(Theta), np.sin(Theta)], [-np.sin(Theta), np.cos(Theta)]])
 Transformation=TranslationMtrx*RotationMtrx
+```
+Note that since the WCS transformation uses the celestial sphere, the values in the final transformation matrix need to be rearranged before writing them to WCS header.
+```
 CD1_1=-Transformation[0,1]
 CD1_2=-Transformation[0,0]
 CD2_1=Transformation[1,0]
 CD2_2=-Transformation[1,1]
 print ([CD1_1,CD1_2,CD2_1,CD2_2])
 ```
-Note that since the WCS transformation uses the celestial sphere, the values in the final transformation matrix need to be rearranged before writing them to WCS header.
 
   ![8b](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-8b_Aladin_Earth_Analog.png)
 
 6. Switch the focus to the HiPS basemap layer when updating the projection for an image, and make sure that the global projection is set to Spheric to make Aladin work faster. Update the projection and turn on visibility on the image layer.
-Now the pixture should fit the circle precisely.
+Now the picture should fit the footprint precisely.
 
   ![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-9_Aladin_Earth_Analog_small.png)
 
