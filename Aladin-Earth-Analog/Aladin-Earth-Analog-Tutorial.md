@@ -52,9 +52,9 @@ TBA
 
 ### Second step - send ADQL query to EPN1
 1. In the available data panel, unfold "Others" > "Table (by TAP)" > jacobsuni
-2. Right-click on any table
+2. Right-click on the table "ESA PANGEA-X 2017"
 
-  ![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/2_Aladin_Earth_Analog_small.png)
+  ![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-2_Aladin_Earth_Analog_small.png)
   
 3. Click "Load" 
 4. Change Mode to "Generic", set Table to "pangaea_x_2017.epn_core", set Max rows to "100".
