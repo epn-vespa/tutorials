@@ -105,7 +105,7 @@ TBA
   
    For an image without distortion a transfomation matrix is the identity matrix [[1,0],[0,1]] multipied by the scale. 
    
-  ![8a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/8a_Aladin_Earth_Analog.png)
+  ![8a](https://raw.githubusercontent.com/epn-vespa/tutorials/master/Aladin-Earth-Analog/img/B-8a_Aladin_Earth_Analog.png)
    
 6. Now that the image is correctly positioned, a rotation transformation matrix needs to be applied to it.
    The clockwise rotation matrix is [[cosθ, sinθ], [sinθ, -cosθ]], where angle θ is the camera yaw.
