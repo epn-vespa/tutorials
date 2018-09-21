@@ -12,7 +12,7 @@ Each task/topic based set of tutorials will be developed and updated on a topica
 * atmospheres - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
 * exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
 
-### tutorial namoiing
+### tutorial naming
 Each tutorial is in a directory, optimally with strings indicating:
 
 * topical area (e.g. ```surf```)
@@ -27,6 +27,13 @@ Available prefixes include:
 * smbd (small bodies)
 * atmo (atmospheres)
 * exop (explanets)
+
+examples tutorial names:
+
+* surf_mars_crism
+* magn_saturn_cassini
+* surf_moon_craters
+* atmo_titan_vims
 
 
 ### Instructions
