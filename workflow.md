@@ -1,3 +1,43 @@
+## Tutorial authoring
+
+### branches for task/topic
+The previous master branch is going to be [legacy branch]().
+
+Each task/topic based set of tutorials will be developed and updated on a topical branch as follows (based on [VESPA JRA Tasks](https://voparis-confluence.obspm.fr):
+
+* sshade - for [Task3: sshade](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+3.+SSHADE)
+* surfaces - for [Task4: surfaces](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+4.+Surfaces)
+* magnetospheres - for [Task5: magnetospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+5.+Magnetospheres)
+* smallbodies - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
+* atmospheres - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
+* exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
+
+### tutorial namoiing
+Each tutorial is in a directory, optimally with strings indicating:
+
+* topical area (e.g. ```surf```)
+* body (e.g. ```mars```)
+* experiment(s) (e.g. ```HRSC```)
+
+Available prefixes include:
+
+* sshd (sshade)
+* surf (surfaces)
+* magn (magnetospheres)
+* smbd (small bodies)
+* atmo (atmospheres)
+* exop (explanets)
+
+
+### Instructions
+For editing a branch 
+
+**info TBA**
+
+The master branch / merge will be handled by JacobsUni.
+
+
+
 ## Naming of tutorial directory
 
 The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](cassini-titan-flyby)
