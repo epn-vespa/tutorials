@@ -13,6 +13,20 @@ Each task/topic based set of tutorials will be developed and updated on a topica
 * exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
 * miscelaneous
 
+### branches structure
+Each branch will have a directory named after the branch where tutorials will be placed.
+Each tutorial then is organized as suggested in the next section.
+An example of such structure for the `surfaces` branch is:
+```
+[branch surfaces]
+| - surfaces/
+| | - surf_mars_crism/
+| | - surf_moon_craters/
+| - README.md
+| - README_for_producers.md
+| - workflow.md
+```
+
 ### tutorial naming
 Each tutorial is in a directory, optimally with strings indicating:
 
