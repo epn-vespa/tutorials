@@ -11,6 +11,7 @@ Each task/topic based set of tutorials will be developed and updated on a topica
 * smallbodies - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
 * atmospheres - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
 * exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
+* miscelaneous
 
 ### tutorial naming
 Each tutorial is in a directory, optimally with strings indicating:
@@ -27,6 +28,7 @@ Available prefixes include:
 * smbd (small bodies)
 * atmo (atmospheres)
 * exop (explanets)
+* misc (miscelaneous)
 
 examples tutorial names:
 
