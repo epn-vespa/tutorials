@@ -53,9 +53,21 @@ examples tutorial names:
 
 
 ### Instructions
-For editing a branch 
+For cloning a single branch the command should (feel free to improve) be:
 
-**info TBA**
+```
+git clone https://github.com/epn-vespa/tutorials.git -b <BRANCH_NAME> --single-branch <LOCAL_DIRECTORY>
+```
+e.g.
+
+```
+git clone https://github.com/epn-vespa/tutorials.git -b surfaces --single-branch .
+```
+or 
+
+```
+git clone https://github.com/epn-vespa/tutorials.git -b magnetospheres --single-branch .
+```
 
 The master branch / merge will be handled by JacobsUni.
 
@@ -90,6 +102,8 @@ Images embedded in a tutorial should be in the [img][template/img] subdirectory 
 ```html
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/template/img/1.png" width="400">
 ```
+* In any case, please keep image/screenshot file size reasonably small.
+
 ### Videos 
 * Videos can be linked from YouTube/Vimeo or similar video streaming, preferably with a placeholder screenshot, e.g. as described [here](http://stackoverflow.com/questions/4279611/how-to-embed-a-video-into-github-readme-md).
 
