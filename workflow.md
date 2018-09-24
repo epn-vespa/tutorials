@@ -1,3 +1,78 @@
+## Tutorial authoring
+
+### branches for task/topic
+The previous master branch is going to be [legacy branch]().
+
+Each task/topic based set of tutorials will be developed and updated on a topical branch as follows (based on [VESPA JRA Tasks](https://voparis-confluence.obspm.fr):
+
+* sshade - for [Task3: sshade](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+3.+SSHADE)
+* surfaces - for [Task4: surfaces](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+4.+Surfaces)
+* magnetospheres - for [Task5: magnetospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+5.+Magnetospheres)
+* smallbodies - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
+* atmospheres - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
+* exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
+* miscelaneous
+
+### branches structure
+Each branch will have a directory named after the branch where tutorials will be placed.
+Each tutorial then is organized as suggested in the next section.
+An example of such structure for the `surfaces` branch is:
+```
+[branch surfaces]
+| - surfaces/
+| | - surf_mars_crism/
+| | - surf_moon_craters/
+| - README.md
+| - README_for_producers.md
+| - workflow.md
+```
+
+### tutorial naming
+Each tutorial is in a directory, optimally with strings indicating:
+
+* topical area (e.g. ```surf```)
+* body (e.g. ```mars```)
+* experiment(s) (e.g. ```HRSC```)
+
+Available prefixes include:
+
+* sshd (sshade)
+* surf (surfaces)
+* magn (magnetospheres)
+* smbd (small bodies)
+* atmo (atmospheres)
+* exop (explanets)
+* misc (miscelaneous)
+
+examples tutorial names:
+
+* surf_mars_crism
+* magn_saturn_cassini
+* surf_moon_craters
+* atmo_titan_vims
+
+
+### Instructions
+For cloning a single branch the command should (feel free to improve) be:
+
+```
+git clone https://github.com/epn-vespa/tutorials.git -b <BRANCH_NAME> --single-branch <LOCAL_DIRECTORY>
+```
+e.g.
+
+```
+git clone https://github.com/epn-vespa/tutorials.git -b surfaces --single-branch .
+```
+or 
+
+```
+git clone https://github.com/epn-vespa/tutorials.git -b magnetospheres --single-branch .
+```
+
+The master branch / merge will be handled by JacobsUni.
+
+
+
 ## Naming of tutorial directory
 
 The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](cassini-titan-flyby)
@@ -27,6 +102,8 @@ Images embedded in a tutorial should be in the [img][template/img] subdirectory 
 ```html
 <img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/template/img/1.png" width="400">
 ```
+* In any case, please keep image/screenshot file size reasonably small.
+
 ### Videos 
 * Videos can be linked from YouTube/Vimeo or similar video streaming, preferably with a placeholder screenshot, e.g. as described [here](http://stackoverflow.com/questions/4279611/how-to-embed-a-video-into-github-readme-md).
 
