@@ -1,7 +1,8 @@
 ## Tutorial authoring
 
 ### branches for task/topic
-The previous master branch is going to be [legacy branch]().
+The previous master branch is going to be [legacy branch](https://github.com/epn-vespa/tutorials/tree/legacy).
+Please, **do not modify** the `legacy` branch, it is there to keep as an easy to access snapshot of the previous version of the repository (also, there is a tag `v1` in the history of this repo which points to the previous structure/legacy).
 
 Each task/topic based set of tutorials will be developed and updated on a topical branch as follows (based on [VESPA JRA Tasks](https://voparis-confluence.obspm.fr):
 
@@ -75,7 +76,7 @@ The master branch / merge will be handled by JacobsUni.
 
 ## Naming of tutorial directory
 
-The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](cassini-titan-flyby)
+The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](https://github.com/epn-vespa/tutorials/tree/master/misc/cassini-titan-flyby)
 
 ## Creation / migration of content 
 
