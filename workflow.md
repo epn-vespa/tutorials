@@ -2,7 +2,7 @@
 
 ### branches for task/topic
 The previous master branch is going to be [legacy branch](https://github.com/epn-vespa/tutorials/tree/legacy).
-Please, **do not modify** the `legacy` branch, it is there to keep as an easy to access snapshot of the previous version of the repository (also, there is a tag `v1` in the history of this repo which points to the previous structure/legacy).
+Please, **do not modify the _legacy_ branch**, it is there to keep as an easy to access snapshot of the previous version of the repository (also, there is a tag `v1` in the history of this repo which points to the previous structure/legacy).
 
 Each task/topic based set of tutorials will be developed and updated on a topical branch as follows (based on [VESPA JRA Tasks](https://voparis-confluence.obspm.fr):
 
