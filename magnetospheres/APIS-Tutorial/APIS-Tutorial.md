@@ -44,7 +44,7 @@ thus remote proxies of active regions and dynamics of the magnetosphere, of
 plasma acceleration processes, and of the energy transfer to the planetary 
 atmosphere. 
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/1_planetary_uv_observations.png " width="500" alt="Planetary UV Observations">  
+<img src="https://github.com/epn-vespa/tutorials/raw/master/magnetospheres/APIS-Tutorial/img/1_planetary_uv_observations.png" width="500" alt="Planetary UV Observations">  
 
 _Fig. 1: Planetary UV Observations_
 
@@ -58,7 +58,7 @@ The database currently contains more then 6000 individual observations of
 Jupiter, Saturn, Uranus and their moons, as well as Mars. The data were acquired
 with the Space Telescope Imaging Spectrograph (STIS) and Advanced Camera for 
 Surveys (ACS) instruments of the Hubble Space Telescope (HST) in the Far UV 
-range (~1100 to 1700 Angström) since 1997. Several processing level with added 
+range (~1100 to 1700 Angström) since 1997. Several processing level with added 
 value are available.
 
 The data are accessible online at [http://apis.obspm.fr](http://apis.obspm.fr). 
@@ -85,7 +85,7 @@ unique observation identifier). Once a query is done, the corresponding time
 interval is automatically displayed and is kept for any further queries. 
 Use the `Clear` and `Clear Date` buttons to empty the query form fields.
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/2_search_for_data.png" width="500" alt="Search for Data">  
+<img src="https://github.com/epn-vespa/tutorials/raw/master/magnetospheres/APIS-Tutorial/img/2_search_for_data.png" width="500" alt="Search for Data">  
 
 _Fig. 2: Search for Data_
 
@@ -117,7 +117,7 @@ is automatically displayed and is taken into account for any further queries.
 
 NB: *This type of combined analysis of several space plasma datasets (in situ 
 and remote) is specifically the scope of another VO tool: [AMDA](http://amda.cdpp.eu)
-developed by the [CDPP](http://cdpp.eu) (Centre de Données de Physique des Plasmas)*
+developed by the [CDPP](http://cdpp.eu) (Centre de Données de Physique des Plasmas)*
 
 #### Processing Levels
 
@@ -244,7 +244,7 @@ no signal), of the rings and the planetary disc (emissions at large wavelength
 corresponds to the reflected solar light), and of wide band signatures 
 corresponding H and H2 auroral emissions.
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/3_images_and_2d_spectra.png" width="500" alt="Images and 2D Spectra">  
+<img src="https://github.com/epn-vespa/tutorials/raw/master/magnetospheres/APIS-Tutorial/img/3_images_and_2d_spectra.png" width="500" alt="Images and 2D Spectra">  
 
 _Fig. 3: Images and 2D spectra corresponding to Saturn in december 2000._
 
@@ -277,7 +277,7 @@ FITS format in the search results of spectra (columns 1 and 3).
 
 The data are then transfered from APIS to Specview via SAMP.
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/4_1d_spectra_specview.png" width="500" alt="1D Spectra in Specview">  
+<img src="https://github.com/epn-vespa/tutorials/raw/master/magnetospheres/APIS-Tutorial/img/4_1d_spectra_specview.png" width="500" alt="1D Spectra in Specview">  
 
 _Fig. 4: Extracted 1D spectra in 2 bright emission regions of the `o43ba1bnq` 2D 
 spectrum of Jupiter. The vertical bar at 1216 A indicates H-Lyman α line._
@@ -319,7 +319,7 @@ composition. For the giant planet, we mostly expect (1) the intense Lyman α of
 Hydrogen at 1216 A and  (2) the Werner and Lyman bands of H2 between 800 and 
 1700 A (Figure 5).
 
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/APIS-Tutorial/img/5_synthetic_ly_alpha.png" width="500" alt="Synthetic Lyman alpha spectrum">  
+<img src="https://github.com/epn-vespa/tutorials/raw/master/magnetospheres/APIS-Tutorial/img/5_synthetic_ly_alpha.png" width="500" alt="Synthetic Lyman alpha spectrum">  
 
 _Fig. 5: Synthetic spectrum of the H-Lyα line of H2 bands, together with the 
 absorption cross-section of CH4 (secondary atmospheric species capable of 
@@ -419,7 +419,7 @@ can be used to query APIS remotely.
 
 <h2 id="References">References</h2>
 The Auroral Planetary Imaging and Spectroscopy (APIS) service (2015)
-L. Lamy, R. Prangé, F. Henry, P. Le Sidaner, Astron. and Computing, 
+L. Lamy, R. Prangé, F. Henry, P. Le Sidaner, Astron. and Computing, 
 [arXiv](https://arxiv.org/abs/1501.03920), 
 [DOI](http://dx.doi.org/10.1016/j.ascom.2015.01.005).
 
