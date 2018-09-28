@@ -57,7 +57,8 @@ This short tutorial shows how to compare related profiles in some services
 * Browse service
 * Launch TOPCAT 
 * Select line  granule_uid = temp2888A1
-* On bottom left menu "Data selection", click "Send Tables" and validate dialogues
+* On bottom left menu "Data selection", click "Send Tables" and validate dialogues. 
+
 This sends the profile in VOTable format to TOPCAT
 
 ![2](img/2.png)
@@ -72,7 +73,7 @@ This sends the profile in VOTable format to TOPCAT
 
 ### Back to VESPA portal
 * Go to the right end of the table
-* Click value in Datalink_url of the selected line. A new page open.
+* Click value in Datalink_url of the selected line. A new page opens.
 
 ![4](img/4.png)
 
