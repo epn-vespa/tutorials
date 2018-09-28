@@ -46,7 +46,7 @@ This short tutorial shows how to compare related profiles in some services
 ### Go to VESPA portal
 * Look for target = Mars, dataproduct_type = profiles
 
-![1](/img/1.png)
+![1](img/1.png)
 
 [http://vespa.obspm.fr)
 
@@ -60,7 +60,7 @@ This short tutorial shows how to compare related profiles in some services
 * On bottom left menu "Data selection", click "Send Tables" and validate dialogues
 This sends the profile in VOTable format to TOPCAT
 
-![2](/img/2.png)
+![2](img/2.png)
 
 
 ### In TOPCAT
@@ -68,13 +68,13 @@ This sends the profile in VOTable format to TOPCAT
 * Select x= CO2_Temp_T100k, and Y = AAMZD 
 * Click Form tab, then +Form button, select "Add Line"
 
-![3](/img/3.png)
+![3](img/3.png)
 
 ### Back to VESPA portal
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page open.
 
-![4](/img/4.png)
+![4](img/4.png)
 
 
 ### Back to VESPA portal
@@ -85,7 +85,7 @@ This sends the profile in VOTable format to TOPCAT
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
-![5](/img/5.png)
+![5](img/5.png)
 
 
 ### Back to TOPCAT PlanePlot window
@@ -93,7 +93,7 @@ This sends the profile in VOTable format to TOPCAT
 * Select the last table in the local menu
 * Select X = temperature and y = AAMZD
 
-![6](/img/6.png)
+![6](img/6.png)
 
 
 ### Back to VESPA portal
