@@ -19,7 +19,7 @@ S. Erard
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 1             | S. Erard      |        |
+| 1             | S. Erard      |  29/9/2018      |
 
 * * *
 
@@ -48,7 +48,7 @@ This short tutorial shows how to compare related profiles in some services
 
 <img src="img/1.png" width="600">
 
-[http://vespa.obspm.fr)
+[http://vespa.obspm.fr]
 
 
 
@@ -75,7 +75,7 @@ This sends the profile in VOTable format to TOPCAT
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page opens.
 
-<img src="img/4.png" width="650">
+<img src="img/4.png" width="700">
 
 
 ### Back to VESPA portal
