@@ -66,8 +66,8 @@ This sends the profile in VOTable format to TOPCAT
 
 ### In TOPCAT
 * Click icon "Plane Plot"
-* Select x= CO2_Temp_T100k, and Y = AAMZD 
-* Click Form tab, then +Form button, select "Add Line"
+* (in the Position tab) Select x= CO2_Temp_T100k, and Y = AAMZD 
+* Click Form tab, then the +Form button, select "Add Line" in local menu
 
 ![3](img/3.png)
 
@@ -79,10 +79,8 @@ This sends the profile in VOTable format to TOPCAT
 
 
 ### Back to VESPA portal
-* Go to the right end of the table
-* Click value in Datalink_url of the selected line. A new page open.
-* (The first link opens the profile in ascii format)
-* In the yellow dialogue MCD_scenario, enter "28" (id of the Martian year in the simulation)
+* This page first provides a link which opens the profile in ascii format
+* In the yellow dialogue MCD_scenario, enter "28" (ID of the Martian year used in the simulation)
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
@@ -94,7 +92,7 @@ This sends the profile in VOTable format to TOPCAT
 * Select the last table in the local menu
 * Select X = temperature and y = AAMZD
 
-![6](img/6.png)
+<img src="img/6.png" width="500">
 
 
 ### Back to VESPA portal
