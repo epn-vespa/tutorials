@@ -44,7 +44,7 @@ This short tutorial shows how to compare related profiles in some services
 ## Steps
 
 ### Go to VESPA portal
-* Look for target = Mars, dataproduct_type = profiles
+* Look for target = Mars, dataproduct_type = profile
 
 <img src="img/1.png" width="600">
 
@@ -98,6 +98,7 @@ This sends the profile in VOTable format to TOPCAT
 ### To go further
 * From the yellow datalink dialogue, you can try other Martian year scenarios and check if they fit better
 * In TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
+* Other EPN-TAP data services include a datalink_url parameter that either provides links or calls computing services. You may experience with them (e.g., hst_planeto)
 
 
 ## References
