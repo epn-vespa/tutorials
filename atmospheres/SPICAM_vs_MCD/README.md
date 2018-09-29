@@ -46,7 +46,7 @@ This short tutorial shows how to compare related profiles in some services
 ### Go to VESPA portal
 * Look for target = Mars, dataproduct_type = profiles
 
-<img src="img/1.png" width="500">
+<img src="img/1.png" width="450">
 
 [http://vespa.obspm.fr)
 
