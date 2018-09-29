@@ -98,7 +98,7 @@ This sends the profile in VOTable format to TOPCAT
 ### To go further
 * From the yellow datalink dialogue, you can try other Martian year scenarios and check if they fit better
 * In TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
-* Other EPN-TAP data services include a datalink_url parameter that either provides links or calls computing services. You may experience with them (e.g., hst_planeto)
+* Other EPN-TAP data services include a datalink_url parameter that either links files or calls computing services. You may experience with them (e.g., hst_planeto)
 
 
 ## References
