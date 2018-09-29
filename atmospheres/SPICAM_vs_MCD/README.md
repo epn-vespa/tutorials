@@ -84,7 +84,7 @@ This sends the profile in VOTable format to TOPCAT
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
-<img src="img/5.png" width="650">
+<img src="img/5.png" width="750">
 
 
 ### Back to TOPCAT PlanePlot window
