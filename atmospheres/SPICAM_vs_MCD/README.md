@@ -69,7 +69,7 @@ This sends the profile in VOTable format to TOPCAT
 * (in the Position tab) Select x= CO2_Temp_T100k, and Y = AAMZD 
 * Click Form tab, then the +Form button, select "Add Line" in local menu
 
-<img src="img/3.png" width="500">
+<img src="img/3.png" width="450">
 
 ### Back to VESPA portal
 * Go to the right end of the table
@@ -92,7 +92,7 @@ This sends the profile in VOTable format to TOPCAT
 * Select the last table in the local menu
 * Select X = temperature and y = AAMZD
 
-<img src="img/6.png" width="500">
+<img src="img/6.png" width="450">
 
 
 ### To go further
