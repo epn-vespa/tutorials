@@ -61,7 +61,7 @@ This short tutorial shows how to compare related profiles in some services
 
 This sends the profile in VOTable format to TOPCAT
 
-<img src="img/2.png" width="500">
+<img src="img/2.png" width="400">
 
 
 ### In TOPCAT
@@ -75,7 +75,7 @@ This sends the profile in VOTable format to TOPCAT
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page opens.
 
-<img src="img/4.png" width="500">
+<img src="img/4.png" width="600">
 
 
 ### Back to VESPA portal
@@ -84,7 +84,7 @@ This sends the profile in VOTable format to TOPCAT
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
-<img src="img/5.png" width="500">
+<img src="img/5.png" width="600">
 
 
 ### Back to TOPCAT PlanePlot window
