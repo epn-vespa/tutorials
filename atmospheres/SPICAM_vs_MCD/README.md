@@ -46,47 +46,45 @@ This short tutorial shows how to compare related profiles in some services
 ### Go to VESPA portal
 * Look for target = Mars, dataproduct_type = profiles
 
-![1](img/1.png)
+<img src="img/1.png" width="600">
 
 [http://vespa.obspm.fr)
 
 
 
-### Open service SPICAM
+### Open service SPICAM in results page
 * Click button "Show All" to see all parameters
 * Browse service
-* Launch TOPCAT 
+* Launch TOPCAT (e.g. by clicking on TOPCAT button in VESPA portal page)
 * Select line  granule_uid = temp2888A1
-* On bottom left menu "Data selection", click "Send Tables" and validate dialogues. 
+* On bottom left menu "Data selection", click "Send Tables" and validate security dialogues in pop-up windows. 
 
 This sends the profile in VOTable format to TOPCAT
 
-![2](img/2.png)
+<img src="img/2.png" width="350">
 
 
 ### In TOPCAT
 * Click icon "Plane Plot"
-* Select x= CO2_Temp_T100k, and Y = AAMZD 
-* Click Form tab, then +Form button, select "Add Line"
+* (in the Position tab) Select x= CO2_Temp_T100k, and Y = AAMZD 
+* Click Form tab, then the +Form button, select "Add Line" in local menu
 
-![3](img/3.png)
+<img src="img/3.png" width="450">
 
 ### Back to VESPA portal
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page opens.
 
-![4](img/4.png)
+<img src="img/4.png" width="650">
 
 
 ### Back to VESPA portal
-* Go to the right end of the table
-* Click value in Datalink_url of the selected line. A new page open.
-* (The first link opens the profile in ascii format)
-* In the yellow dialogue MCD_scenario, enter "28" (id of the Martian year in the simulation)
+* This page first provides a link which opens the profile in ascii format
+* In the yellow dialogue MCD_scenario, enter "28" (ID of the Martian year used in the simulation) and click "Retrieve data"
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
-![5](img/5.png)
+<img src="img/5.png" width="750">
 
 
 ### Back to TOPCAT PlanePlot window
@@ -94,12 +92,12 @@ This sends the profile in VOTable format to TOPCAT
 * Select the last table in the local menu
 * Select X = temperature and y = AAMZD
 
-![6](img/6.png)
+<img src="img/6.png" width="450">
 
 
-### Back to VESPA portal
-* You can try other Martian year scenarios and check if they fit better
-* in TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
+### To go further
+* From the yellow datalink dialogue, you can try other Martian year scenarios and check if they fit better
+* In TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
 
 
 ## References
