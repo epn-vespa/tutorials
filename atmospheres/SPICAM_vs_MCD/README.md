@@ -46,7 +46,7 @@ This short tutorial shows how to compare related profiles in some services
 ### Go to VESPA portal
 * Look for target = Mars, dataproduct_type = profiles
 
-<img src="img/1.png" width="450">
+<img src="img/1.png" width="500">
 
 [http://vespa.obspm.fr)
 
@@ -61,7 +61,7 @@ This short tutorial shows how to compare related profiles in some services
 
 This sends the profile in VOTable format to TOPCAT
 
-<img src="img/2.png" width="450">
+<img src="img/2.png" width="400">
 
 
 ### In TOPCAT
