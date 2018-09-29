@@ -80,7 +80,7 @@ This sends the profile in VOTable format to TOPCAT
 
 ### Back to VESPA portal
 * This page first provides a link which opens the profile in ascii format
-* In the yellow dialogue MCD_scenario, enter "28" (ID of the Martian year used in the simulation)
+* In the yellow dialogue MCD_scenario, enter "28" (ID of the Martian year used in the simulation) and click "Retrieve data"
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
@@ -95,9 +95,9 @@ This sends the profile in VOTable format to TOPCAT
 <img src="img/6.png" width="500">
 
 
-### Back to VESPA portal
-* You can try other Martian year scenarios and check if they fit better
-* in TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
+### To go further
+* From the yellow datalink dialogue, you can try other Martian year scenarios and check if they fit better
+* In TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
 
 
 ## References
