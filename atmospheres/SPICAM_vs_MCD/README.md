@@ -75,7 +75,7 @@ This sends the profile in VOTable format to TOPCAT
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page opens.
 
-<img src="img/4.png" width="650">
+<img src="img/4.png" width="700">
 
 
 ### Back to VESPA portal
