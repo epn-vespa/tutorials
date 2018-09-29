@@ -52,12 +52,12 @@ This short tutorial shows how to compare related profiles in some services
 
 
 
-### Open service SPICAM
+### Open service SPICAM in results page
 * Click button "Show All" to see all parameters
 * Browse service
-* Launch TOPCAT 
+* Launch TOPCAT (e.g. by clicking on TOPCAT button in VESPA portal page)
 * Select line  granule_uid = temp2888A1
-* On bottom left menu "Data selection", click "Send Tables" and validate dialogues. 
+* On bottom left menu "Data selection", click "Send Tables" and validate security dialogues in pop-up windows. 
 
 This sends the profile in VOTable format to TOPCAT
 
