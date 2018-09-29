@@ -69,13 +69,13 @@ This sends the profile in VOTable format to TOPCAT
 * (in the Position tab) Select x= CO2_Temp_T100k, and Y = AAMZD 
 * Click Form tab, then the +Form button, select "Add Line" in local menu
 
-<img src="img/3.png" width="500">
+<img src="img/3.png" width="550">
 
 ### Back to VESPA portal
 * Go to the right end of the table
 * Click value in Datalink_url of the selected line. A new page opens.
 
-<img src="img/4.png" width="600">
+<img src="img/4.png" width="650">
 
 
 ### Back to VESPA portal
@@ -84,7 +84,7 @@ This sends the profile in VOTable format to TOPCAT
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
 * Copy the url from your browser and paste it to TOPCAT (click on "Open new Table" icon and paste it in the first field)
 
-<img src="img/5.png" width="600">
+<img src="img/5.png" width="650">
 
 
 ### Back to TOPCAT PlanePlot window
