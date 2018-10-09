@@ -19,12 +19,12 @@ S. Erard
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 1             | S. Erard      |  29/9/2018      |
+| 1.1             | S. Erard      |  4/10/2018      |
 
 * * *
 
 ## Requirements and dependencies
- Not applicable
+ None
 
 * * *
 
@@ -35,16 +35,18 @@ Comparing vertical profiles in the atmosphere of Mars (Mars-Express/SPICAM and M
 * Atmospheres 
 * Observations
 * Simulations
+* Datalink
 
 ## Summary
-This short tutorial shows how to compare related profiles in some services
+This short tutorial shows how to compare related profiles from various services.
 
 ## Introduction
+The SPICAM service contains vertical profiles in the Martian atmosphere retrieved from inversion of spectral observations from Mars-Express. The Mars Climate Database (MCD) provides simulations of similar profiles in the frame of various scenarios related, e. g., to dust content in the atmosphere. To make comparisons easier, the SPICAM service also provides pre-parametered links to simulations from the MCD.
 
 ## Steps
 
 ### Go to VESPA portal
-* Look for target = Mars, dataproduct_type = profile
+* Search for target = Mars, dataproduct_type = profile
 
 <img src="img/1.png" width="600">
 
@@ -54,7 +56,7 @@ This short tutorial shows how to compare related profiles in some services
 
 ### Open service SPICAM in results page
 * Click button "Show All" to see all parameters
-* Browse service
+* Browse service content
 * Launch TOPCAT (e.g. by clicking on TOPCAT button in VESPA portal page)
 * Select line  granule_uid = temp2888A1
 * On bottom left menu "Data selection", click "Send Tables" and validate security dialogues in pop-up windows. 
@@ -78,7 +80,7 @@ This sends the profile in VOTable format to TOPCAT
 <img src="img/4.png" width="700">
 
 
-### Back to VESPA portal
+### In VESPA portal
 * This page first provides a link which opens the profile in ascii format
 * In the yellow dialogue MCD_scenario, enter "28" (ID of the Martian year used in the simulation) and click "Retrieve data"
 * This opens an xml file in your browser (this is a simulated profile in the same conditions as the observation)
@@ -98,7 +100,7 @@ This sends the profile in VOTable format to TOPCAT
 ### To go further
 * From the yellow datalink dialogue, you can try other Martian year scenarios and check if they fit better
 * In TOPCAT you can try other temperature profiles from the same SPICAM file (retrieved assumming other T at the top of the atmosphere)
-* Other EPN-TAP data services include a datalink_url parameter that either links files or calls computing services. You may experience with them (e.g., hst_planeto)
+* Other EPN-TAP data services include a datalink_url parameter that either links files or calls computing services. You may experiment with them (e.g., hst_planeto)
 
 
 ## References
