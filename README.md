@@ -30,7 +30,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Magnetospheres
 
 * [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/APIS-Tutorial/APIS-Tutorial.md)
-* [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/wiki/cassini_titan_flyby.md)
+* [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/README.md)
 * [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
 
