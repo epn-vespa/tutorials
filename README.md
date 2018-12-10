@@ -16,12 +16,12 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 * [Several use cases on planetary surfaces with Aladin](https://voparis-confluence.obspm.fr/display/VES/2-+Various+use+cases+on+planetary+surfaces+with+Aladin%2C+2)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/draft/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
-* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
+* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/draft/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 
 
 ## Exoplanets
 
-* [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
+* [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/draft/exoplanets/README.md)
 * [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
 * [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
 
@@ -29,18 +29,18 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 ## Magnetospheres
 
-* [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/APIS-Tutorial/APIS-Tutorial.md)
+* [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/APIS-Tutorial/APIS-Tutorial.md)
 * [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/README.md)
-* [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
-* [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
+* [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
+* [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
 
 ## Spectroscopy
-* [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/master/misc/CASSIS_VESPA_tutorial.pdf)
+* [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/draft/misc/CASSIS_VESPA_tutorial.pdf)
 * [Accessing spectral data](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
 
 ## Other
 
-* [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
+* [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/draft/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
 
  ## Video tutorials
 
