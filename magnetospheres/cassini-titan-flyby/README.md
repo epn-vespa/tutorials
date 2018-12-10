@@ -45,19 +45,19 @@ We want to search for data provided by VESPA around a Titan flyby by the CASSINI
 The Titan fly by is described below (source PDS):
 
 
-![0](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/T117atPDS.png)
+![0](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/T117atPDS.png)
 
 ## Steps
 
 ### First step
 Start 3Dview : goto http://3dview.cdpp.eu and click on the **Launch 3DView** button, save the file as launch3dview.jnlp and run the application
 
-![1](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/3DviewLaunchPage.png)
+![1](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/3DviewLaunchPage.png)
 
 ### Next step
 In the desktop bar, select File/New to open a new 3D scene
 
-![2](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/open3Dscene.png)
+![2](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/open3Dscene.png)
 
 ### Next step
 With the File/Manage scene menu,create a scene with Titan as central body, CASSINI as spacecraft and TIIS as coordinate system
