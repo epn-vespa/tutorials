@@ -63,33 +63,33 @@ In the desktop bar, select File/New to open a new 3D scene
 With the File/Manage scene menu,create a scene with Titan as central body, CASSINI as spacecraft and TIIS as coordinate system
 from 2016-02-16T21:00:00 to 2016-02-17T03:00:00
 
-![3](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/manageScene.png)
+![3](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/manageScene.png)
 
 ### Next step
 Select the VESPA option in the Science Menu
 
-![4](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/sciencemenu.png)
+![4](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/sciencemenu.png)
 
 This opens the VESPA pop-up window,with Target,StartTime and StopTime already selected from the scene.
 
-![5](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/EPNTAPWindow.png)
+![5](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/EPNTAPWindow.png)
 
 ### Next step
 Launch the animation and stop it at about 23:16,and click on the Select Region button to add a new search keyword.
 
-![6](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/launchAnimation.png)
+![6](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/launchAnimation.png)
 
-![7](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/time.png)
+![7](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/time.png)
 
 ## Next step
 click on the Select Region button to add a new search keyword. The following pop-up window is opened.
 
-![8](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/selectRegion1.png)
+![8](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/selectRegion1.png)
 
 ## Next step
 Then select a region 
 
-![9](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/selectRegion2.png)
+![9](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/selectRegion2.png)
 
 ## Next step
 To increase the number of possible responses, change the start date to
@@ -98,7 +98,7 @@ To increase the number of possible responses, change the start date to
 The list of services is displayed in the left part of the window. The name of each service is displayed with the corresponding
 number of results.
 
-![10](https://raw.githubusercontent.com/epn-vespa/tutorials/master/cassini-titan-flyby/img/ListOfServices.png)
+![10](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/img/ListOfServices.png)
 
 ## Next step
 Click on titan to display the results of this database.
