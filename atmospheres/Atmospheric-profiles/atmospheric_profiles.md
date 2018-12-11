@@ -1,4 +1,4 @@
-## Atmospheric profiles
+## Titan atmospheric profiles
 
 [Introduction](#Intro)  
 [Authors](#Authors)  
@@ -13,8 +13,8 @@ Looking for atmospheric profiles with the [VESPA portal](http://vespa.obspm.fr)
 and plot them with TopCat
 
 ## Authors
-
-Edited by Gangloff Michel on 2018 December 11.
+Stéphane Erard, Baptiste Cecconi, Pierre Le Sidaner
+Edited by Gangloff Michel on 2018 December 11, from original tutorial on the VESPA web site
 
 ## Change Log
 
