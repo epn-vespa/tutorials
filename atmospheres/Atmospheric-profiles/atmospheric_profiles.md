@@ -26,7 +26,7 @@ Edited by Gangloff Michel on VESPA wiki.
 
 Select Titan as Target Name and click on Send Query  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/1_Send_Query.png" width="500" alt="Send Query">  
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" width="500" alt="Step 1">  
 
 Services which sent a non empty response are displayed in green  
 
