@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Looking for atmospheric profiles with the [VESPA portal](http://vespa.obspm.fr)and plot them with TopCat
+Looking for atmospheric profiles with the [VESPA portal](http://vespa.obspm.fr) and plot them with TopCat
 
 ## Authors
 
