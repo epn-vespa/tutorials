@@ -19,8 +19,8 @@ Edited by Gangloff Michel on 2018 December 11.
 ## Change Log
 
 * Version : 1
-* Name: [Michel Gangloff]
-* Notes: Converted from [VESPA web site](http://www.europlanet-vespa.eu/tutos.shtml)
+* Name: Michel Gangloff
+* Notes: Converted from [VESPA web site](http://www.europlanet-vespa.eu/tutos.shtml) , 2018/12/11
 
 ## Steps
 
