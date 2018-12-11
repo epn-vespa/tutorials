@@ -7,7 +7,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 ## Atmospheres
 
-* [Looking for and plotting Titan atmospheric profiles](http://voparis-europlanet.obspm.fr/utilities/Tuto_Titan_TopCat.pdf)
+* [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
 * [VIRTIS-VENUS EXPRESS](http://voparis-europlanet.obspm.fr/utilities/Tuto_TopCat_VEx.pdf)
 * [Comparing vertical profiles in the atmosphere of Mars (SPICAM_vs_MCD)](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/SPICAM_vs_MCD/README.md)
 * [Matisse](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/MATISSEforVESPAtutorial.pdf)
