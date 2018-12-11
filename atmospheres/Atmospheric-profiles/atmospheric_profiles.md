@@ -24,9 +24,18 @@ Edited by Gangloff Michel on VESPA wiki.
 
 ## Steps
 
-Select Titan as Target Name and click on Send Query  
 
-<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" width="500" alt="Step 1">  
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1"> 
+
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepTwo.png" alt="Step 2">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepThree.png" alt="Step 3">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepFour.png" alt="Step 4">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1">
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png" alt="Step 1">
+
 
 Services which sent a non empty response are displayed in green  
 
