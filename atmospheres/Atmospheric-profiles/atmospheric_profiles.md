@@ -32,7 +32,7 @@ Services which sent a non empty response are displayed in green
 
 1. display the description of a service  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Atmospheric-profiles/img/2_display_the_description_of_service.png" width="500" alt="2">  
+<img src="https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/img/StepOne.png width="500" alt="2">  
 
 2. display the response of the selected service  
 
