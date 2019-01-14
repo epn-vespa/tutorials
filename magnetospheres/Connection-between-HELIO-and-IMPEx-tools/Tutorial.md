@@ -46,7 +46,7 @@ Speed:  977
 SpeedError: +/50**  
 CME hits Earth, Venus, Pluto, Voyager1, New Horizons, Rosetta (see screenshot)  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/2_Input_Example_for_the_Helio_CME_Forward_PM.png" width="500" alt="Input Screenshot for Step 2">  
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/2_Input_Example_for_the_Helio_CME_Forward_PM.png" width="500" alt="Input Screenshot for Step 2">
 
 ## Third Step 
 
@@ -70,6 +70,9 @@ to get a more detailed view on the data at Venus and Earth.
 Selected Parameters Illustration:  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Parameter_Input.png" width="500" alt="Parameter Input for AMDA Plot">  
+
+
+<img src="../img/ecran_amda_1.png" width="500" alt="Input Screenshot for Step 2">
 
 
 Output Plot:  
