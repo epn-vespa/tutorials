@@ -69,15 +69,14 @@ to get a more detailed view on the data at Venus and Earth.
 
 Selected Parameters Illustration:  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Parameter_Input.png" width="500" alt="Parameter Input for AMDA Plot">  
 
-
-<img src="../img/ecran_amda_1.png" width="500" alt="Input Screenshot for Step 2">
+<img src="./img/ecran_amda_1.png" alt="Input Screenshot for Step 2">
 
 
 Output Plot:  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Plot_Output.png" width="500" alt="Parameter Output for AMDA Plot">  
+<img src="./img/ecran_amda_2.png" alt="Parameter Output for AMDA Plot">
+
 
 ### The Venus Impact
 
