@@ -90,14 +90,9 @@ Venus radii). Use the following data:
   * runs for Venus under (Remote Data (Simulations)  
   * VEX ephemeris data: Local Data/VEX/Ephemeris/orbit venus/xyz_vso  
 
-* Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
+* Plot the data. 
 
-Image illustration for creating the absolute value of the observed magnetic field:  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_absolute_value_of_the_observed_magnetic_field.png" width="500" alt="Magnetic Field Creation">  
-
-
-Image illustration for zooming into the region:  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Venus_Impact_Zoom_Into_Region.png" width="500" alt="Zoom Into the Region">  
+<img src="./img/ecran_amda_3.png" alt="Compare observation with simuation">
 
 #### The Earth Case  
 
