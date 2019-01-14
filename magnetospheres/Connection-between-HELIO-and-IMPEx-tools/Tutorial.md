@@ -108,23 +108,24 @@ interconnectivity of AMDA & 3DView (see example in fourth step).
 a. Time range: Start = 2012/06/16 00:00:00 & Stop = 2012/06/17 00:00:00
 b. Choose Cluster1 and Geotail and start scene
 3. Load
-a. Science : Models : Magnetopause models / Shue, and
-b. Science : Impex tree
+a. Science : Models : Magnetopause models / Shue et al.
+b. Science : Remote Data(Impex)Impex 
 4. Within the Impex tree choose
-a. Model data : FMI : GUMICS_Earth:run_000001 -> 3DCubes : MagneticField
-: traj interpol Bx,By,Bz and *Add selected data to 3DScene* (make sure that
-Geotail is the selected spacecraft)
-b. Observational data : AMDA : Geotail : MGF : mgf_preliminary : b_gsm
+a. Model data : @FMI/GUMICS_Earth_run_000001 -> Time series / Magnetic field components / Bx,By,Bz
+ *Add selected data to 3DScene* (make sure that Geotail is the selected spacecraft)
+b. Observational data @AMDA : Geotail : MGF : key_parameters : b_gsm
 and *Add selected data to 3DScene*
 c. One may additionally add Cluster1 data in the same way as described above
 5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science -> Science data controls. Additionally further spacecraft can be added via File -> Manage Scene. Further data can also be added in the same way as described above.
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_Manipulate_different_Parameter.png" width="500" alt="4.5 Manipulating Different Parameters">
+
+<img src="./img/ecran_3dview_1.png" alt="4.5 Manipulating Different Parameters">
 
 6. Within the science control one can also add a 2DPlot by clicking on *2Dplot* on the
 respective Science Control Panel (see below screenshot)   
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_2DPlot.png" width="500" alt="2D Plot">
+
+<img src="./img/ecran_3dview_2.png" alt="2D Plot">
 
 ## References
 
-PDF File exported from VESPA tutorial site. 
+PDF File exported from VESPA tutorial site and updated. 
 [This site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)
