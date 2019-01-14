@@ -2,7 +2,7 @@
 
 [Authors](#Authors)
 
-[Change Log](#Change Log)
+[ChangeLog](#ChangeLog)
 
 [Introduction](#Introduction)
 
@@ -11,11 +11,13 @@
 ## Authors
 To be updated...
 
-## Change Log
+## ChangeLog
 
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|[Original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)|
+|2|Michel Gangloff|Updates to become compliant with new versions of AMDA and 3DView|
+
 
 ## Introduction
 This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IMPEx functionality and 3DView/IMPEx functionality. The AMDA, as well as the 3DView part show new features in AMDA, which were implemented within the IMPEx FP7 project, i.e. the possibility of plotting simulation runs for given spacecraft side by side with observational data.  
@@ -58,10 +60,9 @@ impacts at Venus and Earth should be visible (e.g. 2012/06/15 15:00:00 2012/
 06/17 05:00:00)  
 
 * The following parameters may be selected (see screenshot below):  
-  * VEXMAG data: Remote Data  
-  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO]  
-  * WINDMFI data: Local Data/WIND/MFI/mfi_high/b_gse  
-  * CLUSTER1FGM data: Local Data/fgm_5vps/b_gse  
+  * VEX MAG data: Local Data/VEX/MAG/4 sec/b_vso 
+  * WIND MFI data: Local Data/Wind/MFI/3 sec(wi_ho_mfi)/b_gse  
+  * CLUSTER1 FGM data: Local Data/Cluster/Cluster 1/FGM/0.2 sec(5vps)/b_gse  
 
 * Plot the data (see screenshot below). One can zoom into different time intervals
 to get a more detailed view on the data at Venus and Earth.  
@@ -82,13 +83,10 @@ at Venus (e.g. 2012/06/15 19:00:00 2012/06/16/ 13:00:00).
 
 * Compare observational data by VEX MAG with FMI HYB simulation run data (please be aware that the FMI HYB simulation runs are by now only for quiet solar wind conditions. The runs are within a range around Venus of x=[3,3],y=[4,4],z=[4,4]  
 Venus radii). Use the following data:  
-  * VEXMAG data: Remote Data
-  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO  
-  *  Via Create/Modify parameter one can also create the absolute  
-  * value of the observed magnetic field (see screenshot below)  
-  * runs for Venus under (Remote Data (Simulations))  
-  * VEXMAG ephemeris data: Remote Data
-(Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/SC_POS_VSO  
+  * VEX MAG data: Local Data/VEX/MAG/4 sec/b_vso
+  * absolute value of the observed magnetic field  Local Data/VEX/MAG/4 sec/|b|
+  * runs for Venus under (Remote Data (Simulations)  
+  * VEX ephemeris data: Local Data/VEX/Ephemeris/orbit venus/xyz_vso  
 
 * Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
 
