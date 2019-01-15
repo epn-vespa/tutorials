@@ -69,8 +69,8 @@ Comparison between MGS observations and Hybrid simulation results using [AMDA](h
 <img src="./img/3_.png" alt="3">
 
 Use Data Mining tool (Magnifying glass)  
-Construct a data Mining condition by dragging and dropping resources of the workspace explorer (MGS bx_mso => data mining conditions)  
-The condition mark out the simula1on IMF value : -2<Bx<-1 , 2<By<3, -1<Bz<1  
+Enter a data Mining condition by dragging and dropping resources of the workspace explorer (MGS bx_mso => data mining conditions)  
+The condition mark out the simulation IMF value : -2<Bx<-1 , 2<By<3, -1<Bz<1  
 Specify a sampling time (averaging over 300s), the name of the request and the Time interval Start Time : 1998/07/05 => Stop Time : 1998/07/15  
 Then perform the search...  
 
