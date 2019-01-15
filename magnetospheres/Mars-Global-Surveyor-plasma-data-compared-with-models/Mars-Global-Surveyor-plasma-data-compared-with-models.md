@@ -74,7 +74,7 @@ The condition mark out the simulation IMF value : -2<Bx<-1 , 2<By<3, -1<Bz<1
 Specify a sampling time (averaging over 300s), the name of the request and the Time interval Start Time : 1998/07/05 => Stop Time : 1998/07/15  
 Then perform the search...  
 
-<img src="./img/4_.png" alt="4">
+<img src="./img/Diapositive1.jpg" alt="4">
 
 Visualize the Time Table created from the search and manipulate it in order to have about one orbit per event  
 
