@@ -17,11 +17,6 @@ V. Genot et al.
 
 ## Change log
 
-| Version       | Author        | Notes  |
-| ------------- |:-------------:| -----: |
-| 1             | Gangloff      |    |
-
-
 | Version       | Author        | Notes                                                                |
 | ------------- |:-------------:| --------------------------------------------------------------------:|
 | 1             | Gangloff      | Initial version modified to handle the latest version of VESPA portal|
