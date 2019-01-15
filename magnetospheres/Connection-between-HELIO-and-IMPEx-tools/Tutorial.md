@@ -9,7 +9,7 @@
 [Steps](#Steps)
 
 ## Authors
-To be updated...
+Michel Gangloff, Vincent Génot, Baptiste Cecconi
 
 ## ChangeLog
 
