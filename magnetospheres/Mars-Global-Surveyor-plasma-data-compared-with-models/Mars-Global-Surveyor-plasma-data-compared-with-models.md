@@ -84,6 +84,8 @@ Visualize the Time Table created from the search and manipulate it in order to h
 Create a new parameter corresponding to the Total B field (MGS) Idem by drag and drop  
 
 <img src="./img/5_.png" alt="5">
+<img src="./img/manage_timeTable.png" alt="5">
+<img src="./img/create_modifiy_param.png" alt="5bis">
 
 Visualize your data with the *plotting data* function. Select each component of the MGS magnetic field (MSO) with some color code (bx : blue, by:green, bz : red, btot from *derived parameter* : orange) + MGS ephemeris (xyz_mso in *CYL* coordinate system)  
 For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region* from *My\_Time\_Table*  
