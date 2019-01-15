@@ -90,7 +90,6 @@ Create a new parameter corresponding to the Total B field (MGS) Idem by drag and
 Visualize your data with the *plotting data* function. Select each component of the MGS magnetic field (MSO) with some color code (bx : blue, by:green, bz : red, btot from *derived parameter* : orange) + MGS ephemeris (xyz_mso in *CYL* coordinate system)  
 For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region* from *My\_Time\_Table*  
 
-<img src="./img/6_.png" alt="6">
 <img src="./img/param_select_plot.png" alt="6">
 
 <img src="./img/7_.png" alt="7">
