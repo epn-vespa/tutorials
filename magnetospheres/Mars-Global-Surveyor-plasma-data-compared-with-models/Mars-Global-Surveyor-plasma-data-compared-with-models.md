@@ -92,7 +92,6 @@ For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region
 
 <img src="./img/param_select_plot.png" alt="6">
 
-<img src="./img/7_.png" alt="7">
 <img src="./img/plot_amda.png" alt="7">
 
 <img src="./img/8_.png" alt="8">
