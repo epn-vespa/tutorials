@@ -1,9 +1,13 @@
 ## Mars Global Surveyor plasma data compared with models
 
 [Authors](#Authors)
+
 [Change Log](#Log)
+
 [Goals](#Goals)
+
 [Steps](#Steps)
+
 [References](#References)
 
 ## Authors
@@ -20,7 +24,7 @@ M. Gangloff, IRAP-CDPP,Toulouse,France
 
 IMPEx team  http://impex-fp7.oeaw.ac.at  
 
-
+## Log
 
 Version : 1
 
@@ -91,16 +95,18 @@ For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region
 <img src="./img/8_.png" alt="8">
 
 Add simulation result datasets:  
-Remote data(Simulations)/MODELS@LATMOS/LatHyS_Mars_18_01_13/Magnetic_field Drag and drop each B components and select MGS S/C  
+Remote data(Simulations)/MODELS@LATMOS/LatHyS_Mars_18_01_13/Magnetic_field 
+
+Drag and drop each B component and select MGS S/C  
 
 
-Possibly to zoom  
+Possibility to zoom  
 
 <img src="./img/9_.png" alt="9">
 
 ## References
 
-Original Powerpoint PDF version 1 on [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-MGS-LATHYS.pdf)
+Original Powerpoint PDF of version 1 on [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-MGS-LATHYS.pdf)
   
 
 
