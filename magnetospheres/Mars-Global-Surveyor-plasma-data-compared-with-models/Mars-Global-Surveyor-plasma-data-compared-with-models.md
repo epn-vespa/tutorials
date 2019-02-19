@@ -84,6 +84,7 @@ Visualize the Time Table created from the search and manipulate it in order to h
 Create a new parameter corresponding to the Total B field (MGS) Idem by drag and drop  
 
 <img src="./img/5_.png" alt="5">
+
 <img src="./img/manage_timeTable.png" alt="5">
 <img src="./img/create_modifiy_param.png" alt="5bis">
 
@@ -93,6 +94,7 @@ For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region
 <img src="./img/param_select_plot.png" alt="6">
 
 <img src="./img/plot_amda.png" alt="7">
+
 
 <img src="./img/8_.png" alt="8">
 
