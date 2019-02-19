@@ -2,20 +2,22 @@
 
 [Authors](#Authors)
 
-[Change Log](#Change Log)
+[ChangeLog](#ChangeLog)
 
 [Introduction](#Introduction)
 
 [Steps](#Steps)
 
 ## Authors
-To be updated...
+Michel Gangloff, Vincent Génot, Baptiste Cecconi
 
-## Change Log
+## ChangeLog
 
 |Version|Name|Note|
 |---|---|---|
 |1|[Keyuan Yin](https://github.com/megadiesel705)|[Original site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)|
+|2|Michel Gangloff|Updates to become compliant with new versions of AMDA and 3DView|
+
 
 ## Introduction
 This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IMPEx functionality and 3DView/IMPEx functionality. The AMDA, as well as the 3DView part show new features in AMDA, which were implemented within the IMPEx FP7 project, i.e. the possibility of plotting simulation runs for given spacecraft side by side with observational data.  
@@ -25,7 +27,8 @@ This tutorial gives an example of the interconnected use of HELIO Tools, AMDA/IM
 
 Searching for events in [Helio](http://hfe.helio-vo.eu/Helio/). Using *Search Events* button to open new search.   
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/1_Search_Button_Icon.png" width="200" alt="Search Event Button">  
+
+<img src="./img/1_Search_Button_Icon.png" width="200" alt="Search Event Button">
 
 Example(with picture attached):  
 *Time Range*:  
@@ -33,7 +36,7 @@ Example(with picture attached):
 *Event Catalogue*:  
 SOHO/LASCO CME Event List / pa_width>=270 : 1 CME  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/1_Factor_Input_Illustration.png" width="500" alt="Input Example for Step 1">  
+<img src="./img/1_Factor_Input_Illustration.png" width="500" alt="Input Example for Step 1">  
 
 ## Second Step 
 
@@ -44,7 +47,7 @@ Speed:  977
 SpeedError: +/50**  
 CME hits Earth, Venus, Pluto, Voyager1, New Horizons, Rosetta (see screenshot)  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/2_Input_Example_for_the_Helio_CME_Forward_PM.png" width="500" alt="Input Screenshot for Step 2">  
+<img src="./img/2_Input_Example_for_the_Helio_CME_Forward_PM.png" width="500" alt="Input Screenshot for Step 2">
 
 ## Third Step 
 
@@ -58,22 +61,23 @@ impacts at Venus and Earth should be visible (e.g. 2012/06/15 15:00:00 2012/
 06/17 05:00:00)  
 
 * The following parameters may be selected (see screenshot below):  
-  * VEXMAG data: Remote Data  
-  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO]  
-  * WINDMFI data: Local Data/WIND/MFI/mfi_high/b_gse  
-  * CLUSTER1FGM data: Local Data/fgm_5vps/b_gse  
+  * VEX MAG data: Local Data/VEX/MAG/4 sec/b_vso 
+  * WIND MFI data: Local Data/Wind/MFI/3 sec(wi_ho_mfi)/b_gse  
+  * CLUSTER1 FGM data: Local Data/Cluster/Cluster 1/FGM/0.2 sec(5vps)/b_gse  
 
 * Plot the data (see screenshot below). One can zoom into different time intervals
 to get a more detailed view on the data at Venus and Earth.  
 
 Selected Parameters Illustration:  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Parameter_Input.png" width="500" alt="Parameter Input for AMDA Plot">  
+
+<img src="./img/ecran_amda_1.png" alt="Input Screenshot for Step 2">
 
 
 Output Plot:  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Plotting_data_in_AMDA_Plot_Output.png" width="500" alt="Parameter Output for AMDA Plot">  
+<img src="./img/ecran_amda_2.png" alt="Parameter Output for AMDA Plot">
+
 
 ### The Venus Impact
 
@@ -82,22 +86,14 @@ at Venus (e.g. 2012/06/15 19:00:00 2012/06/16/ 13:00:00).
 
 * Compare observational data by VEX MAG with FMI HYB simulation run data (please be aware that the FMI HYB simulation runs are by now only for quiet solar wind conditions. The runs are within a range around Venus of x=[3,3],y=[4,4],z=[4,4]  
 Venus radii). Use the following data:  
-  * VEXMAG data: Remote Data
-  * (Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/MAG_VEX_VSO  
-  *  Via Create/Modify parameter one can also create the absolute  
-  * value of the observed magnetic field (see screenshot below)  
-  * runs for Venus under (Remote Data (Simulations))  
-  * VEXMAG ephemeris data: Remote Data
-(Observations)/VexMag@Graz/VEX/Vex_mag/MAG_VSO/SC_POS_VSO  
+  * VEX MAG data: Local Data/VEX/MAG/4 sec/b_vso
+  * absolute value of the observed magnetic field  Local Data/VEX/MAG/4 sec/|b|
+  * runs for Venus under (Remote Data (Simulations)  
+  * VEX ephemeris data: Local Data/VEX/Ephemeris/orbit venus/xyz_vso  
 
-* Plot the data. One can now zoom into the region, where the FMI HYB simulation run is plotted (see screenshot below).    
+* Plot the data. 
 
-Image illustration for creating the absolute value of the observed magnetic field:  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_absolute_value_of_the_observed_magnetic_field.png" width="500" alt="Magnetic Field Creation">  
-
-
-Image illustration for zooming into the region:  
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/3_Venus_Impact_Zoom_Into_Region.png" width="500" alt="Zoom Into the Region">  
+<img src="./img/ecran_amda_3.png" alt="Compare observation with simuation">
 
 #### The Earth Case  
 
@@ -113,23 +109,24 @@ interconnectivity of AMDA & 3DView (see example in fourth step).
 a. Time range: Start = 2012/06/16 00:00:00 & Stop = 2012/06/17 00:00:00
 b. Choose Cluster1 and Geotail and start scene
 3. Load
-a. Science : Models : Magnetopause models / Shue, and
-b. Science : Impex tree
+a. Science : Models : Magnetopause models / Shue et al.
+b. Science : Remote Data(Impex)Impex 
 4. Within the Impex tree choose
-a. Model data : FMI : GUMICS_Earth:run_000001 -> 3DCubes : MagneticField
-: traj interpol Bx,By,Bz and *Add selected data to 3DScene* (make sure that
-Geotail is the selected spacecraft)
-b. Observational data : AMDA : Geotail : MGF : mgf_preliminary : b_gsm
+a. Model data : @FMI/GUMICS_Earth_run_000001 -> Time series / Magnetic field components / Bx,By,Bz
+ *Add selected data to 3DScene* (make sure that Geotail is the selected spacecraft)
+b. Observational data @AMDA : Geotail : MGF : key_parameters : b_gsm
 and *Add selected data to 3DScene*
 c. One may additionally add Cluster1 data in the same way as described above
 5. The different parameters can be manipulated via Scientific Control Panels (see screenshot below). One can get to the control panels via Science -> Science data controls. Additionally further spacecraft can be added via File -> Manage Scene. Further data can also be added in the same way as described above.
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_Manipulate_different_Parameter.png" width="500" alt="4.5 Manipulating Different Parameters">
+
+<img src="./img/ecran_3dview_1.png" alt="4.5 Manipulating Different Parameters">
 
 6. Within the science control one can also add a 2DPlot by clicking on *2Dplot* on the
 respective Science Control Panel (see below screenshot)   
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/Connection-between-HELIO-and-IMPEx-tools/img/4_2DPlot.png" width="500" alt="2D Plot">
+
+<img src="./img/ecran_3dview_2.png" alt="2D Plot">
 
 ## References
 
-PDF File exported from VESPA tutorial site. 
+PDF File exported from VESPA tutorial site and updated. 
 [This site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)

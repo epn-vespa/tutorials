@@ -74,7 +74,7 @@ The condition mark out the simulation IMF value : -2<Bx<-1 , 2<By<3, -1<Bz<1
 Specify a sampling time (averaging over 300s), the name of the request and the Time interval Start Time : 1998/07/05 => Stop Time : 1998/07/15  
 Then perform the search...  
 
-<img src="./img/4_.png" alt="4">
+<img src="./img/Diapo1.png" alt="4">
 
 Visualize the Time Table created from the search and manipulate it in order to have about one orbit per event  
 
@@ -85,12 +85,16 @@ Create a new parameter corresponding to the Total B field (MGS) Idem by drag and
 
 <img src="./img/5_.png" alt="5">
 
+<img src="./img/manage_timeTable.png" alt="5">
+<img src="./img/create_modifiy_param.png" alt="5bis">
+
 Visualize your data with the *plotting data* function. Select each component of the MGS magnetic field (MSO) with some color code (bx : blue, by:green, bz : red, btot from *derived parameter* : orange) + MGS ephemeris (xyz_mso in *CYL* coordinate system)  
 For Time Selection : select *Time Table* and drag and drop the *Mars\_SW\_Region* from *My\_Time\_Table*  
 
-<img src="./img/6_.png" alt="6">
+<img src="./img/param_select_plot.png" alt="6">
 
-<img src="./img/7_.png" alt="7">
+<img src="./img/plot_amda.png" alt="7">
+
 
 <img src="./img/8_.png" alt="8">
 

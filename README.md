@@ -1,66 +1,84 @@
-# Table of Contents
-#### [User tutorials](#tutorials-for-users)
-#### [Data producer tutorials](#tutorials-for-data-producers)
-#### [Info on how to create VESPA tutorials](#implementing-a-vespa-service)
-#### [Use of external tools](#external-tools)
+# Introduction
 
-# tutorials
-VESPA tutorials are available from multiple entry points, pointing to those here which are the working copies. They can be accessed from:
+The VESPA team has collected a set of tutorials covering several aspects of planetary sciences: Atmospheres, Surfaces, Magnetospheres, etc.
+These tutorials are provided as text (Markdown, pdf) or video.
 
-* The present repo
-* [The VESPA wiki](http://discussions.europlanet-vespa.eu)
-* [The VESPA web page](http://europlanet-vespa.eu/tutos.shtml)
+# Text tutorials
 
-## Tutorials for users
+## Atmospheres
 
-* [Aladin & planetary surfaces](https://github.com/epn-vespa/tutorials/blob/master/Aladin-Planetary-Surfaces/Aladin-Planetary-Surfaces-Tutorial.md)
-* [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/master/APIS-Tutorial/APIS-Tutorial.md)
-* [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
-* [Atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/Atmospheric-profiles/atmospheric_profiles.md)
-  * [pdf version from VESPA web site](http://voparis-europlanet.obspm.fr/utilities/Tuto_Titan_TopCat.pdf)
-* [Connection of HELIO with AMDA and 3Dview](https://github.com/epn-vespa/tutorials/blob/master/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
-* [Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
-  * [pdf version on VESPA web site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-Exploring-Exoplanets.pdf)
-* [ExPRES](https://github.com/epn-vespa/tutorials/blob/master/ExPRES-tutorial/ExPRES-Tutorial.md)
-* [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
-* [EPN-TAP services: VIRTIS-VENUS EXPRESS](https://github.com/epn-vespa/tutorials/blob/master/EPN-TAP-services-Virtis-Venus-Express-demo/EPN-TAP-services-Virtis-Venus-Express-demo.md)
-  * [pdf version from VESPA web](http://voparis-europlanet.obspm.fr/utilities/Tuto_TopCat_VEx.pdf)
-* [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/master/cassini-titan-flyby/README.md)
-* CASSIS as a spectroscopy tool for VESPA  [vespa web](http://voparis-europlanet.obspm.fr/utilities/Tuto_CASSIS_VESPA.pdf), [local copy](CASSIS_VESPA_tutorial.pdf)
-* [Magnetospheric region identification with AMDA and TopCat](https://github.com/epn-vespa/tutorials/blob/master/Magnetospheric-regions-automatic-identification-with-AMDA-and-TOPCAT/Magnetospheric%20regions%20automatic%20identification%20with%20AMDA%20and%20TOPCAT%20%20%23AMDA.md)
-* [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
-* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/vo_qgis_plugin/vo-qgis-plugin.md)
+* [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
+* [VIRTIS-VENUS EXPRESS](http://voparis-europlanet.obspm.fr/utilities/Tuto_TopCat_VEx.pdf)
+* [Comparing vertical profiles in the atmosphere of Mars (SPICAM_vs_MCD)](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/SPICAM_vs_MCD/README.md)
+* [Matisse](https://github.com/epn-vespa/tutorials/blob/draft/atmospheres/MATISSEforVESPAtutorial.pdf)
 
-in addition to the tutorials above, those on the vespa web page (to be ported to GitHub) include:
 
-* [Accessing spectral data (pdf from VESPA web site)](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
-* [Exercises from VO doctoral training in Paris, 2017](http://voparis-europlanet.obspm.fr/utilities/FormationDoc_2017.pdf)
-* [Plotting exoplanets, pdf from VESPA web site - simple plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
-* [Plotting exoplanets, pdf from VESPA web site - advanced plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
-* [CME impact on Venus and Earth, pdf from VESPA web site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-HELIO-IMPEx.pdf)
-* [Comparison between MGS observations and Hybrid simulation results, pdf from VESPA web site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-MGS-LATHYS.pdf)
-* [APIS tutorial](https://github.com/epn-vespa/tutorials/blob/master/APIS-Tutorial/APIS-Tutorial.md) (translated)
-* Use cases:
-  * [Comparing Mars atmospheric profiles with simulations (MCD vs SPICAM)](http://voparis-europlanet.obspm.fr/utilities/Grenade_2017_abstract_Erard.pdf)
- 
-## Astronomy VO tutorials:
+## Surfaces
 
-* [Repository of scientific tutorials for VO usage](http://www.euro-vo.org/?q=science/scientific-tutorials)
-* [Other tutorials at various levels](http://vo-for-education.oats.inaf.it//eng_download.html)
-* [Selected tutorial lists](http://www.g-vo.org/pmwiki/About/GettingStarted)
-  
+* [Several use cases on planetary surfaces with Aladin](https://voparis-confluence.obspm.fr/display/VES/2-+Various+use+cases+on+planetary+surfaces+with+Aladin%2C+2)
+* [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/draft/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
+* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/draft/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
+
+
+## Exoplanets
+
+* [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/draft/exoplanets/README.md)
+* [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
+* [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
+
+
+
+## Magnetospheres
+
+* [APIS - Auroral Planetary Images and Spectra](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/APIS-Tutorial/APIS-Tutorial.md)
+* [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/cassini-titan-flyby/README.md)
+* [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
+* [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/draft/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
+
+## Spectroscopy
+* [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/draft/misc/CASSIS_VESPA_tutorial.pdf)
+* [Accessing spectral data](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
+
+## Other
+
+* [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/draft/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
+
  ## Video tutorials
-  
-Additional video-version of tutorials above listed on [Vespa tutorial video entry page](http://typhon.obspm.fr/VESPA-tutorials/index.php?page=1). 
-Can be donwloaded and visualized localy :
-* [Tracking asteroids](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Tracking_asteroids.wmv)
-* [Predicting Solar Wind Disturbances arrival times at planets](http://voparis-srv.obspm.fr/vo/planeto/tutorials/HELIO_use_case.mp4)
-* [Martian induced magnetosphere](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Interoperability_AMDA_LatHyS_Topcat.wmv)
-* [Auroral processes on Saturn](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Auroral_processes_Saturn.wmv)
-* [Exploring exoplanets](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Exploring_exoplanets.wmv)
-* [Mars, evidence of an O+ ions "plume"](http://voparis-srv.obspm.fr/vo/planeto/tutorials/O_plus_ions_plume_Mars.wmv)
-* [Analyzing Pluto's surface](http://voparis-srv.obspm.fr/vo/planeto/tutorials/Analyzing_Pluto_surface.wmv)
-* [IMPEx Tutorial Video](http://voparis-srv.obspm.fr/vo/planeto/tutorials/impex_tutorial.mp4)
 
-They have been ported to YouTube and integrated in the present repo on:
-* [VESPA video tutorial ported](https://github.com/epn-vespa/tutorials/blob/master/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md)
+**Tracking asteroids**
+
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/1_Tracking_asteroids.png)](https://youtu.be/eM45OHes1Cg?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Predicting Solar Wind Disturbances arrival times at planets**
+
+[![ScreenShot](https://github.com/megadiesel705/tutorials/raw/master/VESPA-Video-Tutorials/img/2_Predicting_Solar_Wind_Disturbances_arrival_times_at_planets.png)](https://youtu.be/N6IxgPFKOcA?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Mars, a use case of interoperability**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/3_Mars%2C%20a_use_case_of_interoperability.png)](https://youtu.be/HiSylVOtaKM?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Auroral processes on Saturn**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/4_Auroral_processes_on_Saturn.png)](https://youtu.be/PNL7UcdO4yQ?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Exploring exoplanets**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/5_Exploring_exo.png)](https://youtu.be/ypOBwrXT7mc?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Mars, evidence of an oxygen ions "plume"**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/6_Mars%2Cevidence_of_an_oxygen_ions%22plume%22.png)](https://youtu.be/4ekOyAvIh_Q?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+**Analyzing Pluto's surface**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/7_Analyzing_Pluto_Surface.png)](https://youtu.be/I4lRFQqOhQs?list=PLG15lzcA80vHJh666j3e5Kr0QczOv63pc)
+
+
+**IMPEx Tutorial Video**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/IMPEx_FP7/SINP-Model-Demonstrators/img/Video_Tutorial_Cover.png)](http://youtu.be/vt5fpE0bzSY)
+
+**GIS VESPA Tutorial Video**
+
+[![ScreenShot](https://raw.githubusercontent.com/megadiesel705/tutorials/master/VESPA-Video-Tutorials/img/GIS-VESPATutorial.png)](https://www.youtube.com/watch?v=Jlso7MkdwYs)
