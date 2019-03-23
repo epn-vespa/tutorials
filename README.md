@@ -14,7 +14,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 
 ## Surfaces
-
+ 
+* [Mapping sparse spatial data with TOPCAT](https://voparis-confluence.obspm.fr/display/VES/Use+case%3A+mapping+sparse+spatial+data+with+TOPCAT)
 * [Several use cases on planetary surfaces with Aladin](https://voparis-confluence.obspm.fr/display/VES/2-+Various+use+cases+on+planetary+surfaces+with+Aladin%2C+2)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
