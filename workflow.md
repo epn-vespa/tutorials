@@ -1,33 +1,5 @@
 ## Tutorial authoring
 
-### branches for task/topic
-The previous master branch is going to be [legacy branch](https://github.com/epn-vespa/tutorials/tree/legacy).
-Please, **do not modify the _legacy_ branch**, it is there to keep as an easy to access snapshot of the previous version of the repository (also, there is a tag `v1` in the history of this repo which points to the previous structure/legacy).
-
-Each task/topic based set of tutorials will be developed and updated on a topical branch as follows (based on [VESPA JRA Tasks](https://voparis-confluence.obspm.fr):
-
-* sshade - for [Task3: sshade](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+3.+SSHADE)
-* surfaces - for [Task4: surfaces](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+4.+Surfaces)
-* magnetospheres - for [Task5: magnetospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+5.+Magnetospheres)
-* smallbodies - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
-* atmospheres - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
-* exoplanetx - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
-* miscelaneous
-
-### branches structure
-Each branch will have a directory named after the branch where tutorials will be placed.
-Each tutorial then is organized as suggested in the next section.
-An example of such structure for the `surfaces` branch is:
-```
-[branch surfaces]
-| - surfaces/
-| | - surf_mars_crism/
-| | - surf_moon_craters/
-| - README.md
-| - README_for_producers.md
-| - workflow.md
-```
-
 ### tutorial naming
 Each tutorial is in a directory, optimally with strings indicating:
 
@@ -37,13 +9,13 @@ Each tutorial is in a directory, optimally with strings indicating:
 
 Available prefixes include:
 
-* sshd (sshade)
-* surf (surfaces)
-* magn (magnetospheres)
-* smbd (small bodies)
-* atmo (atmospheres)
-* exop (explanets)
-* misc (miscelaneous)
+* sshd (sshade) - for [Task3: sshade](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+3.+SSHADE)
+* surf (surfaces) - for [Task4: surfaces](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+4.+Surfaces)
+* magn (magnetospheres) - for [Task5: magnetospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+5.+Magnetospheres)
+* smbd (small bodies) - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
+* atmo (atmospheres) - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
+* exop (explanets) - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
+* misc (miscelaneous) - for content that doesn't particularly fit the above categories
 
 examples tutorial names:
 
@@ -51,28 +23,6 @@ examples tutorial names:
 * magn_saturn_cassini
 * surf_moon_craters
 * atmo_titan_vims
-
-
-### Instructions
-For cloning a single branch the command should (feel free to improve) be:
-
-```
-git clone https://github.com/epn-vespa/tutorials.git -b <BRANCH_NAME> --single-branch <LOCAL_DIRECTORY>
-```
-e.g.
-
-```
-git clone https://github.com/epn-vespa/tutorials.git -b surfaces --single-branch .
-```
-or 
-
-```
-git clone https://github.com/epn-vespa/tutorials.git -b magnetospheres --single-branch .
-```
-
-The master branch / merge will be handled by JacobsUni.
-
-
 
 ## Naming of tutorial directory
 
