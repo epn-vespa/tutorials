@@ -1,4 +1,4 @@
-## HRSC vs OMEGA files
+## Matching HRSC vs OMEGA files
 
 * [Authors](#authors)
 * [Change log](#change-log)
@@ -29,7 +29,7 @@ None
 * * *
 
 ## Use case
-Identifying overlapping files at the surface of Mars (Mars-Express/HRSC and OMEGA services)
+Identifying overlapping files at the surface of Mars from footprints (Mars-Express/HRSC and OMEGA services)
 
 
 ## Keywords
@@ -39,12 +39,12 @@ Identifying overlapping files at the surface of Mars (Mars-Express/HRSC and OMEG
 * Image cubes
 
 ## Summary
-This short tutorial shows how to search for associated data files in various services.
+This short tutorial shows how to search for associated files in various data services.
 
 
 ## Introduction
 
-HRSC is the main camera on board Mars-Express, OMEGA is the imaging spectrometer. Both acquired large datasets from early 2004, and now provides a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments. Note that these two services only contain subsets of the original datasets. 
+HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments. Note that these two services only contain subsets of the original datasets. 
 
 ## Steps
 
@@ -65,7 +65,7 @@ in the "Other" tab.
 * First open TOPCAT on your desktop (or click the TOPCAT icon in the VESPA portal page) 
 * Click on All metadata / Send table (below the table)
 * TOPCAT will receive a table with 4 rows called omega_cubes (identical to the one displayed in the portal)
-* The omega_cubes service does not include an s_region parameter providing the footprint of the observing sessions. We'll build one from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
+* The omega_cubes service does not include an s_region parameter providing the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with 
 
 name: box5 
@@ -78,11 +78,11 @@ name: box6
 expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
 * You also need to edit the column definition. Click the Display column metadata icon; on rows box5 and box6, type in the field xtype: adql:REGION
 
-* These bounding boxes can be displayed in TOPCAT using SkyPlot window, e.g. with a polygonal form or a quadrilateral layer (see another tutorial)
+* These bounding boxes can be displayed in TOPCAT using SkyPlot window, e.g. with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final orbit is reached.
 
 <img src="img/img2.png" width="600">
 
-* The HRSC service provides the s_region parameter, with the contour sampled at high enough resolution to actually represent the image footprints
+* In the HRSC service, the s_region parameter contains contours sampled at high enough resolution to actually represent the image footprints. 
 
 ### 3- Search HRSC images overlapping one cube
 * We'll use a specific 2D search function which is only implemented in the TAP protocol (not in the tools)
@@ -104,7 +104,7 @@ where the POLYGON… string is copied/pasted from the omega_cubes table, box6 c
 SELECT *
 
    FROM hrsc3nd.epn_core
-   
+
    JOIN TAP_UPLOAD.omega_cubes AS tc
 
    ON 1=INTERSECTS(s_region, tc.box5)
