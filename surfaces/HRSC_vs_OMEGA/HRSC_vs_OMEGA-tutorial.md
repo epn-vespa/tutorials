@@ -1,4 +1,4 @@
-## Exploring exoplanets
+## HRSC vs OMEGA files
 
 * [Authors](#authors)
 * [Change log](#change-log)
@@ -29,7 +29,7 @@ None
 * * *
 
 ## Use case
-Identifying matching files at the surface of Mars (Mars-Express/HRSC and OMEGA services)
+Identifying overlapping files at the surface of Mars (Mars-Express/HRSC and OMEGA services)
 
 
 ## Keywords
@@ -98,13 +98,13 @@ where the POLYGON… string is copied/pasted from the omega_cubes table, box6 c
 * See below how to display the results
 
 ### 4- Search HRSC images overlapping a set of cubes
-* If your selection contains several OMEGA cubes, repeating this process will rapdily become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
+* If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
 * First open the TAP query panel as before. Then type
 
 SELECT *
 
    FROM hrsc3nd.epn_core
-
+   
    JOIN TAP_UPLOAD.omega_cubes AS tc
 
    ON 1=INTERSECTS(s_region, tc.box5)
@@ -132,8 +132,8 @@ in the query field, and click Submit
 
 
 ### 6- To go further
-* You can add more parameters to refine the match between services. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service only includes nadir images).
-* Note that upload in the TAP query in step 4 is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps.
+* You can add more parameters to refine the match between services. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service only includes nadir images), but parameters such as acquision time, local time, solar longitude (Ls) are also available in manuy services.
+* Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
 
 
 ## References
