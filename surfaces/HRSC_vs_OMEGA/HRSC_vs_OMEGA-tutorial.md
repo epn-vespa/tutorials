@@ -85,7 +85,7 @@ expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1ma
 * In the HRSC service, the s_region parameter contains contours sampled at high enough resolution to actually represent the image footprints. 
 
 ### 3- Search HRSC images overlapping one cube
-* We'll use a specific 2D search function which is only implemented in the TAP protocol (not in the tools)
+* We'll use a specific 2D search function which is only implemented in the TAP protocol (not in the tools). We therefore need to query the HRSC server with data retrieved from OMEGA.
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
 * In the new window, type in the large field at the bottom: 
 
