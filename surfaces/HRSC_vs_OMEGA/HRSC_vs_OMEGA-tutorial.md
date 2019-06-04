@@ -67,10 +67,14 @@ in the "Other" tab.
 * TOPCAT will receive a table with 4 rows called omega_cubes (identical to the one displayed in the portal)
 * The omega_cubes service does not include an s_region parameter providing the footprint of the observing sessions. We'll build one from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with 
+
 name: box5 
+
 expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
 * Do it again with
+
 name: box6
+
 expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
 * You also need to edit the column definition. Click the Display column metadata icon; on rows box5 and box6, type in the field xtype: adql:REGION
 
