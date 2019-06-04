@@ -110,6 +110,10 @@ SELECT *
    ON 1=INTERSECTS(s_region, tc.box5)
 
 * You'll now retrieve 17 images overlapping the 4 cubes.
+* Footprints are easily overplotted on OMEGA's ones (see other tutorial)
+
+<img src="img/img2b.png" width="600">
+
 
 ### 5- Displaying the results in Aladin
 * Start Aladin (prototype version ≥ 10.128)
@@ -120,11 +124,11 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 
 in the query field, and click Submit
 * (optional) Select the new HRSC layer in the right panel, and properties in the local menu (right click)
-* (optional) Click Show associated FoV to display the footprints of HRSC images
+* (optional) Click Show associated FoV to display the footprints of HRSC images - displayed in red in the figure
 * From TOPCAT, select the omega_cubes tables and the menu item: INTEROP>Send table to Aladin; do the same for the HRSC… TAP_UPLOAD table 
-* In Aladin, select the new omega_cubes layer in the right panel, and properties in the local menu (right click)
+* In Aladin, select the new omega_cubes layer in the right panel (layer stack), and properties in the local menu (right click)
 * Click Show associated FoV to display the footprints (bounding boxes) of OMEGA cubes - displayed in black in the figure
-* Do the same for the HSRC layer - displayed in yellow in the figure
+* Do the same for the HRSC layer - displayed in yellow in the figure
 
 
 <img src="img/img3.png" width="600">
@@ -132,7 +136,7 @@ in the query field, and click Submit
 
 
 ### 6- To go further
-* You can add more parameters to refine the match between services. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service only includes nadir images), but parameters such as acquision time, local time, solar longitude (Ls) are also available in manuy services.
+* You can add more parameters to refine the match between services. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service only includes nadir images), but parameters such as acquision time, local time, solar longitude (Ls) are also available in many services. Search on these parameters only can be performed from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
 
 
@@ -141,6 +145,6 @@ in the query field, and click Submit
 
 ## Links
 
-See details here to set a correct display on planetary surfaces in TOPCAT:
+See details here to set a correct display on planetary surfaces in TOPCAT and Aladin, and to plot footprints in TOPCAT:
 
 [https://voparis-wiki.obspm.fr/pages/viewpage.action?pageId=14942383]
