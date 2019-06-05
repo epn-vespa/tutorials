@@ -97,6 +97,7 @@ SELECT   *
 where the POLYGON… string is copied/pasted from the omega_cubes table, box6 column for element 997_4_sav
 * Click on Run Query. This will load a table containing 2 rows: the 2 HRSC images overlapping the footprint of this OMEGA session.
 * See below how to display the results
+* Note: this is really a working example - the same query can be run directly from the VESPA portal using the Query mode [ simply type in the ADQL field: 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) ]
 
 ### 4- Search HRSC images overlapping a set of cubes
 * If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
@@ -140,9 +141,9 @@ Click Show associated FoV to display the footprints of HRSC images - displayed i
 
 
 ### 6- To go further
-* You can add more parameters to refine the match between services. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images), but parameters such as acquision time, local time, solar longitude (Ls) are also available in many services. Search on these parameters only can be performed from the VESPA portal.
+* You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
-* A very basic 2D search can be performed on the VESPA portal using the bouding box (c1/c2 with min/max values). However this approximation is usually very inaccurate (it works here because the orbit is ~ polar and the sessions are short), and it falls down completely near the poles.
+* A very basic 2D search can be performed on the VESPA portal using the bouding box (c1/c2 with min/max values). However this approximation is usually very inaccurate (it works here to a certain extent because the orbit is ~ polar and the sessions are short), and it falls down completely near the poles.
 
 
 ## References
