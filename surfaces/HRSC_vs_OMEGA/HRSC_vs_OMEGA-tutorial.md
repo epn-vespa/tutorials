@@ -44,9 +44,9 @@ This short tutorial shows how to identify overlapping files at the surface of Ma
 
 ## Introduction
 
-HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments. Note that these two services only contain subsets of the original datasets. 
+HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments (note that these two services only contain subsets of the original datasets). 
 
-A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by c1/c2 with min/max values). However this approximation is usually very inaccurate and it falls down completely near the poles. Instead, we'll use the footprints provided in some services.
+A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
 
 
 ## Steps
@@ -57,8 +57,8 @@ A very basic 2D search can be performed on the VESPA portal using the bounding b
 * Enter search parameters in the left (query) panel
 * For instance, enter orbit_number ≥ 997, orbit_number ≤ 998 and access_format LIKE '%application/octet-stream%'
 in the "Other" tab.
-* There are 4 results: image cubes acquired on MEx orbits 997 and 998, formatted as IDL save files.
-* We're now looking for HRSC images of these areas
+* There are 4 results: image cubes acquired on MEx orbits 997 and 998, with no duplication (related to format)
+* We'll now search for HRSC images of these areas
 
 <img src="img/img1.png" width="600">
 
@@ -67,7 +67,7 @@ in the "Other" tab.
 ### 2- Send results to TOPCAT and edit the table
 * First open TOPCAT on your desktop (or click the TOPCAT icon in the VESPA portal page) 
 * Click on All metadata / Send table (below the table)
-* TOPCAT will receive a table with 4 rows called omega_cubes (identical to the one displayed in the portal)
+* TOPCAT will receive a table called omega_cubes, with 4 rows (identical to the one displayed in the portal)
 * In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with: 
 
@@ -134,7 +134,7 @@ in the query field, and click Submit.
 Select the new HRSC layer in the right panel, and properties in the local menu (right click)
 
 Click Show associated FoV to display the footprints of HRSC images - displayed in red in the figure
-* In TOPCAT, first edit the column names of the omega_cubes table and change s_region to anything else (say, s_region_0) to put it out of the way. 
+* In TOPCAT, first edit the column names of the omega_cubes table (if not done in step 2) and change s_region to anything else (say, s_region_0) to put it out of the way. 
 * Select the table and the menu item: Interop>Send table to Aladin; do the same for the HRSC… TAP_UPLOAD table 
 * In Aladin, select the new omega_cubes layer in the right panel (layer stack), and properties in the local menu (right click)
 * Click Show associated FoV to display the footprints (bounding boxes) of OMEGA cubes - displayed in black in the figure
