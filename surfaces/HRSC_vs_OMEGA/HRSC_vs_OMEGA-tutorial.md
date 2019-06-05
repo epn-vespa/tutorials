@@ -97,7 +97,9 @@ SELECT   *
 where the POLYGON… string is copied/pasted from the omega_cubes table, box6 column for element 997_4_sav
 * Click on Run Query. This will load a table containing 2 rows: the 2 HRSC images overlapping the footprint of this OMEGA session.
 * See below how to display the results
-* Note: this is really a working example - the same query can be run directly from the VESPA portal using the Query mode [ simply type in the ADQL field: 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) ]
+* Note: the same query can be run directly from the VESPA portal using the Query mode while displaying the HRSC service
+
+[ simply type in the ADQL field: 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) ]
 
 ### 4- Search HRSC images overlapping a set of cubes
 * If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
