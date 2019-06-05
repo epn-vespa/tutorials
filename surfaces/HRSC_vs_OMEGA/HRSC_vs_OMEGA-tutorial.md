@@ -1,4 +1,4 @@
-## Matching HRSC vs OMEGA files
+## Matching HRSC & OMEGA files
 
 * [Authors](#authors)
 * [Change log](#change-log)
