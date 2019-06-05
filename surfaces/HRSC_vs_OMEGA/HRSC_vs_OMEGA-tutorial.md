@@ -76,7 +76,8 @@ expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max
 name: box6
 
 expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
-* You also need to edit the column definition. Click the Display column metadata icon; on rows box5 and box6, type in the field xtype: adql:REGION
+* You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION (required for TAP).
+You can also rename s_region to s_region_0 for later processing in Aladin.
 
 * These bounding boxes can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final polar orbit is reached.
 
@@ -127,7 +128,8 @@ in the query field, and click Submit.
 Select the new HRSC layer in the right panel, and properties in the local menu (right click)
 
 Click Show associated FoV to display the footprints of HRSC images - displayed in red in the figure
-* In TOPCAT, select the omega_cubes tables and the menu item: Interop>Send table to Aladin; do the same for the HRSC… TAP_UPLOAD table 
+* In TOPCAT, first edit the column names of the omega_cubes table and change s_region to anything else (say, s_region_0) to put it out of the way. 
+* Select the table and the menu item: Interop>Send table to Aladin; do the same for the HRSC… TAP_UPLOAD table 
 * In Aladin, select the new omega_cubes layer in the right panel (layer stack), and properties in the local menu (right click)
 * Click Show associated FoV to display the footprints (bounding boxes) of OMEGA cubes - displayed in black in the figure
 * Do the same for the HRSC matches layer - displayed in yellow in the figure
