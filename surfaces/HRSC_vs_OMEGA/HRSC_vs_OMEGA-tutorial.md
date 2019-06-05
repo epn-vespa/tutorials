@@ -76,7 +76,7 @@ expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max
 name: box6
 
 expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
-* You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION (required for TAP).
+* You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION followed by ENTER (required for TAP).
 You can also rename s_region to s_region_0 for later processing in Aladin.
 
 * These bounding boxes can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final polar orbit is reached.
