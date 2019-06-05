@@ -39,7 +39,7 @@ Identifying overlapping files at the surface of Mars from footprints (Mars-Expre
 * Image cubes
 
 ## Summary
-This short tutorial shows how to search for associated files in various data services.
+This short tutorial shows how to search for overlapping files in spatially extended datasets.
 
 
 ## Introduction
@@ -66,12 +66,12 @@ in the "Other" tab.
 * Click on All metadata / Send table (below the table)
 * TOPCAT will receive a table with 4 rows called omega_cubes (identical to the one displayed in the portal)
 * In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
-* Open the table in TOPCAT and add a new synthetic column with 
+* Open the table in TOPCAT and add a new synthetic column with: 
 
 name: box5 
 
 expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
-* Do the same with
+* Add another column with:
 
 name: box6
 
@@ -79,13 +79,13 @@ expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1ma
 * You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION followed by ENTER (required for TAP).
 You can also rename s_region to s_region_0 for later processing in Aladin.
 
-* These bounding boxes can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final polar orbit is reached.
+* These bounding boxes can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final ~ polar orbit is reached.
 
 <img src="img/img2.png" width="600">
 
 * In the HRSC service, the s_region parameter contains contours sampled at high enough resolution to actually represent the image footprints. 
 
-### 3- Search HRSC images overlapping one cube
+### 3- Search HRSC images overlapping one OMEGA cube
 * We'll use a specific 2D search function which is only implemented in the TAP protocol (not in the tools). We therefore need to query the HRSC server with data retrieved from OMEGA.
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
 * In the new window, type in the large field at the bottom: 
@@ -99,9 +99,9 @@ where the POLYGON… string is copied/pasted from the omega_cubes table, box6 c
 * See below how to display the results
 * Note: the same query can be run directly from the VESPA portal using the Query mode while displaying the HRSC service
 
-[ simply type in the ADQL field: 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) ]
+[ type in the ADQL field: 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) ]
 
-### 4- Search HRSC images overlapping a set of cubes
+### 4- Search HRSC images overlapping a set of OMEGA cubes
 * If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
 * First open the TAP query panel as before. Then type
 
@@ -145,7 +145,8 @@ Click Show associated FoV to display the footprints of HRSC images - displayed i
 ### 6- To go further
 * You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
-* A very basic 2D search can be performed on the VESPA portal using the bouding box (c1/c2 with min/max values). However this approximation is usually very inaccurate (it works here to a certain extent because the orbit is ~ polar and the sessions are short), and it falls down completely near the poles.
+* You can test a comparison between services that provide actual footprints using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. Plotting footprints in Aladin is straightforward in this case.
+* A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by c1/c2 with min/max values). However this approximation is usually very inaccurate (it works here to a certain extent because the orbit is ~ polar and the sessions are short), and it falls down completely near the poles.
 
 
 ## References
