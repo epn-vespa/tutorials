@@ -46,6 +46,9 @@ This short tutorial shows how to search for overlapping files in spatially exten
 
 HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments. Note that these two services only contain subsets of the original datasets. 
 
+A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by c1/c2 with min/max values). However this approximation is usually very inaccurate and it falls down completely near the poles. Instead, we'll use the footprints provided in some services.
+
+
 ## Steps
 
 
@@ -90,7 +93,7 @@ You can also rename s_region to s_region_0 for later processing in Aladin.
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
 * In the new window, type in the large field at the bottom: 
 
-SELECT   *
+SELECT *
 
    FROM hrsc3nd.epn_core where 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625) )
 
@@ -145,8 +148,7 @@ Click Show associated FoV to display the footprints of HRSC images - displayed i
 ### 6- To go further
 * You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
-* You can test a comparison between services that provide actual footprints using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. Plotting footprints in Aladin is straightforward in this case.
-* A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by c1/c2 with min/max values). However this approximation is usually very inaccurate (it works here to a certain extent because the orbit is ~ polar and the sessions are short), and it falls down completely near the poles.
+* You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. Plotting footprints in Aladin is straightforward in this case.
 
 
 ## References
