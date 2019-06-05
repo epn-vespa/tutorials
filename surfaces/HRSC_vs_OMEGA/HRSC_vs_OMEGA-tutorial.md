@@ -104,11 +104,11 @@ where the POLYGON… string is copied/pasted from the omega_cubes table, box6 c
 
 SELECT *
 
-   FROM hrsc3nd.epn_core
+   FROM hrsc3nd.epn_core as tb
 
    JOIN TAP_UPLOAD.omega_cubes AS tc
 
-   ON 1=INTERSECTS(s_region, tc.box5)
+   ON 1=INTERSECTS(tb.s_region, tc.box5)
 
 * You'll now retrieve a table with 17 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondance).
 * Footprints are easily overplotted on OMEGA's ones using a polygonal form (see other tutorials)
