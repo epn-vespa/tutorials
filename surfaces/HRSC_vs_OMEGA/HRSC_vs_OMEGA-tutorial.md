@@ -29,7 +29,7 @@ None
 * * *
 
 ## Use case
-Identifying overlapping files at the surface of Mars from footprints (Mars-Express/HRSC and OMEGA services)
+Searching for overlapping files in spatially extended datasets
 
 
 ## Keywords
@@ -39,7 +39,7 @@ Identifying overlapping files at the surface of Mars from footprints (Mars-Expre
 * Image cubes
 
 ## Summary
-This short tutorial shows how to search for overlapping files in spatially extended datasets.
+This short tutorial shows how to identify overlapping files at the surface of Mars from footprints (Mars-Express/HRSC and OMEGA services).
 
 
 ## Introduction
