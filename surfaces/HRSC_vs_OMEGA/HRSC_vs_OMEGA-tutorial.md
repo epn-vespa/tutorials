@@ -73,7 +73,7 @@ access_format LIKE '%application/octet-stream%'
 * First open TOPCAT on your desktop (or click the TOPCAT icon in the VESPA portal page) 
 * Click on All metadata / Send table (below the table)
 * TOPCAT will receive a table called omega_cubes, with 4 rows (identical to the one displayed in the portal)
-* In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
+* In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, each with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with: 
 
 ~~~~
