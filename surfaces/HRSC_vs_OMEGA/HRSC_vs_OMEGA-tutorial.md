@@ -1,15 +1,15 @@
 ## Matching HRSC & OMEGA files
 
-* [Authors](#authors)
-* [Change log](#change-log)
-* [Requirements](#requirements-and-dependencies)
-* [Use case](#use-case)
-* [Keywords](#keywords)
-* [Summary](#summary)
-* [Introduction](#introduction)
-* [Steps](#steps)
-* [References](#references)
-* [Links](#links)
+[Authors](#authors)
+[Change log](#change-log)
+[Requirements](#requirements-and-dependencies)
+[Use case](#use-case)
+[Keywords](#keywords)
+[Summary](#summary)
+[Introduction](#introduction)
+[Steps](#steps)
+[References](#references)
+[Links](#links)
 
 ## Authors:
 
@@ -71,14 +71,12 @@ in the "Other" tab.
 * In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with: 
 
-name: box5 
-
-expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
+>name: box5 
+>expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
 * Add another column with:
 
-name: box6
-
-expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
+>name: box6
+>expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
 * You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION followed by ENTER (required for TAP).
 You can also rename s_region to s_region_0 for later processing in Aladin.
 
