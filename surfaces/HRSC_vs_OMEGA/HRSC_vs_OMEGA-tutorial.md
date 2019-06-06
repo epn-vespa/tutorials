@@ -56,7 +56,8 @@ A very basic 2D search can be performed on the VESPA portal using the bounding b
 * Go to the VESPA portal, click on the omega_cubes service
 * Enter search parameters in the left (query) panel
 * For instance, enter in the "Other" tab:
-~~~~ orbit_number ≥ 997
+~~~~ 
+orbit_number ≥ 997
 orbit_number ≤ 998
 access_format LIKE '%application/octet-stream%'
 ~~~~
