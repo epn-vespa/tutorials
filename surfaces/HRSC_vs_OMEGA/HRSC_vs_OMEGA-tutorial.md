@@ -62,7 +62,7 @@ orbit_number ≤ 998
 access_format LIKE '%application/octet-stream%'
 ~~~~
 
-* There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication related to various formats)
+* There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication due to various formats)
 * We'll now search for HRSC images of these areas
 
 <img src="img/img1.png" width="600">
