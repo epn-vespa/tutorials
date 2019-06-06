@@ -7,7 +7,7 @@
 [Keywords](#keywords)  
 [Summary](#summary)  
 [Introduction](#introduction)  
-[Steps](#steps)  
+[Steps](#tutorial)  
 [References](#references)  
 [Links](#links)  
 
@@ -28,10 +28,10 @@ S. Erard
 
 
 ### Requirements and dependencies
-None
+Display setup for Planetary surfaces and maps in TOPCAT
 
 
-## Keywords
+### Keywords
 Surfaces  
 Observations  
 Images  
@@ -48,7 +48,7 @@ HRSC and OMEGA are respectively the main camera and the imaging spectrometer on 
 A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
 
 
-## Steps
+## Tutorial
 
 
 ### 1- Select OMEGA data of interest
