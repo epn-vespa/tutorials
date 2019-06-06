@@ -1,9 +1,9 @@
 ## Matching HRSC & OMEGA files
 
+[Use case](#use-case)  
 [Authors](#author)  
 [Change log](#change-log)  
 [Requirements](#requirements-and-dependencies)  
-[Use case](#use-case)  
 [Keywords](#keywords)  
 [Summary](#summary)  
 [Introduction](#introduction)  
