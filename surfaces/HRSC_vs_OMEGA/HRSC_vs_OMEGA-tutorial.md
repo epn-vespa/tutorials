@@ -78,12 +78,14 @@ access_format LIKE '%application/octet-stream%'
 
 ~~~~
 name: box5 
-expression: "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
+expression:
+"POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
 ~~~~
 * Add another column with:
 ~~~~
 name: box6
-expression: "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
+expression: 
+"POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
 ~~~~
 * You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION followed by ENTER (required for TAP).
 You can also rename s_region to s_region_0 for later processing in Aladin.
