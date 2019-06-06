@@ -1,42 +1,41 @@
 ## Matching HRSC & OMEGA files
 
-[Authors](#authors)
-[Change log](#change-log)
-[Requirements](#requirements-and-dependencies)
-[Use case](#use-case)
-[Keywords](#keywords)
-[Summary](#summary)
-[Introduction](#introduction)
-[Steps](#steps)
-[References](#references)
-[Links](#links)
+[Authors](#authors)  
+[Change log](#change-log)  
+[Requirements](#requirements-and-dependencies)  
+[Use case](#use-case)  
+[Keywords](#keywords)  
+[Summary](#summary)  
+[Introduction](#introduction)  
+[Steps](#steps)  
+[References](#references)  
+[Links](#links)  
+
+
+## Use case
+Searching for overlapping files in spatially extended datasets
 
 ## Authors:
 
 S. Erard
 
-## Change log
+### Change log
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
 | 0.1           | S. Erard      | 4/6/2019  |
 
-* * *
 
-## Requirements and dependencies
+
+### Requirements and dependencies
 None
-
-* * *
-
-## Use case
-Searching for overlapping files in spatially extended datasets
 
 
 ## Keywords
-* Surfaces 
-* Observations
-* Images
-* Image cubes
+Surfaces  
+Observations  
+Images  
+Image cubes  
 
 ## Summary
 This short tutorial shows how to identify overlapping files at the surface of Mars from footprints (Mars-Express/HRSC and OMEGA services).
