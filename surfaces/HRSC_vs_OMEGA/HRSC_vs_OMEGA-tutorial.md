@@ -99,9 +99,10 @@ You can also rename s_region to s_region_0 for later processing in Aladin.
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
 * In the new window, type in the large field at the bottom: 
 
+~~~~ 
 SELECT *
-
    FROM hrsc3nd.epn_core where 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625) )
+~~~~ 
 
 where the POLYGON… string is copied/pasted from the omega_cubes table, box6 column for element 997_4_sav
 * Click on Run Query. This will load a table containing 2 rows: the 2 HRSC images overlapping the footprint of this OMEGA session.
@@ -113,14 +114,12 @@ where the POLYGON… string is copied/pasted from the omega_cubes table, box6 c
 ### 4- Search HRSC images overlapping a set of OMEGA cubes
 * If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
 * First open the TAP query panel as before. Then type
-
+~~~~ 
 SELECT *
-
    FROM hrsc3nd.epn_core as tb
-
    JOIN TAP_UPLOAD.omega_cubes AS tc
-
    ON 1=INTERSECTS(tb.s_region, tc.box5)
+~~~~ 
 
 * You'll now retrieve a table with 17 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondance).
 * Footprints are easily overplotted on OMEGA's ones using a polygonal form (see other tutorials)
