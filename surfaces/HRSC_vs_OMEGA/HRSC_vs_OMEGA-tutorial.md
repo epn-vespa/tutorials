@@ -7,8 +7,7 @@
 [Keywords](#keywords)  
 [Summary](#summary)  
 [Introduction](#introduction)  
-[Steps](#tutorial)  
-[References](#references)  
+[Tutorial](#tutorial)  
 [Links](#links)  
 
 
@@ -158,11 +157,8 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 * You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. Plotting footprints in Aladin is straightforward in this case.
 
 
-## References
-
 
 ## Links
 
-See details here to set a correct display on planetary surfaces in TOPCAT and Aladin, and to plot footprints in TOPCAT:
-
+See details here to set a correct display on planetary surfaces in TOPCAT and Aladin, and to plot footprints in TOPCAT:  
 [https://voparis-wiki.obspm.fr/pages/viewpage.action?pageId=14942383]
