@@ -52,7 +52,7 @@ A very basic 2D search can be performed on the VESPA portal using the bounding b
 
 
 ### 1- Select OMEGA data of interest
-* Go to the VESPA portal, click on the omega_cubes service
+* Go to the [VESPA portal](http://vespa.obspm.fr), click on the omega_cubes service
 * Enter search parameters in the left (query) panel
 * For instance, enter in the "Other" tab:
 ~~~~ 
@@ -66,7 +66,7 @@ access_format LIKE '%application/octet-stream%'
 
 <img src="img/img1.png" width="600">
 
-[http://vespa.obspm.fr]
+
 
 ### 2- Send results to TOPCAT and edit the table
 * First open TOPCAT on your desktop (or click the TOPCAT icon in the VESPA portal page) 
