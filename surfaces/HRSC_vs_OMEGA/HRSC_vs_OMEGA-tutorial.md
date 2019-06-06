@@ -140,9 +140,7 @@ SELECT *
 SELECT TOP 9999 * FROM hrsc3nd.epn_core 
 ~~~~ 
 >in the query field, and click Submit.
->
 >Select the new HRSC layer in the right panel, and properties in the local menu (right click)
->
 >Click Show associated FoV to display the footprints of HRSC images - displayed in red in the figure
 * In TOPCAT, first edit the column names of the omega_cubes table (if not done in step 2) and change s_region to anything else (say, s_region_0) to put it out of the way. 
 * Select the table and the menu item: Interop>Send table to Aladin; do the same for the HRSC… TAP_UPLOAD table 
