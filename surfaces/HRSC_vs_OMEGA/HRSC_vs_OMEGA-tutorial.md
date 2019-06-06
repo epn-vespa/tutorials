@@ -42,7 +42,7 @@ This short tutorial shows how to identify overlapping files at the surface of Ma
 
 ## Introduction
 
-HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area from two different instruments (note that these two services only contain subsets of the original datasets). 
+HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of idenfying observations of the same area in two different datasets (note that these two services only contain subsets of the original datasets). 
 
 A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
 
