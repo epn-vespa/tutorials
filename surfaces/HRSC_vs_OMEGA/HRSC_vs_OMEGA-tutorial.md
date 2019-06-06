@@ -132,8 +132,9 @@ SELECT *
 * Load the MOLA shaded relief map from the data tree (left panel, under Solar System/Mars); switch Frame to Planet in the upper line. 
 * (optional) Select the HRSC service from the data tree (under Solar System/Tabular data). Type
 
+~~~~ 
 SELECT TOP 9999 * FROM hrsc3nd.epn_core 
-
+~~~~ 
 in the query field, and click Submit.
 
 Select the new HRSC layer in the right panel, and properties in the local menu (right click)
