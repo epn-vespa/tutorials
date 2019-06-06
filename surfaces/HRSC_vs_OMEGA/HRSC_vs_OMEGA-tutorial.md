@@ -27,7 +27,7 @@ S. Erard
 
 
 ### Requirements and dependencies
-Display setup for planetary surfaces and maps in TOPCAT
+Display setup for planetary surfaces and maps in TOPCAT & Aladin
 
 
 ### Keywords
