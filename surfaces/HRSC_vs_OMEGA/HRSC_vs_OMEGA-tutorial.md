@@ -39,9 +39,9 @@ This short tutorial shows how to identify overlapping files at the surface of Ma
 
 ## Introduction
 
-HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars; SPICAM performed stellar oculations from which vertical atmospheric profiles were fit. The hrsc3nd, omega_cubes and spicam services available in VESPA are used here to illustrate the common problem of identifying observations of the same area in two different datasets, typically from different instruments (note that these two services only contain subsets of the original datasets). 
+HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars; SPICAM performed stellar occulations from which vertical atmospheric profiles were fit. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of identifying observations of the same area in two different datasets, typically from different instruments (notice that the hrsc3nd and omega_cubes services only contain subsets of the original datasets). This use case is then extended to point features, based on the spicam service (which contains derived data). 
 
-A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
+A very basic 2D search can be performed on the VESPA portal using a bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
 
 
 ## Tutorial
@@ -187,10 +187,12 @@ SELECT TOP 1000 *
 * You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
 * You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. 
-* When dealing with services located on the same server, the present workflow is still the simplest solution (although selecting a part of the first dataset can be done in the same TAP query as the spatial match, it involves a complicated syntax).
+* When dealing with services located on the same server, the present workflow is still the simplest solution: although selecting a part of the first dataset can be done in the same TAP query as the spatial match, it involves a tricky syntax.
+* This technique can also be used to look for overlaps in a single 2D dataset. 
 
 
 ## Links
 
-See details here to set a correct display on planetary surfaces in TOPCAT and Aladin, and to plot footprints in TOPCAT:  
+See details here to set a correct display of planetary surfaces in TOPCAT and Aladin, and to plot footprints in TOPCAT:  
 [https://voparis-wiki.obspm.fr/pages/viewpage.action?pageId=14942383]
+
