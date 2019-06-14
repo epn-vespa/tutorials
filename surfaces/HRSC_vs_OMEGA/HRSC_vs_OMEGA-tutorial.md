@@ -23,7 +23,7 @@ S. Erard
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
 | 0.1           | S. Erard      | 4/6/2019  |
-
+| 0.2           | S. Erard      | 13/6/2019 |
 
 
 ### Requirements and dependencies
@@ -63,7 +63,7 @@ access_format LIKE '%application/octet-stream%'
 * There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication due to various formats)
 * We'll now search for HRSC images of these areas
 
-<img src="img/img1.png" width="600">
+<img src="img/img1b.png" width="600">
 
 
 
@@ -150,12 +150,40 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 <img src="img/img3.png" width="600">
 
 
+### 6- Matching spatial and point data
+* The same technique can be used to identify point features located in image footprints (here using the foot of SPICAM vertical profiles:
+* Select of set of HRSC images in VESPA as before and load it into TOPCAT
+> Note: you can visualize the selected HSRC footrpints from VESPA: after selection, just click the footprint menu below the table and select "Send GeoJSON selection" - it will display in Mizar in a new window.
 
-### 6- To go further
+* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter spicam, and click the LATMOS server + Use service
+* In the new window, type in the query field: 
+
+~~~~ 
+SELECT TOP 1000 *
+   FROM spicam.epn_core AS tb
+   JOIN TAP_UPLOAD.hrsc3nd AS tc
+   ON 1=CONTAINS(POINT(tb.c1min, tb.c2min), tc.s_region)
+~~~~ 
+
+* Conversely, to identify images containg selected point features:
+* Select a set of SPICAM profiles in VESPA and load it into TOPCAT
+* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter spicam, and click the PRSFUB TAP server + Use service
+* In the new window, type in the query field: 
+
+~~~~ 
+SELECT TOP 1000 *
+   FROM hrsc3nd.epn_core AS tb
+   JOIN TAP_UPLOAD.spicam AS tc
+   ON 1=CONTAINS(POINT(tc.c1min, tc.c2min), tb.s_region)
+~~~~ 
+
+
+
+### 7- To go further
 * You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
-* You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. Plotting footprints in Aladin is straightforward in this case.
-
+* You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. 
+* When dealing with services located on the same server, the present workflow is still the simplest solution (although selecting a part of the first dataset can be done in the same TAP query as the spatial match).
 
 
 ## Links
