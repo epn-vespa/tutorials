@@ -146,13 +146,12 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 * Click Show associated FoV to display the footprints (bounding boxes) of OMEGA cubes - displayed in black in the figure
 * Do the same for the HRSC matches layer - displayed in yellow in the figure
 
-
 <img src="img/img3.png" width="600">
 
 
 ### 6- Matching images and point features
-* The same technique can be used to identify images containg selected point features:
-* Select a set of SPICAM profiles in VESPA and load it into TOPCAT
+* The same technique can be used to identify images containg selected point features (here using the foot of SPICAM vertical profiles from Mars-Express):
+* Select a set of SPICAM profiles in the VESPA portal and load it into TOPCAT
 * In TOPCAT, open the TAP query for the hrsc3nd service as before and type in the query field: 
 
 ~~~~ 
@@ -165,14 +164,14 @@ SELECT TOP 1000 *
 <img src="img/HRSC_in_SPICAM.png" width="600">
 
 
-* Conversely, to identify   point features located in image footprints (here using the foot of SPICAM vertical profiles:
-* Select of set of HRSC images in VESPA as before and load it into TOPCAT
-> Note: you can visualize the selected HSRC footrpints from VESPA: after selection, just click the footprint menu below the table and select "Send GeoJSON selection" - it will display in Mizar in a new window.
+* Conversely, to identify point features located in image footprints:
+* Select a set of HRSC images in VESPA and load it into TOPCAT
+> Note: to visualize the selected HRSC footprints from VESPA, click the Footprints menu below the table and select "Send GeoJSON selection" - it will display in Mizar in a new window.
 
 <img src="img/HRSC_Mizar.png" width="600">
 
 
-* In TOPCAT, select the VO>TAP menu item. In the keywords field enter "spicam", select the LATMOS server & click "Use service"
+* In TOPCAT, select the VO>TAP menu item. In the keywords field enter "spicam", select the LATMOS TAP server & click "Use service"
 * In the new window, type in the query field: 
 
 ~~~~ 
@@ -184,6 +183,7 @@ SELECT TOP 1000 *
 
 <img src="img/SPICAM_in_HRSC.png" width="600">
 
+> Note: again, you can proceed more simply in the VESPA portal in Query mode to retrieve all features in a single image, or all images covering a single feature.
 
 
 ### 7- To go further
