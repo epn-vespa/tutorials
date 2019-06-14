@@ -2,9 +2,6 @@
 
 [Use case](#use-case)  
 [Authors](#author)  
-[Change log](#change-log)  
-[Requirements](#requirements-and-dependencies)  
-[Keywords](#keywords)  
 [Summary](#summary)  
 [Introduction](#introduction)  
 [Tutorial](#tutorial)  
@@ -37,12 +34,12 @@ Images
 Image cubes  
 
 ## Summary
-This short tutorial shows how to identify overlapping files at the surface of Mars from footprints (Mars-Express/HRSC and OMEGA services).
+This short tutorial shows how to identify overlapping files at the surface of Mars from footprints (Mars-Express/HRSC, OMEGA and SPICAM services).
 
 
 ## Introduction
 
-HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars. The hrsc3nd and omega_cubes services available in VESPA are used here to illustrate the common problem of identifying observations of the same area in two different datasets, typically from different instruments (note that these two services only contain subsets of the original datasets). 
+HRSC and OMEGA are respectively the main camera and the imaging spectrometer on board Mars-Express. Both acquired large datasets from early 2004, and now provide a nearly complete coverage of Mars; SPICAM performed stellar oculations from which vertical atmospheric profiles were fit. The hrsc3nd, omega_cubes and spicam services available in VESPA are used here to illustrate the common problem of identifying observations of the same area in two different datasets, typically from different instruments (note that these two services only contain subsets of the original datasets). 
 
 A very basic 2D search can be performed on the VESPA portal using the bounding box (defined by the c1/c2 parameters with min/max values). However this approximation is usually very inaccurate and falls down completely near the poles. Instead, we'll use the footprints provided in some services.
 
