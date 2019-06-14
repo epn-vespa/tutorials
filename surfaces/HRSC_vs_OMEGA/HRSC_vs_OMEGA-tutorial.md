@@ -155,6 +155,9 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 * Select of set of HRSC images in VESPA as before and load it into TOPCAT
 > Note: you can visualize the selected HSRC footrpints from VESPA: after selection, just click the footprint menu below the table and select "Send GeoJSON selection" - it will display in Mizar in a new window.
 
+<img src="img/HRSC_Mizar.png" width="600">
+
+
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter spicam, and click the LATMOS server + Use service
 * In the new window, type in the query field: 
 
@@ -164,6 +167,8 @@ SELECT TOP 1000 *
    JOIN TAP_UPLOAD.hrsc3nd AS tc
    ON 1=CONTAINS(POINT(tb.c1min, tb.c2min), tc.s_region)
 ~~~~ 
+
+<img src="img/SPICAM_in_HRSC.png" width="600">
 
 * Conversely, to identify images containg selected point features:
 * Select a set of SPICAM profiles in VESPA and load it into TOPCAT
@@ -176,6 +181,8 @@ SELECT TOP 1000 *
    JOIN TAP_UPLOAD.spicam AS tc
    ON 1=CONTAINS(POINT(tc.c1min, tc.c2min), tb.s_region)
 ~~~~ 
+
+<img src="img/HRSC_in_SPICAM.png" width="600">
 
 
 
