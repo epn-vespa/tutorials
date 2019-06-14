@@ -51,11 +51,11 @@ A very basic 2D search can be performed on the VESPA portal using a bounding box
 * Go to the [VESPA portal](http://vespa.obspm.fr), click on the omega_cubes service
 * Enter search parameters in the left (query) panel
 * For instance, enter in the "Other" tab:
-~~~~ 
+``` 
 orbit_number ≥ 997
 orbit_number ≤ 998
 access_format LIKE '%application/octet-stream%'
-~~~~
+```
 
 * There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication due to various formats)
 * We'll now search for HRSC images of these areas
@@ -71,17 +71,17 @@ access_format LIKE '%application/octet-stream%'
 * In the omega_cubes service the s_region parameter is empty and doesn't provide the footprint of the observing sessions. We'll build footprints from the bounding box limits provided in the coordinate parameters (C1/C2 for longitude/latitude, each with min/max values).
 * Open the table in TOPCAT and add a new synthetic column with: 
 
-~~~~
+```
 name: box5 
 expression:
 "POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
-~~~~
+```
 * Add another column with:
-~~~~
+```
 name: box6
 expression: 
 "POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
-~~~~
+```
 * You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION (and validate by pressing ENTER!) - this step is required for TAP.
 You can also rename s_region to s_region_0 for later processing in Aladin.
 
@@ -96,29 +96,29 @@ You can also rename s_region to s_region_0 for later processing in Aladin.
 * In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
 * In the new window, type in the large field at the bottom: 
 
-~~~~ 
+``` 
 SELECT *
    FROM hrsc3nd.epn_core where 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625) )
-~~~~ 
+``` 
 
 where the POLYGON… string is copied/pasted from the omega_cubes table, box6 column for element 997_4_sav
 * Click on Run Query. This will load a table containing 2 rows: the 2 HRSC images overlapping the footprint of this OMEGA session.
 * See below how to display the results
 > Note: the same query can be run directly from the VESPA portal using the Query mode while displaying the HRSC service. Type in the ADQL field:
 >
-~~~~ 
+``` 
 1=INTERSECTS(s_region, POLYGON(266.762,44.0625,266.762,59.4062,270.934,59.4062,270.934,44.0625)) 
-~~~~ 
+``` 
 
 ### 4- Search HRSC images overlapping a set of OMEGA cubes
 * If your selection contains several OMEGA cubes, repeating this process will rapidly become tedious. Instead, this can be achieved with a single query, provided that your search table is first uploaded on the distant server.
 * First open the TAP query panel as before. Then type
-~~~~ 
+``` 
 SELECT *
    FROM hrsc3nd.epn_core as tb
    JOIN TAP_UPLOAD.omega_cubes AS tc
    ON 1=INTERSECTS(tb.s_region, tc.box5)
-~~~~ 
+``` 
 
 * You'll now retrieve a table with 17 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondance).
 * Footprints are easily overplotted on OMEGA's ones using a polygonal form (see other tutorials)
@@ -131,9 +131,9 @@ SELECT *
 * Load the MOLA shaded relief map from the data tree (left panel, under Solar System/Mars); switch Frame to Planet in the upper line. 
 > (optional) Select the HRSC service from the data tree (under Solar System/Tabular data). Type
 >
-~~~~ 
+``` 
 SELECT TOP 9999 * FROM hrsc3nd.epn_core 
-~~~~ 
+``` 
 >in the query field, and click Submit.  
 >Select the new HRSC layer in the right panel, and properties in the local menu (right click)  
 >Click Show associated FoV to display the footprints of HRSC images - displayed in red in the figure
@@ -151,12 +151,12 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 * Select a set of SPICAM profiles in the VESPA portal and load it into TOPCAT
 * In TOPCAT, open the TAP query for the hrsc3nd service as before and type in the query field: 
 
-~~~~ 
+``` 
 SELECT TOP 1000 *
    FROM hrsc3nd.epn_core AS tb
    JOIN TAP_UPLOAD.spicam AS tc
    ON 1=CONTAINS(POINT(tc.c1min, tc.c2min), tb.s_region)
-~~~~ 
+``` 
 
 <img src="img/HRSC_in_SPICAM.png" width="600">
 
@@ -171,12 +171,12 @@ SELECT TOP 1000 *
 * In TOPCAT, select the VO>TAP menu item. In the keywords field enter "spicam", select the LATMOS TAP server & click "Use service"
 * In the new window, type in the query field: 
 
-~~~~ 
+``` 
 SELECT TOP 1000 *
    FROM spicam.epn_core AS tb
    JOIN TAP_UPLOAD.hrsc3nd AS tc
    ON 1=CONTAINS(POINT(tb.c1min, tb.c2min), tc.s_region)
-~~~~ 
+``` 
 
 <img src="img/SPICAM_in_HRSC.png" width="600">
 
