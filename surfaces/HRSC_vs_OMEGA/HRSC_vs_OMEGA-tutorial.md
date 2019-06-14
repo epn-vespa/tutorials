@@ -150,15 +150,29 @@ SELECT TOP 9999 * FROM hrsc3nd.epn_core
 <img src="img/img3.png" width="600">
 
 
-### 6- Matching spatial and point data
-* The same technique can be used to identify point features located in image footprints (here using the foot of SPICAM vertical profiles:
+### 6- Matching images and point features
+* The same technique can be used to identify images containg selected point features:
+* Select a set of SPICAM profiles in VESPA and load it into TOPCAT
+* In TOPCAT, open the TAP query for the hrsc3nd service as before and type in the query field: 
+
+~~~~ 
+SELECT TOP 1000 *
+   FROM hrsc3nd.epn_core AS tb
+   JOIN TAP_UPLOAD.spicam AS tc
+   ON 1=CONTAINS(POINT(tc.c1min, tc.c2min), tb.s_region)
+~~~~ 
+
+<img src="img/HRSC_in_SPICAM.png" width="600">
+
+
+* Conversely, to identify   point features located in image footprints (here using the foot of SPICAM vertical profiles:
 * Select of set of HRSC images in VESPA as before and load it into TOPCAT
 > Note: you can visualize the selected HSRC footrpints from VESPA: after selection, just click the footprint menu below the table and select "Send GeoJSON selection" - it will display in Mizar in a new window.
 
 <img src="img/HRSC_Mizar.png" width="600">
 
 
-* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter spicam, and click the LATMOS server + Use service
+* In TOPCAT, select the VO>TAP menu item. In the keywords field enter "spicam", select the LATMOS server & click "Use service"
 * In the new window, type in the query field: 
 
 ~~~~ 
@@ -169,20 +183,6 @@ SELECT TOP 1000 *
 ~~~~ 
 
 <img src="img/SPICAM_in_HRSC.png" width="600">
-
-* Conversely, to identify images containg selected point features:
-* Select a set of SPICAM profiles in VESPA and load it into TOPCAT
-* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter spicam, and click the PRSFUB TAP server + Use service
-* In the new window, type in the query field: 
-
-~~~~ 
-SELECT TOP 1000 *
-   FROM hrsc3nd.epn_core AS tb
-   JOIN TAP_UPLOAD.spicam AS tc
-   ON 1=CONTAINS(POINT(tc.c1min, tc.c2min), tb.s_region)
-~~~~ 
-
-<img src="img/HRSC_in_SPICAM.png" width="600">
 
 
 
