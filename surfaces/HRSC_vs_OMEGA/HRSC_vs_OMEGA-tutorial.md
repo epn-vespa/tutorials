@@ -190,7 +190,7 @@ SELECT TOP 1000 *
 * You can add more parameters to refine the match between datasets. An obvious addition in the general case would be to look for similar viewing geometries (but the hrsc3nd service includes only nadir images). Parameters such as acquision time, local time, solar longitude (Ls) which are available in many services, may be required to match also. Searches restrained to these 1D parameters can be performed more easily from the VESPA portal.
 * Note that upload in the TAP query (step 4) is required because 1) the two services are located on different servers; 2) one service does not provide footprints in s_region, which is required to search for overlaps; this has to be sorted out in TOPCAT.
 * You can test a comparison between services that provide actual footprints by using HRSC and CRISM. Going through TOPCAT is still required because we have to upload one table on a different server. 
-* When dealing with services located on the same server, the present workflow is still the simplest solution (although selecting a part of the first dataset can be done in the same TAP query as the spatial match).
+* When dealing with services located on the same server, the present workflow is still the simplest solution (although selecting a part of the first dataset can be done in the same TAP query as the spatial match, it involves a complicated syntax).
 
 
 ## Links
