@@ -36,8 +36,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/cassini-titan-flyby/README.md)
 * [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
-* [Magnetodisk modelling](* [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/MDISC/README.md)
-)
+* [Magnetodisk modelling](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/MDISC/README.md)
+
 
 ## Spectroscopy
 * [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/master/misc/CASSIS_VESPA_tutorial.pdf)
