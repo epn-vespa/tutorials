@@ -1,6 +1,6 @@
 # Resource Descriptor file Examples
 
-This tutorial is derived from an exercise about magnetodisk modelling using Matlab, based on the MDISC EPN-TAP data service (for students during a summer school in 2018).
+This tutorial is derived from an exercise about magnetodisc modelling using Matlab, based on the MDISC EPN-TAP data service (for students during a summer school in 2018).
 
 
 
