@@ -13,7 +13,7 @@ This tutorial is derived from an exercise about magnetodisk modelling using Matl
 ## Data 
 
 Download the archive at 
-* https://www.ucl.ac.uk/~ucapnac/MDISC/mdisc_v2.zip
+* https://zenodo.org/record/3353721#.XT6UZC-ZNYg
 (~400 MB)
 
 
