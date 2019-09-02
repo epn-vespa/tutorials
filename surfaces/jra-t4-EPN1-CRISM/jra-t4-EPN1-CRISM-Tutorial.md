@@ -15,7 +15,7 @@ Mikhail Minin et al.
 First converted into Markdown file by [Keyuan Yin](https://github.com/megadiesel705) from VESPA Tutorial site.
 
 <h2 id="Preview">Preview CRISM in TOPCAT</h2>
-Open TOPCAT at [this site](http://www.star.bris.ac.uk/~mbt/topcat/topcat-lite.jnlp).  
+Open TOPCAT (http://www.star.bris.ac.uk/~mbt/topcat/#install).  
 Choose VO => TAP Query  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_VO_TAP_Query.png" width="500" alt="VO_TAP">  
