@@ -48,7 +48,7 @@ Click on the "Table Browser" button.
 
 You can now view the table.  
 
-<img src="https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/img/topcat_table_view_select_1st_row.png?raw=true" width="500" alt"Table">  
+<img src="https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/img/topcat_table_view_select_1st_row.png?raw=true" width="500" alt="Table">  
 
 Clicking on a row should open image preview.  
 
