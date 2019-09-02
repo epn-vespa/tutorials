@@ -73,7 +73,7 @@ SELECT  \*
 FROM planetserver_crism.epn\_core  
 WHERE granule\_uid='HRS00003082\_07\_IF177S\_TRR3'  
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/2_enp1_tap_handle.png" width="500" alt"enp1 TAP Handle">  
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/2_enp1_tap_handle.png" width="500" alt="enp1 TAP Handle">  
 
 Click "SUBMIT".  
 
@@ -119,7 +119,7 @@ Open with CASSIS
 **UPDATE:**
 An option to save spectra as .fus, or to send it directly to CASSIS via SAMP has been added.
 
-<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/3_Spectra_fus_Update.png" width="500" alt"Spectra fus">  
+<img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/3_Spectra_fus_Update.png" width="500" alt="Spectra fus">  
 
 To send via SAMP, first start CASSIS. With CASSIS HUB running the button 
 "Broadcast to SAMP!" should be visible.  
