@@ -32,14 +32,13 @@ Select "planetserver_crism.epn_core". Click on "Examples", select "Basic" => "Fu
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_crism.epn_core_2.png" width="500" alt="crism.epn_cor_2">  
 
-Click "Run Query". Click on "(no action)" button at "Activation Action".  
+Click "Run Query".  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_Activation%20Action.png" width="500" alt="Activation Action">  
 
-Select "View URL as Image".   
-Choose "thumbnail_url" for Image Location column;  
-"PNG" for Image Format;  
-"Basic viewer (internal)" for Image Viewer. Press OK.  
+Select "Activation Actions" from the main window "Views" menu item.
+
+Select "Display image". Choose "thumbnail_url" for "Image Location". And "Basic" for "Image Viewer". Close the window.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_Set_Activation_Actin.png" width="500" alt="Set Activation Action">  
 
