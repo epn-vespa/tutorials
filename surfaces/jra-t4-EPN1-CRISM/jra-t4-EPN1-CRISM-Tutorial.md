@@ -26,7 +26,7 @@ Search for "epn1". Double click.
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_epn1_2.png" width="500" alt="epn1_2">  
 
-Select "epn\_vespa\_crism.epn_core". Click on "Examples", select "Basic" => "Full table".  
+Select "planetserver_crism.epn_core". Click on "Examples", select "Basic" => "Full table".  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/1_crism.epn_core_1.png" width="500" alt="crism.epn_core_1">  
 
@@ -71,7 +71,7 @@ Click submit.
 Open [epn1 TAP Handle](http://saada.unistra.fr/taphandle/?url=http://epn1.epn-vespa.jacobs-university.de/tap) in your browser.  
 Open table, add query to search for granule of interest:  
 SELECT  \*  
-FROM epn\_vespa\_crism.epn\_core  
+FROM planetserver_crism.epn\_core  
 WHERE granule\_uid='HRS00003082\_07\_IF177S\_TRR3'  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/2_enp1_tap_handle.png" width="500" alt"enp1 TAP Handle">  
@@ -138,12 +138,3 @@ The value of Xbot should be set to Wavelength nm:
 <h2 id="References">References</h2>  
 
 Please refer this tutorial to original tutorial created  by Mikhail Minin on VESPA wiki.
-
-
-
-
-
-
-
-
-
