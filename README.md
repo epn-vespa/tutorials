@@ -49,7 +49,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
  ## Video tutorials
 
-These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Some of them may be outdated - the VESPA portal interface in particular has evolved significantly.
+These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Some of them may be outdated - the VESPA portal interface in particular has evolved significantly, and additional functions are now avalaible in tools such as Aladin and TOPCAT.
 
 **Tracking asteroids**
 
