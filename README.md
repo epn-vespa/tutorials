@@ -10,13 +10,13 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
 * [VIRTIS-VENUS EXPRESS](http://voparis-europlanet.obspm.fr/utilities/Tuto_TopCat_VEx.pdf)
 * [Comparing vertical profiles in the atmosphere of Mars (SPICAM_vs_MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/README.md)
-* [Matisse](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/MATISSEforVESPAtutorial.pdf)
+* [Matisse used with VIRTIS-VEx](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/MATISSEforVESPAtutorial.pdf)
 
 
 ## Surfaces
  
 * [Mapping sparse spatial data with TOPCAT](https://voparis-confluence.obspm.fr/display/VES/Use+case%3A+mapping+sparse+spatial+data+with+TOPCAT)
-* [Several use cases on planetary surfaces with Aladin](https://voparis-confluence.obspm.fr/display/VES/2-+Various+use+cases+on+planetary+surfaces+with+Aladin%2C+2)
+* [Several use cases on planetary surfaces with Aladin](https://voparis-wiki.obspm.fr/pages/viewpage.action?pageId=14942383)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 * [Identifying overlapping images in different services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
@@ -36,6 +36,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Cassini Titan fly-by](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/cassini-titan-flyby/README.md)
 * [Connection of Helio Tools, AMDA & 3DView: CME impact on Venus and Earth](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Connection-between-HELIO-and-IMPEx-tools/Tutorial.md)
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
+* [ExPRES/MASER modelling of radio emissions](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/ExPRES-tutorial/ExPRES-Tutorial.md)
 * [Magnetodisc modelling](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/MDISC/README.md)
 
 
