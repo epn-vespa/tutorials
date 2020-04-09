@@ -48,6 +48,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 * [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
 
+* [Connecting to EPN-TAP services from python](https://github.com/epn-vespa/tutorials/blob/master/misc/pythonic-access-tutorial/pythonic-access-tutorial.md)
+
  ## Video tutorials
 
 These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Some of them may be outdated - the VESPA portal interface in particular has evolved significantly, and additional functions are now avalaible in tools such as Aladin and TOPCAT.
