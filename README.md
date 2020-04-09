@@ -47,7 +47,6 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Other
 
 * [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
-
 * [Connecting to EPN-TAP services from python](https://github.com/epn-vespa/tutorials/blob/master/misc/pythonic-access-tutorial/pythonic-access-tutorial.md)
 
  ## Video tutorials
