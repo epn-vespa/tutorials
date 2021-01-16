@@ -47,8 +47,10 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Other
 
 * [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
-* [Connecting to EPN-TAP services from python](https://github.com/epn-vespa/tutorials/blob/master/misc/pythonic-access-tutorial/pythonic-access-tutorial.md)
+* [Accessing EPN-TAP services from python](https://github.com/epn-vespa/tutorials/blob/master/misc/pythonic-access-tutorial/pythonic-access-tutorial.md)
 * [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets) ](http://exoplanet.eu/API/)
+* [Using metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
+
 
  ## Video tutorials
 
