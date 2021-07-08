@@ -62,7 +62,7 @@ On the main menu click "File" => "Open URL"
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/2_Open_URL.png" width="500" alt="Open URL">  
 
 Add HiPS :  
-http://epn1.epn-vespa.jacobs-university.de:8080/marsmola/Mars-ELATLON-ICRS.hpx  
+http://epn1.epn-vespa.jacobs-university.de/marsmola/Mars-ELATLON-ICRS.hpx  
 Click submit.  
 
 <img src="https://raw.githubusercontent.com/megadiesel705/tutorials/master/jra-t4-EPN1-CRISM/img/2_Add_HIPS.png" width="500" alt="Add HiPS">  
