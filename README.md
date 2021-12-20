@@ -3,6 +3,9 @@
 The VESPA team has collected a set of tutorials covering several aspects of planetary sciences: Atmospheres, Surfaces, Magnetospheres, etc.
 These tutorials are provided as text (Markdown, pdf) or video.
 
+
+<img src="http://vespa.obspm.fr/media/images/European-Union-Flag.svg" width="50" alt="Planetary UV Observations">   Europlanet 2024 RI has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 871149 
+
 # Text tutorials
 
 ## Atmospheres
