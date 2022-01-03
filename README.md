@@ -28,8 +28,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Exoplanets
 
 * [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
-* [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
-* [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://voparis-srv.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
+* [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://voparis-srv-paris.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
+* [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://voparis-srv-paris.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
 
 
 
