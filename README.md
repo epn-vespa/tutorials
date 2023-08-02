@@ -23,6 +23,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 * [Identifying overlapping images in different services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
+* [Mars body-fixed frame and representation conversions (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/bodyfixed-frame-conversions.ipynb)
+* [Planetary images WCS manipulations (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb)
 
 
 ## Exoplanets
@@ -54,6 +56,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets) ](http://exoplanet.eu/API/)
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
+* [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
+
 
 
  ## Video tutorials
