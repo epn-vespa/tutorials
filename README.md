@@ -26,7 +26,6 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Mars body-fixed frame and representation conversions (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/bodyfixed-frame-conversions.ipynb)
 * [Planetary images WCS manipulations (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb)
 
-
 ## Exoplanets
 
 * [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
@@ -57,6 +56,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
+* [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
 
 
 
