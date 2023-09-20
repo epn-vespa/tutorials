@@ -57,6 +57,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
+* [Retrieving files under datalink using TOPCAT](https://voparis-wiki.obspm.fr/display/VES/How+to+retrieve+datalinks+from+a+selection+of+granules+using+TOPCAT)
 
 
 
