@@ -54,6 +54,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets) ](http://exoplanet.eu/API/)
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
+* [Sending an EPN-TAP query to all EPN-TAP services, and retrieving cumulative results ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
 * [Retrieving files under datalink using TOPCAT](https://voparis-wiki.obspm.fr/display/VES/How+to+retrieve+datalinks+from+a+selection+of+granules+using+TOPCAT)
