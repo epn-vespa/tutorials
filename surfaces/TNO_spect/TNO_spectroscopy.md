@@ -86,7 +86,7 @@ Alternative solutions exist which may be more efficient in some cases:
 
 * You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join"" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in uploads size, so it is better to reduce the size of the target list:
 
-``
+````
 ; target list from service MPC:
 SELECT target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ;
