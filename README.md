@@ -29,8 +29,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 ## Surfaces
  
-* [Mapping sparse spatial data with TOPCAT](https://voparis-confluence.obspm.fr/display/VES/Use+case%3A+mapping+sparse+spatial+data+with+TOPCAT)
-* [Several use cases on planetary surfaces with Aladin & TOPCAT](https://voparis-wiki.obspm.fr/pages/viewpage.action?pageId=14942383)
+* [Mapping sparse spatial data with TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56889197/Use+case+mapping+sparse+spatial+data+with+TOPCAT)
+* [Several use cases on planetary surfaces with Aladin & TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56893398/1-+Various+use+cases+on+planetary+surfaces+with+Aladin+TOPCAT)
 * [Lunar craters with TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/lunar_craters/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
@@ -65,7 +65,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
-* [Retrieving files under datalink using TOPCAT](https://voparis-wiki.obspm.fr/display/VES/How+to+retrieve+datalinks+from+a+selection+of+granules+using+TOPCAT)
+* [Retrieving files under datalink using TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56902007/How+to+retrieve+datalinks+from+a+selection+of+granules+using+TOPCAT)
 
 
 
