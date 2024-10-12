@@ -17,6 +17,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
 * [Sending an EPN-TAP query to all EPN-TAP services in python, and retrieving cumulative results ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)
+* [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
+
 
 
 ## Atmospheres
@@ -59,6 +61,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Spectroscopy
 * [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/master/misc/CASSIS_VESPA_tutorial.pdf)
 * [Accessing spectral data](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
+* [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
+
 
 ## Other
 
