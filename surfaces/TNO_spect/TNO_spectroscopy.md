@@ -40,53 +40,53 @@ EPN-TAP services includes generic list of asteroids with dynamical properties, a
 ## Tutorial
 
  
-### 1- Identify target of interest
+### 1- Identify targets of interest
 
 Several EPN-TAP data services provide dynamical properties of small bodies: MPC, NEOCC, MP3C, DynAstVO, etc.
 
-Specialists identify objects that belong to a dynamical class from these services, using a combination of orbital parameters. In some cases, such classes may be indicated. Here, we can identify TNOs from the MPC service by issuing a simple query: 
+Specialists can identify objects that belong to a dynamical class using a combination of orbital parameters provided by from these services. In some cases however, such classes may be readily indicated. Here, we can identify TNOs from the MPC service by issuing a simple query: 
 
 ``
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ``
 
-This returns a list of ~ 5700 objects with names and properties
+As of writing, this returns a list of ~ 5700 objects with names and properties
 
 
 ### 2- Getting the spectra
 
-The spectro\_asteroids service is a large collection of small body spectra, although those are grouped in dynamical classes.
-The list retrieved in step 1 can be used to query this service from target names — thanks to the homogeneity of EPNCore. 
+The spectro\_asteroids service is a large collection of small body spectra, but those are not grouped in dynamical classes.
+The list retrieved in step 1 can be used to query this service from target names, thanks to the homogeneity of EPNCore. 
 
 The easiest way to perform this is to use TOPCAT:
 
-* Send the above query to the MPC service from TOPCAT (or do it in the VESPA portal and SAMP the result table to TOPCAT)
-* Grab the whole table from spectro\_asteroids - you may need to remove the limit of answers in TOPCAT ("Max Rows" field):
+* From TOPCAT, send the above query to the MPC service (or do it in the VESPA portal and SAMP the result table to TOPCAT)
+* In TOPCAT, grab the whole table from spectro\_asteroids - you may need to remove the limit of answers ("Max Rows" field):
 
 ``
 (SELECT * FROM spectro\_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
-* In TOPCAT run a Pair match (from the Join menu) from the two tables, with algorithm Exact, Matched Value = target_name in both cases.
+* In TOPCAT, from the Join menu: run a Pair match between the two tables, with algorithm Exact, Matched Value = target_name in both cases
 * This will return a list of 45 spectra of TNO (at the time of writing)
 
 Links to the spectra are available under access\_url in this table.
 
-To plot the spectra in TOPCAT:
+To display the spectra in TOPCAT:
 
-* Go to Activate actions (in menu Views)
-* With the match table selected, click Plot Table in the left menu
-* The plot window will open and display something. 
-* Set up the display as you wish
-* clicking a row will plot the current spectrum
+* In menu Views, go to Activate actions
+* With the match result table selected, click Plot Table in the left menu
+* The plot window will open and display something
+* Set up the display as you wish, e.g.: reflectance(wavelength), with Form = Add line 
+* Clicking a row will plot the current spectrum
 
 
 ### 3- Alternative solutions
  
-Alternative solutions exist:
+Alternative solutions exist which may be more efficient in some cases:
 
-* You can upload the target list to the service publishing the spectro\_asteroids and run a cross match on the server (although not all TAP server allow this). This is especially convenient is the second service is too large to be downloaded easily.
-* You can do something similar in python, using the astropy library. The target list can be used to send individual queries (one per target) to the spectrum service.
+* You can upload the target list to the server publishing the spectro\_asteroids service, and run a cross match on the server (this is property of the TAP protocole, but some TAP servers may disable it). This is especially convenient is the second service is too large to be downloaded easily.
+* You can do something similar in python, using the astropy library. In this case you would loop on the target list and send individual queries to the spectrum service.
 
 
 
