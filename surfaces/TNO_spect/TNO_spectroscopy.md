@@ -44,7 +44,7 @@ EPN-TAP services includes generic list of asteroids with dynamical properties, a
 
 Several EPN-TAP data services provide dynamical properties of small bodies: MPC, NEOCC, MP3C, DynAstVO, etc.
 
-Specialists can identify objects that belong to a dynamical class using a combination of orbital parameters provided by from these services. In some cases however, such classes may be readily indicated. Here, we can identify TNOs from the MPC service by issuing a simple query: 
+Specialists can identify objects that belong to a dynamical class using a combination of orbital parameters provided by these services. In some cases however, such classes may be readily indicated. Here, we can identify TNOs from the MPC service by issuing a simple query: 
 
 ``
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
@@ -55,27 +55,26 @@ As of writing, this returns a list of ~ 5700 objects with names and properties
 
 ### 2- Getting the spectra
 
-The spectro\_asteroids service is a large collection of small body spectra, but those are not grouped in dynamical classes.
-The list retrieved in step 1 can be used to query this service from target names, thanks to the homogeneity of EPNCore. 
+The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical classe. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore. 
 
 The easiest way to perform this is to use TOPCAT:
 
 * From TOPCAT, send the above query to the MPC service (or do it in the VESPA portal and SAMP the result table to TOPCAT)
-* In TOPCAT, grab the whole table from spectro\_asteroids - you may need to remove the limit of answers ("Max Rows" field):
+* In TOPCAT, grab the whole table from spectro\_asteroids - check that you're not limited in number of answers ("Max Rows" field):
 
 ``
 (SELECT * FROM spectro\_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
-* In TOPCAT, from the Join menu: run a Pair match between the two tables, with algorithm Exact, Matched Value = target_name in both cases
-* This will return a list of 45 spectra of TNO (at the time of writing)
+* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra)
+* This will return a list of 49 spectra of TNO at the time of writing
 
 Links to the spectra are available under access\_url in this table.
 
 To display the spectra in TOPCAT:
 
-* In menu Views, go to Activate actions
-* With the match result table selected, click Plot Table in the left menu
+* With the match result table selected, go to Activation actions in menu Views 
+* Click Plot Table in the left menu
 * The plot window will open and display something
 * Set up the display as you wish, e.g.: reflectance(wavelength), with Form = Add line 
 * Clicking a row will plot the current spectrum
@@ -85,8 +84,20 @@ To display the spectra in TOPCAT:
  
 Alternative solutions exist which may be more efficient in some cases:
 
-* You can upload the target list to the server publishing the spectro\_asteroids service, and run a cross match on the server (this is property of the TAP protocole, but some TAP servers may disable it). This is especially convenient is the second service is too large to be downloaded easily.
-* You can do something similar in python, using the astropy library. In this case you would loop on the target list and send individual queries to the spectrum service.
+* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join"" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in uploads size, so it is better to reduce the size of the target list:
+``
+; target list from service MPC:
+SELECT target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
+;
+; join on service spectro_asteroids:
+SELECT TOP 100 *
+  FROM spectro_asteroids.epn_core AS db
+  JOIN TAP_UPLOAD.t9 AS tc
+    ON (db.target_name = tc.target_name)
+``
+
+
+* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to get spectra from several services. 
 
 
 
