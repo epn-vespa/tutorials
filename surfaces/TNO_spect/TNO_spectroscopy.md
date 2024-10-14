@@ -50,7 +50,7 @@ Specialists can identify objects that belong to a dynamical class using a combin
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ``
 
-As of writing, this returns a list of ~ 5700 objects with names and properties
+As of writing, this returns a list of ~ 5700 objects with names and properties (these also include Centaurs, though)
 
 
 ### 2- Getting the spectra
@@ -59,11 +59,11 @@ The spectro\_asteroids service is a large collection of small body spectra, but 
 
 The easiest way to perform this is to use TOPCAT:
 
-* From TOPCAT, send the above query to the MPC service (or do it in the VESPA portal and SAMP the result table to TOPCAT)
+* From TOPCAT, send the above query to the MPC service (or do it in the VESPA portal, then SAMP the result table to TOPCAT)
 * In TOPCAT, grab the whole table from spectro\_asteroids - check that you're not limited in number of answers ("Max Rows" field):
 
 ``
-(SELECT * FROM spectro\_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
+(SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
 * In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra)
@@ -78,16 +78,17 @@ To display the spectra in TOPCAT:
 * The plot window will open and display something
 * Set up the display as you wish, e.g.: reflectance(wavelength), with Form = Add line 
 * Clicking a row will plot the current spectrum
+* The Load table action works similarly
 
 
 ### 3- Alternative solutions
  
 Alternative solutions exist which may be more efficient in some cases:
 
-* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join"" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in uploads size, so it is better to reduce the size of the target list:
+* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join"" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in uploads size, so it is better to reduce the size of the target list to a minimum:
 
 ```
-; target list from service MPC:
+; target list from service MPC (will load as t9 in this TOPCAT session):
 SELECT target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ;
 ; join on service spectro_asteroids:
@@ -98,7 +99,7 @@ SELECT TOP 100 *
 ```
 
 
-* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to get spectra from several services. 
+* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services. 
 
 
 
