@@ -66,10 +66,13 @@ The easiest way to perform this is to use TOPCAT:
 (SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
-* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra)
-* This will return a list of 49 spectra of TNO at the time of writing
+* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra). See Fig. 1.
+* This returns a list of 49 spectra of TNO at the time of writing
 
 Links to the spectra are available under access\_url in this table.
+
+
+<img src="img/match_TNOs.png" width="400">
 
 To display the spectra in TOPCAT:
 
@@ -85,7 +88,7 @@ To display the spectra in TOPCAT:
  
 Alternative solutions exist which may be more efficient in some cases:
 
-* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in uploads size, so it is better to reduce the size of the target list to a minimum:
+* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
 
 ```
 ; target list from service MPC (will load as t9 in this TOPCAT session):
