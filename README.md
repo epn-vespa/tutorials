@@ -11,16 +11,13 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Basic / General
 
 * [Installing an EPN-TAP service - broadlines](https://github.com/epn-vespa/tutorials/blob/master/misc/Installing-a-data-service/Installing-a-data-service.md)
-
 * [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
-
 * [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
 * [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets) ](http://exoplanet.eu/API/)
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
 * [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb)
 * [Sending an EPN-TAP query to all EPN-TAP services in python, and retrieving cumulative results ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)
 * [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
-
 
 
 ## Atmospheres
