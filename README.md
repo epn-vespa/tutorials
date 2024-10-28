@@ -30,7 +30,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 ## Surfaces
  
-* [Mapping sparse spatial data with TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56889197/Use+case+mapping+sparse+spatial+data+with+TOPCAT)
+* [Mapping sparse spatial data with TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/mapping-sparse-data/VES-23855284-081219-0903-426.pdf)
 * [Several use cases on planetary surfaces with Aladin & TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56893398/1-+Various+use+cases+on+planetary+surfaces+with+Aladin+TOPCAT)
 * [Lunar craters with TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/lunar_craters/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
@@ -68,7 +68,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
-* [Retrieving files under datalink using TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56902007/How+to+retrieve+datalinks+from+a+selection+of+granules+using+TOPCAT)
+* [Retrieving files under datalink using TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/misc/datalink/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)
 
 
 
