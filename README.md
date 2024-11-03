@@ -23,16 +23,16 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Atmospheres
 
 * [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
-* [VIRTIS-VENUS EXPRESS](http://voparis-europlanet.obspm.fr/utilities/Tuto_TopCat_VEx.pdf)
+* [VIRTIS-VENUS EXPRESS](http://www.europlanet-vespa.eu/tutos/Tuto_TopCat_VEx.pdf)
 * [Comparing vertical profiles in the atmosphere of Mars (SPICAM_vs_MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/README.md)
-* [Matisse used with VIRTIS-VEx](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/MATISSEforVESPAtutorial.pdf)
+* [Matisse used with VIRTIS-VEx](http://www.europlanet-vespa.eu/tutos/MATISSEforVESPAtutorial.pdf)
 
 
 ## Surfaces
  
-* [Mapping sparse spatial data with TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/mapping-sparse-data/VES-23855284-081219-0903-426.pdf)
+* [Mapping sparse spatial data with TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
 * [Several use cases on planetary surfaces with Aladin & TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56893398/1-+Various+use+cases+on+planetary+surfaces+with+Aladin+TOPCAT)
-* [Lunar craters with TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/lunar_craters/Tutorial_Lunar_Crater_database_en.pdf)
+* [Lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 * [Identifying overlapping images in different services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
@@ -42,8 +42,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Exoplanets
 
 * [Exploring Exoplanets](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/README.md)
-* [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://voparis-srv-paris.obspm.fr/vo/planeto/tutorials/exoplanet/vo_description_basic.pdf)
-* [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://voparis-srv-paris.obspm.fr/vo/planeto/tutorials/exoplanet/vo_more_advanced.pdf)
+* [Plotting exoplanets with TOPCAT and Aladin -- simple plots](http://www.europlanet-vespa.eu/tutos/vo_description_basic.pdf)
+* [Plotting exoplanets with TOPCAT and Aladin -- advanced plots](http://www.europlanet-vespa.eu/tutos/vo_more_advanced.pdf)
 
 
 
@@ -58,8 +58,8 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 
 ## Spectroscopy
-* [CASSIS as a spectroscopy tool for VESPA](https://github.com/epn-vespa/tutorials/blob/master/misc/CASSIS_VESPA_tutorial.pdf)
-* [Accessing spectral data](http://voparis-europlanet.obspm.fr/utilities/Tuto_Spectro_1_0.pdf)
+* [CASSIS as a spectroscopy tool for VESPA](http://www.europlanet-vespa.eu/tutos/CASSIS_VESPA_tutorial.pdf)
+* [Accessing spectral data](http://www.europlanet-vespa.eu/tutos/Tuto_Spectro_1_0.pdf)
 * [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
 
 
@@ -68,7 +68,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
-* [Retrieving files under datalink using TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/misc/datalink/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)
+* [Retrieving files under datalink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)
 
 
 
