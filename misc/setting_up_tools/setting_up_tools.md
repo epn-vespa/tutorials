@@ -20,6 +20,7 @@ S. Erard
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
 | 1.0           | S. Erard      | 28/10/2024  |
+| 1.1           | S. Erard      | 2/11/2024  |
 
 
 ### Requirements and dependencies
@@ -142,7 +143,7 @@ New HiPS can also be computed from complete image maps. This is best done in a t
 
 ``
 java -Xmx16g -jar Hipsgen.jar -hhhcar in=Phobos_Viking_Mosaic_40ppd_DLRcontrol.jpg out=Phobos/PhobosHips color=jpg id=CDS/P/Phobos-Viking order=4 INDEX TILES
-`
+``
 
 You need to identify the optimal HiPS order that preserves the map resolution, and also to check that the HiPS is correctly oriented in Aladin. If longitudes are reversed, set ".longitude" to "descending" in properties (it may be more convenient to invert the map before conversion to HiPS).
 
