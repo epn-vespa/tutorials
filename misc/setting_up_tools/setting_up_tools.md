@@ -31,12 +31,12 @@ Data
 Tools
 
 ## Summary
-This tutorial describes the main settings of VO tools for use with VESPA
+This tutorial describes convenient settings of VO tools for use with Solar System data.
 
 
 ## Introduction
 
-The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (i.e., telescopic images of asteroids or planets), this is not optimal for planetary maps from orbital measurements.
+The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
 
 
 
@@ -75,7 +75,7 @@ Two options are available for 2D/flat mapping: car (plate carrée / cylindrical)
 
 (in Axes / Projection)
 
-- Projection = car or Aitoff (for 0° at center, range = 0-360°) — you want to use this for Aitoff
+- Projection = car or Aitoff (for 0° at center, range = 0-360°) — you want to use this option for Aitoff
 - Projection = car0 or Aitoff0 (for 0° on left border)
 - In both cases, keep View Sky system = Equatorial
 
@@ -84,7 +84,7 @@ Two options are available for 2D/flat mapping: car (plate carrée / cylindrical)
 
 ####  Standard settings for planetary maps in TOPCAT PlanePlot (cylindrical)
 
-The older PlanePlot window is still available to produce 2D cylindrical maps, and may provide additional flexibility in some cases. This looks more like a simple plot than the SkyPlot window, though.
+The older PlanePlot window is still available to produce 2D cylindrical maps, and may provide additional flexibility in some cases. This looks more like a simple plot than the SkyPlot window, but it may be more convenient in particular for atmospheric "maps" (e.g., latitude vs time).
 
 • For cylindrical maps with central meridian on the left border
 
@@ -115,7 +115,7 @@ The older PlanePlot window is still available to produce 2D cylindrical maps, an
 
 #### Standard settings for planetary maps and HiPS in Aladin:
 
-Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to handle Planetary data, which needs to be validated — go to Edit > User preferences and check the Planetary data box, then restart. Planetary data collections will be available from the left menu of Aladin.
+Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to handle Planetary data, which needs to be validated — go to Edit > User preferences and check the Planetary data box, then restart. Planetary data collections will become available from the left menu of Aladin.
 
 Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed in very efficiently. Planetary HiPS are available from the left menu, under Collection / Solar System, providing global image coverage of many bodies.
 
@@ -133,6 +133,18 @@ Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed
 #### Superposing images on HiPS
 
 Although Aladin will overplot images in the current coordinate frame, the positioning may be approximative. A secure way to overplot images is to first turn them into HiPS in Aladin.
+Contours (s\_region) and MOC will display correctly in Aladin.
+
+
+#### Building HiPS
+
+New HiPS can also be computed from complete image maps. This is best done in a terminal:
+
+java -Xmx16g -jar Hipsgen.jar -hhhcar in=Phobos_Viking_Mosaic_40ppd_DLRcontrol.jpg out=Phobos/PhobosHips color=jpg id=CDS/P/Phobos-Viking order=4 INDEX TILES
+
+You need to identify the optimal HiPS order that preserves the map resolution, and also to check that the HiPS is correctly oriented in Aladin. If longitudes are reversed, set ".longitude" to "descending" in properties (it may be more convenient to invert the map before conversion to HiPS).
+
+On this particular example: Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (Eros, 67P, etc).
 
 
 ### 3- AladinLite
