@@ -23,7 +23,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Atmospheres
 
 * [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
-* [VIRTIS-VENUS EXPRESS](http://www.europlanet-vespa.eu/tutos/Tuto_TopCat_VEx.pdf)
+* [Walkaround VIRTIS-Venus-Express](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/EPN-TAP-services-Virtis-Venus-Express-demo/EPN-TAP-services-Virtis-Venus-Express-demo.md)
 * [Comparing vertical profiles in the atmosphere of Mars (SPICAM_vs_MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/README.md)
 * [Matisse used with VIRTIS-VEx](http://www.europlanet-vespa.eu/tutos/MATISSEforVESPAtutorial.pdf)
 
