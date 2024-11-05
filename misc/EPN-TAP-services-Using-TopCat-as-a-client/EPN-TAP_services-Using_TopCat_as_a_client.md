@@ -15,7 +15,7 @@ Version: 1
 
 Name: [Keyuan Yin](https://github.com/megadiesel705)
 
-Note: First converted from [this site](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-TOPCAT.pdf)
+Note: First converted from [this site](http://www.europlanet-vespa.eu/Tuto_TOPCAT.pdf)
 
 <h2 id="Steps">Steps</h2>
 
@@ -128,7 +128,7 @@ VOplot offers other plotting services
 
 <h2 id="References">References</h2> 
 
-Please refer this markdown tutorial to [this resource](http://typhon.obspm.fr/VESPA-tutorials/docs/Tuto-TOPCAT.pdf)
+Please refer this markdown tutorial to [this resource](http://www.europlanet-vespa.eu/Tuto_TOPCAT.pdf)
 
 
 
