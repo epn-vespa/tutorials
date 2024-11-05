@@ -19,7 +19,7 @@ S. Erard
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 1.0           | S. Erard      | 28/10/2024  |
+| 1.0           | S. Erard      | 6/9/2017  |
 | 1.1           | S. Erard      | 2/11/2024  |
 
 
@@ -55,7 +55,7 @@ The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, 
 
 In 3D the difference with the celestial sphere is that the planet is observed from outside, and several conventions are different. 3D mapping may be adapted to ellipsoids, as long as the body shape is reasonably regular.
 
-• For 3D mapping on a sphere:
+**• For 3D mapping on a sphere:**
 
 (in Axes / Projection)
 
@@ -70,7 +70,7 @@ In 3D the difference with the celestial sphere is that the planet is observed fr
 
 <img src="img/TOPCAT_SkyPlot_sin.png" width="500" alt="4">  
 
-• For 2D maps:
+**• For 2D maps:**
 
 Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were always  centered on (0°,0°).
 
@@ -87,13 +87,13 @@ Two options are available for 2D/flat mapping: car (plate carrée / cylindrical)
 
 The older PlanePlot window is still available to produce 2D cylindrical maps, and may provide additional flexibility in some cases. This looks more like a simple plot than the SkyPlot window, but it may be more convenient in particular for atmospheric "maps" (e.g., latitude vs time).
 
-• For cylindrical maps with central meridian on the left border
+**• For cylindrical maps with central meridian on the left border**
 
 (in Axes / Range)
 
 - Set Max X value to 360°
 
-• To put the central meridian at the center (range = -180 to 180):
+**• To put the central meridian at the center (range = -180 to 180):**
 
 (in Axes / Range)
 
@@ -120,13 +120,13 @@ Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to
 
 Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed in very efficiently. Planetary HiPS are available from the left menu, under Collection / Solar System, providing global image coverage of many bodies.
 
-• To display a HiPS: 
+**• To display a HiPS:**
 
 - In the fields on top of the window, set Frame to "Planet" or "Planet deg" - this will use a grid in degrees (counted E and W from 0 - this is not the IAU convention, but this is OK).
 - Set Projection to Spheric (which is actually: orthographic), Cartesian (actually: cylindrical), or Mercator for most applications.
 - Aitoff and Mollweide projections are similar to sinusoidal, with all the surface visible simultaneously; keep them centered on (0°,0°).
 - In properties, ".longitude" should be set to "ascending" for correct orientation.
-- The grid button is on the bootom left of the display
+- The grid button is on the bottom left of the display
 
 <img src="img/Aladin_Ceres.png" width="500" alt="4">  
 
