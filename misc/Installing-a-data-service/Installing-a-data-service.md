@@ -56,7 +56,7 @@ The recommended data server for VESPA is DaCHS, provided by the University of He
 To gain familiarity with the service definition process, we recommend to first install DaCHS on Docker on your laptop, and play with it. 
 
 See installation /configuration doc here:
-[VESPA_WORKSHOP.pdf](http://www.europlanet-vespa.eu/VESPA_WORKSHOP.pdf)
+[VESPA_WORKSHOP.pdf](http://www.europlanet-vespa.eu/tutos/VESPA_WORKSHOP.pdf)
 
 
 
@@ -77,7 +77,7 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56897003/Individual+DMP
 ### 3- Installing the data service
  
 The next step is to ingest this table in the server, by writing a short script. See the next part of the installation doc here:
-[VESPA_WORKSHOP.pdf](http://www.europlanet-vespa.eu/VESPA_WORKSHOP.pdf)
+[VESPA_WORKSHOP.pdf](http://www.europlanet-vespa.eu/tutos/VESPA_WORKSHOP.pdf)
 
 A related service definition tutorial provides an example:
 [https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56900060/Setting-up+an+EPN-TAP+service+Tutorial+for+Beginners](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56900060/Setting-up+an+EPN-TAP+service+Tutorial+for+Beginners)
