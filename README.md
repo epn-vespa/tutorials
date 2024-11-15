@@ -11,9 +11,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Basic / General
 
 * [Installing an EPN-TAP service - broadlines](https://github.com/epn-vespa/tutorials/blob/master/misc/Installing-a-data-service/Installing-a-data-service.md)
-
 * [VESPA portal walkaround](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/vespa-portal.md)
-
 * [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
 * [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
 * [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets) ](http://exoplanet.eu/API/)
