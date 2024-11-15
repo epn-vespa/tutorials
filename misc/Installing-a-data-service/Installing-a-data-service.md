@@ -36,7 +36,7 @@ This tutorial describes quickly how to install a new data service in VESPA
 
 ## Introduction
 
-VESPA is an facility for Solar System data which is intended to: 
+VESPA is a facility for Solar System data which is intended to: 
 
 * help users find data of interest for their research
 * help research teams make their data available directly at limited cost
@@ -46,7 +46,7 @@ VESPA relies on the Virtual Observatory framework, and enlarges it to support So
 The baseline is therefore to have one or more servers installed in each contributing institute. If this proves inconvenient, alternative ways exist. 
 
 
-## Tutorial
+## Steps
 
  
 ### 1- Install a data server
@@ -106,7 +106,7 @@ We can help you start or finalize you data service, and indicate higher level fu
 * getting access through search tools and python libraries, workflows
 
 
-## Links
+## References
 
 More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
 
