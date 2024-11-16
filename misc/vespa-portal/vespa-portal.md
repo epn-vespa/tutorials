@@ -55,16 +55,38 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Field panels**: Open field panels by clicking on their banner. Fields set in closed panels are included in the query (click the "*Reset*" button at the bottom if needed). Some parameters (e.g., target_class) only accept predefined values - click them to choose from a list.
 
-**Target Name**: Start typing a Solar System object name. A name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - and if you select a proposed value, the associated target class will also be selected.
+**Target Name**: Start typing a Solar System object name. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - and if you select a proposed value, the associated target class will also be selected. All known aliases of the target are included in the query.
 
 **Coordinates**: To search by coordinates (in *Location* panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "None" may speed up the request if no coordinates are provided.
+
+**Longitudes**: In body-fixed coordinates, longitudes range from 0° to 360° eastward (IAU planetocentric convention).
+
+**Spectral range**: First select the unit (Hz, µm, or cm-1) to set the scale as frequency, wavelength, or wavenumber, then enter range.
+
+**Measurement type** (in Data reference panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
+
 
 ### Send Query
 To send the query, click the blue "*Submit*" button at the bottom of the column.
 
-### Alternative to menus
-The field panels only contain the main EPN-TAP parameters. Click "**ADQL query**" to enter the query directly (WHERE clause only - this already allows for more complicated queries, including all possible columns).
+### ADQL queries
+The field panels only contain the main EPN-TAP parameters. When clicking "**ADQL query**" the parameter form is replaced by a free text field where advanced users can write a query directly in ADQL language. This mode only addresses the WHERE clause of the ADQL query.
 
+This mode allows for powerful searches, e.g. using the footprint provided in the s_region parameter:
+```
+  INTERSECTS(s_region, POLYGON('UNKNOWNFrame', 150, 0, 150, 5, 190, 5, 190, 0))=1
+  CONTAINS(s_region, POLYGON('UNKNOWNFrame', 150, 0, 150, 5, 190, 5, 190, 0))=1
+```
+
+or searches of individual values in lists, such as:
+
+```
+  ivo_hashlist_has(lower(instrument_name), 'iks') = 1
+```
+
+The latter function is supported at least by DaCHS servers (used by most EPN-TAP services).
+
+To issue more sophisticated queries on a single service (or to non EPN-TAP services on a single server), TOPCAT, TapHandle, and python libraries may prove more flexible than the VESPA portal.
 
 
 ## Global Results
@@ -91,6 +113,7 @@ Clicking a service row in the global result area enters the service mode: the ma
 * The **Title box** contains global information, including a link to the main web site of the service, if available.
 * In the default **Tabular View** a thumbnail is displayed when hovering the mouse over the table (if provided by the service). You can switch to **Gallery View** to display all thumbnails together.
 * The left menu is still available to change or refine your query in the service displayed. All EPN-TAP parameters, including columns specific to this service, are available from the "*Other*" panel.
+* Clicking on the table column header switches the **spectral scale** and unit between Hz, cm^-1 and µm.
 
 
 <img src="img/Service_page.png" width="500" alt="image">
@@ -105,6 +128,7 @@ Information can be sent to open VO applications using the local menus at the bot
 
 * **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "VO tools" under "Help"). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
 * **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
+* In case the data are not sent to the support application (webstart reloaded continuously), try and deactivate any proxy in your browser. 
 
 The two menus on the bottom right provide support functions when available:
 
