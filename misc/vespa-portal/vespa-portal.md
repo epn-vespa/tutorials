@@ -131,9 +131,9 @@ Information can be sent to open VO applications using the local menus at the bot
 | Data type       | Tool        |
 | ------------- |:-------------:|
 | Table           | TOPCAT      |
-| Spectra           | CASSIS      |
+| Spectra           | CASSIS, Splat-VO     |
 | Images           | Aladin      |
-| CDF           |       |
+| CDF           | TOPCAT      |
 | VIRTIS PDS Cubes        | APERICubes      |
 | Das2stream           | Autoplot      |
 | PDS4 table           | TOPCAT      |
