@@ -127,12 +127,25 @@ Clicking a service row in the global result area enters the service mode: the ma
 Information can be sent to open VO applications using the local menus at the bottom left of the table. Select row(s) of interest and click:
 
 * **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "VO tools" under "Help"). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
+
+| Data type       | Tool        |
+| ------------- |:-------------:|
+| Table           | TOPCAT      |
+| Spectra           | CASSIS      |
+| Images           | Aladin      |
+| CDF           |       |
+| VIRTIS PDS Cubes        | APERICubes      |
+| Das2stream           | Autoplot      |
+| PDS4 table           | TOPCAT      |
+
+
+
 * **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
 * In case the data are not sent to the support application (webstart reloaded continuously), try and deactivate any proxy in your browser. 
 
 The two menus on the bottom right provide support functions when available:
 
-* **Footprints**: Send the footprints of selected rows in various format to Aladin or TOPCAT if open.
+* **Footprints**: Send the footprints of selected rows in various format to Aladin and TOPCAT if open.
 * **Download thumbnails**: Will zip thumbnails of the selected rows.
 
 **In the SELECT row** at the bottom the "Download VOtable" icon will download all results - copying the associated link will store the complete TAP request for future use.
