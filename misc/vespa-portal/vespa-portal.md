@@ -128,6 +128,8 @@ Clicking a service row in the global result area enters the service mode: the ma
 ## Data & metadata retrieval
 Information can be sent to open VO applications using the local menus at the bottom left of the table. Select row(s) of interest and click:
 
+* **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
+
 * **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "VO tools" under "Help"). Other applications supporting the SAMP protocol may accept data (e.g. ds9, ImageJ and QGIS with SAMP plugin, etc). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
 
 | Data type       | Tool        |
@@ -141,8 +143,6 @@ Information can be sent to open VO applications using the local menus at the bot
 | PDS4 table           | TOPCAT      |
 
 
-
-* **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
 
 **When downloading data**:
 
