@@ -135,12 +135,13 @@ Information can be sent to open VO applications using the local menus at the bot
 | Data type       | Tool        |
 | ------------- |:-------------:|
 | Table           | TOPCAT      |
-| Spectra           | CASSIS, Splat-VO     |
-| Images           | Aladin      |
-| CDF           | TOPCAT      |
+| Spectra         | CASSIS, Splat-VO     |
+| Images          | Aladin, ImageJ with SAMP plugin, possibly ds9    |
+| CDF             | TOPCAT      |
 | VIRTIS PDS Cubes        | APERICubes      |
-| Das2stream           | Autoplot      |
-| PDS4 table           | TOPCAT      |
+| Das2stream          | Autoplot      |
+| WMS (OGC)           | QGIS with SAMP plugin      |
+| PDS4 table          | TOPCAT      |
 
 
 
