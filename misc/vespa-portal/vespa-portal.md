@@ -57,7 +57,7 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Target Name**: Start typing a Solar System object name — IAU names are expected. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - uncheck this if you don't get the expected results. When using quaero, all known aliases of the target are included in the query.
 
-**Coordinates**: To search by coordinates (in ""*Location*"" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "*None*" may speed up the request if no coordinates are provided.
+**Coordinates**: To search by coordinates (in "*Location*" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "*None*" may speed up the request if no coordinates are provided.
 
 **Longitudes**: In body-fixed coordinates, longitudes always range from 0° to 360° eastward (IAU planetocentric convention).
 
@@ -65,7 +65,7 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Time\_min and Time\_max**: are entered and displayed as ISO strings in the portal (but they are encoded as Julian Days in the service table).
 
-**Measurement type** (in ""*Data reference*"" panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
+**Measurement type** (in "*Data reference*" panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
 
 
 ### Send Query
