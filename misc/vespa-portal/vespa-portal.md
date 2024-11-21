@@ -112,13 +112,24 @@ When submitting a query, the central area is rebuilt to display the number of ma
 # Service Pages
 Clicking a service row in the global result area enters the service mode: the main area now displays a table of results described by many parameters in column. By default, only the top of the table is displayed with a selection of columns. The set of buttons below the green info box are used to set the table layout (number of columns). All columns are displayed by clicking the "**Show all**" button. The exposed table can be enlarged with the "*Show xx entries*" button at the bottom left corner, and browsed with the buttons at the bottom right corner.
 
+<img src="img/Service_page.png" width="500" alt="image">
+
+
 * The **Title box** contains global information, including a link to the main web site of the service, if available.
 * In the default **Tabular View** a thumbnail is displayed when hovering the mouse over the table (if provided by the service). You can switch to **Gallery View** to display all thumbnails together.
 * The left menu is still available to change or refine your query to the service displayed. All EPN-TAP parameters, including columns specific to this service, are available from the "*Other*" panel. Click the "+" button to use several such parameters, "x" to remove one. 
-* Clicking on the table column header switches the spectral scale and unit between Hz, cm^-1 and µm.
+* Clicking on the table **column header** switches the spectral scale and unit between Hz, cm^-1 and µm.
+* Some values provided in table cells can be clicked:
 
 
-<img src="img/Service_page.png" width="500" alt="image">
+| Column       | Type        |
+| ------------- |:-------------:|
+| access\_url           | Main data product      |
+| thumbnail\_url         | Small image of this product     |
+| external\_url         | Detailed web page     |
+| Datalink        | List of related links for this granule       |
+| s\_region          | footprint as contour: copy or SAMP    |
+| coverage             | footprint as MOC: copy or SAMP      |
 
 
 ## Mouse actions
