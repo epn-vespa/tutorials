@@ -55,17 +55,17 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Field panels**: Open field panels by clicking on their banner. Fields set in closed panels are included in the query (click the "*Reset*" button at the bottom if needed). Some parameters (e.g., target_class) only accept predefined values - click them to choose from a list.
 
-**Target Name**: Start typing a Solar System object name — IAU names are expected. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - check this if you don't get expected results. When using quaero, all known aliases of the target are included in the query.
+**Target Name**: Start typing a Solar System object name — IAU names are expected. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - uncheck this if you don't get the expected results. When using quaero, all known aliases of the target are included in the query.
 
-**Coordinates**: To search by coordinates (in *Location* panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "None" may speed up the request if no coordinates are provided.
+**Coordinates**: To search by coordinates (in ""*Location*"" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "*None*" may speed up the request if no coordinates are provided.
 
 **Longitudes**: In body-fixed coordinates, longitudes always range from 0° to 360° eastward (IAU planetocentric convention).
 
 **Spectral range**: First select the unit (Hz, µm, or cm-1) to set the scale as frequency, wavelength, or wavenumber, then enter range.
 
-**Time\_min and Time\_max**: Are encoded as Julian Days (although displayed as ISO strings in the portal)
+**Time\_min and Time\_max**: are entered and displayed as ISO strings in the portal (but they are encoded as Julian Days in the service table).
 
-**Measurement type** (in Data reference panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
+**Measurement type** (in ""*Data reference*"" panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
 
 
 ### Send Query
@@ -98,15 +98,15 @@ When submitting a query, the central area is rebuilt to display the number of ma
 
 * Use the "**Service categories**" menu to restrain display and searches to services pertaining to a science field.
 * Click on a service title to access detailed content (service mode) - its results can also be downloaded or sent to TOPCAT directly.
-* The cog wheel switches to **Custom mode**, where you provide the url and schema name of any EPN-TAP service (allows accessing unpublished services).
-* Some EPN-TAP services are declared in the IVOA registry but not listed in the entry page of the VESPA portal — this is because they haven't passed a review yet. Those can be queried individually in Custom mode.
+* The cog wheel switches to **Custom mode**, where you provide the url and schema name of any EPN-TAP service. Such services do not to be declared in the registry (i.e., unpublished services are accessible).
+* Some EPN-TAP services are declared in the IVOA registry but not listed in the entry page of the VESPA portal — this is because they haven't passed a complete review yet. Those can be queried individually in Custom mode.
 
 
 
 ### Additional queries
 
 * **Results Compilation**: Below the list of services, an extra row groups the results from all services in a single table (with some limitation in result number). This table cannot be displayed in the portal but can be sent to TOPCAT, or downloaded as a VOTable.
-* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service (limited to dataset level). The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc). 
+* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc). 
 
 
 # Service Pages
@@ -122,18 +122,18 @@ Clicking a service row in the global result area enters the service mode: the ma
 * Some values provided in table cells can be clicked:
 
 
-| Column       | Type        |
+| Column       | Link to        |
 | ------------- |:-------------:|
 | access\_url           | Main data product      |
 | thumbnail\_url         | Small image of this product     |
-| external\_url         | Detailed web page     |
+| external\_url         | Detailed web page for this granule    |
 | Datalink        | List of related links for this granule       |
 | s\_region          | footprint as contour: copy or SAMP    |
 | coverage             | footprint as MOC: copy or SAMP      |
 
 
 ## Mouse actions
-*   **Selections**: Individual results can be selected/unselected by clicking on table rows, using your system shortcuts. "Select all" / "Reset" buttons are available at the top of the table.
+*   **Selections**: Individual results can be selected/unselected by clicking on table rows, using your system shortcuts. "*Select all*" / "*Reset*" buttons are available at the top of the table.
 
 
 ## Data & metadata retrieval
@@ -141,7 +141,7 @@ Information can be sent to open VO applications using the local menus at the bot
 
 * **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
 
-* **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "VO tools" under "Help"). Other applications supporting the SAMP protocol may accept data (e.g. ds9, ImageJ and QGIS with SAMP plugin, etc). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
+* **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "*VO tools*" under "*Help*"). Other applications supporting the SAMP protocol may accept data (e.g. ds9, ImageJ and QGIS with SAMP plugin, etc). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
 
 | Data type       | Tool        |
 | ------------- |:-------------:|
@@ -151,7 +151,7 @@ Information can be sent to open VO applications using the local menus at the bot
 | CDF             | TOPCAT      |
 | VIRTIS PDS Cubes        | APERICubes      |
 | Das2stream          | Autoplot      |
-| WMS (OGC)           | QGIS with SAMP plugin      |
+| WMS images           | QGIS with SAMP plugin      |
 | PDS4 tables          | TOPCAT      |
 
 
@@ -162,12 +162,12 @@ Information can be sent to open VO applications using the local menus at the bot
 
 * If you need to retrieve an ascii version of data provided as VOTable (e.g., Titan profiles service), first check if the service includes rows providing the data in ascii format. Otherwise, send as Table to TOPCAT and save it in ascii from there (this can be scripted for pipeline processing). 
 
-The two menus on the bottom right provide support functions when available:
+The two menus at bottom right provide support functions when available:
 
-* **Footprints**: Send the footprints of selected rows in various format to Aladin and TOPCAT if open.
+* **Footprints**: Send the footprints of selected rows to Aladin and TOPCAT if open, as contours or MOCs.
 * **Download thumbnails**: Will zip thumbnails of the selected rows.
 
-**In the SELECT row** at the bottom the "Download VOtable" icon will download all results - copying the associated link will store the complete TAP request for future use.
+**In the SELECT row** at the bottom the "*Download VOtable*" icon will download all results - copying the associated link will store the complete TAP request for future use.
 
 # To go further
 
