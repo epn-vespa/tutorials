@@ -57,7 +57,7 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Target Name**: Start typing a Solar System object name — IAU names are expected. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - uncheck this if you don't get the expected results. When using quaero, all known aliases of the target are included in the query.
 
-**Coordinates**: To search by coordinates (in "*Location*" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. Using "*None*" may speed up the request if no coordinates are provided.
+**Coordinates**: To search by coordinates (in "*Location*" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. 
 
 **Longitudes**: In body-fixed coordinates, longitudes always range from 0° to 360° eastward (IAU planetocentric convention).
 
@@ -88,7 +88,7 @@ or searches of individual values in lists, such as:
 
 The latter function is supported at least by DaCHS servers (used by most EPN-TAP services).
 
-To issue more sophisticated queries on a single service (or to non EPN-TAP services on a single server), TOPCAT, TapHandle, and python libraries may prove more flexible than the VESPA portal.
+To issue more sophisticated queries on a single service (or to several TAP services on a single server), TOPCAT, TapHandle, and python libraries may prove more flexible than the VESPA portal.
 
 
 ## Global Results
@@ -98,7 +98,7 @@ When submitting a query, the central area is rebuilt to display the number of ma
 
 * Use the "**Service categories**" menu to restrain display and searches to services pertaining to a science field.
 * Click on a service title to access detailed content (service mode) - its results can also be downloaded or sent to TOPCAT directly.
-* The cog wheel switches to **Custom mode**, where you provide the url and schema name of any EPN-TAP service. Such services do not to be declared in the registry (i.e., unpublished services are accessible).
+* The cog wheel switches to **Custom mode**, where you provide the url and schema name of any EPN-TAP service. Such services do not have to be declared in the registry (i.e., unpublished services are accessible).
 * Some EPN-TAP services are declared in the IVOA registry but not listed in the entry page of the VESPA portal — this is because they haven't passed a complete review yet. Those can be queried individually in Custom mode.
 
 
@@ -106,7 +106,7 @@ When submitting a query, the central area is rebuilt to display the number of ma
 ### Additional queries
 
 * **Results Compilation**: Below the list of services, an extra row groups the results from all services in a single table (with some limitation in result number). This table cannot be displayed in the portal but can be sent to TOPCAT, or downloaded as a VOTable.
-* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc). 
+* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc). This function is only available when using the query form (not the ADQL query mode).
 
 
 # Service Pages
