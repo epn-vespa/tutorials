@@ -1,14 +1,7 @@
 ## Plotting shape models in TOPCAT
 
-**Tuto in progress for TOPCAT version 4.11beta - for the time being this is only a baseline to be cleaned up and finalized. See the associated documentation, also in dev:****
+**Tuto in progress for TOPCAT version 4.11beta - for the time being this is only a baseline to be cleaned up and finalized. See the associated documentation, also in dev:**
 https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
-
-[Tutorial](#use-case)  
-[Authors](#author)  
-[Summary](#summary)  
-[Introduction](#introduction)  
-[Tutorial](#tutorial)  
-[Links](#links)  
 
 ## Tutorial
 
@@ -46,7 +39,9 @@ The tutorial consists in:
 
 3) Overplotting images / data pre-projected on the same shape model, for quicklook or more accurate plots. Possibly include an extra information such as albedo or fixed illumination for reference.
 
-Background on the procedure and formats are provided on this page:``
+Background on the procedure and formats are provided on this page:
+
+``
 https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
 ``
 
@@ -54,7 +49,9 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+
 
 #### Load a shape model of Phobos
 
-In TOPCAT, click the Open table icon, select Format = ver and enter URL = ``
+In TOPCAT, click the Open table icon, select Format = ver and enter URL =
+
+ ``
 https://sbnarchive.psi.edu/pds4/non_mission/gaskell.phobos.shape-model/data/phobos_ver64q.tab
 ``
 
@@ -85,7 +82,7 @@ Rotate and manipulate the figure in 3D. To improve the rendering you can try, in
 
 > You will notice in the Position tab that the default display for this type of shape model uses Coordinates = Components and X/Y/Z set to the corresponding columns of the vertex table.
 
-<img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Phobos_simple.png" alt="Phobos_simple.png" width="338"><img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Phobos_hires.png" alt="" width="267">
+<img title="" src="img/Phobos_simple.png" alt="Phobos_simple.png" width="338"><img title="" src="img/Phobos_hires.png" alt="" width="267">
 
 *Fig.1: phobos_ver64q.tab and phobos_ver256q.tab shape models from PDS SBN (Gaskell, with increasing resolution)*
 
@@ -93,7 +90,9 @@ Rotate and manipulate the figure in 3D. To improve the rendering you can try, in
 
 #### Plot a shape model of comet 67P
 
-As previously, load this file in TOPCAT with Format = ver and URL = ``
+As previously, load this file in TOPCAT with Format = ver and URL =
+
+ ``
 http://comsim.esac.esa.int/rossim/SHAPE_MODEL_DRAFTS/OTHER_LEGACY/SHAP7_v1.6/cg-spc-shap7-v1.6-cheops.ver
 ``
 
@@ -117,7 +116,7 @@ Add this data as previously to the plot and adjust the symbol size.
 
 > By default, the same color scale is used to plot both data files, which makes sense if you're plotting the same quantity. You can access an independent color table (actually, several ones) by selecting Shading mode = Paux and Aux2shader = another color table. This color ramp will not be displayed in the caption, so the main color table should be used with the main parameter.
 
-<img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/67P_VIR.png" alt="" width="315"><img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/67P_VIR2.png" title="" alt="" width="326">
+<img title="" src="img/67P_VIR.png" alt="" width="315"><img src="img/67P_VIR2.png" title="" alt="" width="326">
 
 *Fig.2: Two views of comet 67P nucleus with overlaid VIRTIS footprints (values plotted on footprint center)*
 
@@ -137,11 +136,11 @@ Deactivate the default Mark Form and in the Polygon form play with Shading mode 
 
 Compare the low resolution Phobos model to the 67P high resolution model in this solid display mode. Is higher resolution always optimal for this application?
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Phobos_withRoI.png" title="" alt="" width="624">
+<img src="img/Phobos_withRoI.png" title="" alt="" width="624">
 
 *Fig.3: Phobos as a plate mesh, with a region of interest overlaid on vertices*
 
-<img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Eros_mesh.png" alt="" width="315"><img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Eros_solid.png" alt="" width="310">
+<img title="" src="img/Eros_mesh.png" alt="" width="315"><img title="" src="img/Eros_solid.png" alt="" width="310">
 
 *Fig.4: Eros plate model from DAMIT, mesh and solid view - the plotted quantity is the distance from center*
 
@@ -149,7 +148,7 @@ Compare the low resolution Phobos model to the 67P high resolution model in this
 
 In this case, you want to use a secondary color scale by setting the plate Shading mode to Paux, as described above.
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Lutetia_RoI.png" title="" alt="" width="621">
+<img src="img/Lutetia_RoI.png" title="" alt="" width="621">
 
 *Fig.5: Lutetia plate model from DAMIT, solid view with observations overlaid on footprint centers*
 
@@ -167,13 +166,17 @@ In both cases, we have to match the data file with the plate model based on plat
 
 To illustrates how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models produced by inversion of light curves.
 
-- Load the shape model of Vesta with format = ver and URL= ``
+- Load the shape model of Vesta with format = ver and URL=
+  
+   ``
   https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64139/shape.txt
   ``
 
 - Plot the plate table as previously.
 
-We want to overlay the albedo texture available at ``
+We want to overlay the albedo texture available at
+
+ ``
 https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo
 ``
 
@@ -182,7 +185,7 @@ This file provides one albedo value per plate on this shape model - unfortunatel
 - Open the Pair match tool from the tool bar. Set Algorithm = Exact value, tables = vestaalbedo.txt and shape.txt-2, both with Matched Value column = $0 (which stands for row number), and keep Match selection = best match symmetric, Join type = 1 and 2. This will join the matching rows in a new table called match(x1,x2).
 - Display this matched table in the Cube plot window as previously, this time using Aux = col1 (i.e. the albedo value)
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Vesta_albedo.png" title="" alt="" width="627">
+<img src="img/Vesta_albedo.png" title="" alt="" width="627">
 
 *Fig. 6: Vesta plate model from DAMIT, with albedo overlaid on plates*
 
@@ -194,7 +197,8 @@ In this case you can provide a complete albedo texture with shading mode = Paux 
 
 This type of plot is relevant for a publication.
 
-![](/Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Phobos_plates.png)
+<img src="img/Phobos_plates.png" title="" alt="" width="627">
+
 
 *Fig. 7: Phobos with Z coordinate on plates (grey scale) and a dummy parameter overlaid on plates in a Region of Interest (color)*
 
@@ -214,11 +218,9 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 - In the Form tab, set Shading mode to Aux and Aux to col5 (topographic slope), then increase the Shape size.
 - When displaying low resolution shape models such as this one, adding a Line3D form may improve the rendering.
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/shape_models/img/Eros_lonlat.png" title="" alt="" width="638">
+<img src="img/Eros_lonlat.png" title="" alt="" width="638">
 
-*Fig. 7: Older Eros lon-lat model from PDS SBN, with slope plotted on coordinate grid*
-
-
+*Fig. 8: Older Eros lon-lat model from PDS SBN, with slope plotted on coordinate grid*
 
 > Note: the lonlat format was subject to severe artefacts and discontinuities. It can only provide quicklook display, as it doesn't define extended plates. 
 
