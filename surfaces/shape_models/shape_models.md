@@ -66,7 +66,7 @@ Ingesting this type of file produces 2 tables in TOPCAT:
 
 #### Plot Phobos as a point cloud
 
-Select the first table and open the Cube plot window from the tool bar. The point cloud is displayed using the default Mark form.
+Select the first table and open the Cube plot window from the tool bar. The point cloud is displayed using the default Mark form (Fig. 1).
 
 - It is important to set up the axis length uniformly: go to Axes > Coords and check the "Isometric" box
 
@@ -84,13 +84,13 @@ Rotate and manipulate the figure in 3D. To improve the rendering you can try, in
 
 <img title="" src="img/Phobos_simple.png" alt="Phobos_simple.png" width="338"><img title="" src="img/Phobos_hires.png" alt="" width="267">
 
-*Fig.1: phobos_ver64q.tab and phobos_ver256q.tab shape models from PDS SBN (Gaskell, with increasing resolution)*
+*Fig. 1: phobos_ver64q.tab and phobos_ver256q.tab shape models from PDS SBN (with increasing resolution)*
 
 ### 2-  Quicklook display of data on a shape model
 
 #### Plot a shape model of comet 67P
 
-As previously, load this file in TOPCAT with Format = ver and URL =
+As previously, load the shape model file in TOPCAT with Format = ver and URL =
 
  ``
 http://comsim.esac.esa.int/rossim/SHAPE_MODEL_DRAFTS/OTHER_LEGACY/SHAP7_v1.6/cg-spc-shap7-v1.6-cheops.ver
@@ -104,25 +104,25 @@ Plot the vertex table as previously in the Cube plot window, don't forget to che
 
 • In TOPCAT, read the local file <a href="img/VH3Db.txt">"VH3Db.txt"</a> in ascii format —&nbsp;it is derived from VIRTIS / Rosetta observations from the 1D H-channel. The file includes a measured reflectance and the Cartesian coordinates of the footprint center for successive locations.
 
-In the previous Cube plot window, add a new positional plot control. 
+In the previous Cube plot window, add a new positional layer control. 
 
-- In the Position tab for this layer, select VH3Db.txt
+- In the Position tab for this layer, select the table VH3Db.txt
 - In the Form tab, Set Shading mode to Aux, Aux to col4, and adjust Shape size to manage continuity
 - The color scale can be modified under the Aux Axis icon in the control stack.
 
 • Now read the local file  <a href="img/VM3D.txt">"VM3D.txt"</a> in ascii format —&nbsp;this is a similar file derived from the imaging channel of VIRTIS / Rosetta. 
 
-Add this data as previously to the plot and adjust the symbol size. 
+Add this data as previously to the plot and adjust the symbol size (Fig. 2). 
 
-> By default, the same color scale is used to plot both data files, which makes sense if you're plotting the same quantity. You can access an independent color table (actually, several ones) by selecting Shading mode = Paux and Aux2shader = another color table. This color ramp will not be displayed in the caption, so the main color table should be used with the main parameter.
+• You can similarly experiment with the local file ["phobosRoIvert.txt"](img/phobosRoIvert.txt) and the Phobos shape model (Fig. 3).
+
+> By default, the same color scale is used to plot both data files on 67P, which makes sense if you're plotting the same quantity. You can access an independent color table (actually, several ones) by selecting Shading mode = Paux and Aux2shader = another color table. This color ramp will not be displayed in the caption, therefore the main color table should be used with the main parameter (Fig. 2b).
 
 <img title="" src="img/67P_VIR.png" alt="" width="315"><img src="img/67P_VIR2.png" title="" alt="" width="326">
 
-*Fig.2: Two views of comet 67P nucleus with overlaid VIRTIS footprints (values plotted on footprint center)*
+*Fig. 2: Two views of comet 67P nucleus with overlaid VIRTIS footprints (values plotted on footprint center)*
 
-• You can similarly experiment with the local file ["phobosRoIvert.txt"](img/phobosRoIvert.txt) and the Phobos shape model (Fig.3).
-
-> Notice that in this case a shape model is embedded in the data files as a set of 3D coordinates. It doesn't have to be the exact same shape as the reference one plotted in the first layer, and can even point to locations above or below the surface (i.e., coma or sub-surface for a comet).
+> Notice that in this section a shape model is embedded in the data files as a set of 3D coordinates. It doesn't have to be the exact same shape as the reference one plotted in the first layer, and can even point to locations above or below the surface (i.e., coma or sub-surface for a comet).
 
 ### 3- Solid plate models
 
@@ -130,41 +130,41 @@ Open a new Cube plot window, select the *plate* table (e.g., "phobos_ver64q.tab-
 
 Deactivate the default Mark Form and in the Polygon form play with Shading mode and Polygon mode. 
 
-- The shape model is displayed as a mesh for most settings
-- set Polygon mode = Fill and Shading mode = Aux, with Aux = one the table columns (try the Z coordinate at this point). This plots the Aux parameter on the solid shape, and the rear side is hidden from view
-- Add a second Polygon form and set Shading mode = translucent and Polygon mode = outline. This will overlay the mesh to improve legibility (as in Fig.5).
+- The shape model is displayed as a mesh for most settings (Fig. 3 & 4a)
+- set Polygon mode = Fill and Shading mode = Aux, with Aux = one the table columns (try the Z coordinate at this point). This plots the Aux parameter on the solid shape, and the rear side is hidden from view (Fig. 4b)
+- Add a second Polygon form and set Shading mode = translucent and Polygon mode = outline. This will overlay the mesh to improve legibility (as in Fig. 5).
 
 Compare the low resolution Phobos model to the 67P high resolution model in this solid display mode. Is higher resolution always optimal for this application?
 
-<img src="img/Phobos_withRoI.png" title="" alt="" width="624">
+<img title="" src="img/Phobos_withRoI.png" alt="" width="330">
 
 *Fig.3: Phobos as a plate mesh, with a region of interest overlaid on vertices*
 
 <img title="" src="img/Eros_mesh.png" alt="" width="315"><img title="" src="img/Eros_solid.png" alt="" width="310">
 
-*Fig.4: Eros plate model from DAMIT, mesh and solid view - the plotted quantity is the distance from center*
+*Fig. 4: Eros plate model from DAMIT, mesh and solid view - the plotted quantity is the distance from center*
 
-• As previously you can overlay the VIRTIS data on the coordinates of their footprint center (Fig. 5, on Lutetia). This is the easiest way to represent data on a plate model, and this is adapted for quicklook. 
+• As previously you can overlay additional data on the coordinates of their footprint center (Fig. 5, on Lutetia). This is the easiest way to represent data on a plate model, and this is adapted for quicklook view. 
 
-In this case, you want to use a secondary color scale by setting the plate Shading mode to Paux, as described above.
+In this case, it is better to use a secondary color scale by setting the plate Shading mode to Paux, as described above.
 
-<img src="img/Lutetia_RoI.png" title="" alt="" width="621">
+<img title="" src="img/Lutetia_RoI.png" alt="" width="335">
 
-*Fig.5: Lutetia plate model from DAMIT, solid view with observations overlaid on footprint centers*
+*Fig. 5: Lutetia plate model from DAMIT, solid view with observations overlaid on footprint centers*
 
 #### Overlay data on a solid plate model
 
 A more accurate plot would use the exact 2D spatial coverage of the data derived from the instrument field of view. There are two possible situations: 
 
-- to plot a complete coverage of the target as a texture — this typically provides the albedo or illumination conditions for every plate. There is a 1-to-1 match between the data file and the plate model.
+- plotting a complete coverage of the target as a texture — this typically provides the albedo or illumination conditions for every plate. There is a 1-to-1 match between the data file and the plate model.
 
-- to plot data restrained to a Region of Interest. The solution to this problem requires to identify the plates covered by each pixel footprint — this is feasible with SPICE, although not immediate. The data file is therefore a list of plate IDs + measured quantities. This situtation is relevant to resolved observations but also to thermal modeling, where flux or temperature is computed on individual plates.
+- plotting data restrained to a Region of Interest. The solution to this problem requires to identify the plates covered by each pixel footprint — this is feasible with SPICE, and may be part of the computation pipeline. The data file is therefore a list of plate IDs + measured quantities. This situation is relevant to resolved observations but also to thermal modeling, where flux or temperature is computed on individual plates.
 
-In both cases, we have to match the data file with the plate model based on plate ID.
+In both cases, we have to match the data file with the plate model based on plate ID — the exact same model must be used.
 
 ##### Texture
 
-To illustrates how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models produced by inversion of light curves.
+To illustrates how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models (produced by inversion of light curves).
 
 - Load the shape model of Vesta with format = ver and URL=
   
@@ -180,27 +180,26 @@ We want to overlay the albedo texture available at
 https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo
 ``
 
-This file provides one albedo value per plate on this shape model - unfortunately the file is not correctly formatted for TOPCAT and needs editing. Instead, use the prepared local version <a href="img/vestaalbedo.txt">"vestaalbedo.txt"</a>. You can see that no coordinates are included in the data file: the plates are identified by their row number in the two files, which need to be cross-matched (Fig. 6)
+This file provides one albedo value per plate on this shape model - unfortunately the file is not correctly formatted for TOPCAT and needs editing. Instead, use the prepared local version <a href="img/vestaalbedo.txt">"vestaalbedo.txt"</a>. You can see that no coordinates are included in the data file: the plates are identified by their row number in the two files, which need to be cross-matched:
 
 - Open the Pair match tool from the tool bar. Set Algorithm = Exact value, tables = vestaalbedo.txt and shape.txt-2, both with Matched Value column = $0 (which stands for row number), and keep Match selection = best match symmetric, Join type = 1 and 2. This will join the matching rows in a new table called match(x1,x2).
-- Display this matched table in the Cube plot window as previously, this time using Aux = col1 (i.e. the albedo value)
+- Display this matched table in the Cube plot window as previously, this time using Aux = col1 which is the albedo value (Fig. 6)
 
-<img src="img/Vesta_albedo.png" title="" alt="" width="627">
+<img title="" src="img/Vesta_albedo.png" alt="" width="307">
 
-*Fig. 6: Vesta plate model from DAMIT, with albedo overlaid on plates*
+*Fig. 6: Vesta plate model from DAMIT, with albedo texture overlaid on plates*
 
 ##### Region of Interest
 
 If the data coverage is not complete, the data file has to provide the plate number explicitely on each row, together with data values. The match with the complete shape model would rely on this plate number (Fig. 7).
 
-In this case you can provide a complete albedo texture with shading mode = Paux and the actual data with shading mode = Aux.
+In this case you can also provide a complete albedo texture for context, using shading mode = Paux and the actual data with shading mode = Aux.
 
 This type of plot is relevant for a publication.
 
-<img src="img/Phobos_plates.png" title="" alt="" width="627">
+<img title="" src="img/Phobos_plates.png" alt="" width="315"><img title="" src="img/Vesta_plate.png" alt="" width="310">
 
-
-*Fig. 7: Phobos with Z coordinate on plates (grey scale) and a dummy parameter overlaid on plates in a Region of Interest (color)*
+*Fig. 7: a) Phobos with Z coordinate on plates (grey scale) and a dummy parameter overlaid on plates in a Region of Interest (color) b) Lower resolution example on Vesta*
 
 ### 4- Using other formats
 
@@ -218,7 +217,7 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 - In the Form tab, set Shading mode to Aux and Aux to col5 (topographic slope), then increase the Shape size.
 - When displaying low resolution shape models such as this one, adding a Line3D form may improve the rendering.
 
-<img src="img/Eros_lonlat.png" title="" alt="" width="638">
+<img title="" src="img/Eros_lonlat.png" alt="" width="315">
 
 *Fig. 8: Older Eros lon-lat model from PDS SBN, with slope plotted on coordinate grid*
 
@@ -226,7 +225,7 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 
 #### SPICE digital shape kernels (dsk)
 
-Space mission data are commonly projected on the shape models provided by SPICE dsk kernels. These are binary files which do not enter TOPCAT directly. The DSKEXP command convert them to several formats, including the .ver format used above (see additional reading).
+Space mission data are commonly projected on the shape models provided by SPICE dsk kernels. These are binary files which do not enter TOPCAT directly. However, the DSKEXP command convert them to several formats, including the .ver format used above (see additional reading).
 
 ### 5- To go further
 
