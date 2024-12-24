@@ -134,9 +134,7 @@ In the Cube plot window, you can use the freehand tool (from the tool bar) to gr
 
 - You can check All in the subset tab to display both the selected RoI and the global shape.
 
-This procedure works to select both vertices or plates.
-
-
+This procedure works to select either vertices or plates.
 
 ### 3- Solid plate models
 
