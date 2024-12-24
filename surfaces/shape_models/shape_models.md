@@ -124,6 +124,20 @@ Add this data as previously to the plot and adjust the symbol size (Fig. 2).
 
 > Notice that in this section a shape model is embedded in the data files as a set of 3D coordinates. It doesn't have to be the exact same shape as the reference one plotted in the first layer, and can even point to locations above or below the surface (i.e., coma or sub-surface for a comet).
 
+#### Selecting a Region of Interest manually
+
+In the Cube plot window, you can use the freehand tool (from the tool bar) to grab the coordinates of a region manually defined — this is 2-step process in 3D:
+
+- Select the freehand tool, draw a region with the pointer; when done, check the freedhand tool again, give a name to this subset and click "Add subset". The new subset includes both the front and rear sides of the shape model, which is probably not what you want.
+
+- Rotate the plot by ~ 90° — the subset will appear as disconnected regions. In the Subset tab, uncheck All to plot only the current subset, then select the part of interest and define a new subset with the region of interest.
+
+- You can check All in the subset tab to display both the selected RoI and the global shape.
+
+This procedure works to select both vertices or plates.
+
+
+
 ### 3- Solid plate models
 
 Open a new Cube plot window, select the *plate* table (e.g., "phobos_ver64q.tab-2") of either shape model loaded. In the Forms tab of this layer, add a Polygon form and set Coordinates > Other points to "others".
