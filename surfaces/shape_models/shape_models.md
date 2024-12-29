@@ -112,7 +112,7 @@ In the previous Cube plot window, add a new positional layer control.
 
 • Now read the local file  <a href="img/VM3D.txt">"VM3D.txt"</a> in ascii format —&nbsp;this is a similar file derived from the imaging channel of VIRTIS / Rosetta. 
 
-Add this data as previously to the plot and adjust the symbol size (Fig. 2). 
+Add this data to the plot as previously and adjust the symbol size (Fig. 2). 
 
 • You can similarly experiment with the local file ["phobosRoIvert.txt"](img/phobosRoIvert.txt) and the Phobos shape model (Fig. 3).
 
@@ -132,7 +132,7 @@ In the Cube plot window, you can use the freehand tool (from the tool bar) to gr
 
 - Rotate the plot by ~ 90° — the subset will appear as disconnected regions. In the Subset tab, uncheck All to plot only the current subset, then select the part of interest and define a new subset with the region of interest.
 
-- You can check All in the subset tab to display both the selected RoI and the global shape.
+- You can check All in the subset tab again to display both the selected RoI and the global shape.
 
 This procedure works to select either vertices or plates.
 
@@ -174,7 +174,7 @@ A more accurate plot would use the exact 2D spatial coverage of the data derived
 
 In both cases, we have to match the data file with the plate model based on plate ID — the exact same model must be used.
 
-##### Texture
+##### Overlay a texture
 
 To illustrates how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models (produced by inversion of light curves).
 
@@ -201,19 +201,34 @@ This file provides one albedo value per plate on this shape model - unfortunatel
 
 *Fig. 6: Vesta plate model from DAMIT, with albedo texture overlaid on plates*
 
-##### Region of Interest
+> Note: On Unix-like systems you can prepare the file this way:
+> 
+> curl -s https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo | sed -e's/ /\n/g'> vestaalbedo.txt
+
+##### Overlay a Region of Interest
 
 If the data coverage is not complete, the data file has to provide the plate number explicitely on each row, together with data values. The match with the complete shape model would rely on this plate number (Fig. 7).
 
-In this case you can also provide a complete albedo texture for context, using shading mode = Paux and the actual data with shading mode = Aux.
+You can provide both a complete albedo texture for context (using shading mode = Paux) and the actual data on a dedicated color scale using shading mode = Aux.
 
-This type of plot is relevant for a publication.
+This type of plot is relevant for detailed analyses or publications.
 
 <img title="" src="img/Phobos_plates.png" alt="" width="315"><img title="" src="img/Vesta_plate.png" alt="" width="310">
 
 *Fig. 7: a) Phobos with Z coordinate on plates (grey scale) and a dummy parameter overlaid on plates in a Region of Interest (color) b) Lower resolution example on Vesta*
 
-### 4- Using other formats
+
+
+### 4- Using other shape formats
+
+#### SPICE digital shape kernels (dsk)
+
+Space mission data are commonly projected on shape models provided by SPICE dsk kernels. These are binary files with extension .bds, which do not enter TOPCAT directly. However, the DSKEXP command converts them to several formats, including the .ver format used above. Once the paths are set on your system, type for instance:
+
+``
+dskexp -dsk phobos_g_288m_spc_0000n00000_v001.bds -text phobos.ver -format ver``
+
+which you can ingest in TOPCAT as ver (see also additional reading).
 
 #### lonlat models
 
@@ -223,7 +238,7 @@ You can load an older "lon-lat" shape model of Eros here, in ascii format: ``
 https://sbnarchive.psi.edu/pds3/near/NEAR_A_5_COLLECTED_MODELS_V1_0/data/msi/erosrgst.tab
 ``
 
-Each row describes a location with latitude, longitude (beware of the inversion), radius and extra parameters such as gravity, topographic slope, etc.
+Each row describes a location with latitude, longitude (beware of the inversion), radius and extra computed parameters such as gravity, topographic slope, etc.
 
 - Display the table in the Cube plot window, this time setting Coordinates = Polar, Lon = col2, Lat = col1 (in this order), Radius = col3.
 - In the Form tab, set Shading mode to Aux and Aux to col5 (topographic slope), then increase the Shape size.
@@ -235,9 +250,7 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 
 > Note: the lonlat format was subject to severe artefacts and discontinuities. It can only provide quicklook display, as it doesn't define extended plates. 
 
-#### SPICE digital shape kernels (dsk)
-
-Space mission data are commonly projected on the shape models provided by SPICE dsk kernels. These are binary files which do not enter TOPCAT directly. However, the DSKEXP command convert them to several formats, including the .ver format used above (see additional reading).
+ 
 
 ### 5- To go further
 
