@@ -186,7 +186,7 @@ To illustrates how you would overlay a complete texture on a plate model, we're 
 
 - Plot the plate table as previously.
 
-We want to overlay the albedo texture available at
+We then want to overlay the albedo texture available at
 
  ``
 https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo
@@ -201,9 +201,11 @@ This file provides one albedo value per plate on this shape model - unfortunatel
 
 *Fig. 6: Vesta plate model from DAMIT, with albedo texture overlaid on plates*
 
-> Note: On Unix-like systems you can prepare the file this way:
+> Note: On Unix-like systems you can convert the original file this way:
 > 
-> curl -s https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo | sed -e's/ /\n/g'> vestaalbedo.txt
+> curl -s https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo | sed -e's/ /\n/g' > vestaalbedo.txt
+> 
+> This replaces spaces by EOL, effectively transposing a simple list of values to a column-vector.
 
 ##### Overlay a Region of Interest
 
@@ -217,13 +219,11 @@ This type of plot is relevant for detailed analyses or publications.
 
 *Fig. 7: a) Phobos with Z coordinate on plates (grey scale) and a dummy parameter overlaid on plates in a Region of Interest (color) b) Lower resolution example on Vesta*
 
-
-
 ### 4- Using other shape formats
 
 #### SPICE digital shape kernels (dsk)
 
-Space mission data are commonly projected on shape models provided by SPICE dsk kernels. These are binary files with extension .bds, which do not enter TOPCAT directly. However, the DSKEXP command converts them to several formats, including the .ver format used above. Once the paths are set on your system, type for instance:
+Space mission data are commonly projected on shape models provided by SPICE dsk kernels (with extension .bds). These are binary files which do not enter TOPCAT directly. However, the DSKEXP command converts them to several formats, including the .ver format used above. Once the paths are set on your system, type for instance:
 
 ``
 dskexp -dsk phobos_g_288m_spc_0000n00000_v001.bds -text phobos.ver -format ver``
@@ -232,9 +232,9 @@ which you can ingest in TOPCAT as ver (see also additional reading).
 
 #### lonlat models
 
-Older shape models were based on regular sampling in longitude and latitude, rather than on tesselation of the target. 
+Older shape models were based on regular sampling in longitude and latitude, rather than on tessellation of the target shape. 
 
-You can load an older "lon-lat" shape model of Eros here, in ascii format: ``
+You can load an older "lon-lat" shape model of Eros here, using the ascii input option: ``
 https://sbnarchive.psi.edu/pds3/near/NEAR_A_5_COLLECTED_MODELS_V1_0/data/msi/erosrgst.tab
 ``
 
@@ -249,8 +249,6 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 *Fig. 8: Older Eros lon-lat model from PDS SBN, with slope plotted on coordinate grid*
 
 > Note: the lonlat format was subject to severe artefacts and discontinuities. It can only provide quicklook display, as it doesn't define extended plates. 
-
- 
 
 ### 5- To go further
 
