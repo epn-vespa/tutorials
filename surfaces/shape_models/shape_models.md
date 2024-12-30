@@ -205,7 +205,7 @@ This file provides one albedo value per plate on this shape model - unfortunatel
 > 
 > curl -s https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo | sed -e's/ /\n/g' > vestaalbedo.txt
 > 
-> This replaces spaces by EOL, effectively transposing a simple list of values to a column-vector.
+> This replaces spaces by EOL, effectively transposing a simple list of values to a column-vector usable by TOPCAT.
 
 ##### Overlay a Region of Interest
 
