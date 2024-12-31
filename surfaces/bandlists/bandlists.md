@@ -58,19 +58,9 @@ Using TOPCAT Plane plot window, you can easily plot peak intensity (peak_rel) ve
 
 The corresponding stilts command is:
 
-``topcat -stilts plot2plane \
-   xpix=644 ypix=480 \
-   xlabel='pos_peak / cm-1' ylabel=peak_rel \
-   xmin=-649 xmax=2199 ymin=-0.085 ymax=1.139 \
-   legend=false \
-   auxvisible=false \
-   in=BANDLIST_RAMAN_beta_K2CaCO3-2.data.vot x=pos_peak \
-    y=peak_rel shading=auto leglabel='19: All' \
-   layer_1=Mark \
-      size_1=5 \
-   layer_2=XYError \
-      xerrhi_2=pos_peak_err xerrlo_2=pos_peak_err \
-       yerrhi_2=peak_rel_err yerrlo_2=peak_rel_err``
+```topcat -stilts plot2plane \
+
+```
 
 #### Bands plot
 
