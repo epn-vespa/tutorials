@@ -58,8 +58,20 @@ Using TOPCAT Plane plot window, you can easily plot peak intensity (peak_rel) ve
 
 The corresponding stilts command is:
 
-```topcat -stilts plot2plane \
-
+```
+topcat -stilts plot2plane \
+   xpix=662 ypix=432 \
+   ylog=true xlabel=10000./pos_peak ylabel=peak_rel \
+   xmin=-0.3 xmax=109.9 ymin=4.0E-11 ymax=21976 \
+   legend=true \
+   auxvisible=false \
+   in=Vespa:BANDLIST_RAMAN_Siderite.data.vot x=10000./pos_peak \
+    y=peak_rel shading=auto leglabel='20: All' \
+   layer_1=Mark \
+      size_1=2 \
+   layer_2=XYError \
+      xerrhi_2=pos_peak_err xerrlo_2=pos_peak_err \
+       yerrhi_2=peak_rel_err yerrlo_2=peak_rel_err
 ```
 
 #### Bands plot
@@ -111,3 +123,7 @@ You can superpose observational spectra on this plot, in order to check a possib
 • Remember that all TOPCAT plots can be produced from the command line via the stilts script language, which can be incorporated in a processing pipeline. Such plots can be manipulated with a mouse in the same way as in TOPCAT.
 
 • Use TOPCAT XYarray Layer control to work with sub-arrays and functions associated to row parameters — see: [XYArray Layer Control](https://www.star.bristol.ac.uk/mbt/topcat/sun253/GangLayerControl_xyarray.html)
+
+```
+
+```
