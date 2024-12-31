@@ -86,21 +86,17 @@ What we really want is to reproduce the thumbnail image from the service, i.e. t
 
 - In the Position tab select the bandlist table
 
-- type Xvalues = add(pos_peak,multiply(width,xgrid)) 
+- type Xvalues = add(pos_peak,multiply(width,xgrid)) - This will provide a wavenumber vector around each band center.
 
-[providing a wavenumber vector around each band center]
-
-- type Yvalues = multiply(peak_rel,arrayFunc("exp(-x*x)",xgrid))
-
-[corresponding scaled Gaussian]
-
+- type Yvalues = multiply(peak_rel,arrayFunc("exp(-x*x)",xgrid)) - This will provide the corresponding scaled Gaussian.
+  
   => For each row of the bandlist, the two vectors are plotted against each other
 
 - In Axes > Coords, check the Ylog box and set the scale to reproduce the thumbnail
 
   
 
-<img src="img/Capture%20d’écran%202024-12-31%20à%2009.27.51.png" title="" alt="Capture d’écran 2024-12-31 à 09.27.51.png" width="547">
+<img src="img/bandlist_gauss.png" title="" alt="bandlist_gauss.png" width="547">
 
 *Fig. 2: plotting the individual bands in TOPCAT*
 
@@ -114,7 +110,7 @@ To plot the data as a function of wavelength in µm (Fig. 3):
 
 You can superpose observational spectra on this plot, in order to check a possible match with the laboratory data.
 
-<img src="img/Capture%20d’écran%202024-12-31%20à%2009.59.18.png" title="" alt="Capture d’écran 2024-12-31 à 09.59.18.png" width="546">
+<img src="img/bandlist_wvl.png" title="" alt="bandlist_wvl.png" width="546">
 
 *Fig. 3: Same plot as a function of wavelength in µm (band profiles are Gaussian in energy)*
 
