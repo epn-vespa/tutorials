@@ -52,13 +52,13 @@ Using TOPCAT Plane plot window, you can easily plot peak intensity (peak_rel) ve
 
 - Add errors with the XYerror form
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/Tuto%20bandlist/img/siderite_plot.png" title="" alt="siderite_plot.png" width="521">
+<img src="img/siderite_plot.png" title="" alt="siderite_plot.png" width="521">
 
 *Fig. 1: Basic plot of band parameters in TOPCAT*
 
 The corresponding stilts command is:
 
-`topcat -stilts plot2plane \
+``topcat -stilts plot2plane \
    xpix=644 ypix=480 \
    xlabel='pos_peak / cm-1' ylabel=peak_rel \
    xmin=-649 xmax=2199 ymin=-0.085 ymax=1.139 \
@@ -70,7 +70,7 @@ The corresponding stilts command is:
       size_1=5 \
    layer_2=XYError \
       xerrhi_2=pos_peak_err xerrlo_2=pos_peak_err \
-       yerrhi_2=peak_rel_err yerrlo_2=peak_rel_err `
+       yerrhi_2=peak_rel_err yerrlo_2=peak_rel_err``
 
 #### Bands plot
 
@@ -98,7 +98,7 @@ What we really want is to reproduce the thumbnail image from the service, i.e. t
 
   
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/Tuto%20bandlist/img/Capture%20d’écran%202024-12-31%20à%2009.27.51.png" title="" alt="Capture d’écran 2024-12-31 à 09.27.51.png" width="547">
+<img src="img/Capture%20d’écran%202024-12-31%20à%2009.27.51.png" title="" alt="Capture d’écran 2024-12-31 à 09.27.51.png" width="547">
 
 *Fig. 2: plotting the individual bands in TOPCAT*
 
@@ -112,7 +112,7 @@ To plot the data as a function of wavelength in µm (Fig. 3):
 
 You can superpose observational spectra on this plot, in order to check a possible match with the laboratory data.
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/Tuto%20bandlist/img/Capture%20d’écran%202024-12-31%20à%2009.59.18.png" title="" alt="Capture d’écran 2024-12-31 à 09.59.18.png" width="546">
+<img src="img/Capture%20d’écran%202024-12-31%20à%2009.59.18.png" title="" alt="Capture d’écran 2024-12-31 à 09.59.18.png" width="546">
 
 *Fig. 3: Same plot as a function of wavelength in µm (band profiles are Gaussian in energy)*
 
