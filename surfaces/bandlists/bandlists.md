@@ -74,7 +74,7 @@ topcat -stilts plot2plane \
        yerrhi_2=peak_rel_err yerrlo_2=peak_rel_err
 ```
 
-#### Bands plot
+#### Band plots
 
 What we really want is to reproduce the thumbnail image from the service, i.e. to plot individual bands with Gaussian profiles (Fig. 2)
 
@@ -100,7 +100,7 @@ What we really want is to reproduce the thumbnail image from the service, i.e. t
 
 *Fig. 2: plotting the individual bands in TOPCAT*
 
-#### Bands plot in wavelength
+#### Band plots in wavelength
 
 To plot the data as a function of wavelength in µm (Fig. 3):
 
@@ -119,7 +119,3 @@ You can superpose observational spectra on this plot, in order to check a possib
 • Remember that all TOPCAT plots can be produced from the command line via the stilts script language, which can be incorporated in a processing pipeline. Such plots can be manipulated with a mouse in the same way as in TOPCAT.
 
 • Use TOPCAT XYarray Layer control to work with sub-arrays and functions associated to row parameters — see: [XYArray Layer Control](https://www.star.bristol.ac.uk/mbt/topcat/sun253/GangLayerControl_xyarray.html)
-
-```
-
-```
