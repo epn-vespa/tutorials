@@ -3,8 +3,6 @@
 The VESPA team has collected a set of tutorials covering several aspects of planetary sciences: Atmospheres, Surfaces, Magnetospheres, etc.
 These tutorials are provided as text (Markdown, pdf) or video. See the [main VESPA site](http://www.europlanet-vespa.eu/).
 
-
-
 <img src="https://vespa.obspm.fr/media/images/European-Union-Flag.svg" width="50" alt="EU flag">   Europlanet 2024 RI has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 871149 
 
 # Text tutorials
@@ -20,7 +18,7 @@ These tutorials are provided as text (Markdown, pdf) or video. See the [main VES
 * [Sending an EPN-TAP query to all EPN-TAP services in python, and retrieving cumulative results ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)
 * [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
 
-## For data providers
+## Sharing your data
 
 - [Installing an EPN-TAP service - broadlines](https://github.com/epn-vespa/tutorials/blob/master/misc/Installing-a-data-service/Installing-a-data-service.md)
 
@@ -69,6 +67,4 @@ These tutorials are provided as text (Markdown, pdf) or video. See the [main VES
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
 * [Retrieving files under datalink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)
-* [Video tutorials](https://github.com/epn-vespa/tutorials/blob/master/misc/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md)
-  
-  These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Most of them are outdated - the VESPA portal interface in particular has evolved significantly, and additional functions are now available in tools such as Aladin and TOPCAT.
+* [Video tutorials](https://github.com/epn-vespa/tutorials/blob/master/misc/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md) — These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Most of them are outdated; the VESPA portal interface in particular has evolved significantly, and additional functions are now available in tools such as Aladin and TOPCAT.
