@@ -44,18 +44,18 @@ EPN-TAP services includes generic list of asteroids with dynamical properties, a
 
 Several EPN-TAP data services provide dynamical properties of small bodies: MPC, NEOCC, MP3C, DynAstVO, etc.
 
-Specialists can identify objects that belong to a dynamical class using a combination of orbital parameters provided by these services. In some cases however, such classes may be readily indicated. Here, we can identify TNOs from the MPC service by issuing a simple query: 
+Specialists can identify objects that belong to a dynamical class using a combination of orbital parameters provided by these services. In some cases however, such classes may be readily indicated. Here, we can identify distant objects from the MPC service by issuing a simple query: 
 
 ``
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ``
 
-As of writing, this returns a list of ~ 5700 objects with names and properties (these also include Centaurs, though)
+As of writing, this returns a list of ~ 5700 objects with names and properties (including TNOs and Centaurs, though)
 
 
 ### 2- Getting the spectra
 
-The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical classe. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore. 
+The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical class. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore. 
 
 The easiest way to perform this is to use TOPCAT:
 
@@ -63,7 +63,7 @@ The easiest way to perform this is to use TOPCAT:
 * In TOPCAT, grab the whole table from spectro\_asteroids - check that you're not limited in number of answers ("Max Rows" field):
 
 ``
-(SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
+SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
 * In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra). See Fig. 1.
@@ -102,7 +102,7 @@ SELECT TOP 100 *
 ```
 
 
-* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services. 
+* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra extracted from several services. 
 
 
 
