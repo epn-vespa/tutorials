@@ -85,13 +85,13 @@ A related service definition tutorial provides an example:
 
 ### 4- File format
 
-The table will include links to your files, which need to be available on the network - not necessarily in your institute (if your data are sets of scalar parameters rather than files, they can be included in the table itself).
+The table will often include links to your files, which need to be available on the network - not necessarily in your institute. If your data are sets of scalar parameters rather than files, they can be included in the table itself.
 
-There is no requirement on the file format, although of course some are more convenient. 
-You normally want to use a standard format in your field if there is one - meaning that you don't have to convert existing files. However:
+There is no requirement on the file format, although of course some are more convenient than others. 
+You normally want to use a standard format of your field, if there is one - which means that you don't have to convert existing files. However:
 
-* It is much better to use a self-described format, with a label containing metadata and references (fits, VOtable, PDS, etc) -  ascii files with no header or CSV files are not really traceable once downloaded.
-* you may want to use a format that display tools such as [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/) or [Aladin](https://aladin.cds.unistra.fr/) can handle - that would greatly help manipulating your data later.
+* It is much better to use a self-described format, with a label containing metadata and references (fits, VOtable, PDS, etc) -  ascii files with no header or CSV files are not really traceable once downloaded and are a common source of problems.
+* You may want to use a format that display tools such as [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/) or [Aladin](https://aladin.cds.unistra.fr/) can handle - that would greatly help manipulating your data later.
 
 
 ### 4- Further topics
@@ -101,9 +101,16 @@ Please contact the VESPA team for support: support.vespa @ obspm.fr
 We can help you start or finalize you data service, and indicate higher level functionalities in VESPA. This includes:
 
 * declaring your server in the registry, so that your data can be found
+* declaring your server to the VESPA team, so that it appears in the VESPA portal (after a quick review)
 * preserving your service definition on a common GitLab for sustainability and maintenance
 * handling more specific cases (e.g., existing database, collection of fits files, etc)
 * getting access through search tools and python libraries, workflows
+
+### 5- Possible issues
+
+* Server error —&nbsp;you may have to restart the DaCHS server from time to time.
+
+* Messages about postgres connection —&nbsp; The server becomes unresponsive when there is little space left on the disk —&nbsp;typically because of accumulating log files. This is particularly sensitive when the service is installed on a Docker or a Virtual Machine. In DaCHS, the log files are located in /var/gavo/Logs.
 
 
 ## References
