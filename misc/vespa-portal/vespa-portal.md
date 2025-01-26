@@ -26,7 +26,7 @@ S. Erard, C. Chauvin
 
 # Summary
 
-VESPA is an integrated system connecting many data services related to Planetary Science and solar Physics. 
+VESPA (Virtual European Solar and Planetary Access) is an integrated system connecting many data services related to Planetary Science and solar Physics  —&nbsp;see the [main VESPA site](http://www.europlanet-vespa.eu/).
 
 This tutorial provides an overview of the [VESPA data portal](https://vespa.obspm.fr). A shorter documentation is available in the portal from the upper right menu (*Help*> How to use)
 
@@ -127,7 +127,7 @@ Clicking a service row in the global result area enters the service mode: the ma
 | access\_url           | Main data product      |
 | thumbnail\_url         | Small image of this product     |
 | external\_url         | Detailed web page for this granule    |
-| Datalink        | List of related links for this granule       |
+| datalink        | List of related links for this granule       |
 | s\_region          | footprint as contour: copy or SAMP    |
 | coverage             | footprint as MOC: copy or SAMP      |
 

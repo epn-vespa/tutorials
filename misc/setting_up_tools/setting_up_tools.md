@@ -39,6 +39,8 @@ This tutorial describes convenient settings of VO tools for use with Solar Syste
 
 The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
 
+This tutorial summarizes the basic settings for adapting the display to standard planetary use. 
+
 
 
 ## Planetary mapping
@@ -51,7 +53,7 @@ TOPCAT includes several mapping tools (windows) usable to display planetary maps
 
 #### Standard settings for planetary maps in  TOPCAT SkyPlot
 
-The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, similar to Aladin) but also to 2D mapping. This is the defaut mode to map EPNCore tables, as the coordinates predefined as the average (min,max) values. 
+The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, similar to Aladin) but also to 2D mapping. This is the defaut mode to map EPNCore tables, since coordinates are predefined as average (min,max) values. 
 
 In 3D the difference with the celestial sphere is that the planet is observed from outside, and several conventions are different. 3D mapping may be adapted to ellipsoids, as long as the body shape is reasonably regular.
 
