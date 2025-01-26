@@ -101,7 +101,7 @@ Please contact the VESPA team for support: support.vespa @ obspm.fr
 We can help you start or finalize you data service, and indicate higher level functionalities in VESPA. This includes:
 
 * declaring your server in the registry, so that your data can be found
-* declaring your server to the VESPA team, so that it appears in the VESPA portal (after a quick review)
+* declaring your service to the VESPA team, so that it appears in the VESPA portal (after a quick review)
 * preserving your service definition on a common GitLab for sustainability and maintenance
 * handling more specific cases (e.g., existing database, collection of fits files, etc)
 * getting access through search tools and python libraries, workflows
