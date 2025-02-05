@@ -34,7 +34,7 @@ This tutorial describes how to retrieve spectra of TNOs, when these targets are 
 
 ## Introduction
 
-EPN-TAP services includes generic list of asteroids with dynamical properties, and spectral databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of TNOs, is it therefore necessary to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways achieve this.
+EPN-TAP services includes generic list of asteroids with dynamical properties, and spectral databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of TNOs, is it therefore necessary to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways to achieve this.
 
 
 ## Tutorial
@@ -55,7 +55,7 @@ As of writing, this returns a list of ~ 5700 objects with names and properties 
 
 ### 2- Getting the spectra
 
-The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical class. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore. 
+The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical class. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore description. 
 
 The easiest way to perform this is to use TOPCAT:
 
@@ -102,7 +102,7 @@ SELECT TOP 100 *
 ```
 
 
-* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra extracted from several services. 
+* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services. 
 
 
 
