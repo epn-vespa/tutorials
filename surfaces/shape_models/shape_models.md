@@ -5,7 +5,7 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+
 
 ## Tutorial
 
-3D plots in TOPCAT
+3D plots in TOPCAT (v4.10-3 and up)
 
 ## Author:
 
@@ -15,7 +15,8 @@ S. Erard
 
 | Version | Author   | Notes      |
 | ------- |:--------:| ----------:|
-| 1.0     | S. Erard | 12/12/2024 |
+| 0.     | S. Erard | 12/12/2024 |
+| 1.0     | S. Erard | 12/3/2025 |
 
 ### Keywords
 
@@ -46,6 +47,19 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+
 ``
 
 ### 1-  Basic display of shape models
+
+#### Setup
+
+From v4.10-3, TOPCAT supports 3D formats in a limited and exploratory form. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
+
+``
+startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
+``
+
+to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exists).
+
+The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
+
 
 #### Load a shape model of Phobos
 

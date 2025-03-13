@@ -41,6 +41,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Identifying overlapping images in different services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
 * [Mars body-fixed frame and representation conversions (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/bodyfixed-frame-conversions.ipynb)
 * [Planetary images WCS manipulations (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb)
+* [Plotting shape models of small bodies in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md)
 
 ## Exoplanets
 
