@@ -21,6 +21,7 @@ S. Erard
 | ------------- |:-------------:| -----: |
 | 1.0           | S. Erard      | 6/9/2017  |
 | 1.1           | S. Erard      | 2/11/2024  |
+| 1.2           | S. Erard      | 28/3/2025  |
 
 
 ### Requirements and dependencies
@@ -40,6 +41,23 @@ This tutorial describes convenient settings of VO tools for use with Solar Syste
 The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
 
 This tutorial summarizes the basic settings for adapting the display to standard planetary use. 
+
+
+
+## 3D shape models
+
+ 
+### 1- TOPCAT configuration
+
+From v4.10-3, TOPCAT supports 3D formats. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
+
+``
+startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
+``
+
+to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exists).
+
+The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
 
 
 
@@ -160,6 +178,7 @@ AladinLite has functionalities similar to Aladin but is a different software:
 
 - AladinLite is typically integrated in a web page, where it provides display capacities.
 - It has a different Planetary data mode - options need to be implemented when AladinLite is installed in the web page, see developer doc: [https://aladin.cds.unistra.fr/AladinLite/doc/](https://aladin.cds.unistra.fr/AladinLite/doc/).
+- The coordinate system defaults to ICRS. Although no planetary is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
 - A very handy feature is to replace the Simbad resolver of celestial objects by a similar functionality connected to the USGC Gazetteer of Planetary Nomenclature —&nbsp;see here: [https://aladin.cds.unistra.fr/AladinLite/planets-explorer/](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 
 
