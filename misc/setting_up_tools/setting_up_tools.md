@@ -59,6 +59,8 @@ to a file ~/.starjava.properties located in your home directory (add this file i
 
 The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
 
+Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to get a nice display of 3D shape models.
+
 
 
 ## Planetary mapping
