@@ -106,7 +106,7 @@ When submitting a query, the central area is rebuilt to display the number of ma
 ### Additional queries
 
 * **Results Compilation**: Below the list of services, an extra row groups the results from all services in a single table (with some limitation in result number). This table cannot be displayed in the portal but can be sent to TOPCAT, or downloaded as a VOTable.
-* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc). This function is only available when using the query form (not the ADQL query mode).
+* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc), you have to go the "Data Sets and Information" section at the bottom of the page to see the actual results (usually on several pages). This function is only available when using the query form (not the ADQL query mode).
 
 
 # Service Pages
