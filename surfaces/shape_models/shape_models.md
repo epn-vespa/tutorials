@@ -50,7 +50,7 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+
 
 #### Setup
 
-From v4.10-3, TOPCAT supports 3D formats in a limited and exploratory form. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
+From v4.10-3, TOPCAT (https://www.star.bris.ac.uk/~mbt/topcat/) supports 3D formats in a limited and exploratory form. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
 
 ``
 startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
