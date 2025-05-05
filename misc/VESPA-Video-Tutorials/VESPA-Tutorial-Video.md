@@ -1,4 +1,4 @@
-# VESPA Tutorial
+# VESPA Video tutorials
 
 These videos are legacy material from the FP7 Europlanet-RI programme (2009-2012). Most of them are outdated; the VESPA portal interface in particular has evolved significantly, and additional functions are now available in tools such as Aladin and TOPCAT. 
 
