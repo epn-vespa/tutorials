@@ -1,4 +1,4 @@
-# Introduction
+# Europlanet VESPA
 
 VESPA (Virtual European Solar and Planetary Access) is an integrated system connecting many data services related to the study of the Solar System, mostly developed in the frame of the EC-funded Europlanet programmes —&nbsp;see the [main VESPA site](http://www.europlanet-vespa.eu/).
 
