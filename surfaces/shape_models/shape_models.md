@@ -1,6 +1,6 @@
 ## Plotting shape models in TOPCAT
 
-**Tuto in progress for TOPCAT version 4.11beta - for the time being this is only a baseline to be cleaned up and finalized. See the associated documentation, also in dev:**
+**See the associated documentation, also in dev:**
 https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
 
 ## Tutorial
@@ -15,8 +15,8 @@ S. Erard
 
 | Version | Author   | Notes      |
 | ------- |:--------:| ----------:|
-| 0.     | S. Erard | 12/12/2024 |
-| 1.0     | S. Erard | 12/3/2025 |
+| 0.      | S. Erard | 12/12/2024 |
+| 1.0     | S. Erard | 12/3/2025  |
 
 ### Keywords
 
@@ -59,7 +59,6 @@ startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
 to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exists).
 
 The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
-
 
 #### Load a shape model of Phobos
 
