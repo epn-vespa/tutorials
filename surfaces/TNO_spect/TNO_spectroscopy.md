@@ -20,6 +20,7 @@ S. Erard
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
 | 1.0           | S. Erard      | 12/10/2024  |
+| 1.1           | S. Erard      | 19/6/2025  |
 
 
 
@@ -50,8 +51,18 @@ Specialists can identify objects that belong to a dynamical class using a combin
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ``
 
-As of writing, this returns a list of ~ 5700 objects with names and properties (including TNOs and Centaurs, though)
+As of writing, this returns a list of ~ 6000 objects with names and properties (including both TNOs and Centaurs, though)
 
+
+```
+Alternative: Use the analytic TNO definition provided e.g. by Astorb / Lowell Obs: 
+SELECT * FROM mpc.epn_core WHERE "semi_major_axis" >= 30.0709 
+This yields 5337 objects, TNOs only
+```
+
+Such queries can be issued from any TAP client, e.g. the VESPA portal or TOPCAT, see Fig. 1.
+
+<img src="img/Query_MPC.png" width="400">
 
 ### 2- Getting the spectra
 
@@ -66,7 +77,7 @@ The easiest way to perform this is to use TOPCAT:
 SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
-* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra). See Fig. 1.
+* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra). See Fig. 2.
 * This returns a list of 49 spectra of TNO at the time of writing
 
 Links to the spectra are available under access\_url in this table.
