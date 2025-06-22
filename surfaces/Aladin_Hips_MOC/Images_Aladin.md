@@ -103,7 +103,7 @@ The mutiview mode is available from a series of icons below the display window. 
 
 
 
-![Capture d’écran 2025-06-21 à 12.22.38.png](img/Capture%20d’écran%202025-06-21%20à%2012.22.38.png)
+![HiPS_assoc.png](img/HiPS_assoc.png)
 
 *Fig.2: Synchronised HiPS in two windows (CTX and MOLA altimetry on Mars)*
 
@@ -191,11 +191,11 @@ Some HiPS include colour encoding. Grey-level HiPS can be plotted in Aladin with
 
 
 
-![Capture d’écran 2025-06-21 à 12.30.52.png](img/Capture%20d’écran%202025-06-21%20à%2012.30.52.png)
+![Color_superp](img/Color_superp)
 
 *Fig.6: MOLA altimetry (coloured) on CTX mosaic of Mars (high resolution, in grey)*
 
-<img src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/Tuto%20Hips_MOC/img/N_Syrtis_Aladin.png" title="" alt="N_Syrtis_Aladin.png" width="660">
+![N_Syrtis_Aladin.png](img/N_Syrtis_Aladin.png)
 
 *Fig.7: OMEGA olivine map (coloured) on CTX mosaic of Mars (high resolution, in grey) in the Jezero crater area*
 
@@ -220,7 +220,7 @@ The HiPS computation can take several seconds. When done, open the properties pa
 Georeferenced spectral cubes can be displayed like images — you may need to use a two-view display to make it fit correctly.
 A slider shows up on top of the cube to allow the selection of spectral planes.
 
-![Capture d’écran 2025-06-21 à 11.59.05.png](img/Capture%20d’écran%202025-06-21%20à%2011.59.05.png)
+![Cube.png](img/Cube.png)
 
 *Fig.9: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
@@ -232,7 +232,7 @@ The **CASSIS plugin** (Tools > plugin > CASSIS extractor) will open the CASSIS a
 
 In both cases, moving the spatial marker in Aladin's main window will update the displayed spectrum
 
-![Capture d’écran 2025-06-21 à 12.14.48.png](img/Capture%20d’écran%202025-06-21%20à%2012.14.48.png)
+![Aladin_CASSIS.png](img/Aladin_CASSIS.png)
 
 *Fig.10: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
