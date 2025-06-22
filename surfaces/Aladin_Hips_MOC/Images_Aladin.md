@@ -85,7 +85,7 @@ The mutiview mode is available from a series of icons below the display window. 
 
 • Unselect the Match icon to dissociate them
 
-![HiPS_assoc.png](img/HiPS_assoc.png)
+<img src="img/HiPS_assoc.png" title="" alt="HiPS_assoc.png" width="555">
 
 *Fig.2: Synchronised HiPS in two windows (CTX and MOLA altimetry on Mars)*
 
@@ -118,7 +118,8 @@ This will overplot large crater contours with name. Colour varies with crater si
 
 The same result is obtained by selecting the craters in the VESPA portal (or TOPCAT) and sending the complete metadata table via SAMP.
 
-![Lunar_craters.png](img/Lunar_craters.png)
+
+<img src="img/Lunar_craters.png" title="" alt="Lunar_craters.png" width="555">
 
 *Fig.3: Largest lunar craters on LRO mosaic, with circular contours*
 
@@ -128,7 +129,9 @@ When selecting data from the VESPA portal, both s_region and MOC coverages can b
 
 The complete metadata table can also be samped from the VESPA portal or other clients. It will appear in the data stack, and as a table below the display window (click on the data stack if not). Only the central coordinates are plotted by default. To plot the s_region themselves, open the property panel (from the local menu or Edit > Properties) and select "Show associated FoV". 
 
-![HRSC_s_region.png](img/HRSC_s_region.png)
+
+<img src="img/HRSC_s_region.png" title="" alt="HRSC_s_region.png" width="555">
+
 
 *Fig.4: s_region footprints for selected HRSC nadir sessions on Mars*
 
@@ -136,7 +139,9 @@ Although both formats provide accurate footprints, MOC are particularly adapted 
 
 To display MOC footprints from a samped table, look for the column Coverage in the table and click the button in this cell.
 
-![VVEX_MOC.png](img/VVEX_MOC.png)
+
+<img src="img/VVEX_MOC.png" title="" alt="VVEX_MOC.png" width="555">
+
 
 *Fig.5: Selection of VIRTIS / Venus-Express session footprints on Magellan Mosaic*
 
@@ -154,11 +159,15 @@ Some HiPS include colour encoding. Grey-level HiPS can be plotted in Aladin with
 
 • Try to superimpose MOLA coloured altimetry (or OMEGA olivine map) to MARS CTX or Mars THEMIS Day mosaic.
 
-![Color_superp](img/Color_superp.png)
+
+<img src="img/Color_superp.png" title="" alt="Color_superp.png" width="555">
+
 
 *Fig.6: MOLA altimetry (coloured) on CTX mosaic of Mars (high resolution, in grey)*
 
-![N_Syrtis_Aladin.png](img/N_Syrtis_Aladin.png)
+
+<img src="img/N_Syrtis_Aladin.png" title="" alt="N_Syrtis_Aladin.png" width="555">
+
 
 *Fig.7: OMEGA olivine map (coloured) on CTX mosaic of Mars (high resolution, in grey) in the Jezero crater area*
 
@@ -170,7 +179,8 @@ To plot a georeferenced image correctly, the best way is to first convert it to 
 
 The HiPS computation can take several seconds. When done, open the properties panel and set "Transparency" to 0. The HiPS image will plot on the HiPS basemap.
 
-![Mercury_fits.png](img/Mercury_fits.png)
+
+<img src="img/Mercury_fits.png" title="" alt="Mercury_fits.png" width="555">
 
 *Fig.8: An image of Mercury (planetary fits version) on the MESSENGER HiPS*
 
@@ -179,7 +189,9 @@ The HiPS computation can take several seconds. When done, open the properties pa
 Georeferenced spectral cubes can be displayed like images — you may need to use a two-view display to make it fit correctly.
 A slider shows up on top of the cube to allow the selection of spectral planes.
 
-![Cube.png](img/Cube.png)
+
+<img src="img/Cube.png" title="" alt="Cube.png" width="555">
+
 
 *Fig.9: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
@@ -189,7 +201,9 @@ The **CASSIS plugin** (Tools > plugin > CASSIS extractor) will open the CASSIS a
 
 In both cases, moving the spatial marker in Aladin's main window will update the displayed spectrum
 
-![Aladin_CASSIS.png](img/Aladin_CASSIS.png)
+
+<img src="img/Aladin_CASSIS.png" title="" alt="Aladin_CASSIS.png" width="555">
+
 
 *Fig.10: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
