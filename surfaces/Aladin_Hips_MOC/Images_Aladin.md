@@ -173,7 +173,7 @@ Some HiPS include colour encoding. Grey-level HiPS can be plotted in Aladin with
 
 ### 2- Images
 
-Images with no associate coordinate can be georeferenced using the astrometrical calibration functionality in Aladin (under Menu Image). Fits images with WCS included in the header do not require this (see [Planetary images WCS manipulations](surfaces/astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb).
+Images with no associate coordinate can be georeferenced using the astrometrical calibration functionality in Aladin (under Menu Image). Fits images with WCS included in the header do not require this (see [Planetary images WCS manipulations](../astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb).
 
 To plot a georeferenced image correctly, the best way is to first convert it to HiPS format. In the Aladin data stack, select the image then go to Tool > Generate Hips based on… > current image.
 
