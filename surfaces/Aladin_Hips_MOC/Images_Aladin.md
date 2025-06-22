@@ -47,7 +47,7 @@ The Aladin Data tree includes tens of planetary HiPS, many of which are derived 
 
 • Click and drag the pointer to rotate the planet (select the "Pan" tool if this doesn't work). Double-click on a location to centre it.
 
-• Zoom in or out with the mouse
+• Zoom in or out with the mouse central button
 
 • Rotate the polar axis by dragging the mouse on the compass (bottom right of display window). This is reset by clicking the North icon below the window.
 
@@ -109,7 +109,7 @@ SELECT TOP 9999 * FROM lunar_craters.epn_core where diameter > 10
 
 ```
 {
-draw ellipse(0.5*118.54*${diameter}, 0.5*118.72*${diameter}, 0) rainbow(${depth}, 0, 3) rainbow($ {depth},0,3)
+draw ellipse(0.5*118.54*${diameter}, 0.5*118.54*${diameter}, 0) rainbow(${depth}, 0, 3) rainbow($ {depth},0,3)
 draw ${feature_name} rainbow(${depth}, 0., 3)
 }
 ```
@@ -123,11 +123,11 @@ The same result is obtained by selecting the craters in the VESPA portal (or TOP
 
 *Fig.3: Largest lunar craters on LRO mosaic, with circular contours*
 
-### 2- contours and MOC footprints
+### 2- Contours and MOC footprints
 
-When selecting data from the VESPA portal, both s_region and MOC coverages can be samped individually or globally from the result table (the same is possible for s_region in the TAPhandle client, or from TOPCAT). Footprints plot directly in Aladin when they are sent by themselves (e.g. using the Footprint button in the VESPA portal, or from the TOPCAT activation menu).
+When selecting data from the VESPA portal, both s_region and MOC coverages can be sent via SAMP individually or globally from the result table (the same is possible for s_region in the TAPhandle client, or from TOPCAT). Footprints plot directly in Aladin when they are sent by themselves (e.g. using the Footprint button in the VESPA portal, or from the TOPCAT activation menu).
 
-The complete metadata table can also be samped from the VESPA portal or other clients. It will appear in the data stack, and as a table below the display window (click on the data stack if not). Only the central coordinates are plotted by default. To plot the s_region themselves, open the property panel (from the local menu or Edit > Properties) and select "Show associated FoV". 
+The complete metadata table can also be samped from the VESPA portal or other clients. It will appear in the data stack, and as a table below the display window (click on the data stack if not). Only the central coordinates are plotted by default. To plot the contours themselves, open the property panel (from the local menu or Edit > Properties) and select "Show associated FoV". 
 
 
 <img src="img/HRSC_s_region.png" title="" alt="HRSC_s_region.png" width="555">
@@ -151,7 +151,7 @@ To display MOC footprints from a samped table, look for the column Coverage in t
 
 The HiPS already downloaded in Aladin are listed in the data stack (rightmost column). A basic mechanism in Aladin prevents from overplotting HiPS from different planetary bodies (see warning message on top of the data stack area). Also notice that data overlapping the current view are coloured in green in the Collections Data tree.
 
-Global HiPS can be superposed by selecting one (check the box) and setting the slider of the other one. 
+Global HiPS can be superposed by selecting one as reference (check the box) and setting the slider of the other one(s). 
 
 • Try this with Mars TES albedo and Mars THEMIS Day IR mosaic HiPS, or with the THEMIS day and night HiPS. More than two HiPS can be superposed this way.
 
@@ -173,11 +173,11 @@ Some HiPS include colour encoding. Grey-level HiPS can be plotted in Aladin with
 
 ### 2- Images
 
-Images with no associate coordinate can be georeferenced using the astrometrical calibration functionality in Aladin (under Menu Image). Fits images with WCS included in the header do not require this (see [Planetary images WCS manipulations](../astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb).
+Images with no associate coordinate can be georeferenced using the astrometrical calibration functionality in Aladin (under Menu Image). Fits images with WCS included in the header do not require this (see [Planetary images WCS manipulations](../astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb) ), but they will plot in native format (x/y coordinates) with the lon/lat coordinate grid overplotted, like in ds9.
 
-To plot a georeferenced image correctly, the best way is to first convert it to HiPS format. In the Aladin data stack, select the image then go to Tool > Generate Hips based on… > current image.
+To allow reprojection of georeferenced images on an arbitrary grid, it is required to first convert them to HiPS format. In the Aladin data stack, select the image then go to Tool > Generate Hips based on… > current image.
 
-The HiPS computation can take several seconds. When done, open the properties panel and set "Transparency" to 0. The HiPS image will plot on the HiPS basemap.
+The HiPS computation can take several seconds. When done, open the properties panel and set "Transparency" to 0. The HiPS image will plot on the reference HiPS basemap, and will follow any manipulation and reprojection in the display window.
 
 
 <img src="img/Mercury_fits.png" title="" alt="Mercury_fits.png" width="555">
