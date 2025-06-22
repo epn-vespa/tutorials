@@ -34,7 +34,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 ## Surfaces
 
 * [Mapping sparse spatial data with TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
-* [Several use cases on planetary surfaces with Aladin & TOPCAT](https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/56893398/1-+Various+use+cases+on+planetary+surfaces+with+Aladin+TOPCAT)
+* [Planetary maps and images in Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
 * [Lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)

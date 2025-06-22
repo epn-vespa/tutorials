@@ -1,0 +1,101 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Verdana-Bold;\f1\fnil\fcharset0 Verdana;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1011\margr1011\margb1445\margt1011\vieww18144\viewh13980\viewkind0\viewscale100
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Tuto Aladin moderne
+\f1\b0 \
+\
+\
+\uc0\u8730 \'a01) HiPS dans Aladin et AladinLite\
+(ex tuto keynote, refait avec CTX)\
+\
+Zoom in / out with mouse\
+Rotate by dragging the mouse on the compass (bottom right)\
+Lock View (from the local menu) freezes attitude but allows zooming\
+Image>Symmetry swaps in both directions\
+\
+With 2 windows open: \
+Select both to match coordinates / scale (you may need to click the Match icon also)\
+Unselect the Match icon to dissociate them \
+\
+\uc0\u8730 \'a02) Ajout crat\'e8res\
++ filtre pour affichage nom et diam\'e8tre\
+(ex Io et Lune ?)\
+Select Tabular data > Lunar craters\
+SELECT TOP 9999 * FROM lunar_craters.epn_core where diameter > 10\
+(on ne voit pas la table)\
+Catalogue > Create a filter > Advanced mode\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \{\
+draw ellipse(0.5*118.54*$\{diameter\}, 0.5*118.72*$\{diameter\}, 0) rainbow($\{depth\}, 0, 3) rainbow($ \{depth\},0,3)\
+draw $\{feature_name\} rainbow($\{depth\}, 0., 3)\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\uc0\u8730 \'a03) Ajout MOC et s_region dans Aladin\
+via une table charg\'e9e dans Aladin - marche pas ???\
+via SAMP\
+\
+Samp de metadata depuis VESPA = R\'e9cup\'e8re les s_region et peut les afficher (HRSC)\
+\
+\
+4) superposition image \
+=> faire un HiPS aussi, partiel\
+A faire, \'e0 partir d'un WCS planeto\
+\
+\uc0\u8730 \'a0Essais avec les CRISM fits Chiara : \
+	ils sont projet\'e9s sur lon/lat r\'e9guliers, N en bas\
+13-000087.fits est N en bas ??  \'97\'a0c'est celui -l\'e0 sur mes ex OK\
+22-000043.fits idem (hemi S)\
+et pas moyen de redresser, mais de tt fa\'e7on le Hips image ne superpose pas sur la carte\
+en clair : m\'eame apr\'e8s cal astrom on reste en affichage coord image + grille coord superpos\'e9e\
+Le bouton orientation ne fait rien\
+	Ah si : j'ai fini par avoir \'e7a et un Hips align\'e9s, mais N en bas. Puis les deux superpos\'e9s mais pas cal\'e9s\
+	\'97\'a0en affichant 2 zones en m\'eame temps\
+	si je clique 1! sur le cube dans le pile, je vois le contour\
+\
+\'86\'a0orb0413_1.IR2.fits (cube OMEGA)\
+mieux dans le sens o\'f9 les deux sont coupl\'e9s, mais super bizarre, change la proj\
+VI0023_01.fits\
+mm genre mais crash Aladin\
+\
+\uc0\u8730 \'a0Ce qui marche: \
+mercury_cutout.fits\
+[\'95\'a0Faire astro calib sur WCS ]\'a0pas la peine en fait, c'est ds le WCS\
+\'95\'a0Puis Tool > Generate Hips based on\'85\'a0> current image\
+\'95\'a0puis dans properties: transparency = 0\
+Afficher le HIPS (pas l'image d'origine) sur le HIPS Mercure\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+\uc0\u8730 \'a0With cubes: \
+The Spect icon right of the window will plot a spatial marker and display the spectrum in the Zoom window (bottom right)\
+The CASSIS plugin (Tools > plugin > CASSIS extractor) will open CASSIS and display the local spectrum\
+In both cases, moving the spatial marker in Aladin's main window will update the displayed spectrum\
+	Capture d\'92\'e9cran 2025-06-21 \'e0 11.44.08.png et suivants : cube CRISM sur CTX\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+\uc0\u8730 \'a05) Superposition de HiPS min\'e9ralogie\
+(ex Jezero)\
+Suffit de charger 2 hips et de mettre l'un en couleur (Images > Pixel Contrast)\
+2 Hips : \
+	pas tj possible de mettre en couleurs, sait pas pourquoi (format ?)\
+	j'arrive pas non plus \'e0 faire une trichro\
+\
+\
+\uc0\u8730 \'a06) (\'e0 la fin )\
++ planets-explorer dans AladinLite\
++ USGS resolver dans AladinLite\
+(autres keynotes)\
+\
+
+{\*\beandata789c9d935d6f82301486aff157748db752d876b12d8851c1c4cc2099b86497153a65e32ba5cef1ef57444aeb66b68c1bda73fabe4f7b4e6b8d3ed3047c105ac6793684a66e4040b2308fe26c3b84eb6036b88323bb675d39cb69f0e2bba048e292017f3d59cca7000e101a17454210720207f88bf92a00dc0321d78300ee182b1e103a1c0e3aae57e9619ed60b4be4d3bc2094550b6e36e0023d6211e498c65dd90e8f4671c8ec9e66bd93caee631aee62bec242f594474b46f9666d6ff5482a128d45fa146f75f9e68d84ac14324c29ae07c2a09fed934492692d573b3984092e855e4e37f9e9acbf9e3b5d5eb3e28c912da1f6ad85dae1518854636fa5f39fec2cf6a6502e603aceb5ca5140a8f36ca16715f93ff7e64fdc2eda567ce28ebd27f6ead6f78d778ef1e866cf48f9dcf4dfdba71ba591d2490dd334ee0df5c03ff68b5c3a9fb8360e57711aa6958c92572c8f8552b2dfead9d0329c1289f70b4354a4736bbc585e887b2a8a56cf2704670e665830cece7cde24513053ad540756ded6e9e109b6501bf52759b43a0b1d5facddfb02aa1d4161}}
