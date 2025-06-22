@@ -1,19 +1,15 @@
 ## Planetary maps and images in Aladin
 
-
-
 ## Tutorial
 
 Basic display and visualisation of planetary images 
 
-
 ### Change log
 
-| Version | Authors   | Notes     |
-| ------- |:--------:| ---------:|
-| 0.1     | S. Erard, S. Derrière, M. Minin | 1/6/2015 |
-| 1.0     | S. Erard | 22/6/2025 |
-
+| Version | Authors                         | Notes     |
+| ------- |:-------------------------------:| ---------:|
+| 0.1     | S. Erard, S. Derrière, M. Minin | 1/6/2015  |
+| 1.0     | S. Erard                        | 22/6/2025 |
 
 ### Keywords
 
@@ -32,8 +28,6 @@ It assumes an adequate setup in Aladin (see [setting_up_tools](https://github.co
 
 The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements. 
 Aladin has therefore been expanded to support images of planetary surfaces in the VESPA environment.
-
-
 
 ## Using planetary HiPS in Aladin
 
@@ -61,21 +55,15 @@ The Aladin Data tree includes tens of planetary HiPS, many of which are derived 
 
 • The menu item Image>Symmetry swaps the scene in both directions
 
-![HiPS_zoom.png](img/HiPS_zoom.png)
+<img src="img/HiPS_zoom.png" title="" alt="HiPS_zoom.png" width="555">
 
 *Fig.1: basic HiPS manipulation in Aladin (Mars MRO CTX)*
-
-
 
 ### 2- Special uses
 
 In addition to maps, some planetary HiPS are built from lander **panoramas**. Play with the "Mars Stimson panorama" by zooming in/out at different locations.
 
-
-
 The field of view is always plotted at the bottom of the window. A **scale and compass** are also visible when the body is resolved (not in full-disk view).
-
-
 
 HiPS support a change of **projection** mode (from the "Projection" field above the display window). The most relevant projections are:
 
@@ -87,11 +75,7 @@ HiPS support a change of **projection** mode (from the "Projection" field above 
 
 See [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) for more details.
 
-
-
 The healpix grid is usable on ellipsoids to plot images or data; beware however that density maps are not preserved but are function of latitude. Plotting data on irregular shape models is supported by TOPCAT rather than Aladin (see [shape models in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md)).
-
-
 
 ### 3- Multiview display
 
@@ -101,13 +85,9 @@ The mutiview mode is available from a series of icons below the display window. 
 
 • Unselect the Match icon to dissociate them
 
-
-
 ![HiPS_assoc.png](img/HiPS_assoc.png)
 
 *Fig.2: Synchronised HiPS in two windows (CTX and MOLA altimetry on Mars)*
-
-
 
 ## Superimposing vectorial information
 
@@ -132,20 +112,15 @@ SELECT TOP 9999 * FROM lunar_craters.epn_core where diameter > 10
 draw ellipse(0.5*118.54*${diameter}, 0.5*118.72*${diameter}, 0) rainbow(${depth}, 0, 3) rainbow($ {depth},0,3)
 draw ${feature_name} rainbow(${depth}, 0., 3)
 }
-
 ```
 
 This will overplot large crater contours with name. Colour varies with crater size. Of course, this assumes that all craters are circular.
 
 The same result is obtained by selecting the craters in the VESPA portal (or TOPCAT) and sending the complete metadata table via SAMP.
 
-
-
 ![Lunar_craters.png](img/Lunar_craters.png)
 
 *Fig.3: Largest lunar craters on LRO mosaic, with circular contours*
-
-
 
 ### 2- contours and MOC footprints
 
@@ -153,25 +128,17 @@ When selecting data from the VESPA portal, both s_region and MOC coverages can b
 
 The complete metadata table can also be samped from the VESPA portal or other clients. It will appear in the data stack, and as a table below the display window (click on the data stack if not). Only the central coordinates are plotted by default. To plot the s_region themselves, open the property panel (from the local menu or Edit > Properties) and select "Show associated FoV". 
 
-
-
 ![HRSC_s_region.png](img/HRSC_s_region.png)
 
 *Fig.4: s_region footprints for selected HRSC nadir sessions on Mars*
-
-
 
 Although both formats provide accurate footprints, MOC are particularly adapted to provide complex unit boundaries, as they also support unconnected regions. They are also more robust in some situations (inclusion of a pole, footprint large wrt the planetary disk…).
 
 To display MOC footprints from a samped table, look for the column Coverage in the table and click the button in this cell.
 
-
-
 ![VVEX_MOC.png](img/VVEX_MOC.png)
 
 *Fig.5: Selection of VIRTIS / Venus-Express session footprints on Magellan Mosaic*
-
-
 
 ## Superimposing spatial data
 
@@ -183,23 +150,17 @@ Global HiPS can be superposed by selecting one (check the box) and setting the s
 
 • Try this with Mars TES albedo and Mars THEMIS Day IR mosaic HiPS, or with the THEMIS day and night HiPS. More than two HiPS can be superposed this way.
 
-
-
 Some HiPS include colour encoding. Grey-level HiPS can be plotted in Aladin with a colour scale. In any case, a coloured HiPS can be superposed to a grey-level ones by setting the visibility slider to a low value. A typical usage is to superpose low-resolution physical information on a high-resolution mosaic. 
 
 • Try to superimpose MOLA coloured altimetry (or OMEGA olivine map) to MARS CTX or Mars THEMIS Day mosaic.
 
-
-
-![Color_superp](img/Color_superp)
+![Color_superp](img/Color_superp.png)
 
 *Fig.6: MOLA altimetry (coloured) on CTX mosaic of Mars (high resolution, in grey)*
 
 ![N_Syrtis_Aladin.png](img/N_Syrtis_Aladin.png)
 
 *Fig.7: OMEGA olivine map (coloured) on CTX mosaic of Mars (high resolution, in grey) in the Jezero crater area*
-
-
 
 ### 2- Images
 
@@ -213,8 +174,6 @@ The HiPS computation can take several seconds. When done, open the properties pa
 
 *Fig.8: An image of Mercury (planetary fits version) on the MESSENGER HiPS*
 
-
-
 ### 3- Spectral cubes
 
 Georeferenced spectral cubes can be displayed like images — you may need to use a two-view display to make it fit correctly.
@@ -223,8 +182,6 @@ A slider shows up on top of the cube to allow the selection of spectral planes.
 ![Cube.png](img/Cube.png)
 
 *Fig.9: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
-
-
 
 The **Spect icon** in the tool column (right of the display window) will plot a spatial marker and display the spectrum in the Zoom window (bottom right).
 
@@ -236,15 +193,11 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 *Fig.10: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
-
-
 ## Further topics
 
 • Browse planetary HiPS in AladinLite with the [Aladin Lite planets explorer](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 
 • AladinLite has a resolver mode which identifies surface features from the USGS Planetary Gazetteer (requires AladinLite to be installed with this option in the web page).
-
-
 
 ## Links
 
