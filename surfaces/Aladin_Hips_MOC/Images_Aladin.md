@@ -6,10 +6,10 @@ Basic display and visualisation of planetary images
 
 ### Change log
 
-| Version | Authors                         | Notes     |
-| ------- |:-------------------------------:| ---------:|
-| 0.1     | S. Erard, S. Derrière, M. Minin | 1/6/2015  |
-| 1.0     | S. Erard                        | 22/6/2025 |
+| Version | Authors                                                | Notes     |
+| ------- |:------------------------------------------------------:| ---------:|
+| 0.1     | S. Erard, C. Marmo, P. Fernique, S. Derrière, M. Minin | 1/6/2015  |
+| 1.0     | S. Erard                                               | 22/6/2025 |
 
 ### Keywords
 
