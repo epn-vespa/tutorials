@@ -1,14 +1,12 @@
 ## Setting up VO tools for planetary context
 
-[Tutorial](#use-case)  
 [Authors](#author)  
 [Summary](#summary)  
 [Introduction](#introduction)  
-[Tutorial](#tutorial)  
 [Links](#links)  
 
-
 ## Tutorial
+
 Basic set up of VO tools for planetary science
 
 ## Author:
@@ -17,24 +15,22 @@ S. Erard
 
 ### Change log
 
-| Version       | Author        | Notes  |
-| ------------- |:-------------:| -----: |
-| 1.0           | S. Erard      | 6/9/2017  |
-| 1.1           | S. Erard      | 2/11/2024  |
-| 1.2           | S. Erard      | 28/3/2025  |
-
+| Version | Author   | Notes     |
+| ------- |:--------:| ---------:|
+| 1.0     | S. Erard | 6/9/2017  |
+| 1.1     | S. Erard | 2/11/2024 |
+| 1.2     | S. Erard | 28/3/2025 |
 
 ### Requirements and dependencies
 
-
-
 ### Keywords
+
 Data
 Tools
 
 ## Summary
-This tutorial describes convenient settings of VO tools for use with Solar System data.
 
+This tutorial describes convenient settings of VO tools for use with Solar System data.
 
 ## Introduction
 
@@ -42,11 +38,8 @@ The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) fra
 
 This tutorial summarizes the basic settings for adapting the display to standard planetary use. 
 
-
-
 ## 3D shape models
 
- 
 ### 1- TOPCAT configuration
 
 From v4.10-3, TOPCAT supports 3D formats. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
@@ -61,13 +54,9 @@ The "ver" option will become available in the Format field of the Load new table
 
 Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to optimise the display of 3D shape models.
 
-
-
 ## Planetary mapping
 
- 
 ### 1- TOPCAT
-
 
 TOPCAT includes several mapping tools (windows) usable to display planetary maps.
 
@@ -104,8 +93,7 @@ Two options are available for 2D/flat mapping: car (plate carrée / cylindrical)
 
 <img src="img/TOPCAT_SkyPlot_cyl.png" width="500" alt="4">  
 
-
-####  Standard settings for planetary maps in TOPCAT PlanePlot (cylindrical)
+#### Standard settings for planetary maps in TOPCAT PlanePlot (cylindrical)
 
 The older PlanePlot window is still available to produce 2D cylindrical maps, and may provide additional flexibility in some cases. This looks more like a simple plot than the SkyPlot window, but it may be more convenient in particular for atmospheric "maps" (e.g., latitude vs time).
 
@@ -131,10 +119,7 @@ The older PlanePlot window is still available to produce 2D cylindrical maps, an
 
 <img src="img/TOPCAT_planePlot.png" width="500" alt="4">  
 
-
- 
 ### 2- Aladin
-
 
 #### Standard settings for planetary maps and HiPS in Aladin:
 
@@ -152,11 +137,9 @@ Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed
 
 <img src="img/Aladin_Ceres.png" width="500" alt="4">  
 
-
 #### Superposing images on HiPS
 
-Although Aladin will overplot images in the current coordinate frame, the positioning may be approximative. A secure way to overplot images is to first turn them into HiPS in Aladin.
-Contours (s\_region) and MOC will display correctly in Aladin.
+Another tutorial is dedicated to overlay HiPS, images, and contours in Aladin. See [Planetary maps and images in Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
 
 
 #### Building HiPS
@@ -173,22 +156,18 @@ To use the new HiPS, just drop the PhobosHips directory on Aladin window.
 
 On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc).
 
-
 ### 3- AladinLite
 
 AladinLite has functionalities similar to Aladin but is a different software:
 
 - AladinLite is typically integrated in a web page, where it provides display capacities.
 - It has a different Planetary data mode - options need to be implemented when AladinLite is installed in the web page, see developer doc: [https://aladin.cds.unistra.fr/AladinLite/doc/](https://aladin.cds.unistra.fr/AladinLite/doc/).
-- The coordinate system defaults to ICRS. Although no planetary is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
+- The coordinate system defaults to ICRS. Although no planetary system is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
 - A very handy feature is to replace the Simbad resolver of celestial objects by a similar functionality connected to the USGC Gazetteer of Planetary Nomenclature —&nbsp;see here: [https://aladin.cds.unistra.fr/AladinLite/planets-explorer/](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
-
 
 ### 4- Further topics
 
 Please contact the VESPA team for support: support.vespa @ obspm.fr
-
-
 
 ## Links
 
