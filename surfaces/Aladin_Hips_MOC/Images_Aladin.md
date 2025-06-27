@@ -114,11 +114,11 @@ draw ${feature_name} rainbow(${depth}, 0., 3)
 }
 ```
 
-This will overplot large crater contours with name. Colour varies with crater size. Of course, this assumes that all craters are circular.
+This will overplot large crater contours with name. Colour varies with crater depth. Of course, this assumes that all craters are circular.
 
 (118.54 is the scale in "/km = 360 *3600 / (2π R<sub>Moon</sub>) )
 
-The same result is obtained by selecting the craters in the VESPA portal (or TOPCAT) and sending the complete metadata table via SAMP.
+The same result is obtained by selecting craters in the VESPA portal (or TOPCAT) and sending the metadata table via SAMP.
 
 <img src="img/Lunar_craters.png" title="" alt="Lunar_craters.png" width="555">
 
@@ -174,7 +174,7 @@ The HiPS computation can take several seconds. When done: select the HiPS versio
 
 <img src="img/Mercury_fits.png" title="" alt="Mercury_fits.png" width="555">
 
-*Fig.8: An image of Mercury (planetary fits version) on the MESSENGER HiPS*
+*Fig.8: An image of Mercury (planetary fits version converted to HiPS) on the MESSENGER HiPS*
 
 ### 3- Spectral cubes
 
@@ -195,21 +195,15 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 *Fig.10: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
 
-
-
 ## Further topics
 
-• Browse planetary HiPS in AladinLite with the [Aladin Lite planets explorer](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
+• Explore planetary HiPS in your browser with the [Aladin Lite planets explorer](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 
-• AladinLite has a resolver mode which identifies surface features from the USGS Planetary Gazetteer (requires AladinLite to be installed with this option in the web page).
+• AladinLite has a resolver mode which identifies surface features from the USGC Gazetteer of Planetary Nomenclature (requires AladinLite to be installed with this option in the web page).
 
-• As mentioned above, data tree items (under Collections) are coloured green when they overlap the current view and body.
-
-This is done by comparing with a global MOC provided for each collection on a "MOCserver". This can be queried manually here: [MocServer](http://alasky.u-strasbg.fr/MocServer/query) (see use cases on the sky: [MocServer](http://alasky.u-strasbg.fr/MocServer/example))
+• As mentioned above, data tree items (under Collections) are coloured green when they overlap the current view and body. This is done by comparing with a global MOC provided for each collection on a "MOCserver". This can be queried manually here: [MocServer](http://alasky.u-strasbg.fr/MocServer/query) (see use cases on the sky: [MocServer](http://alasky.u-strasbg.fr/MocServer/example))
 
 A more versatile system is available in the Collection-tree filter (click button in front of From at the bottom of the Data tree, select the Spatial tab), allowing the user to provide an on-line MOC and play with intersect functions.
-
-
 
 ## Links
 
