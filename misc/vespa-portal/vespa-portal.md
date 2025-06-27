@@ -118,7 +118,7 @@ Clicking a service row in the global result area enters the service mode: the ma
 * The **Title box** contains global information, including a link to the main web site of the service, if available.
 * In the default **Tabular View** a thumbnail is displayed when hovering the mouse over the table (if provided by the service). You can switch to **Gallery View** to display all thumbnails together.
 
-<img src="img/GalerieBASS2000.png" width="500" alt="image">
+<img src="img/GalerieBASS2000.png" width="600" alt="image">
 
 
 * The left menu is still available to change or refine your query to the service displayed. All EPN-TAP parameters, including columns specific to this service, are available from the "*Other*" panel. Click the "+" button to use several such parameters, "x" to remove one. 
