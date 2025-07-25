@@ -146,7 +146,7 @@ To display MOC footprints from a samped table, look for the column Coverage in t
 
 ### 1- HiPS
 
-The HiPS already downloaded in Aladin are listed in the data stack (rightmost column). A basic mechanism in Aladin prevents from overplotting HiPS from different planetary bodies (see warning message on top of the data stack area, and check box selector turning red). Also notice that data overlapping the current view are coloured and body in green in the Collections Data tree.
+The HiPS already downloaded in Aladin are listed in the data stack (rightmost column). A basic mechanism in Aladin prevents from overplotting HiPS from different planetary bodies (see warning message on top of the data stack area, and check box selector turning red). Also notice that data overlapping the current view and body are coloured in green in the Collections Data tree.
 
 Global HiPS can be superposed by selecting one as reference (check the box) and setting the transparency slider of the other one(s). 
 
