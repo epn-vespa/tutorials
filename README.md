@@ -67,6 +67,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 
 ## Other
 
+* [Finding planet observations in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)
 * [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
 * [Retrieving files under datalink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)
