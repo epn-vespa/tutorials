@@ -264,7 +264,7 @@ SELECT target_name, taxonomy_code, dynamical_type,
 * [VESPA portal](http://vespa.obspm.fr)
 * [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/)
 * [Merlin et al. 2017](https://doi.org/10.1051/0004-6361/201730933)
-* [Barucci et al. 2005 taxonomy](https://doi.org/10.1051/0004-6361:20053346)
+* [Barucci et al. 2005 taxonomy](https://ui.adsabs.harvard.edu/abs/2005AJ....130.1291B/abstract)
 * [SsODNet/Quaero API](https://ssp.imcce.fr/webservices/ssodnet/api/quaero)
 
 
