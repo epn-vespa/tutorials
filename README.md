@@ -57,7 +57,6 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
 * [ExPRES/MASER modelling of radio emissions](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/ExPRES-tutorial/ExPRES-Tutorial.md)
 * [Magnetodisc modelling](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/MDISC/README.md)
-* [HAPI — heliophysics time-series](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/hapi-tutorial.pdf)
 
 ## Spectroscopy
 
