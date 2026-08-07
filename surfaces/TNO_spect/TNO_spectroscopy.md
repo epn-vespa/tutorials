@@ -21,6 +21,7 @@ S. Erard
 | ------------- |:-------------:| -----: |
 | 1.0           | S. Erard      | 12/10/2024  |
 | 1.1           | S. Erard      | 19/6/2025  |
+| 1.2           | T. Hope       | 2/4/2026   |
 
 
 
@@ -31,7 +32,7 @@ Spectroscopy
 Service
 
 ## Summary
-This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services
+This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services. It also shows how to use the dedicated spectro\_tno service for direct access to TNO/Centaur reflectance spectra with rich metadata (taxonomy, dynamics, photometric colours).
 
 ## Introduction
 
@@ -113,7 +114,157 @@ SELECT TOP 100 *
 ```
 
 
-* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services. 
+* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services.
 
+
+### 4- Using the dedicated spectro\_tno service
+
+The spectro\_tno service (Merlin et al. 2017, A&A 604, A86) provides combined vis-nIR reflectance spectra (0.35--2.45 micron) of 42 TNOs and Centaurs, plus 4 taxonomic mean spectra. Unlike generic spectral services, it includes dynamical classification, spectral taxonomy, and photometric colour indices directly as queryable columns. No cross-match with MPC is needed to filter by dynamical class.
+
+#### Querying the service
+
+From TOPCAT (VO > TAP), connect to the PADC TAP service and run:
+
+``
+SELECT * FROM spectro_tno.epn_core
+``
+
+This returns 46 rows: 42 individual spectra and 4 taxonomic mean spectra computed by Merlin et al. 2017 (one per BB, BR, IR, RR class of the Barucci et al. 2005 taxonomy).
+
+#### Filtering by dynamical class or taxonomy
+
+The custom columns allow direct filtering without any cross-match:
+
+``
+SELECT target_name, dynamical_type, taxonomy_code, instrument_name
+  FROM spectro_tno.epn_core
+  WHERE dynamical_type = 'Plutino'
+``
+
+Available values for dynamical\_type: Cubewano, Plutino, SDO, Detached object, Centaur.
+Available values for taxonomy\_code: BB, BR, IR, RR.
+
+#### Displaying a spectrum
+
+* Load the result table in TOPCAT
+* Open the Activation Actions window (Views > Activation Actions)
+* In the Actions list, check "Plot Table"; in the Configuration panel, set Table Location to access\_url and Plot Type to Plane
+* Click a row in the table, or use the lightning bolt button to invoke on the current row
+* TOPCAT opens a Plane Plot window with X = wavelength and Y = reflectance (auto-detected from VOTable UCDs)
+* In the Form tab, check Line alongside Mark to connect the data points; the Aux axis displays reflectance\_error as a colour gradient
+
+
+<img src="img/chariklo_plot.png" width="550">
+
+
+### 5- Enriching spectro\_tno with orbital parameters from MPC
+
+The spectro\_tno service provides dynamical classification but not orbital elements. These can be retrieved from MPC via a cross-match on target\_name in TOPCAT.
+
+#### Step-by-step
+
+* Load spectro\_tno in TOPCAT:
+
+``
+SELECT target_name, alt_target_name, dynamical_type, taxonomy_code
+  FROM spectro_tno.epn_core
+  WHERE granule_gid = 'combined_spectrum'
+``
+
+* Load orbital elements from MPC:
+
+``
+SELECT target_name, semi_major_axis, eccentricity, inclination
+  FROM mpc.epn_core
+  WHERE orbit_class LIKE '%Distant object%'
+``
+
+* Open the Match Tables window (Joins > Pair Match)
+* Algorithm: Exact Value
+* Table 1: spectro\_tno table, Matched Value column: target\_name
+* Table 2: MPC table, Matched Value column: target\_name
+* Output Rows — Match Selection: Best match, symmetric; Join Type: 1 and 2
+* Click Go
+
+<img src="img/match_tables.png" width="250">
+
+This produces a combined table with both spectro\_tno metadata (taxonomy, dynamics) and MPC orbital elements (semi\_major\_axis, eccentricity, inclination) for each matched object.
+
+<img src="img/match_results.png" width="650">
+
+Note: target\_name in spectro\_tno uses current IAU names from the SsODNet/Quaero database. For recently named objects (e.g. Lempo, Varda, Aya), the match with MPC may require using alt\_target\_name instead.
+
+#### Scatter plot: orbital elements coloured by taxonomy
+
+With the matched table:
+
+* Open the Plane Plot window (Graphics > Plane Plot)
+* In the Position tab, set X = semi\_major\_axis, Y = eccentricity
+* To colour by taxonomy: in the main TOPCAT window, open Views > Row Subsets and create one subset per class (e.g. expression `taxonomy_code.equals("BB")`, and likewise for BR, IR, RR)
+
+<img src="img/taxonomy_subsets.png" width="650">
+
+* Back in the Plane Plot, go to the Subsets tab: the 4 subsets appear with distinct colours. Check all four to display the points coloured by taxonomic class
+
+<div style="width:650px; height:650px; overflow:hidden;">
+  <img src="img/taxonomy_scatterplot.png" width="650" style="margin-top:-10px;">
+</div>
+
+This kind of analysis was previously only possible by manually combining several catalogues. The EPN-TAP framework and TOPCAT make it a straightforward operation.
+
+
+### 6- Comparing taxonomic mean spectra
+
+The 4 taxonomic mean spectra (BB, BR, IR, RR) summarise the spectral diversity of TNOs/Centaurs. They can be compared directly:
+
+``
+SELECT * FROM spectro_tno.epn_core WHERE granule_gid = 'taxonomic_mean'
+``
+
+* Load this table in TOPCAT (4 rows)
+* In Activation Actions, check "Load Table" with Table Location = access\_url
+* Use the double lightning bolt with film strip icon ("Perform all active actions on every row in the current subset in turn") to load all 4 VOTables at once
+
+<img src="img/activation_means.png" width="650">
+
+* Open a Plane Plot (Graphics > Plane Plot). The first table is already displayed
+* For each remaining table, click "Add a new positional plot control to the stack" and select the next table. Set X = wavelength, Y = reflectance
+
+<img src="img/positional_plot.png" width="650">
+
+* Check Line in the Form tab for each layer
+* Each layer gets a distinct colour, allowing direct comparison of the 4 mean spectra
+
+<img src="img/comparison_plot.png" width="650">
+
+The spectral slope increases from BB (neutral/blue) to RR (very red), reflecting increasing amounts of complex organics (tholins) on the surface.
+
+
+### 7- Photometric colour analysis
+
+The spectro\_tno service includes V-R, V-I, V-J, V-H and V-K colour indices from Table 2 of Merlin et al. 2017. These can be used to study the colour diversity of TNOs:
+
+``
+SELECT target_name, taxonomy_code, dynamical_type,
+       color_index_v_r, color_index_v_i, color_index_v_j
+  FROM spectro_tno.epn_core
+  WHERE color_index_v_r IS NOT NULL
+``
+
+* Load in TOPCAT and open the Plane Plot window (Graphics > Plane Plot)
+* In the Position tab, set X = color\_index\_v\_r, Y = color\_index\_v\_j
+* To colour by taxonomy: open Views > Row Subsets and create one subset per class (`taxonomy_code.equals("BB")`, and likewise for BR, IR, RR), then check them in the Subsets tab of the plot
+
+<img src="img/colour_diagram.png" width="650">
+
+
+
+## Links
+
+* [VESPA portal](http://vespa.obspm.fr)
+* [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/)
+* [Merlin et al. 2017](https://doi.org/10.1051/0004-6361/201730933)
+* [Barucci et al. 2005 taxonomy](https://ui.adsabs.harvard.edu/abs/2005AJ....130.1291B/abstract)
+* [SsODNet/Quaero API](https://ssp.imcce.fr/webservices/ssodnet/api/quaero)
 
 
