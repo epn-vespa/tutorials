@@ -2,7 +2,7 @@
 
 ## Tutorial
 
-Basic set up of VO tools for planetary science
+Comparing observational and experimental spectra
 
 ## Author:
 
@@ -53,7 +53,7 @@ In the ADQL text field, type:
 
 Click Run query (Fig. 1)
 
-<img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/asteroid_spect/img/TOPCAT_query.png" alt="TOPCAT_query.png" width="493" data-align="center">
+<img title="TOPCAT query panel" src="img/TOPCAT_query.png" alt="TOPCAT_query.png" width="493" data-align="center">
 
                                     *Fig. 1: TOPCAT query panel*
 
