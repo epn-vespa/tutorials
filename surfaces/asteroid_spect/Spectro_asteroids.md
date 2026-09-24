@@ -4,9 +4,6 @@
 
 Comparing observational and experimental spectra
 
-## Author:
-
-S. Erard
 
 ### Change log
 
@@ -36,19 +33,20 @@ VO Tools
 
 This tutorial show basic spectrum manipulations and comparisons.
 
-## Tutorial
+## Spectra of asteroid 4 Vesta
 
-### 1- Spectra of asteroid 4 Vesta
+### 1- Search spectra in TOPCAT
 
-**• Open TOPCAT**
+Open TOPCAT. 
 
-• In the icon bar of the main window, click the icon: Open… SQL
+In the icon bar of the main window, click the icon: Open… SQL
 
-in the Select service pane, type keyword = PADC
+In the Select service pane, type keyword = PADC
 
-select http://voparis-tap-planeto.obspm.fr/tap & click Use service - this changes pane
+Select http://voparis-tap-planeto.obspm.fr/tap & click Use service - this changes pane
 
 In the ADQL text field, type:
+
 `SELECT TOP 1000 * from spectro_asteroids.epn_core where target_name = 'Vesta'` 
 
 Click Run query (Fig. 1)
@@ -71,7 +69,7 @@ Click and select Plot table, click on Invoke now…  the current spectrum shoul
 
 Go to the table window, select another row; it should display upon selection (wait a second if the interface does not react, or try another row)
 
-<img title="" src="file:///Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/asteroid_spect/img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="433" data-align="right">
+<img title="" src="img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="433" data-align="right">
 
                                                                     *Fig. 2: TOPCAT activation actions / plot*
 
@@ -81,7 +79,10 @@ Notice how spectra differ in spectral range, but also that they are not provided
 
 The reflectance spectra in the NIR range (Fig. 2) display 2 bands of pyroxenes at ~ 1 and 2 µm, with varying band center & width. Band position depends on pyroxene composition (Fe/Mg ratio) and is an important indicator of mineralogy.
 
-**• Launch Splat-VO**
+
+### 2- Display spectra in SPLAT-VO
+
+Launch Splat-VO
 
 • In the main TOPCAT window, select the current table. In the main menu, select Interop / Sent table to… SPLAT
 
@@ -95,9 +96,11 @@ these 5 spectra should plot in a single window 
 
 • Identify your preferred spectrum of Vesta
 
-### 2- Experimental spectra
+## Experimental spectra
 
-**• Open the VESPA portal**
+### 1- Search spectra in the VESPA portal
+
+Open the VESPA portal
 
 • Go to the Relab service — this is a VO access to a large spectral database of mineral samples in reflectance.
 
@@ -137,7 +140,11 @@ Using the VESPA portal is a simple solution to get around the complexity of ADQL
 
 The result table with add in the Table list of TOPCAT
 
-**In SPLAT-VO** the table pane opens and list the table sendt via SAMP (this pane is actually the ObsCore wuery window, which can display EPNCore tables).
+
+
+### 2- Display and compare spectra in SPLAT-VO
+
+In SPLAT-VO the table pane opens and list the table sendt via SAMP (this pane is actually the ObsCore wuery window, which can display EPNCore tables).
 
 • Click display all => all spectra (linked under access_url) will plot in a single window
 
@@ -149,24 +156,20 @@ The scaled spectrum will add in the spectra list; add it to the current plot win
 
 Identify the best matches visually from the SNC meteorites
 
-
-
-![SNC_plus_Vesta.png](/Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/asteroid_spect/img/SNC_plus_Vesta.png)
+<img title="" src="img/SNC_plus_Vesta.png" alt="" width="493" data-align="center">
 
             *Fig. 3: reflectance spectra of SNC meteorite samples and Vesta in SPLAT-VO*
 
 
+Compute the ratio between the Vesta spectrum and the best meteroritic match (icon Add… two spectra). Try several solutions to minimize the residuals. Notice the limitations of this procedure.
 
-• Compute the ratio between the Vesta spectrum and the best meteroritic match (icon Add… two spectra). Try several solutions to minimize the residuals. Notice the limitations of this procedure.
-
-
-
-![Vesta_to_analogues.png](/Users/serard/Data4/Ai/Le%20Monde/Technique/Europlanet-IDIS/cadre%20FP7/JRA4/Tutos%20:%20docus/tutorials/surfaces/asteroid_spect/img/Vesta_to_analogues.png)
+<img title="" src="img/Vesta_to_analogues.png" alt="Vesta_to_analogues.png" width="493" data-align="center">
 
             *Fig. 4: Ratio of Vesta spectrum to 2 closest SNC meteorite spectra in SPLAT-VO*
 
 
+## Going further
 
-**Going further** (determing the best fit, extracting absorption band parameters, etc) requires command line processing under python or another language.
+Going further (e.g., determining the best fit, extracting absorption band parameters, etc) requires command line processing under python or another language.
 
 The simplest solution to exchange data is to store your intermediate results as VOTable or fits files (supported by astropy in python). If you're not using python, remember that VOTable is not often supported (ascii or fits are more secure).
