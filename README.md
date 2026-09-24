@@ -64,6 +64,7 @@ These tutorials are provided as text (Markdown, pdf) or video.
 * [Accessing spectral data](http://www.europlanet-vespa.eu/tutos/Tuto_Spectro_1_0.pdf)
 * [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
 * [Plotting bandlists in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/bandlists/bandlists.md)
+* [Comparing observations with laboratory spectra](https://github.com/epn-vespa/tutorials/blob/master/surfaces/asteroid_spect/Spectro_asteroids.md)
 
 ## Other
 
