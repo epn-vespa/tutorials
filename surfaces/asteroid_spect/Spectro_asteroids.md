@@ -75,9 +75,9 @@ Go to the table window, select another row; it should display upon selection (wa
 
 
 
-Notice how spectra differ in spectral range, but also that they are not provided in the same scale — some provide flux density (reflected solar irradiance) others are in reflectance (irradiance divided by the solar flux at target distance). Some spectra at longer wavelength are provided in emissivity (irradiance divided by surface black body). This particularity of Solar System observations is reflected (!) in the measurement_type parameter of EPN-TAP. These different scales cannot be compared directly.
+Notice how spectra differ in spectral range, but also that they are not provided in the same scale — some are in flux density (reflected solar irradiance) others are in reflectance (irradiance divided by the solar flux at target distance). Some spectra at longer wavelength are provided in emissivity (irradiance divided by surface black body). This particularity of Solar System observations is reflected (!) in the measurement_type parameter of EPN-TAP. Different scales cannot be compared directly.
 
-The reflectance spectra in the NIR range (Fig. 2) display 2 bands of pyroxenes at ~ 1 and 2 µm, with varying band center & width. Band position depends on pyroxene composition (Fe/Mg ratio) and is an important indicator of mineralogy.
+The reflectance spectra in the NIR range (Fig. 2) display 2 bands of pyroxenes at ~ 1 and 2 µm, with varying band center & width. Band parameters depend on pyroxene composition (Fe/Mg ratio) and is an important indicator of mineralogy.
 
 
 ### 2- Display spectra in SPLAT-VO
@@ -94,7 +94,7 @@ these 5 spectra should plot in a single window 
 
 (same thing works for the 2 Usui et al spectra; you need to send them separately because of different unit/scale; the 4 fits spectra won't plot in SPLAT for formatting reasons)
 
-• Identify your preferred spectrum of Vesta
+• Identify your preferred spectrum of Vesta in the NIR range.
 
 ## Experimental spectra
 
@@ -102,7 +102,7 @@ these 5 spectra should plot in a single window 
 
 Open the VESPA portal
 
-• Go to the Relab service — this is a VO access to a large spectral database of mineral samples in reflectance.
+• Go to the Relab service — this is a VO interface on a large spectral database of mineral samples in reflectance.
 
 This service is currently under validation, so:
 
@@ -112,9 +112,9 @@ Service URL = http://voparis-tap-sandbox.obspm.fr/tap
 
 Schema Name = relab (lower case)
 
-Click on the single green row, that will open the table of the service
+Click on the single green row, that will open the service table 
 
-• We're looking for possible analogues to Vespa surface materials. Here we are testing pyroxenes from Martian meteorites (both are basaltic materials).
+• We're looking for possible analogues to Vespa surface materials. Here we are testing pyroxenes fractions from Martian meteorites (which are basaltic materials like Vesta surface).
 
 • In the form fields at the left of the interface, 
 
@@ -122,19 +122,19 @@ click Other and select from the menu: sample_classification LIKE mars-met
 
 click Other again and select: sample_desc LIKE pyroxene
 
-Click Spectral and select: Data range is included in  [0.3, 3] µm 
+click Spectral and select: Data range is included in  [0.3, 3] µm 
 
-Cick Submit
+click Submit
 
 • The result table displays only 13 rows matching the query: SNC meteorites, pyroxene fraction only.
 
-The actual ADQL query is displayed below (it can be used in TOPCAT, CASSIS or SPLAT-VO):
+The actual ADQL query is displayed below the table (it can be used in TOPCAT, CASSIS or SPLAT-VO):
 
 `SELECT * FROM relab.epn_core WHERE spectral_range_min >= 99930819333333.33 AND spectral_range_max <= 999308193333333.4 AND "sample_classification" LIKE '%mars-met%'`
 
-(the spectral range is given in Hz as per EPN-TAP standard)
+(the spectral range is converted to Hz as per EPN-TAP standard)
 
-Using the VESPA portal is a simple solution to get around the complexity of ADQL queries.
+Using the VESPA portal is a simple solution to get around the technicity of ADQL queries.
 
 • With TOPCAT and SPLAT-VO still open, click All metadata / Send Table (not spectra)
 
@@ -144,15 +144,15 @@ The result table with add in the Table list of TOPCAT
 
 ### 2- Display and compare spectra in SPLAT-VO
 
-In SPLAT-VO the table pane opens and list the table sendt via SAMP (this pane is actually the ObsCore wuery window, which can display EPNCore tables).
+In SPLAT-VO the table pane opens and lists the table sent via SAMP (this pane is actually the ObsCore query window, which can display EPNCore tables).
 
-• Click display all => all spectra (linked under access_url) will plot in a single window
+• Click display all. All spectra (which are linked under access_url) will plot in a single window
 
 • Add your preferred Vesta spectrum in this plot window (from the main window, select the spectrum and check the plot window box)
 
 Adjust the Y-scale using the icon Add… by constant (/6 in this case)
 
-The scaled spectrum will add in the spectra list; add it to the current plot window
+The scaled spectrum will add in the spectrum list of the main window; add it to the current plot window
 
 Identify the best matches visually from the SNC meteorites
 
