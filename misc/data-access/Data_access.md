@@ -6,6 +6,17 @@ Searching for spectra in EPN-TAP data services
 
 We're showing how to search for data in EPN-TAP data services from various environments, and display the results. This tutorial uses spectral data as an example.
 
+[Introduction](#Introduction)  
+[VESPA portal](#1- VESPA portal)  
+[TOPCAT](#2- TOPCAT)  
+[CASSIS](#3- CASSIS)  
+[SPLAT-VO](#4- SPLAT-VO)  
+[Aladin](#5- Aladin)  
+[TAPhandle](#6- TAPhandle)  
+[python](#7- python / pyvo)  
+[To go further](#To go further)  
+
+
 ### Change log
 
 | Version | Author   | Notes     |
@@ -260,7 +271,7 @@ The last command will print the result table.
 
 
 
-### 8- To go further
+## To go further
 
 You have seen how to query VESPA data services from the most common VO clients, and display simple data products.
 
