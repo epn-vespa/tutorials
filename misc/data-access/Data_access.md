@@ -1,6 +1,5 @@
 ## Accessing EPN-TAP services from different tools
 
-Searching for spectra in EPN-TAP data services
 
 ## Summary
 
@@ -137,6 +136,8 @@ After a few seconds, the result table should add in the table list (main window)
 Go to the table window, select another row. It should display upon selection (wait a second if the interface does not react, or try another row)
 
 Superpose other spectra in the same window by clicking Add new positional plot control, then defining the spectrum of interest. This is a bit tedious - sending the table to SPLAT may be easier in such cases (it will open the files under access_url and plot them at once).
+
+TOPCAT is an all-purpose table handling tool and VO client, filled with powerfull graphic functions (including for spatial data, but not images).
 
 <img title="TOPCAT" src="../../surfaces/asteroid_spect/img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="647" data-align="right">
 
@@ -283,4 +284,4 @@ https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting
 
 
 
-Other more specialized tools are available to support Solar System data, as well as non-VO tools using VO plugins, and VO-compliant web services.
+Other more specialized tools are available to support Solar System data. Some non-VO tools can exchange data via SAMP thanks to VO plugins. VO-compliant web services can also be included in access workflows.
