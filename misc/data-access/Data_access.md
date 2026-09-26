@@ -7,14 +7,14 @@ Searching for spectra in EPN-TAP data services
 We're showing how to search for data in EPN-TAP data services from various environments, and display the results. This tutorial uses spectral data as an example.
 
 [Introduction](#Introduction)  
-[VESPA portal](#1- VESPA portal)  
-[TOPCAT](#2- TOPCAT)  
-[CASSIS](#3- CASSIS)  
-[SPLAT-VO](#4- SPLAT-VO)  
-[Aladin](#5- Aladin)  
-[TAPhandle](#6- TAPhandle)  
-[python](#7- python / pyvo)  
-[To go further](#To go further)  
+[VESPA portal](#1--VESPA-portal)  
+[TOPCAT](#2--TOPCAT)  
+[CASSIS](#3--CASSIS)  
+[SPLAT-VO](#4--SPLAT-VO)  
+[Aladin](#5--Aladin)  
+[TAPhandle](#6--TAPhandle)  
+[python](#7--python-/-pyvo)  
+[To go further](#To-go-further)  
 
 
 ### Change log
