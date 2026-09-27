@@ -10,17 +10,27 @@ The VESPA team has collected a set of tutorials covering data discovery, access,
 
 # Getting started
 
-These tutorials provide a recommended entry point for new users:
-
-| Level       | Tutorial                                                                                                                                  | Main tools                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| 🟢 Beginner | [VESPA portal walkaround](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/vespa-portal.md)                           | VESPA portal                                                           |
-| 🟢 Beginner | [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md)     | VESPA portal, TOPCAT, <br/>CASSIS, SPLAT-VO, Aladin, TAPhandle, python |
-| 🟢 Beginner | [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) | TOPCAT, Aladin, AladinLite                                             |
-
 **VESPA data life cycle:**
 
 Discover → Access → Analyse → Publish → Share results
+
+
+
+These tutorials provide a recommended entry point for new users:
+
+| Level | Tutorial                                                                                                                                  | Main tools                                                        |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 🟢    | [VESPA portal walkaround](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/vespa-portal.md)                           | VESPA portal                                                      |
+| 🟢    | [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md)     | VESPA portal, TOPCAT, CASSIS, SPLAT-VO, Aladin, TAPhandle, python |
+| 🟢    | [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) | TOPCAT, Aladin, AladinLite                                        |
+
+**Levels**:
+
+🟢 Beginner
+🟡 Intermediate
+🔴 Advanced
+
+
 
 ---
 
@@ -28,15 +38,15 @@ Discover → Access → Analyse → Publish → Share results
 
 These tutorials illustrate direct access to EPN-TAP services, advanced VO usage, and programmatic workflows.
 
-| Level           | Tutorial                                                                                                                                                                                               | Main tools       |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| 🟡 Intermediate | [EPN-TAP services: Using TOPCAT as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)           | TOPCAT           |
-| 🟡 Intermediate | [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets)](http://exoplanet.eu/API/)                                                                                                     | Python           |
-| 🟡 Intermediate | [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)          | Python, pyvo     |
-| 🟡 Intermediate | [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb) | Python, pyvo     |
-| 🔴 Advanced     | [Sending an EPN-TAP query to all EPN-TAP services in python and retrieving cumulative results](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)  | Python, Registry |
-| 🟡 Intermediate | [Retrieving files under DataLink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)                                     | TOPCAT           |
-| 🔴 Advanced     | [Finding planet observations in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
+| Level | Tutorial                                                                                                                                                                                               | Main tools       |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| 🟡    | [EPN-TAP services: Using TOPCAT as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)           | TOPCAT           |
+| 🟡    | [Using EPN-TAP as a service API via python (Encyclopedia of exoplanets)](http://exoplanet.eu/API/)                                                                                                     | Python           |
+| 🟡    | [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)          | Python, pyvo     |
+| 🟡    | [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb) | Python, pyvo     |
+| 🔴    | [Sending an EPN-TAP query to all EPN-TAP services in python and retrieving cumulative results](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)  | Python, Registry |
+| 🟡    | [Retrieving files under DataLink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)                                     | TOPCAT           |
+| 🔴    | [Finding planet observations in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
 
 ---
 
@@ -44,9 +54,9 @@ These tutorials illustrate direct access to EPN-TAP services, advanced VO usage,
 
 Tutorials intended for data providers and service operators.
 
-| Level       | Tutorial                                                                                                                                                     |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🔴 Advanced | [Installing an EPN-TAP service - broadlines](https://github.com/epn-vespa/tutorials/blob/master/misc/Installing-a-data-service/Installing-a-data-service.md) |
+| Level | Tutorial                                                                                                                                                     |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 🔴    | [Installing an EPN-TAP service - broadlines](https://github.com/epn-vespa/tutorials/blob/master/misc/Installing-a-data-service/Installing-a-data-service.md) |
 
 ---
 
