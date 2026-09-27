@@ -105,6 +105,8 @@ Select one service in green (M4ast or spectro_asteroids) to open the results fro
 
 *Alternative*: in the global result page, click the SAMP button on the row EPN-TAP compilation results, this will send a table of all results to open tools.
 
+The VESPA portal is a discovery interface dedicated to Solar System data. It provides access to EPN-TAP services validated within the VESPA ecosystem and allows users to query them simultaneously through a unified interface.
+
 ### 2- TOPCAT
 
 TOPCAT accesses data services one by one.
@@ -237,6 +239,7 @@ Type your query, either with the graphic query builder (Select What / Where / Po
 
 <img title="TAPhandle query" src="img/TAPhandle.png" alt="TAPhandle.png" data-align="center">
 
+TAPHandle has similarities with the VESPA portal, but is a more generic interface to the Virtual Observatory infrastructure. It supports the full TAP protocol and can access any TAP-compliant service. In contrast, the VESPA portal is specifically designed for Solar System data and provides dedicated support for EPN-TAP services.
 
 ### 7- python / pyvo
 
