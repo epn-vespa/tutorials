@@ -50,13 +50,13 @@ VO Tools
 
 Most Solar System data are shared in the VO as data services compliant with the EPN-TAP standard. Those can be searched in many ways: 
 
-• The **VESPA portal** is a user-friendly interface for quick search and data discovery, hiding the complexity of the query system (ADQL and EPN-TAP)
+- The **VESPA portal** is a user-friendly interface for quick search and data discovery, hiding the complexity of the query system (ADQL and EPN-TAP)
 
-• **VO tools** provide a lower-level but more detailed access, explicitly using the power of the query system, as well as advanced display and processing features
+- **VO tools** provide a lower-level but more detailed access, explicitly using the power of the query system, as well as advanced display and processing features
 
-• More **generic VO portals** such as TAPhandle can access these services
+- More **generic VO portals** such as TAPhandle can access these services
 
-• **python libraries** allow flexible access to the data and the construction of complex workflows.
+- **python libraries** allow flexible access to the data and the construction of complex workflows.
 
 All these environments access the same EPN-TAP services. They differ mainly in the way queries are submitted, data are displayed, and further processing is performed. We're showing here how to send similar queries from various environments, and plot the results. We search for spectra of asteroid 4 Vesta as a simple example because several spectral services provide data for this target.
 
@@ -65,11 +65,11 @@ All these environments access the same EPN-TAP services. They differ mainly in t
 
 VO tools are specialized in a type of data product, although they tend to support many situations. 
 
-• TOPCAT mostly handles tables
+- TOPCAT mostly handles tables
 
-• CASSIS and SPLAT-VO handle spectra
+- CASSIS and SPLAT-VO handle spectra
 
-• Aladin handles images and maps, plus georeferenced objects
+- Aladin handles images and maps, plus georeferenced objects
 
 They all have direct access to VO data services, with particularities detailed below.
 
@@ -77,25 +77,25 @@ They all have direct access to VO data services, with particularities detailed b
 
 ### 1- VESPA portal
 
-The entry page is divided in a main area listing the available EPN-TAP services and a query form on the left side. This form is a set of parameter fields which can be completed to compose a query. The query will be sent to all data services.
+The entry page is divided in a main area listing the validated EPN-TAP services and a query form on the left side. This form is a set of parameter fields which can be completed to compose a query. The query will be sent to all data services.
 
 In the parameter fields, enter:
 
-• target_name = Vesta
+- target_name = Vesta
 
-• dataproduct_type = spectrum
+- dataproduct_type = spectrum
 
-• Click the Submit button (or type Enter)
+- Click the Submit button (or type Enter)
 
 The list of services is then updated and reordered: 
 
-• Services answering the query are displayed in green at the top of the list 
+- Services answering the query are displayed in green at the top of the list 
 
-• Services displayed in gray do not match the query
+- Services displayed in gray do not match the query
 
-• Services displayed in red do not respond correctly (this may happen if your query contains non-standard parameters, or because of internal issues)
+- Services displayed in red do not respond correctly (this may happen if your query contains non-standard parameters, or because of internal issues)
 
-• The complete query is displayed below the table for reuse.
+- The complete query is displayed below the table for reuse.
 
 (click the ADQL Query field on top of the form to enter a more formal/powerful query)
 
@@ -103,9 +103,11 @@ The list of services is then updated and reordered:
 
 Select one service in green (M4ast or spectro_asteroids) to open the results from this service. In most cases, thumbnails are displayed when hovering the mouse over the table. With VO tools open, select All metadata / send table or select All data / send spectra to pass the data to tools which can handle it.
 
-Alternative: in the global result page, click the SAMP button on the row EPN-TAP compilation results, this will send a table of all results to open tools.
+*Alternative*: in the global result page, click the SAMP button on the row EPN-TAP compilation results, this will send a table of all results to open tools.
 
 ### 2- TOPCAT
+
+TOPCAT accesses data services one by one.
 
 In the icon bar of the main window, click the icon: Open… SQL (or VO / TAP query from the menu)
 
@@ -119,23 +121,25 @@ In the ADQL text field, type:
 
 Click Run query (Fig. 1)
 
+You've just selected a data server and sent a query to one of its tables — congrats!
+
 *Alternative*: select one of the *.epn_core items in the list (= data tables) and play with the Examples button at the bottom.
 
 <img title="TOPCAT query panel" src="../../surfaces/asteroid_spect/img/TOPCAT_query.png" alt="TOPCAT_query.png" width="548" data-align="center">
 
 After a few seconds, the result table should add in the table list (main window)
 
-• Click the Display Table cells icon to open it — this is the same table you would see in the VESPA portal, except that units are not converted (time is in JD, spectral range in Hz…).
+- Click the Display Table cells icon to open it — this is the same table you would see in the VESPA portal, except that units are not converted (time is in JD, spectral range in Hz…).
 
-• In the main window select this table and go to the Menu: Views / Activate actions
+- In the main window select this table and go to the Menu: Views / Activate actions
 
-• Click and select Plot table with Resource URL = access_url & Plot Type = Plane 
+- Click and select Plot table with Resource URL = access_url & Plot Type = Plane 
 
-• Click on Invoke now…  the current spectrum should display in a plot window and load in the table list
+- Click on Invoke now…  the current spectrum should display in a plot window and load in the table list
 
 Go to the table window, select another row. It should display upon selection (wait a second if the interface does not react, or try another row)
 
-Superpose other spectra in the same window by clicking Add new positional plot control, then defining the spectrum of interest. This is a bit tedious - sending the table to SPLAT may be easier in such cases (it will open the files under access_url and plot them at once).
+Superpose other spectra in the same window by clicking Add new positional plot control, then defining the spectrum of interest. This is a bit tedious - sending the whole table to SPLAT may be easier in such cases (it will open the files under access_url and plot them at once).
 
 TOPCAT is an all-purpose table handling tool and VO client, filled with powerfull graphic functions (including for spatial data, but not images).
 
@@ -202,11 +206,11 @@ SPLAT-VO is particularly efficient to display many spectra with minimum manipula
 
 EPN-TAP services can be queried from the data tree on the left side. 
 
-• Collection / Solar System / <target_name> contains planetary HiPS (multiresolution maps)
+- Collection / Solar System / <target_name> contains planetary HiPS (multiresolution maps)
 
-• Collection / Solar System / Tabular data lists the individual data services
+- Collection / Solar System / Tabular data lists the individual data services
 
-• Click Load in the pop-up window to open a query dialogue where you can type an EPN-TAP query
+- Click Load in the pop-up window to open a query dialogue where you can type an EPN-TAP query
 
 Tables may appear below the display area in Aladin. Some fields display as buttons which can overplot on the display.
 
@@ -220,15 +224,15 @@ Aladin is mostly a celestial image / map environment. It handles planetary coord
 
 Select PADC planeto (http://voparis-tap-planeto.obspm.fr/tap) as a server, either from the entry list or by entering the URL in the top field
 
-• Select the spectro_asteroids service from the list of services available on this server
+- Select the spectro_asteroids service from the list of services available on this server
 
 Type your query, either with the graphic query builder (Select What / Where / Position) or by typing it in the Plain Text Query panel at the bottom
 
-• Click Submit — this will display the result table with all columns
+- Click Submit — this will display the result table with all columns
 
-• You can send this table via SAMP to other tools from the Job Control panel, Action menu
+- You can send this table via SAMP to other tools from the Job Control panel, Action menu
 
-• URL columns in the table may contain a SAMP icon for individual sends, depending on format
+- URL columns in the table may contain a SAMP icon for individual sends, depending on format
 
 
 <img title="TAPhandle query" src="img/TAPhandle.png" alt="TAPhandle.png" data-align="center">
@@ -248,13 +252,13 @@ In your environment, type:
 
 The last command will print the result table.
 
-• Parameters can be retrieved like this:
+- Parameters can be retrieved like this:
 
 `t0 = 0`
 
 `timemin = resultset['time_min'][t0]`
 
-• To download a file: 
+- To download a file: 
 
 `import requests`
 
