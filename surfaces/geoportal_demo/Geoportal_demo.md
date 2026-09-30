@@ -1,10 +1,15 @@
+*S. Erard, Astro-CC Scientific training event, Strasbourg 1/10/2026*
+
+&nbsp;
+&nbsp;
+ 
 # Geoportal demo
 
 
 
 
 
-TheVESPA geoportal has functionalities similar to GIS (Geographic Information System) commonly used in planetary science, such as JMars. But in contrast to GIS it uses only VO standards and protocols, and is interfaced with EPN-TAP data services. It is more efficent and faster than Aladin Desktop because it only accesses planetary data and uses a database integrating metadata from all EPN-TAP services.
+The VESPA geoportal has functionalities similar to GIS (Geographic Information System) commonly used in planetary science, such as JMars. But in contrast to GIS it uses only VO standards and protocols, and is interfaced with EPN-TAP data services. It is more efficent and faster than Aladin Desktop because it only accesses planetary data and uses a database integrating metadata from all EPN-TAP services.
 
 
 
