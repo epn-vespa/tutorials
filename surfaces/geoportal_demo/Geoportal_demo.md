@@ -170,11 +170,13 @@ Alternatively, you can drop the complete result table in Aladin Desktop for visu
 
 By double-clicking on the table in Aladin, it would open in the drawer below the display. Search the coverage column and click the button to plot the crater MOC
 
-(alternatively, the crater centre will plot immediately, but you need to use a filter to draw the contour from Catalogue > Create a filter - use [this](img/Mars_Craters.ajs)). 
-
+(alternatively, the crater centre will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this](img/Mars_Craters.ajs)). 
 
 
 <img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png" data-align="center">
+
+
+A natural application is to identify rapidly spectra within morphological surface units, compute their mean and standard deviation, and browse them to check the homogeneity of spectral properties (or not). This is currently feasible in python; such a functionality in VO tools would make it even more convenient.
 
 
 **Note**
