@@ -131,6 +131,8 @@ If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E
 You can save the current configuration from the Session menu (and reload it later from the target selection page).
 
 
+<img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png" data-align="center">
+
 
 ## Morphological units on Mercury
 
