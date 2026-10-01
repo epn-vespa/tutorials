@@ -104,7 +104,7 @@ In the main window, select the crater table, then select Views > Activate Action
 - Click on craters in the plot => a small map of the area will display in a pop-up window
 
 
-<img title="TOPCAT Mars" src="img/TOPCAT_Mars.png" alt="TOPCAT_Mars.png" data-align="center">
+<img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png" data-align="center">
 
 
 ### MOC from HiPS
