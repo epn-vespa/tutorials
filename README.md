@@ -74,6 +74,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 ## Surfaces and Planetary Mapping
 
 * [Planetary maps and images in Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
+* [VESPA geoportal demo](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md)
 * [Mapping sparse spatial data with TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
 * [Lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)

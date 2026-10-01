@@ -3,19 +3,19 @@
 &nbsp;
 &nbsp;
  
-# Geoportal demo
+# VESPA geoportal demo
 
 
 
 
 
-The VESPA geoportal has functionalities similar to GIS (Geographic Information System) commonly used in planetary science, such as JMars. But in contrast to GIS it uses only VO standards and protocols, and is interfaced with EPN-TAP data services. It is more efficent and faster than Aladin Desktop because it only accesses planetary data and uses a database integrating metadata from all EPN-TAP services.
+The VESPA geoportal has functionalities similar to GIS (Geographic Information System) commonly used in planetary science, such as JMars. But in contrast to GIS it uses only VO standards and protocols, and is interfaced with EPN-TAP data services. It is more efficient and faster than Aladin Desktop because it only accesses planetary data and uses a database integrating metadata from all EPN-TAP services.
 
 
 
 ## Preliminaries - Setting up VO tools
 
-VO tools defaut to standard celestial conventions, which differ from those used in planetary science. The main differences concern the orientation of planetary coordinate frames, and measurements in solar reflected light. Spatial frames in particular must be consistently setup to plot data correctly on planetary surfaces.
+VO tools default to standard celestial conventions, which differ from those used in planetary science. The main differences concern the orientation of planetary coordinate frames, and measurements in solar reflected light. Spatial frames in particular must be consistently setup to plot data correctly on planetary surfaces.
 
 See here to setup TOPCAT and Aladin: https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md
 
@@ -65,13 +65,13 @@ Open the table area below the display if you've minimized it. In the result tabl
 
 Click on the MOC buttan at the left of the table to display selected crater MOC
 
-Click download VOtable (the big black arrow in the table header) to save it on your disk
+Click Download VOTable (the big black arrow in the table header) to save it on your disk
 
 
 
 ### Display in TOPCAT
 
-Load this VOtable in TOPCAT
+Load this VOTable in TOPCAT
 
 This is where you need to setup TOPCAT properly:
 
@@ -128,8 +128,7 @@ These regions are very small and are plotted on a dark background, you need to z
 If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E / 21°N)
 
 
-
-You can save the current configuration from the Session menu (and reload it later from the taraget selection page).
+You can save the current configuration from the Session menu (and reload it later from the target selection page).
 
 
 
@@ -165,7 +164,7 @@ In the filter section on the right, select the Mercury_craters service and click
 <img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png" data-align="center">
 
 
- From the AladinLite Stack menu you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (as json).
+ From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (as json).
 
 Load this file into Aladin Desktop - which wouldn't accept a .shp file
 
@@ -186,7 +185,7 @@ A natural application is to identify rapidly spectra within morphological surfac
 
 **Note**
 
-- The geoportal uses a collection of metadata from all services stored on PADC machines. This is required to maintained responsivity
+- The geoportal uses a collection of metadata from all services stored on PADC machines. This is required to maintained responsiveness
 
 - The copy may therefore not reflect recent modifications in the services (but will be working independently of the EPN-TAP services)
 
