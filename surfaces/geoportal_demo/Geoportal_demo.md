@@ -127,10 +127,10 @@ MOC can be defined from a HiPS - this makes sense for HiPS exposing quantitative
 
 These regions are very small and are plotted on a dark background, you need to zoom in enough to see them. A possible method is to open the menu MOC created from HiPS and center one of them, then zoom in.
 
-If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E / 21°N)
+If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E / 21°N, see image below).
 
 
-You can save the current configuration from the Session menu (and reload it later from the target selection page).
+You can save the current session from the Session menu. You will be able to reload it later from the target selection page.
 
 
 <img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png"  width="600" data-align="center">
@@ -142,7 +142,7 @@ Select Mercury as a target.
 
 Switch to the MDIS colour mosaic
 
-We will use the shapefile of a Mercury pyroclastic deposit. This was derived from the analysis of MESSENGER images by Leon-Dasi et al 2023, and distributed as supplementary material to the paper.
+We are interested in pyroclastic deposits on Mercury, and work from the analysis of MESSENGER images by Leon-Dasi et al 2023 (10.3390/rs15184560). Contours are shared on Zenodo as supplementary material to this paper, in shapefile format. We will focus on a particular deposit. 
 
 Use the file Shapefile_vent_327_deposit.shp, a deposit straddling a small crater
 
@@ -168,7 +168,7 @@ In the filter section on the right, select the Mercury_craters service and click
 <img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png"  width="600" data-align="center">
 
 
- From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (in json format).
+ From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC in json format.
 
 Load this file into Aladin Desktop - which wouldn't accept a .shp file
 
