@@ -53,7 +53,7 @@ Click Submit below the filters
 
 
 
-<img title="Geoportal Mars" src="img/Geoportal_Mars2.png" alt="Geoportal_Mars2.png"  width="433" data-align="center">
+<img title="Geoportal Mars" src="img/Geoportal_Mars2.png" alt="Geoportal_Mars2.png"  width="600" data-align="center">
 
 Open the table area below the display if you've minimized it. In the result table, add display of diameter then sort by diameter
 
@@ -106,7 +106,7 @@ You can also display a small area around the feature of interest, which helps vi
 (alternatively, you can send the table via SAMP to Aladin Desktop, and load a HiPS of the planet. Double-clicking on the table will  plot crater centres. When clicking a feature in any window/table, all other displays will remain synchronized).
 
 
-<img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png"  width="433" data-align="center">
+<img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png"  width="600" data-align="center">
 
 
 ### MOC from HiPS
@@ -133,7 +133,7 @@ If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E
 You can save the current configuration from the Session menu (and reload it later from the target selection page).
 
 
-<img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png"  width="433" data-align="center">
+<img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png"  width="600" data-align="center">
 
 
 ## Morphological units on Mercury
@@ -165,7 +165,7 @@ In the filter section on the right, select the Mercury_craters service and click
 
 
 
-<img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png"  width="433" data-align="center">
+<img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png"  width="600" data-align="center">
 
 
  From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (in json format).
@@ -181,7 +181,7 @@ By double-clicking on the table in Aladin, it would open in the drawer below the
 (alternatively, the crater centre will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this](img/Mars_Craters.ajs)). 
 
 
-<img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png"  width="433" data-align="center">
+<img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png"  width="600" data-align="center">
 
 
 A natural application is to identify rapidly spectra within morphological surface units, compute their mean and standard deviation, and browse them to check the homogeneity of spectral properties (or not). This is currently feasible in python; such a functionality in VO tools would make it even more convenient.
