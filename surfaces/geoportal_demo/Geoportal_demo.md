@@ -3,7 +3,7 @@
 &nbsp;
 &nbsp;
  
-# Spatial searches —VESPA geoportal demo
+# Spatial searches — VESPA geoportal demo
 
 
 
@@ -21,7 +21,7 @@ VO tools default to standard celestial conventions, which differ from those used
 
 See here to setup TOPCAT and Aladin: [https://github.com/epn-vespa/tutorials/blob/master/misc/setting\_up\_tools/setting\_up\_tools.md](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
 
-We will use HiPS (multiresolution maps) and MOC (healpix-based footprints). See here how they work: [https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin\_Hips\_MOC](https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin_Hips_MOC)
+We will use HiPS (multiresolution maps) and MOC (healpix-based footprints). See here how they work: [https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin\_Hips\_MOC/Images\_Aladin.md](https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
 
 
 ## Selecting craters in a region of interest
@@ -34,7 +34,7 @@ We're working with craters on Mars.
 
 Zoom in and out, rotate the sphere, try the various HiPS available
 
-Notice the number of data elements found in EPN-TAP services (top right)
+Notice the number of data elements found in EPN-TAP services (top right in the green header)
 
 Use the grid and the resolver in AladinLite (relying on the USGS gazetteer of nomenclature)
 
