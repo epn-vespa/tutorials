@@ -1,15 +1,9 @@
 ## Plotting shape models in TOPCAT
 
-**See the associated documentation, also in dev:**
-https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
+**Details on the procedure and shape model formats are provided on this page:**
+``https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation``
 
-## Tutorial
 
-3D plots in TOPCAT (v4.10-3 and up)
-
-## Author:
-
-S. Erard
 
 ### Change log
 
@@ -17,6 +11,7 @@ S. Erard
 | ------- |:--------:| ----------:|
 | 0.      | S. Erard | 12/12/2024 |
 | 1.0     | S. Erard | 12/3/2025  |
+| 1.1     | S. Erard | 2/10/2026  |
 
 ### Keywords
 
@@ -26,11 +21,11 @@ Small bodies
 
 ## Summary
 
-This tutorial describes how to plot shape models of small bodies in TOPCAT, and how to overplot observations. 
+This tutorial is intended for science users working with irregular bodies (asteroids, comets, small satellites) who want to visualize observations in a 3D context rapidly. It describes how to plot shape models of small bodies in TOPCAT, and how to overplot observations. 
 
 ## Introduction
 
-Small bodies and satellites have irregular figures which can't be plotted adequately in Aladin. Such bodies are described by 3D shape models, which are provided in a number of formats accepting many variations. TOPCAT has been able to plot such shape models at least from version 4, given some preliminary work on the data table. From v4.11, this function has been simplified and provides easy quicklook visualisation.
+Small bodies and satellites have irregular figures which can't be plotted adequately in Aladin. Such bodies are described by 3D shape models, which are provided in a number of formats accepting many variations. TOPCAT has been able to plot such shape models at least from version 4, given some preliminary work on the data table. From v4.10, this function has been simplified and provides easy quicklook visualisation.
 
 The tutorial consists in:
 
@@ -41,7 +36,6 @@ The tutorial consists in:
 3) Overplotting images / data pre-projected on the same shape model, for quicklook or more accurate plots. Possibly include an extra information such as albedo or fixed illumination for reference.
 
 Background on the procedure and formats are provided on this page:
-
 ``
 https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
 ``
@@ -50,7 +44,7 @@ https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+
 
 #### Setup
 
-From v4.10-3, TOPCAT (https://www.star.bris.ac.uk/~mbt/topcat/) supports 3D formats in a limited and exploratory form. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
+From v4.10-3, TOPCAT (https://www.star.bris.ac.uk/~mbt/topcat/) supports 3D formats in a limited and exploratory form. Depending on TOPCAT version, you may need to enable this option by setting a system property. The simplest way is to add a line:
 
 ``
 startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
@@ -265,8 +259,15 @@ Each row describes a location with latitude, longitude (beware of the inversion)
 
 ### 5- To go further
 
-• Remember that all TOPCAT plots can be produced from the command line via the stilts script language, which can be incorporated in a processing pipeline. Such 3D plots can be manipulated in the same way as in TOPCAT windows.
+• Remember that all TOPCAT plots can be produced from the command line using the stilts scripting language. These commands can be incorporated into automated processing pipelines, and 3D plots can be manipulated in much the same way as in interactive TOPCAT windows.
 
-• Details on the procedure and shape model formats are provided on this page:``
-https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
-``
+• Observational data must include the coordinates to position measurements on the shape model. These coordinates can typically be computed in Python from data selected through EPN-TAP services. A natural workflow is therefore: 
+> Select data from an EPN-TAP service
+>  
+> Read the file and compute (or retrieve) the associated surface coordinates
+>
+> Merge coordinates with the parameter(s) to be displayed
+> 
+> Plot the resulting table with stilts, together with the corresponding shape model
+
+Shape models provide the natural spatial reference for irregular bodies. Combined with TOPCAT 3D capabilities, they allow rapid inspection of observations, derived products, and model outputs in their true geometric context. Although intended primarily for quicklook analysis, these tools can also support detailed investigations when data are associated with individual vertices or plates of the shape model.
