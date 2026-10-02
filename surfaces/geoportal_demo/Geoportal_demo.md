@@ -53,7 +53,7 @@ Click Submit below the filters
 
 
 
-<img title="Geoportal Mars" src="img/Geoportal_Mars2.png" alt="Geoportal_Mars2.png" data-align="center">
+<img title="Geoportal Mars" src="img/Geoportal_Mars2.png" alt="Geoportal_Mars2.png"  width="433" data-align="center">
 
 Open the table area below the display if you've minimized it. In the result table, add display of diameter then sort by diameter
 
@@ -75,7 +75,7 @@ Load this VOTable in TOPCAT
 
 This is where you need to setup TOPCAT properly:
 
-- in Axes: unset reflect long (all longitudes would be reversed otherwise)
+- In Axes: unset reflect long (all longitudes would be reversed otherwise)
 
 - In Axes / grid: uncheck sexagesimal
 
@@ -93,7 +93,7 @@ Click Plane plot to display
 
 
 
-In the main window, select the crater table, then select Views > Activate Actions from the menu
+You can also display a small area around the feature of interest, which helps visual inspection of individual features.  In the main window, select the crater table, then select Views > Activate Actions from the menu
 
 - Select and check Display HiPS cutouts
 
@@ -101,17 +101,19 @@ In the main window, select the crater table, then select Views > Activate Action
 
 - Select HiPS Survey = your preferred Mars HiPS (in Other > mars)
 
-- Click on craters in the plot => a small map of the area will display in a pop-up window
+- Click on craters in the plot (or select a table row) => a small map of the area will display in a pop-up window
+
+(alternatively, you can send the table via SAMP to Aladin Desktop, and load a HiPS of the planet. Double-clicking on the table will  plot crater centres. When clicking a feature in any window/table, all other displays will remain synchronized).
 
 
-<img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png" data-align="center">
+<img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png"  width="433" data-align="center">
 
 
 ### MOC from HiPS
 
 Back to the Geoportal, on Mars. 
 
-MOC can be defined from a HiPS - this makes sense for HiPS exposing quantitative values, e.g. the retrieved abundance of a given mineral
+MOC can be defined from a HiPS - this makes sense for HiPS exposing quantitative values, e.g. altimetry, but also retrieved abundance of a given mineral.
 
 - Click the menu Add MOC from HiPS
 
@@ -131,7 +133,7 @@ If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E
 You can save the current configuration from the Session menu (and reload it later from the target selection page).
 
 
-<img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png" data-align="center">
+<img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png"  width="433" data-align="center">
 
 
 ## Morphological units on Mercury
@@ -148,38 +150,38 @@ Use the file Shapefile_vent_327_deposit.shp, a deposit straddling a small crater
 
 
 
-[the tuto is intended to use individual spectra from MESSENGER - today we'll use craters instead]
+[this use case makes full sense when using individual spectra from MESSENGER - today we'll use craters instead]
 
 
 
 In the filter section on the right, select the Mercury_craters service and click Submit
 
-- In the MOC panel, display information on the MOC created from the shapefile (and uncheck hand-drawn MOCs if any). Click Overlaps then the Apply Selection button
+- In the MOC panel, display information on the MOC created from the shapefile, check the box (and uncheck hand-drawn MOCs if any). Click Overlaps then the Apply Selection button
 
-- This will select only craters which footprint overlaps the selected MOC, i.e. the unit of interest 
+- This will select only craters which footprint overlaps the selected MOC, i.e. the unit of interest (only 2 of them)
 
-- Again, you can plot their MOC from the left side button
-
-
+- Again, you can plot their MOC from the left side button of the table
 
 
-<img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png" data-align="center">
 
 
- From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (as json).
+<img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png"  width="433" data-align="center">
+
+
+ From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC (in json format).
 
 Load this file into Aladin Desktop - which wouldn't accept a .shp file
 
-You can also save the crater MOCs from AladinLite.
+You can similarly save the crater MOCs from AladinLite.
 
 Alternatively, you can drop the complete result table in Aladin Desktop for visu (or load it in TOPCAT then SAMP it to Aladin).
 
-By double-clicking on the table in Aladin, it would open in the drawer below the display. Search the coverage column and click the button to plot the crater MOC
+By double-clicking on the table in Aladin, it would open in the drawer below the display. Search the Coverage column and click the button to plot the crater MOC.
 
 (alternatively, the crater centre will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this](img/Mars_Craters.ajs)). 
 
 
-<img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png" data-align="center">
+<img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png"  width="433" data-align="center">
 
 
 A natural application is to identify rapidly spectra within morphological surface units, compute their mean and standard deviation, and browse them to check the homogeneity of spectral properties (or not). This is currently feasible in python; such a functionality in VO tools would make it even more convenient.
@@ -189,8 +191,8 @@ A natural application is to identify rapidly spectra within morphological surfac
 
 - The geoportal uses a collection of metadata from all services stored on PADC machines. This is required to maintained responsiveness
 
-- The copy may therefore not reflect recent modifications in the services (but will be working independently of the EPN-TAP services)
+- The copy may therefore not reflect recent modifications in the services - but it will be working even if the EPN-TAP services are down
 
-- Some operations rely on the EPN-TAP services however, in particular the result VOTable stored on the user disk, and the visualization of granules in the VESPA portal. The services have to be running and reachable for these functionalities to work
+- Some operations query the EPN-TAP services however, in particular the result VOTable stored on the user disk, and the visualization of granules in the VESPA portal. The services have to be running and reachable for these functionalities to work
 
 
