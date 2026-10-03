@@ -57,8 +57,10 @@ access_format LIKE '%application/octet-stream%'
 
 * There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication due to various formats)
 * We'll now search for HRSC images of these areas
-* Footprints are often provided through the standard VO parameter `s_region`, which describes the spatial coverage of an observation as a contour. It is generally more accurate than simple longitude/latitude bounding boxes and enables spatial operations such as INTERSECTS and CONTAINS.
 
+Footprints are often provided through the standard VO parameter `s_region`, which describes the spatial coverage of an observation as a contour. It is generally more accurate than simple longitude/latitude bounding boxes and enables spatial operations such as INTERSECTS and CONTAINS.
+
+&nbsp;
 
 <img src="img/img1c.png" width="600">
 
