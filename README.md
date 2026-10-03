@@ -79,7 +79,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 * [Lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
-* [Identifying overlapping images in different services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
+* [Cross-matching overlapping observations from EPN-TAP services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
 * [Plotting shape models of small bodies in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md)
 
 ## Spectroscopy

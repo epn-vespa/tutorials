@@ -172,4 +172,4 @@ Compute the ratio between the Vesta spectrum and the best meteroritic match (ico
 
 Going further (e.g., determining the best fit, extracting absorption band parameters, etc) requires command line processing under python or another language.
 
-The simplest solution to exchange data is to store your intermediate results as VOTable or fits files (supported by astropy in python). If you're not using python, remember that VOTable is not often supported (ascii or fits are more secure).
+The simplest solution to exchange data is to store your intermediate results as VOTable or fits files (supported by astropy in python). If you are using another language than python, remember that VOTable is not often supported (ascii or fits are more secure).

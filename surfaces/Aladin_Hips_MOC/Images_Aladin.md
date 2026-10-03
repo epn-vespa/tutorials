@@ -1,8 +1,5 @@
 ## Planetary maps and images in Aladin
 
-## Tutorial
-
-Basic display and visualisation of planetary images 
 
 ### Change log
 
@@ -20,7 +17,7 @@ Tools
 
 ## Summary
 
-This tutorial describes basic image manipulation of planetary images in Aladin.
+This tutorial introduces the planetary capabilities of Aladin, including planetary HiPS, footprints, spatial overlays, and spectral cubes. It focuses on visual exploration of planetary surfaces and observations distributed through the VESPA infrastructure.
 
 It assumes an adequate setup in Aladin (see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md))
 
@@ -31,11 +28,11 @@ Aladin has therefore been expanded to support images of planetary surfaces in th
 
 ## Using planetary HiPS in Aladin
 
-### 1- Basic manipulation
+### 1- Basic 3D manipulation
 
-Once the planetary mode is validated in Aladin, Solar System HiPS are included in the left-hand Data discovery tree (red rectangle in Fig.1). Most sub-directories contain HiPS of the planets and their satellites. 
+Once the planetary mode is validated in Aladin, Solar System data are included in the left-hand Data discovery tree (red rectangle in Fig.1). Most sub-directories contain HiPS of the planets and their satellites. 
 
-[HiPS](https://aladin.cds.unistra.fr/hips/) (Hierarchical Progressive Surveys) are multiresolution maps which are optimised for display of on-line material: only the scene and resolution plotted on screen is downloaded, making it fast and smooth. HiPS rely on a tessellation system of the sphere (healpix).
+> [HiPS](https://aladin.cds.unistra.fr/hips/) (Hierarchical Progressive Surveys) are multiresolution maps optimised for interactive visualization of on-line material: only the scene and resolution plotted on screen is downloaded, making it fast and smooth. HiPS rely on a tessellation system of the sphere (healpix) which is also functional with ellipsoids. They are the primary map format used in Aladin.
 
 The Aladin Data tree includes tens of planetary HiPS, many of which are derived from the standard USGS maps with their native resolution. 
 
@@ -59,17 +56,17 @@ The Aladin Data tree includes tens of planetary HiPS, many of which are derived 
 
 *Fig.1: basic HiPS manipulation in Aladin (Mars MRO CTX)*
 
-### 2- Special uses
+### 2- 2D maps and panoramas
 
 In addition to maps, some planetary HiPS are built from lander **panoramas**. Play with the "Mars Stimson panorama" by zooming in/out at different locations.
 
 The field of view is always plotted at the bottom of the window. A **scale and compass** are also visible when the body is resolved (not in full-disk view).
 
-HiPS support changes of **projection** mode (from the "Projection" field above the display window). The most relevant projections are:
+HiPS support changes of **projection** mode (from the "Projection" field above the display window). The most relevant projections available are:
 
 • Spherical (actually: orthographic), can be rotated in 3D with the pointer
 
-• Cartesian (actually: cylindrical) or Mercator provide a complete view of the surface, both preferably centred on the Equator for readability
+• Cartesian (actually: cylindrical) or Mercator provide a complete view of the surface, both preferably centered on the Equator for readability
 
 • Aitoff and Mollweide are similar with lesser deformation at high latitudes
 
@@ -91,7 +88,7 @@ The mutiview mode is available from a series of icons below the display window. 
 
 ## Overlay of vector information
 
-### 1- Craters
+### 1- Craters boundaries
 
 Aladin can load tabular data from TAP services directly.
 
@@ -116,7 +113,7 @@ draw ${feature_name} rainbow(${depth}, 0., 3)
 
 This will overplot large crater contours with name. Colour varies with crater depth. Of course, this assumes that all craters are circular.
 
-(118.54 is the scale in "/km = 360 *3600 / (2π R<sub>Moon</sub>) )
+> The scale factor may be adapted to the target: 118.54 is the lunar scale in "/km = 360 *3600 / (2π R<sub>Moon</sub>) 
 
 The same result is obtained by selecting craters in the VESPA portal (or TOPCAT) and sending the metadata table via SAMP.
 
@@ -178,6 +175,8 @@ The HiPS computation can take several seconds. When done: select the HiPS versio
 
 ### 3- Spectral cubes
 
+Modern space mission payloads often include an imaging spectrometer. Such instruments provide lower spatial resolution but much higher spectral resolution than filter cameras, and produce data organized as "spectral cubes" (see VIRTIS or OMEGA data collections in the VESPA portal). Such observations are key to retrieve the surface composition of planetary surfaces and atmospheres. 
+
 Georeferenced spectral cubes can be displayed like images — you may need to use a two-view display to make it fit correctly.
 A slider shows up on top of the cube to allow the selection of spectral planes.
 
@@ -197,6 +196,8 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 ## Further topics
 
+• Most planetary HiPS used here are also available through the [VESPA Geoportal](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md). Aladin provides more advanced visualization and analysis capabilities, while the Geoportal focuses on spatial discovery and selection.
+
 • Explore planetary HiPS in your browser with the [Aladin Lite planets explorer](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 
 • AladinLite has a resolver mode which identifies surface features from the USGC Gazetteer of Planetary Nomenclature (requires AladinLite to be installed with this option in the web page).
@@ -205,10 +206,14 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 A more versatile system is available in the Collection-tree filter (click button in front of From at the bottom of the Data tree, select the Spatial tab), allowing the user to provide an on-line MOC and play with intersect functions.
 
+## Conclusion
+
+Aladin provides a powerful environment for exploring planetary maps, observations, footprints, and spectral datasets. Combined with VESPA services and planetary HiPS, it enables rapid visual inspection of distributed data products and complements other VO tools such as TOPCAT and CASSIS.
+
 ## Links
 
-More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
-
 VESPA data portal: https://vespa.obspm.fr
+
+More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
 
 Please contact the VESPA team for support: support.vespa @ obspm.fr
