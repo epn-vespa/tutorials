@@ -7,6 +7,7 @@
 | ------- |:------------------------------------------------------:| -------------:|
 | 0.1     | S. Erard, C. Marmo, P. Fernique, S. Derrière, M. Minin | 1/6/2015-2017 |
 | 1.0     | S. Erard                                               | 22/6/2025     |
+| 1.1     | S. Erard                                               | 4/10/2026     |
 
 ### Keywords
 
@@ -15,11 +16,20 @@ Maps
 Cubes
 Tools
 
+
+### Requirements
+
+Download and install the last version of Aladin Desktop: 
+
+Aladin: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
+
+The tutorial assumes an adequate setup in Aladin, see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
+
+
 ## Summary
 
 This tutorial introduces the planetary capabilities of Aladin, including planetary HiPS, footprints, spatial overlays, and spectral cubes. It focuses on visual exploration of planetary surfaces and observations distributed through the VESPA infrastructure.
 
-It assumes an adequate setup in Aladin (see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md))
 
 ## Introduction
 
@@ -68,7 +78,7 @@ HiPS support changes of **projection** mode (from the "Projection" field above t
 
 • Cartesian (actually: cylindrical) or Mercator provide a complete view of the surface, both preferably centered on the Equator for readability
 
-• Aitoff and Mollweide are similar with lesser deformation at high latitudes
+• Aitoff and Mollweide also provide a complete view, with lesser deformation at high latitudes. Mollweide preserves areas.
 
 See [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) for more details.
 
@@ -106,10 +116,11 @@ SELECT TOP 9999 * FROM lunar_craters.epn_core where diameter > 10
 
 ```
 {
-draw ellipse(0.5*118.54*${diameter}, 0.5*118.54*${diameter}, 0) rainbow(${depth}, 0, 3) rainbow($ {depth},0,3)
+draw ellipse(0.5*118.54*${diameter}, 0.5*118.54*${diameter}, 0) rainbow(${depth}, 0, 3) 
 draw ${feature_name} rainbow(${depth}, 0., 3)
 }
 ```
+
 
 This will overplot large crater contours with name. Colour varies with crater depth. Of course, this assumes that all craters are circular.
 
@@ -192,7 +203,7 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 <img src="img/Aladin_CASSIS.png" title="" alt="Aladin_CASSIS.png" width="555">
 
-*Fig.10: a CRISM spectral cube (fits version) overplotted on the CTX HiPS*
+*Fig.10: CRISM cube (fits version) in Aladin and extracted spectra in the CASSIS plugin*
 
 ## Further topics
 
@@ -200,7 +211,7 @@ In both cases, moving the spatial marker in Aladin's main window will update the
 
 • Explore planetary HiPS in your browser with the [Aladin Lite planets explorer](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 
-• AladinLite has a resolver mode which identifies surface features from the USGC Gazetteer of Planetary Nomenclature (requires AladinLite to be installed with this option in the web page).
+• AladinLite has a resolver mode which identifies surface features from the USGS Gazetteer of Planetary Nomenclature (requires AladinLite to be installed with this option in the web page).
 
 • As mentioned above, data tree items (under Collections) are coloured green when they overlap the current view and body. This is done by comparing with a global MOC provided for each collection on a "MOCserver". This can be queried manually here: [MocServer](http://alasky.u-strasbg.fr/MocServer/query) (see use cases on the sky: [MocServer](http://alasky.u-strasbg.fr/MocServer/example))
 

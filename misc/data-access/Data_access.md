@@ -103,7 +103,7 @@ The list of services is then updated and reordered:
 
 Select one service in green (M4ast or spectro_asteroids) to open the results from this service. In most cases, thumbnails are displayed when hovering the mouse over the table. With VO tools open, select All metadata / send table or select All data / send spectra to pass the data to tools which can handle it.
 
-*Alternative*: in the global result page, click the SAMP button on the row EPN-TAP compilation results, this will send a table of all results to open tools.
+> Alternative: in the global result page, click the SAMP button on the row EPN-TAP compilation results, this will send a table of all results to open tools.
 
 The VESPA portal is a discovery interface dedicated to Solar System data. It provides access to EPN-TAP services validated within the VESPA ecosystem and allows users to query them simultaneously through a unified interface.
 
@@ -119,13 +119,13 @@ Select http://voparis-tap-planeto.obspm.fr/tap and click Use service - this chan
 
 In the ADQL text field, type:
 
-`SELECT TOP 100 * from spectro_asteroids.epn_core where target_name = 'Vesta'` 
+``SELECT TOP 100 * from spectro_asteroids.epn_core where target_name = 'Vesta'``
 
 Click Run query (Fig. 1)
 
 You've just selected a data server and sent a query to one of its tables — congrats!
 
-*Alternative*: select one of the *.epn_core items in the list (= data tables) and play with the Examples button at the bottom.
+> Alternative: select one of the *.epn_core items in the list (= data tables) and play with the Examples button at the bottom.
 
 <img title="TOPCAT query panel" src="../../surfaces/asteroid_spect/img/TOPCAT_query.png" alt="TOPCAT_query.png" width="548" data-align="center">
 
