@@ -105,7 +105,7 @@ The bounding boxes in box5 can be displayed in TOPCAT using SkyPlot window, with
 
 ### 3- Search HRSC images overlapping one OMEGA cube
 * We'll use ADQL spatial functions provided by TAP services to perform the overlap search. We therefore need to query the HRSC server with data retrieved from OMEGA.
-* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the "PRSFUB TAP" server + Use service
+* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and select the "PRSFUB TAP" server + Use service
 * In the new window, type in the large field at the bottom: 
 
 ``` 
@@ -135,7 +135,7 @@ SELECT *
 * You'll now retrieve a table with 69 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondence).
 * Footprints are easily overplotted on OMEGA's ones using a polygonal form (see other tutorials)
 * A first plot would show that some of these results concern several images in global mapping mode, which are not helpful in this context. Examine the table columns to identify a resolution parameter - you'll find that limiting Grid\_size to a maximum of 13 m/px identifies the most relevant images.
-* In the previous table, select the corresponding rows and define a subset HR containing only those.
+* In the previous table, select the corresponding rows and define a subset HR containing only those (leftmost icon of the table window).
 
 <img src="img/img2d.png" width="600">
 
