@@ -22,7 +22,9 @@ Searching for overlapping files in spatially extended datasets
 
 
 ### Requirements and dependencies
-Display setup for planetary surfaces and maps in TOPCAT & Aladin
+Download and install the last version of TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
+
+The tutorial assumes planetary data setup of TOPCAT & Aladin, see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
 
 
 ### Keywords
@@ -55,7 +57,7 @@ orbit_number ≤ 998
 access_format LIKE '%application/octet-stream%'
 ```
 
-* There are 4 results: image cubes acquired on MEx orbits 997 and 998 (with no duplication due to various formats)
+* There are 4 results: image cubes acquired on MEx orbits 997 and 998 
 * We'll now search for HRSC images of these areas
 
 Footprints are often provided through the standard VO parameter `s_region`, which describes the spatial coverage of an observation as a contour. It is generally more accurate than simple longitude/latitude bounding boxes and enables spatial operations such as INTERSECTS and CONTAINS.
@@ -64,6 +66,7 @@ Footprints are often provided through the standard VO parameter `s_region`, whic
 
 <img src="img/img1c.png" width="600">
 
+*Fig. 1: omega_cubes service in the VESPA portal*
 
 
 ### 2- Send results to TOPCAT and edit the table
@@ -80,25 +83,29 @@ In the omega_cubes service however, the s_region parameter is empty and doesn't 
 ```
 name: box5 
 expression:
-"POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), " ")
+"POLYGON UNKNOWNFrame "+join(array(C1min, C2min, C1min, C2max, C1max, C2max, C1max, C2min), " ")
 ```
 * Add another column with:
 ```
 name: box6
 expression: 
-"POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2Max, C1max, C2min), ",")+")"
+"POLYGON("+join(array(C1min, C2min, C1min, C2max, C1max, C2max, C1max, C2min), ",")+")"
 ```
 * You also need to edit the column definition. Click the icon Display column metadata. Search for box5, type in the field xtype of this parameter: adql:REGION (and validate by pressing ENTER!) - this step is required for TAP.
-You can also rename s_region to s_region_0 for later processing in Aladin.
+You must also rename s_region to s_region_0 for later processing in Aladin.
 
-These bounding boxes can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final, roughly polar, orbit is reached.
+* The box5 column will be used for a mass query with TAP; box6 for copy/paste in individual queries.
 
-<img src="img/img2.png" width="600">
+The bounding boxes in box5 can be displayed in TOPCAT using SkyPlot window, with a polygonal form or a quadrilateral layer (see another tutorial). They provide a reasonably accurate estimate of the session footprints, at least outside the polar areas and after the final, roughly polar, orbit is reached.
+
+<img src="img/img2c.png" width="600">
+
+*Fig. 2: OMEGA session bounding boxes plotted with TOPCAT area control*
 
 
 ### 3- Search HRSC images overlapping one OMEGA cube
 * We'll use ADQL spatial functions provided by TAP services to perform the overlap search. We therefore need to query the HRSC server with data retrieved from OMEGA.
-* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the PRSFUB TAP server + Use service
+* In TOPCAT, select the VO>TAP menu item. In the keywords field: enter HRSC, and click the "PRSFUB TAP" server + Use service
 * In the new window, type in the large field at the bottom: 
 
 ``` 
@@ -107,7 +114,7 @@ SELECT *
 ``` 
 
 where the POLYGON… string is copied/pasted from the omega_cubes table, box6 column for element 997_4_sav
-* Click on Run Query. This will load a table containing 2 rows: the 2 HRSC images overlapping the footprint of this OMEGA session.
+* Click on Run Query. This will load a table containing 23 rows: the 23 HRSC images overlapping the footprint of this OMEGA session.
 * See below how to display the results
 > Note: the same query can be run directly from the VESPA portal using the Query mode while displaying the HRSC service. Type in the ADQL field:
 >
@@ -125,34 +132,40 @@ SELECT *
    ON 1=INTERSECTS(tb.s_region, tc.box5)
 ``` 
 
-* You'll now retrieve a table with 17 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondance).
+* You'll now retrieve a table with 69 rows describing the images overlapping the 4 cubes (this table actually concatenates descriptions from the two services, therefore providing one to one correspondence).
 * Footprints are easily overplotted on OMEGA's ones using a polygonal form (see other tutorials)
+* A first plot would show that some of these results concern several images in global mapping mode, which are not helpful in this context. Examine the table columns to identify a resolution parameter - you'll find that limiting Grid\_size to a maximum of 13 m/px identifies the most relevant images.
+* In the previous table, select the corresponding rows and define a subset HR containing only those.
 
-<img src="img/img2b.png" width="600">
+<img src="img/img2d.png" width="600">
 
+*Fig. 3: OMEGA footprints and highest resolution HRSC images in TOPCAT*
+         
 
 ### 5- Displaying the results in Aladin
 * Start Aladin
 * Load the MOLA shaded relief map from the data tree (left panel, under Solar System/Mars); switch Frame to Planet in the upper line. 
+<!-- useless step, deprecated
 * Select the HRSC service from the data tree (under Solar System/Tabular data). Type
 
-``` 
-SELECT TOP 9999 * FROM hrsc3nd.epn_core 
-``` 
-in the query field, and click Submit.  
+```
+SELECT TOP 9999 * FROM hrsc3nd.epn_core
+```
+in the query field, and click Submit.   -->
 
 * In TOPCAT, first edit the column names of the omega_cubes table (if not done in step 2) and change s_region to anything else (say, s_region_0) so it doesn't get in the way. 
 * Select the table and the menu item: Interop>Send table to Aladin;
-* Do the same for the HRSC… TAP_UPLOAD table 
+* Do the same for the HRSC… TAP_UPLOAD table (complete table, then with HR subset selected)
 
 To display all three datasets in Aladin: 
 
 * Select the corresponding data layer in the right panel (layer stack), right click to open the local menu, and select Properties
 * Click Show associated FoV to display the footprints
 
-In the figure, footprints of HRSC images are displayed in red; bounding boxes of OMEGA cubes in black; HRSC matches in yellow.
 
-<img src="img/img3.png" width="600">
+<img src="img/img3b.png" width="600">
+
+*Fig. 4: In Aladin, bounding boxes of OMEGA cubes displayed in black; footprints of overlapping HRSC images in red; hi-res HRSC images in yellow*
 
 
 ### 6- Matching images and point features
@@ -168,6 +181,8 @@ SELECT TOP 1000 *
 ``` 
 
 <img src="img/HRSC_in_SPICAM.png" width="600">
+
+*Fig. 5: Selected SPICAM footprints and HRSC sessions containing them*
 
 
 * Conversely, to identify point features located in image footprints:
@@ -185,6 +200,8 @@ SELECT TOP 1000 *
 ``` 
 
 <img src="img/SPICAM_in_HRSC.png" width="600">
+
+*Fig. 6: Selected HRSC sessions and included SPICAM sessions*
 
 > Note: again, you can proceed more simply in the VESPA portal in Query mode to retrieve all features in a single image, or all images covering a single feature.
 

@@ -1,15 +1,13 @@
 ## Plotting shape models in TOPCAT
 
-**Details on the procedure and shape model formats are provided on this page:**
-``https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation``
 
 
 
 ### Change log
 
-| Version | Author   | Notes      |
+| Version | Author   | Date      |
 | ------- |:--------:| ----------:|
-| 0.      | S. Erard | 12/12/2024 |
+| 0.1      | S. Erard | 12/12/2024 |
 | 1.0     | S. Erard | 12/3/2025  |
 | 1.1     | S. Erard | 2/10/2026  |
 
@@ -18,6 +16,17 @@
 Shape models 
 Spectroscopy
 Small bodies
+
+
+### Requirements
+
+Download and install the last version of TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
+
+The tutorial assumes planetary data setup of TOPCAT, see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
+
+See section 1 / Setup if you don't see the "ver" format in input.
+
+You may want to clone this repository to facilitate the access to attached files.
 
 ## Summary
 
@@ -35,7 +44,7 @@ The tutorial consists in:
 
 3) Overplotting images / data pre-projected on the same shape model, for quicklook or more accurate plots. Possibly include an extra information such as albedo or fixed illumination for reference.
 
-Background on the procedure and formats are provided on this page:
+Background on the procedure and formats is provided on this page:
 ``
 https://voparis-wiki.atlassian.net/wiki/spaces/VES/pages/289439745/Shape+models+in+TOPCAT+-+documentation
 ``
@@ -50,7 +59,7 @@ From v4.10-3, TOPCAT (https://www.star.bris.ac.uk/~mbt/topcat/) supports 3D form
 startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
 ``
 
-to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exists).
+to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exist).
 
 The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
 
@@ -58,7 +67,7 @@ The "ver" option will become available in the Format field of the Load new table
 
 In TOPCAT, click the Open table icon, select Format = ver and enter URL =
 
- ``
+``
 https://sbnarchive.psi.edu/pds4/non_mission/gaskell.phobos.shape-model/data/phobos_ver64q.tab
 ``
 
@@ -123,7 +132,7 @@ Add this data to the plot as previously and adjust the symbol size (Fig. 2).
 
 • You can similarly experiment with the local file ["phobosRoIvert.txt"](img/phobosRoIvert.txt) and the Phobos shape model (Fig. 3).
 
-> By default, the same color scale is used to plot both data files on 67P, which makes sense if you're plotting the same quantity. You can access an independent color table (actually, several ones) by selecting Shading mode = Paux and Aux2shader = another color table. This color ramp will not be displayed in the caption, therefore the main color table should be used with the main parameter (Fig. 2b).
+> By default, the same color scale is used to plot both data files on 67P, which makes sense if you're plotting the same quantity. You can access an independent color table (actually, several ones) by selecting Shading mode = Paux and Aux2shader = another color table. This color ramp will not be displayed in the caption, therefore the main color table should be used with the main parameter (Fig. 2 right).
 
 <img title="" src="img/67P_VIR.png" alt="" width="315"><img src="img/67P_VIR2.png" title="" alt="" width="326">
 
@@ -135,7 +144,7 @@ Add this data to the plot as previously and adjust the symbol size (Fig. 2).
 
 In the Cube plot window, you can use the freehand tool (from the tool bar) to grab the coordinates of a region manually defined — this is 2-step process in 3D:
 
-- Select the freehand tool, draw a region with the pointer; when done, check the freedhand tool again, give a name to this subset and click "Add subset". The new subset includes both the front and rear sides of the shape model, which is probably not what you want.
+- Select the freehand tool, draw a region with the pointer; when done, check the freehand tool again, give a name to this subset and click "Add subset". The new subset includes both the front and rear sides of the shape model, which is probably not what you want.
 
 - Rotate the plot by ~ 90° — the subset will appear as disconnected regions. In the Subset tab, uncheck All to plot only the current subset, then select the part of interest and define a new subset with the region of interest.
 
@@ -150,7 +159,7 @@ Open a new Cube plot window, select the *plate* table (e.g., "phobos_ver64q.tab-
 Deactivate the default Mark Form and in the Polygon form play with Shading mode and Polygon mode. 
 
 - The shape model is displayed as a mesh for most settings (Fig. 3 & 4a)
-- set Polygon mode = Fill and Shading mode = Aux, with Aux = one the table columns (try the Z coordinate at this point). This plots the Aux parameter on the solid shape, and the rear side is hidden from view (Fig. 4b)
+- set Polygon mode = Fill and Shading mode = Aux, with Aux = one of the table columns (try the Z coordinate at this point). This plots the Aux parameter on the solid shape, and the rear side is hidden from view (Fig. 4b)
 - Add a second Polygon form and set Shading mode = translucent and Polygon mode = outline. This will overlay the mesh to improve legibility (as in Fig. 5).
 
 Compare the low resolution Phobos model to the 67P high resolution model in this solid display mode. Is higher resolution always optimal for this application?
@@ -183,19 +192,19 @@ In both cases, we have to match the data file with the plate model based on plat
 
 ##### Overlay a texture
 
-To illustrates how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models (produced by inversion of light curves).
+To illustrate how you would overlay a complete texture on a plate model, we're looking at lower resolution shape models (produced by inversion of light curves).
 
 - Load the shape model of Vesta with format = ver and URL=
   
    ``
-  https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64139/shape.txt
-  ``
+https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64139/shape.txt
+``
 
 - Plot the plate table as previously.
 
 We then want to overlay the albedo texture available at
 
- ``
+``
 https://astro.troja.mff.cuni.cz/projects/damit/stored_files/open/64137/albedo
 ``
 
@@ -216,7 +225,7 @@ This file provides one albedo value per plate on this shape model - unfortunatel
 
 ##### Overlay a Region of Interest
 
-If the data coverage is not complete, the data file has to provide the plate number explicitely on each row, together with data values. The match with the complete shape model would rely on this plate number (Fig. 7).
+If the data coverage is not complete, the data file has to provide the plate number explicitly on each row, together with data values. The match with the complete shape model would rely on this plate number (Fig. 7).
 
 You can provide both a complete albedo texture for context (using shading mode = Paux) and the actual data on a dedicated color scale using shading mode = Aux.
 
@@ -230,7 +239,7 @@ This type of plot is relevant for detailed analyses or publications.
 
 #### SPICE digital shape kernels (dsk)
 
-Space mission data are commonly projected on shape models provided by SPICE dsk kernels (with extension .bds). These are binary files which do not enter TOPCAT directly. However, the DSKEXP command converts them to several formats, including the .ver format used above. Once the paths are set on your system, type for instance:
+Space mission data are commonly projected on shape models provided by [SPICE dsk kernels](https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/FORTRAN/req/dsk.html) (with extension .bds). These are binary files which do not enter TOPCAT directly. However, the DSKEXP command converts them to several formats, including the .ver format used above. After installation, type for instance:
 
 ``
 dskexp -dsk phobos_g_288m_spc_0000n00000_v001.bds -text phobos.ver -format ver``

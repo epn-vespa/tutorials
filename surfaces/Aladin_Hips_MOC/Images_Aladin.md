@@ -19,11 +19,9 @@ Tools
 
 ### Requirements
 
-Download and install the last version of Aladin Desktop: 
+Download and install the last version of Aladin Desktop: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
 
-Aladin: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
-
-The tutorial assumes an adequate setup in Aladin, see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
+The tutorial assumes planetary data setup of Aladin, see [setting_up_tools](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
 
 
 ## Summary
