@@ -1,0 +1,7 @@
+#AJS
+filter Filter1 {
+{
+draw ellipse(0.5*84.55*${diameter}, 0.5*84.55*${diameter}, 0) rainbow(${diameter}, 10., 500.)
+draw ${feature_name} rainbow(${diameter}, 10., 500.)
+}
+}

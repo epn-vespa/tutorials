@@ -183,7 +183,7 @@ Load this file into Aladin Desktop (you can also drop it, or load it in TOPCAT t
 
 By double-clicking on the result table in Aladin, it would open in the drawer below the display. Search the Coverage column and click the button to plot the crater MOC.
 
-(the crater centres will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this file](img/Mars_Craters.ajs)). 
+(the crater centres will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this file](img/mercury_craters.ajs)). 
 
 
 <img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png"  width="600" data-align="center">
