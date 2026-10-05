@@ -20,6 +20,7 @@ These tutorials provide a recommended entry point for new users:
 
 | Level | Tutorial                                                                                                                                  | Main tools                                                        |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 🟢    | [Simple data access](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/VESPA_access.pdf)                           | VESPA portal                                                      |
 | 🟢    | [VESPA portal walkaround](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/vespa-portal.md)                           | VESPA portal                                                      |
 | 🟢    | [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md)     | VESPA portal, TOPCAT, CASSIS, SPLAT-VO, Aladin, TAPhandle, python |
 | 🟢    | [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) | TOPCAT, Aladin, AladinLite                                        |
@@ -76,9 +77,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 * [Planetary maps and images in Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
 * [Spatial searches - VESPA geoportal demo](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md)
 * [Mapping sparse spatial data with TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
-* [Lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
-* [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
-* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
+* [Studying lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [Cross-matching overlapping observations from EPN-TAP services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
 * [Plotting shape models of small bodies in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md)
 
@@ -123,3 +122,8 @@ These tutorials focus on technical methods, coordinate systems, and reusable pro
 * [Video tutorials](https://github.com/epn-vespa/tutorials/blob/master/misc/VESPA-Video-Tutorials/VESPA-Tutorial-Video.md)
 
 These videos originate from the FP7 Europlanet-RI programme (2009–2012). Some content remains useful, but interfaces and workflows have evolved significantly since their production. In particular, the VESPA portal, Aladin, TOPCAT, and several VO services now provide additional features not covered in these videos.
+
+* [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
+* [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
+
+These two tutorials are based on the deprecated CRISM service at Constructor University. They do provide indications about sending VO data to the QGIS application.

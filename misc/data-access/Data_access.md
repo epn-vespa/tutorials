@@ -60,7 +60,7 @@ Most Solar System data are shared in the VO as data services compliant with the 
 
 All these environments access the same EPN-TAP services. They differ mainly in the way queries are submitted, data are displayed, and further processing is performed. We're showing here how to send similar queries from various environments, and plot the results. We search for spectra of asteroid 4 Vesta as a simple example because several spectral services provide data for this target.
 
-<img title="Data access" src="img/VESPA_data_arch.png" alt="VESPA_data_arch.png" width="548" data-align="center">
+<img title="Data access" src="img/VESPA_data_arch.png" alt="VESPA_data_arch.png" width="600" data-align="center">
 
 
 VO tools are specialized in a type of data product, although they tend to support many situations. 
@@ -99,7 +99,7 @@ The list of services is then updated and reordered:
 
 (click the ADQL Query field on top of the form to enter a more formal/powerful query)
 
-<img title="Portal query" src="img/Query_VVEx.png" alt="Query_VVEx.png" width="548" data-align="center">
+<img title="Portal query" src="img/Query_VVEx.png" alt="Query_VVEx.png" width="600" data-align="center">
 
 Select one service in green (M4ast or spectro_asteroids) to open the results from this service. In most cases, thumbnails are displayed when hovering the mouse over the table. With VO tools open, select All metadata / send table or select All data / send spectra to pass the data to tools which can handle it.
 
@@ -127,7 +127,7 @@ You've just selected a data server and sent a query to one of its tables — con
 
 > Alternative: select one of the *.epn_core items in the list (= data tables) and play with the Examples button at the bottom.
 
-<img title="TOPCAT query panel" src="../../surfaces/asteroid_spect/img/TOPCAT_query.png" alt="TOPCAT_query.png" width="548" data-align="center">
+<img title="TOPCAT query panel" src="../../surfaces/asteroid_spect/img/TOPCAT_query.png" alt="TOPCAT_query.png" width="600" data-align="center">
 
 After a few seconds, the result table should add in the table list (main window)
 
@@ -145,7 +145,7 @@ Superpose other spectra in the same window by clicking Add new positional plot c
 
 TOPCAT is an all-purpose table handling tool and VO client, filled with powerfull graphic functions (including for spatial data, but not images).
 
-<img title="TOPCAT" src="../../surfaces/asteroid_spect/img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="647" data-align="right">
+<img title="TOPCAT" src="../../surfaces/asteroid_spect/img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="650" data-align="right">
 
 ### 3- CASSIS
 
@@ -166,7 +166,7 @@ In the main panel, Click VO / EPN-TAP Query
 CASSIS is very efficient to handle scales, units, and spectral quantities, and to analyse spectral lines. It is also connected to atomic and molecular databases.
 
 
-<img title="CASSIS query" src="img/CASSIS_Vesta.png" alt="CASSIS_Vesta.png" width="548" data-align="center">
+<img title="CASSIS query" src="img/CASSIS_Vesta.png" alt="CASSIS_Vesta.png" width="600" data-align="center">
 
 
 ### 4- SPLAT-VO
@@ -200,7 +200,7 @@ You can dispatch spectra between plotting windows from the main window, or click
 SPLAT-VO is particularly efficient to display many spectra with minimum manipulations. It is also connected to experimental spectroscopy services in the VO.
 
 
-<img title="SPLAT query" src="img/SPLAT_query.png" alt="SPLAT_query.png" data-align="center">
+<img title="SPLAT query" src="img/SPLAT_query.png" alt="SPLAT_query.png"  width="650" data-align="center">
 
 
 
@@ -219,7 +219,7 @@ Tables may appear below the display area in Aladin. Some fields display as butto
 Aladin is mostly a celestial image / map environment. It handles planetary coordinates, footprints (s_region ou MOC) and georeferenced data products (associated with spatial coordinates) but other data types may not display properly.
 
 
-<img title="Aladin query" src="img/Aladin_query.png" alt="Aladin_query.png" data-align="center">
+<img title="Aladin query" src="img/Aladin_query.png" alt="Aladin_query.png"  width="650" data-align="center">
 
 
 ### 6- TAPhandle
@@ -237,7 +237,7 @@ Type your query, either with the graphic query builder (Select What / Where / Po
 - URL columns in the table may contain a SAMP icon for individual sends, depending on format
 
 
-<img title="TAPhandle query" src="img/TAPhandle.png" alt="TAPhandle.png" data-align="center">
+<img title="TAPhandle query" src="img/TAPhandle.png" alt="TAPhandle.png"  width="650" data-align="center">
 
 TAPHandle has similarities with the VESPA portal, but is a more generic interface to the Virtual Observatory infrastructure. It supports the full TAP protocol and can access any TAP-compliant service. In contrast, the VESPA portal is specifically designed for Solar System data and provides dedicated support for EPN-TAP services.
 
