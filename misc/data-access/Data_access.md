@@ -12,7 +12,7 @@ We're showing how to search for data in EPN-TAP data services from various envir
 [SPLAT-VO](#4--SPLAT-VO)  
 [Aladin](#5--Aladin)  
 [TAPhandle](#6--TAPhandle)  
-[python](#7--python-\/-pyvo)  
+[python](#7--python-pyvo)  
 [To go further](#To-go-further)  
 
 

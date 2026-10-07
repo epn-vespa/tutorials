@@ -8,7 +8,7 @@
 [Identify targets of interest](#1--Identify-targets-of-interest)  
 [Getting the spectra](#2--Getting-the-spectra)  
 [Displaying the spectra](#3--Displaying-the-spectra-in-TOPCAT)  
-[Alternative solutions](#4--Alternative solutions)  
+[Alternative solutions](#4--Alternative-solutions)  
 [Using the dedicated spectro_tno service](#5--Using-the-dedicated-spectro_tno-service)  
 
 [Conclusion](#Conclusion)  
@@ -233,9 +233,9 @@ These average spectra serve as a reference to determine the taxonomic class from
 
 The level of documentation of the spectro\_tno makes it useful to combine with other data services. In particular:
 
-* Orbital elements can be retrieved from the MPC service, e.g., to study the distribution of taxonomic types in the Solar System
+* Orbital elements can be retrieved from the MPC service, e.g., to study the distribution of taxonomic types in the Solar System (Fig. 6)
 * The colour indices from this table can be compared with observations from other small body services, either spectra (e.g., spectro_asteroids, Gaia_asteroids) or flux measurements (e.g. SBNAF, TNOsAreCool).
-* The average spectra are intended to allow computing colour indices in other photometric systems, so that such observations can be used to identify taxonomic classes.
+* The class-averaged spectra are intended to allow computing colour indices in other photometric systems, so that such observations can be used to identify taxonomic classes.
 
 
 As previously, any cross-match relies on the target\_name parameter when studying large populations of Solar System objects.
