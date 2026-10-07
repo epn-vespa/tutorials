@@ -139,12 +139,12 @@ You can download all spectra at once, so they are ready to use in composite plot
 
 ### 4- Alternative solutions
  
-Alternative methods may be more efficient in some cases.
+Alternative methods to perform the cross-match may be more efficient in some cases.
 
 #### 4.1 Upload on server
  You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This TAP functionality is available from TOPCAT and other clients, or from python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
 
-* target list from service MPC (will load as t10 in this TOPCAT session):
+* light target list from service MPC (will load as t10 in this TOPCAT session):
 
 ```
 SELECT target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
@@ -169,10 +169,10 @@ In python you can loop on the target list and send individual queries to the spe
 
 The above workflow works because all EPN-TAP services use a common metadata model: parameters have the same meaning across services and can be used as matching keys. In particular, the `target_name` parameter is essential for identifying moving objects in the Solar System (as opposed to astronomical objects with fixed coordinates).
 
-However, `target_name` assumes standard IAU values which may be difficult to implement - it is prone to typos (spaces, etc), and doesn't necessarily use ascii encoding. Besides, small bodies have several designations and the main one may evolve over time (discovery IDs, principal designation, number, name). EPNCore handles this by providing a parameter `alt_target_name` that may aggregate different designations. A query on target_name can be made more robust by using a special function to match a single string with this aggregate: 
+However, `target_name` assumes standard IAU values which may be difficult to implement - it is prone to typos (spaces, etc), and doesn't necessarily use ascii encoding. Besides, small bodies have several designations and the main one may evolve over time (discovery IDs, principal designation, number, name). EPNCore handles this by providing a parameter `alt_target_name` that may aggregate different designations. A query on target_name can be made more robust by using a special function to match a individual values in this aggregate: 
 
 
-* target list with all designations, from service MPC (will load as t15 here):
+* light target list with all designations, from service MPC (will load as t15 here):
 
 ```
 SELECT alt_target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
