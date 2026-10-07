@@ -37,7 +37,7 @@ These tutorials provide a recommended entry point for new users:
 
 # Advanced access and workflows
 
-These tutorials illustrate direct access to EPN-TAP services, advanced VO usage, and programmatic workflows.
+These tutorials illustrate advanced access to EPN-TAP services, advanced VO usage, and programmatic workflows.
 
 | Level | Tutorial                                                                                                                                                                                               | Main tools       |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
@@ -125,4 +125,4 @@ These videos originate from the FP7 Europlanet-RI programme (2009–2012). Some 
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 
-These two tutorials are based on the deprecated CRISM service at Constructor University. They do provide indications about sending VO data to the QGIS application.
+These two tutorials are based on the deprecated CRISM service at Constructor University. They still provide indications about sending VO data to the QGIS application.
