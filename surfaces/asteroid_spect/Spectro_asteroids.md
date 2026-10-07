@@ -67,7 +67,7 @@ Look at column content. This service is a compilation of various spectral collec
 
 Click and select Plot table, click on Invoke now…  the current spectrum should display in a plot window
 
-Go to the table window, select another row; it should display upon selection (wait a second if the interface does not react, or try another row)
+Go to the table window, select another row; it should display upon selection (wait a second if the interface does not react, or try another row). You can navigate quickly in the table with the vertical arrows.
 
 <img title="" src="img/TOPCAT_Vesta.png" alt="TOPCAT_Vesta.png" width="433" data-align="right">
 

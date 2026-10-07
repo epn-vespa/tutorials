@@ -1,19 +1,22 @@
-## Finding spectra of TNOs
+## Finding spectra of TNOs through service cross-matching
 
-[Tutorial](#use-case)  
-[Authors](#author)  
+
+[Use case](#Use_case)  
 [Summary](#summary)  
 [Introduction](#introduction)  
-[Tutorial](#tutorial)  
-[Links](#links)  
+
+[Identify targets of interest](#1--Identify-targets-of-interest)  
+[Getting the spectra](#2--Getting-the-spectra)  
+[Displaying the spectra](#3--Displaying-the-spectra-in-TOPCAT)  
+[Alternative solutions](#4--Alternative solutions)  
+[Using the dedicated spectro_tno service](#5--Using-the-dedicated-spectro_tno-service)  
+
+[Conclusion](#Conclusion)  
 
 
-## Tutorial
-Cross correlation of data services
+## Use case
+Cross-matching and combining complementary data services
 
-## Author:
-
-S. Erard
 
 ### Change log
 
@@ -21,25 +24,36 @@ S. Erard
 | ------------- |:-------------:| -----: |
 | 1.0           | S. Erard      | 12/10/2024  |
 | 1.1           | S. Erard      | 19/6/2025  |
-| 1.2           | T. Hope       | 2/4/2026   |
+| 1.2           | S. Erard, T. Chope       | 2/4/2026   |
+| 1.3           | S. Erard, T. Chope       | 6/10/2026   |
 
 
 
+
+### Requirements and dependencies
+
+Download the lastest versions of the VO tools to manage spectral data: 
+
+TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
+
+SPLAT-VO: [GAVO SPLAT](https://www.g-vo.org/pmwiki/About/SPLAT)
+
+• Basic knowledge of the VESPA portal: [https://vespa.obspm.fr](https://vespa.obspm.fr)
 
 
 ### Keywords
 Spectroscopy
-Service
+EPN-TAP
+Cross-match
 
 ## Summary
-This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services. It also shows how to use the dedicated spectro\_tno service for direct access to TNO/Centaur reflectance spectra with rich metadata (taxonomy, dynamics, photometric colours).
+This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services. It also shows how to use the dedicated spectro\_tno service for direct access to TNO/Centaur reflectance spectra together with taxonomic and dynamical information.
 
 ## Introduction
 
-EPN-TAP services includes generic list of asteroids with dynamical properties, and spectral databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of TNOs, is it therefore necessary to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways to achieve this.
+EPN-TAP services include generic lists of asteroids with dynamical properties, and spectral databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of Trans-Neptunian Objects, it is therefore often necessary to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways to achieve this.
 
 
-## Tutorial
 
  
 ### 1- Identify targets of interest
@@ -52,22 +66,25 @@ Specialists can identify objects that belong to a dynamical class using a combin
 SELECT * FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
 ``
 
-As of writing, this returns a list of ~ 6000 objects with names and properties (including both TNOs and Centaurs, though)
+As of writing, this returns a list of 6292 objects with names and properties, including both TNOs and Centaurs
 
 
-```
-Alternative: Use the analytic TNO definition provided e.g. by Astorb / Lowell Obs: 
-SELECT * FROM mpc.epn_core WHERE "semi_major_axis" >= 30.0709 
-This yields 5337 objects, TNOs only
+
+> Alternative: Use the analytic TNO definition provided e.g. by Astorb / Lowell Observatory: 
+```SELECT * FROM mpc.epn_core WHERE "semi_major_axis" >= 30.0709 
+This yields 5544 objects, TNOs only
 ```
 
 Such queries can be issued from any TAP client, e.g. the VESPA portal or TOPCAT, see Fig. 1.
 
-<img src="img/Query_MPC.png" width="400">
+<img src="img/Query_MPC.png" width="500">
+
+*Fig. 1: Query to MPC in TOPCAT*
+
 
 ### 2- Getting the spectra
 
-The spectro\_asteroids service is a large collection of small body spectra, but the targets are not described in terms of dynamical class. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore description. 
+The spectro\_asteroids service is a large collection of small body spectra from several papers, but the targets are not described in terms of dynamical class. The list retrieved in step 1 can be used to query this service from the target\_name parameter, thanks to the homogeneity of EPNCore description. 
 
 The easiest way to perform this is to use TOPCAT:
 
@@ -78,62 +95,105 @@ The easiest way to perform this is to use TOPCAT:
 SELECT * FROM spectro_asteroids.epn_core WHERE ("target_class" LIKE '%asteroid%')
 ``
 
-* In TOPCAT, from the Join menu: run a Pair match between the two tables. Use: algorithm = Exact Value; Matched Value = target_name in both cases; Match Selection = All matches (to retrieve all available spectra). See Fig. 2.
-* This returns a list of 49 spectra of TNO at the time of writing
+In TOPCAT, from the Join menu, run a Pair match between the two tables. Use: 
 
-Links to the spectra are available under access\_url in this table.
+* algorithm = Exact Value
+* Matched Value = target_name in both cases
+* Match Selection = All matches (to retrieve all available spectra of the same object)
+* (Beware that all table rows must be visible for the match, i.e. no subset must be active)
+
+This returns a list of 45 spectra of TNOs at the time of writing, see Fig. 2. Inspection of the table shows that most of these spectra were acquired on the Keck telescope (`instrument_host_name`) and published by Barkume et al 2008 (`bib_reference`). 
+
+Links to the spectra are available under `access\_url` in the table.
 
 
-<img src="img/match_TNOs.png" width="400">
+<img src="img/match_TNOs.png" width="500">
 
-To display the spectra in TOPCAT:
+*Fig. 2: Matching the tables in TOPCAT*
 
-* With the match result table selected, go to Activation actions in menu Views 
-* Click Plot Table in the left menu
+### 3- Displaying the spectra in TOPCAT
+
+To browse the spectra quickly:
+
+(in this case you may want to define a subset excluding Pluto which is given with another scale)
+
+* With the match result table selected, go to the menu  Views > Activation actions 
+* Select and check Plot Table in the left menu, click Invoke
 * The plot window will open and display something
 * Set up the display as you wish, e.g.: reflectance(wavelength), with Form = Add line 
-* Clicking a row will plot the current spectrum
-* The Load table action works similarly
+* Use the vertical arrows in the table to browse spectra sequentially
 
 
-### 3- Alternative solutions
+
+<img src="img/Activation_action.png" width="500">
+
+*Fig. 3: Stepping through spectra in TOPCAT*
+
+
+
+You can download all spectra at once, so they are ready to use in composite plots:
+
+* Select and check the Load Table action
+* Use the lightning & film icon (= Selected Action on All Rows) to apply it to the current subset
+
+
+### 4- Alternative solutions
  
-Alternative solutions exist which may be more efficient in some cases:
+Alternative methods may be more efficient in some cases.
 
-* You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This functionality is available from TOPCAT and other TAP clients, or in python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
+#### 4.1 Upload on server
+ You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This TAP functionality is available from TOPCAT and other clients, or from python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
+
+* target list from service MPC (will load as t10 in this TOPCAT session):
 
 ```
-; target list from service MPC (will load as t9 in this TOPCAT session):
 SELECT target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
-;
-; join on service spectro_asteroids:
+```
+
+* Join on service spectro_asteroids:
+
+```
 SELECT TOP 100 *
   FROM spectro_asteroids.epn_core AS db
-  JOIN TAP_UPLOAD.t9 AS tc
+  JOIN TAP_UPLOAD.t10 AS tc
     ON (db.target_name = tc.target_name)
 ```
 
 
-* Alternatively, in python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services.
+#### 4.2 Python script
+
+In python you can loop on the target list and send individual queries to the spectrum service. This also makes it possible to retrieve spectra from several services. See this tutorial for python access: [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md).
 
 
-### 4- Using the dedicated spectro\_tno service
+#### 4.3 Searching alternate names
 
-The spectro\_tno service (Merlin et al. 2017, A&A 604, A86) provides combined vis-nIR reflectance spectra (0.35--2.45 micron) of 42 TNOs and Centaurs, plus 4 taxonomic mean spectra. Unlike generic spectral services, it includes dynamical classification, spectral taxonomy, and photometric colour indices directly as queryable columns. No cross-match with MPC is needed to filter by dynamical class.
+The above workflow works because all EPN-TAP services use a common metadata model: parameters have the same meaning across services and can be used as matching keys. In particular, the `target_name` parameter is essential for identifying moving objects in the Solar System (as opposed to astronomical objects with fixed coordinates).
 
-#### Querying the service
+However, `target_name` assumes standard IAU values which may be difficult to implement - it is prone to typos (spaces, etc), and doesn't necessarily use ascii encoding. Besides, small bodies have several designations and the main one may evolve over time (discovery IDs, principal designation, number, name). EPNCore handles this by providing a parameter `alt_target_name` that may aggregate different designations. A query on target_name can be made more robust by using a special function to match a single string with this aggregate: 
 
-From TOPCAT (VO > TAP), connect to the PADC TAP service and run:
 
-``
-SELECT * FROM spectro_tno.epn_core
-``
+* target list with all designations, from service MPC (will load as t15 here):
 
-This returns 46 rows: 42 individual spectra and 4 taxonomic mean spectra computed by Merlin et al. 2017 (one per BB, BR, IR, RR class of the Barucci et al. 2005 taxonomy).
+```
+SELECT alt_target_name FROM mpc.epn_core WHERE "orbit_class" LIKE '%Distant object%' 
+```
 
-#### Filtering by dynamical class or taxonomy
+* Join on service spectro_asteroids:
 
-The custom columns allow direct filtering without any cross-match:
+```
+SELECT TOP 100 *
+  FROM spectro_asteroids.epn_core AS db
+  JOIN TAP_UPLOAD.t15 AS tc
+    ON (1=ivo_hashlist_has(tc.alt_target_name, db.target_name))
+```
+
+This syntax is supported by most EPN-TAP servers. You have to check if alt_target_name is present in the reference service and if it always provides all possible designations. There is usually one more robust way to write the query - typically you want to check the target_name from observational services with the alt_target_name from large catalogues, which are updated more often and are expected to be more complete.
+
+
+
+### 5- Using the dedicated spectro\_tno service
+
+The spectro\_tno service provides combined vis-nIR reflectance spectra (0.35-2.45 micron) of 42 TNOs and Centaurs acquired at the VLT. The original paper (Merlin et al. 2017) was intended to provide a reference frame for future observations. The table therefore contains additional information: extra rows for average spectra of the 4 standard taxonomic classes; extra columns providing dynamical class, spectral taxonomic type, and photometric colour indices, which may be queried directly. No cross-match with MPC is needed to filter by dynamical class:
 
 ``
 SELECT target_name, dynamical_type, taxonomy_code, instrument_name
@@ -141,130 +201,64 @@ SELECT target_name, dynamical_type, taxonomy_code, instrument_name
   WHERE dynamical_type = 'Plutino'
 ``
 
-Available values for dynamical\_type: Cubewano, Plutino, SDO, Detached object, Centaur.
-Available values for taxonomy\_code: BB, BR, IR, RR.
-
-#### Displaying a spectrum
-
-* Load the result table in TOPCAT
-* Open the Activation Actions window (Views > Activation Actions)
-* In the Actions list, check "Plot Table"; in the Configuration panel, set Table Location to access\_url and Plot Type to Plane
-* Click a row in the table, or use the lightning bolt button to invoke on the current row
-* TOPCAT opens a Plane Plot window with X = wavelength and Y = reflectance (auto-detected from VOTable UCDs)
-* In the Form tab, check Line alongside Mark to connect the data points; the Aux axis displays reflectance\_error as a colour gradient
+#### 5.1- Displaying and comparing the spectra
 
 
-<img src="img/chariklo_plot.png" width="550">
+Spectra are displayed in TOPCAT like in section 3. In addition you can use the XYError form to overplot the uncertainty in reflectance, which is provided for all spectra (Fig. 4). Notice the varying S/N ratio in regions of the spectral range measured by different instruments.
+
+<img src="img/Echeclus_TOPCAT.png" width="500">
+
+*Fig. 4: VLT spectrum of Echeclus with error bars*
 
 
-### 5- Enriching spectro\_tno with orbital parameters from MPC
-
-The spectro\_tno service provides dynamical classification but not orbital elements. These can be retrieved from MPC via a cross-match on target\_name in TOPCAT.
-
-#### Step-by-step
-
-* Load spectro\_tno in TOPCAT:
+The average spectra can be loaded this way:
 
 ``
-SELECT target_name, alt_target_name, dynamical_type, taxonomy_code
-  FROM spectro_tno.epn_core
-  WHERE granule_gid = 'combined_spectrum'
+SELECT * FROM spectro_tno.epn_core WHERE granule_gid='taxonomic_mean'
 ``
 
-* Load orbital elements from MPC:
+The 4 average spectra are displayed with TOPCAT in Fig. 5 (it may be faster to send this table to SPLAT-VO for a quick plot).
 
-``
-SELECT target_name, semi_major_axis, eccentricity, inclination
-  FROM mpc.epn_core
-  WHERE orbit_class LIKE '%Distant object%'
-``
+The spectral slope increases from BB (neutral/blue) to RR (very red) types, which is interpreted as the effect of increasing amounts of complex organics (tholins) on the surface. Also notice the large telluric absorption remnants (these spectral regions are masked in Fig. 4).
 
-* Open the Match Tables window (Joins > Pair Match)
-* Algorithm: Exact Value
-* Table 1: spectro\_tno table, Matched Value column: target\_name
-* Table 2: MPC table, Matched Value column: target\_name
-* Output Rows — Match Selection: Best match, symmetric; Join Type: 1 and 2
-* Click Go
-
-<img src="img/match_tables.png" width="250">
-
-This produces a combined table with both spectro\_tno metadata (taxonomy, dynamics) and MPC orbital elements (semi\_major\_axis, eccentricity, inclination) for each matched object.
-
-<img src="img/match_results.png" width="650">
-
-Note: target\_name in spectro\_tno uses current IAU names from the SsODNet/Quaero database. For recently named objects (e.g. Lempo, Varda, Aya), the match with MPC may require using alt\_target\_name instead.
-
-#### Scatter plot: orbital elements coloured by taxonomy
-
-With the matched table:
-
-* Open the Plane Plot window (Graphics > Plane Plot)
-* In the Position tab, set X = semi\_major\_axis, Y = eccentricity
-* To colour by taxonomy: in the main TOPCAT window, open Views > Row Subsets and create one subset per class (e.g. expression `taxonomy_code.equals("BB")`, and likewise for BR, IR, RR)
-
-<img src="img/taxonomy_subsets.png" width="650">
-
-* Back in the Plane Plot, go to the Subsets tab: the 4 subsets appear with distinct colours. Check all four to display the points coloured by taxonomic class
-
-<div style="width:650px; height:650px; overflow:hidden;">
-  <img src="img/taxonomy_scatterplot.png" width="650" style="margin-top:-10px;">
-</div>
-
-This kind of analysis was previously only possible by manually combining several catalogues. The EPN-TAP framework and TOPCAT make it a straightforward operation.
+These average spectra serve as a reference to determine the taxonomic class from other observations (Fig. 5). Different normalisations and spectral ranges must be accounted for - Quaoar is actually an RR type, not a BB as suggested here.
 
 
-### 6- Comparing taxonomic mean spectra
+<img src="img/types_Quaoar_TOPCAT.png" width="500">
 
-The 4 taxonomic mean spectra (BB, BR, IR, RR) summarise the spectral diversity of TNOs/Centaurs. They can be compared directly:
-
-``
-SELECT * FROM spectro_tno.epn_core WHERE granule_gid = 'taxonomic_mean'
-``
-
-* Load this table in TOPCAT (4 rows)
-* In Activation Actions, check "Load Table" with Table Location = access\_url
-* Use the double lightning bolt with film strip icon ("Perform all active actions on every row in the current subset in turn") to load all 4 VOTables at once
-
-<img src="img/activation_means.png" width="650">
-
-* Open a Plane Plot (Graphics > Plane Plot). The first table is already displayed
-* For each remaining table, click "Add a new positional plot control to the stack" and select the next table. Set X = wavelength, Y = reflectance
-
-<img src="img/positional_plot.png" width="650">
-
-* Check Line in the Form tab for each layer
-* Each layer gets a distinct colour, allowing direct comparison of the 4 mean spectra
-
-<img src="img/comparison_plot.png" width="650">
-
-The spectral slope increases from BB (neutral/blue) to RR (very red), reflecting increasing amounts of complex organics (tholins) on the surface.
+*Fig. 5: The Keck observation of Quaoar in spectro_asteroids compared with the 4 taxonomical averages from VLT spectra in spectro_tno*
 
 
-### 7- Photometric colour analysis
+#### 5.2- Cross-matching with other services
 
-The spectro\_tno service includes V-R, V-I, V-J, V-H and V-K colour indices from Table 2 of Merlin et al. 2017. These can be used to study the colour diversity of TNOs:
+The level of documentation of the spectro\_tno makes it useful to combine with other data services. In particular:
 
-``
-SELECT target_name, taxonomy_code, dynamical_type,
-       color_index_v_r, color_index_v_i, color_index_v_j
-  FROM spectro_tno.epn_core
-  WHERE color_index_v_r IS NOT NULL
-``
+* Orbital elements can be retrieved from the MPC service, e.g., to study the distribution of taxonomic types in the Solar System
+* The colour indices from this table can be compared with observations from other small body services, either spectra (e.g., spectro_asteroids, Gaia_asteroids) or flux measurements (e.g. SBNAF, TNOsAreCool).
+* The average spectra are intended to allow computing colour indices in other photometric systems, so that such observations can be used to identify taxonomic classes.
 
-* Load in TOPCAT and open the Plane Plot window (Graphics > Plane Plot)
-* In the Position tab, set X = color\_index\_v\_r, Y = color\_index\_v\_j
-* To colour by taxonomy: open Views > Row Subsets and create one subset per class (`taxonomy_code.equals("BB")`, and likewise for BR, IR, RR), then check them in the Subsets tab of the plot
 
-<img src="img/colour_diagram.png" width="650">
+As previously, any cross-match relies on the target\_name parameter when studying large populations of Solar System objects.
+ 
+
+
+<img src="img/taxonomy_scatterplot.png" width="650" style="margin-top:-10px;">
+
+*Fig. 6: Taxonomic types from spectro_tno in a dynamical plot from the MPC service*
 
 
 
-## Links
+## Conclusion
 
-* [VESPA portal](http://vespa.obspm.fr)
-* [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/)
-* [Merlin et al. 2017](https://doi.org/10.1051/0004-6361/201730933)
-* [Barucci et al. 2005 taxonomy](https://ui.adsabs.harvard.edu/abs/2005AJ....130.1291B/abstract)
-* [SsODNet/Quaero API](https://ssp.imcce.fr/webservices/ssodnet/api/quaero)
+This tutorial illustrates a common use case in VESPA: combining complementary EPN-TAP services to build a scientific sample that is not directly available from a single source.
+
+Starting from the MPC catalogue, we identified Trans-Neptunian Objects and retrieved corresponding spectra from a generic spectral service. Several approaches were presented to perform the cross-match, including local table matching in TOPCAT, TAP uploads, and the use of alternate target designations.
+
+The dedicated spectro_tno service illustrates a complementary approach, where dynamical and taxonomic information are already provided together with the spectra. Such specialized services can in turn be combined with catalogues, spectral databases, photometric measurements, or model results.
+
+This workflow highlights one of the main strengths of the EPN-TAP framework: metadata are described in a common way across independent services, making cross-matching straightforward. The same approach can be applied well beyond TNO spectroscopy, wherever complementary Solar System datasets need to be cross-matched or compared.
+
+
+
 
 
