@@ -47,7 +47,7 @@ These tutorials illustrate direct access to EPN-TAP services, advanced VO usage,
 | 🟡    | [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb) | Python, pyvo     |
 | 🔴    | [Sending an EPN-TAP query to all EPN-TAP services in python and retrieving cumulative results](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)  | Python, Registry |
 | 🟡    | [Retrieving files under DataLink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)                                     | TOPCAT           |
-| 🔴    | [Finding planet observations in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
+| 🔴    | [Using ST-MOC: Finding observations of Jupiter in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
 
 ---
 
@@ -68,7 +68,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 ## Atmospheres
 
 * [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
-* [Walkaround VIRTIS-Venus-Express](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/EPN-TAP-services-Virtis-Venus-Express-demo/EPN-TAP-services-Virtis-Venus-Express-demo.md)
+* [Imaging spectroscopy: walkaround VIRTIS-Venus-Express](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/EPN-TAP-services-Virtis-Venus-Express-demo/EPN-TAP-services-Virtis-Venus-Express-demo.md)
 * [Comparing vertical profiles in the atmosphere of Mars (SPICAM vs MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/README.md)
 * [Matisse used with VIRTIS-VEx](http://www.europlanet-vespa.eu/tutos/MATISSEforVESPAtutorial.pdf)
 
@@ -76,7 +76,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 
 * [Planetary maps and images in Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
 * [Spatial searches - VESPA geoportal demo](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md)
-* [Mapping sparse spatial data with TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
+* [Mapping sparse spatial data with TOPCAT (VIRTIS-Rosetta)](http://www.europlanet-vespa.eu/tutos/VES-23855284-081219-0903-426.pdf)
 * [Studying lunar craters with TOPCAT and Aladin](http://www.europlanet-vespa.eu/tutos/Tutorial_Lunar_Crater_database_en.pdf)
 * [Cross-matching overlapping observations from EPN-TAP services (HRSC vs OMEGA vs SPICAM)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/HRSC_vs_OMEGA/HRSC_vs_OMEGA-tutorial.md)
 * [Plotting shape models of small bodies in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md)
@@ -85,7 +85,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 
 * [CASSIS as a spectroscopy tool for VESPA](http://www.europlanet-vespa.eu/tutos/CASSIS_VESPA_tutorial.pdf)
 * [Cross-matching services: spectra of TNOs](https://github.com/epn-vespa/tutorials/blob/master/surfaces/TNO_spect/TNO_spectroscopy.md)
-* [Plotting bandlists in TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/surfaces/bandlists/bandlists.md)
+* [Plotting bandlists in TOPCAT (SSHADE)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/bandlists/bandlists.md)
 * [Comparing observations with laboratory spectra](https://github.com/epn-vespa/tutorials/blob/master/surfaces/asteroid_spect/Spectro_asteroids.md)
 
 ## Magnetospheres and Plasma Physics
