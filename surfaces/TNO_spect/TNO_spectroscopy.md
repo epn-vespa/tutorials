@@ -47,11 +47,11 @@ EPN-TAP
 Cross-match
 
 ## Summary
-This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services. It also shows how to use the dedicated spectro\_tno service for direct access to TNO/Centaur reflectance spectra together with taxonomic and dynamical information.
+This tutorial describes how to retrieve spectra of TNOs, when these targets are not identified in spectral services. It also shows how to use the dedicated spectro\_tno service for direct access to a collection of TNO/Centaur reflectance spectra, together with taxonomic and dynamical information.
 
 ## Introduction
 
-EPN-TAP services include generic lists of asteroids with dynamical properties, and spectral databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of Trans-Neptunian Objects, it is therefore often necessary to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways to achieve this.
+EPN-TAP services include generic catalogues of asteroids with dynamical properties, and observational databases of small bodies. In the latter, the dynamical type is not usually provided. To retrieve spectra of Trans-Neptunian Objects, it is therefore usually required to identify TNOs from a first service, then to query a spectral service with a list of targets. This is not directly feasible in the VESPA portal, but there are several ways to achieve this.
 
 
 
@@ -115,10 +115,10 @@ Links to the spectra are available under `access\_url` in the table.
 
 To browse the spectra quickly:
 
-(in this case you may want to define a subset excluding Pluto which is given with another scale)
+(in this case you may want to define a subset excluding Pluto which is given with another scale - select the spectrum and click the second button on the top left corner of the data table)
 
 * With the match result table selected, go to the menu  Views > Activation actions 
-* Select and check Plot Table in the left menu, click Invoke
+* Select and check Plot Table in the left menu, click Invoke Now…
 * The plot window will open and display something
 * Set up the display as you wish, e.g.: reflectance(wavelength), with Form = Add line 
 * Use the vertical arrows in the table to browse spectra sequentially
@@ -142,7 +142,7 @@ You can download all spectra at once, so they are ready to use in composite plot
 Alternative methods to perform the cross-match may be more efficient in some cases.
 
 #### 4.1 Upload on server
- You can upload the target list to the server hosting the spectro\_asteroids service and run a cross match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This TAP functionality is available from TOPCAT and other clients, or from python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
+ You can upload the target list to the server hosting the spectro\_asteroids service and run a cross-match on the server. This is especially convenient if the service you're mining is too large to be downloaded easily. This TAP functionality is available from TOPCAT and other clients, or from python using the astropy library. "Upload Join" is a property of the TAP protocol, but some TAP servers may disable it - in particular you are limited in upload size, so it is better to reduce the size of the target list to a minimum:
 
 * light target list from service MPC (will load as t10 in this TOPCAT session):
 
@@ -169,7 +169,7 @@ In python you can loop on the target list and send individual queries to the spe
 
 The above workflow works because all EPN-TAP services use a common metadata model: parameters have the same meaning across services and can be used as matching keys. In particular, the `target_name` parameter is essential for identifying moving objects in the Solar System (as opposed to astronomical objects with fixed coordinates).
 
-However, `target_name` assumes standard IAU values which may be difficult to implement - it is prone to typos (spaces, etc), and doesn't necessarily use ascii encoding. Besides, small bodies have several designations and the main one may evolve over time (discovery IDs, principal designation, number, name). EPNCore handles this by providing a parameter `alt_target_name` that may aggregate different designations. A query on target_name can be made more robust by using a special function to match a individual values in this aggregate: 
+However, `target_name` assumes standard IAU values which may be difficult to implement - it is prone to typos (spaces, etc), and doesn't necessarily use ascii encoding. Besides, small bodies have several designations and the main one may evolve over time (discovery IDs, principal designation, number, name). EPNCore handles this by providing a parameter `alt_target_name` that may aggregate different designations. A query on target_name can be made more robust by using a special function to match individual values in this aggregate: 
 
 
 * light target list with all designations, from service MPC (will load as t15 here):

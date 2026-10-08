@@ -25,7 +25,7 @@ We're showing how to search for data in EPN-TAP data services from various envir
 
 ### Requirements and dependencies
 
-Download the last version of VO tools: 
+Download the lastest versions of VO tools: 
 
 TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
 

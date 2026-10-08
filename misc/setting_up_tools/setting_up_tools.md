@@ -1,17 +1,13 @@
 ## Setting up VO tools for planetary context
 
-[Authors](#author)  
+
 [Summary](#summary)  
 [Introduction](#introduction)  
+[3D shape models](#1--3d-shape-models)  
+[Planetary mapping](#2--planetary-mapping)  
+[SAMP connectivity](#3--samp-connectivity-check)  
 [Links](#links)  
 
-## Tutorial
-
-Basic set up of VO tools for planetary science
-
-## Author:
-
-S. Erard
 
 ### Change log
 
@@ -20,13 +16,27 @@ S. Erard
 | 1.0     | S. Erard | 6/9/2017  |
 | 1.1     | S. Erard | 2/11/2024 |
 | 1.2     | S. Erard | 28/3/2025 |
+| 1.3     | S. Erard | 8/10/2026 |
 
 ### Requirements and dependencies
+
+Download the latest versions of VO tools: 
+
+TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
+
+Aladin: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
+
+SPLAT-VO: [GAVO SPLAT](https://www.g-vo.org/pmwiki/About/SPLAT)
+
+CASSIS: [https://cassis.irap.omp.eu/](https://cassis.irap.omp.eu/)
+
 
 ### Keywords
 
 Data
 Tools
+Mapping
+Plotting
 
 ## Summary
 
@@ -38,31 +48,35 @@ The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) fra
 
 This tutorial summarizes the basic settings for adapting the display to standard planetary use. 
 
-## 3D shape models
+## 1- 3D shape models
 
-### 1- TOPCAT configuration
+### 1.1- TOPCAT configuration
 
-From v4.10-3, TOPCAT supports 3D formats. You first need to enable this option in TOPCAT by setting a system property. The simplest way is to add a line:
+
+From v4.10-3, TOPCAT supports 3D formats in a limited and exploratory form. On some TOPCAT versions, the "ver" option is not available by default when reading a file. If not, you need to enable this option by setting a system property. The simplest way is to add a line:
 
 ``
 startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
 ``
 
-to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exists).
+to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exist).
 
 The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
 
 Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to optimise the display of 3D shape models.
 
-## Planetary mapping
+## 2- Planetary mapping
 
-### 1- TOPCAT
+### 2.1- TOPCAT
 
 TOPCAT includes several mapping tools (windows) usable to display planetary maps.
 
 #### Standard settings for planetary maps in  TOPCAT SkyPlot
 
-The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, similar to Aladin) but also to 2D mapping. This is the defaut mode to map EPNCore tables, since coordinates are predefined as average (min,max) values. 
+The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, similar to Aladin) but also to 2D mapping. This is the default mode to map EPNCore tables, since TOPCAT uses average values:
+
+- midLon(c1min, c1max)
+- midLat(c2min, c2max)
 
 In 3D the difference with the celestial sphere is that the planet is observed from outside, and several conventions are different. 3D mapping may be adapted to ellipsoids, as long as the body shape is reasonably regular.
 
@@ -71,19 +85,22 @@ In 3D the difference with the celestial sphere is that the planet is observed fr
 (in Axes / Projection)
 
 - Projection =  sin (i.e. sphere, for orthographic projection)
-- Uncheck "Reflect longitude axis" in general: EPNCore coordinates C1/C2 are always provided as E-handed. Keep it checked only if coordinates are provided with W longitudes.
-- View Sky System: Equatorial
+- Uncheck "Reflect longitude axis" in general: EPNCore coordinates C1/C2 are always provided as E-handed. Keep it checked only if coordinates are provided with W longitudes in a data product
+- View Sky System: Equatorial (other options are for the sky only)
 
 (in Axis / Grid)
 
 - Uncheck "Sexagesimal"
 - Increase "Grid Crowding" cursor value to 30 or 60° tick
 
-<img src="img/TOPCAT_SkyPlot_sin.png" width="500" alt="4">  
+<img src="img/TOPCAT_SkyPlot_sin.png" width="500" >  
+
+*Fig. 1: Spherical plot in TOPCAT with standard planetary orientation*
+
 
 **• For 2D maps:**
 
-Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were always  centered on (0°,0°).
+Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were always centered on (0°,0°).
 
 (in Axes / Projection)
 
@@ -91,7 +108,10 @@ Two options are available for 2D/flat mapping: car (plate carrée / cylindrical)
 - Projection = car0 or Aitoff0 (for 0° on left border)
 - In both cases, keep View Sky system = Equatorial
 
-<img src="img/TOPCAT_SkyPlot_cyl.png" width="500" alt="4">  
+<img src="img/TOPCAT_SkyPlot_cyl.png" width="500" >  
+
+*Fig. 2: Cylindrical map in TOPCAT in a SkyPlot window*
+
 
 #### Standard settings for planetary maps in TOPCAT PlanePlot (cylindrical)
 
@@ -117,25 +137,37 @@ The older PlanePlot window is still available to produce 2D cylindrical maps, an
 
 - X Label = Longitude
 
-<img src="img/TOPCAT_planePlot.png" width="500" alt="4">  
+<img src="img/TOPCAT_planePlot.png" width="500" > 
 
-### 2- Aladin
+*Fig. 3: Cylindrical map in TOPCAT in a PlanePlot window*
+ 
+
+### 2.2- Aladin
 
 #### Standard settings for planetary maps and HiPS in Aladin:
 
 Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to handle Planetary data, which needs to be validated — go to Edit > User preferences and check the Planetary data box, then restart. Planetary data collections will become available from the left menu of Aladin.
 
-Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed in very efficiently. Planetary HiPS are available from the left menu, under Collection / Solar System, providing global image coverage of many bodies.
+
+<img src="img/Aladin_setup.png" width="300" >  
+
+*Fig. 4: Aladin preferences window: check the last item*
+
+
+Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed in very efficiently. Planetary HiPS are available from the data tree on the left, under Collection / Solar System, providing global image coverage of many bodies (satellites are in the planet directory).
 
 **• To display a HiPS:**
 
 - In the fields on top of the window, set Frame to "Planet" or "Planet deg" - this will use a grid in degrees (counted E and W from 0 - this is not the IAU convention, but this is OK).
 - Set Projection to Spheric (which is actually: orthographic), Cartesian (actually: cylindrical), or Mercator for most applications.
-- Aitoff and Mollweide projections are similar to sinusoidal, with all the surface visible simultaneously; keep them centered on (0°,0°).
+- Aitoff and Mollweide both provide a complete view of the surface (similarly to historical sinusoidal maps), with lesser deformation at high latitudes than cylindrical or Mercator. Mollweide preserves areas, Aitoff doesn't. Keep them both centered on (0°,0°).
 - In properties, ".longitude" should be set to "ascending" for correct orientation.
 - The grid button is on the bottom left of the display
 
-<img src="img/Aladin_Ceres.png" width="500" alt="4">  
+<img src="img/Aladin_Ceres.png" width="500" >  
+
+*Fig. 5: Spherical plot in Aladin with standard planetary orientation. The data tree is on the left, the stack on the right.*
+
 
 #### Superposing images on HiPS
 
@@ -150,27 +182,47 @@ New HiPS can also be computed from complete image maps. This is best done in a t
 java -Xmx16g -jar Hipsgen.jar -hhhcar in=Phobos_Viking_Mosaic_40ppd_DLRcontrol.jpg out=Phobos/PhobosHips color=jpg id=yourInstitute/P/Phobos-Viking order=4 INDEX TILES
 ``
 
-You need to identify the optimal HiPS order that preserves the map resolution, and also to check that the HiPS is correctly oriented in Aladin. If longitudes are reversed, set ".longitude" to "descending" in properties (it may be more convenient to invert the map before conversion to HiPS).
+You first need to identify the optimal HiPS order that preserves the map resolution —&nbsp;see [https://ivoa.net/documents/HiPS/index.html](https://ivoa.net/documents/HiPS/index.html
 
-To use the new HiPS, just drop the PhobosHips directory on Aladin window.
+Also check that the HiPS is correctly oriented in Aladin. If longitudes are reversed, set ".longitude" to "descending" in properties (it may be more convenient to invert the map before conversion to HiPS).
+
+To use the new HiPS, just drop the PhobosHips directory itself on the Aladin window.
 
 On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc).
 
-### 3- AladinLite
+### 2.3- AladinLite
 
-AladinLite has functionalities similar to Aladin but is a different software:
+AladinLite has functionalities similar to Aladin but is a different software, with different Planetary data mode than Aladin Desktop:
 
-- AladinLite is typically integrated in a web page, where it provides display capacities.
-- It has a different Planetary data mode - options need to be implemented when AladinLite is installed in the web page, see developer doc: [https://aladin.cds.unistra.fr/AladinLite/doc/](https://aladin.cds.unistra.fr/AladinLite/doc/).
-- The coordinate system defaults to ICRS. Although no planetary system is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
-- A very handy feature is to replace the Simbad resolver of celestial objects by a similar functionality connected to the USGC Gazetteer of Planetary Nomenclature —&nbsp;see here: [https://aladin.cds.unistra.fr/AladinLite/planets-explorer/](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
+- AladinLite is typically integrated in a web page, where it provides display capacities and SAMP connectivity. 
+- Options are activated when AladinLite is installed in the web page, see the developer doc if you're concerned: [https://aladin.cds.unistra.fr/AladinLite/doc/](https://aladin.cds.unistra.fr/AladinLite/doc/)
 
-### 4- Further topics
+For the planetary context (e.g., in the VESPA geoportal):
+ 
+- The coordinate system defaults to ICRS. Although no specific planetary system is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
+- The Simbad resolver of celestial objects is replaced by a similar functionality connected to the USGS Gazetteer of Planetary Nomenclature —&nbsp;see it here in action: [https://aladin.cds.unistra.fr/AladinLite/planets-explorer/](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
+- The Stack menu allows the user to both display new HiPS layers or to save overlays on disk (in particular MOC footprints)
 
-Please contact the VESPA team for support: support.vespa @ obspm.fr
+Most planetary options are available in the [VESPA geoportal](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md)
+
+<!-- ## 3- Further topics -->
+
+
+## 3- SAMP connectivity check
+
+SAMP is a VO protocol to share information between applications on your machine, including web pages. It relies on the SAMP hub to exchange messages - these can point to a file or convey information such as feature coordinates. Non-VO applications may also benefit from SAMP connectivity through plugins. Beware that applications do not accept all SAMP messages, in particular not all data types (e.g., TOPCAT will only receive tables).
+
+SAMP is commonly used to send data from the VESPA portal to VO tools, and between VO tools. It also maintains windows synchronized among VO applications. Upon the first call, the application must be registered manually with the hub —&nbsp;a dialogue will open to authorize this.
+
+Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
+
+
+
 
 ## Links
 
 More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
 
 VESPA data portal: [https://vespa.obspm.fr](https://vespa.obspm.fr)
+
+VESPA team for support: support.vespa @ obspm.fr

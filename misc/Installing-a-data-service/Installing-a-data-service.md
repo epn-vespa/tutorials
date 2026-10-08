@@ -91,7 +91,7 @@ There is no requirement on the file format, although of course some are more con
 You normally want to use a standard format of your field, if there is one - which means that you don't have to convert existing files. However:
 
 * It is much better to use a self-described format, with a label containing metadata and references (fits, VOtable, PDS, etc) -  ascii files with no header or CSV files are not really traceable once downloaded and are a common source of problems.
-* You may want to use a format that display tools such as [TOPCAT](https://www.star.bris.ac.uk/~mbt/topcat/) or [Aladin](https://aladin.cds.unistra.fr/) can handle - that would greatly help manipulating your data later.
+* You may want to use a format that display tools such as [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat//) or [Aladin](https://aladin.cds.unistra.fr/) can handle - that would greatly help manipulating your data later.
 
 
 ### 4- Further topics
