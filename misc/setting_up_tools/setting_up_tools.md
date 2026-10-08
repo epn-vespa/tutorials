@@ -1,10 +1,10 @@
-## Setting up VO tools for planetary context
+## Configuring VO tools for planetary data
 
 
 [Summary](#summary)  
 [Introduction](#introduction)  
-[3D shape models](#1--3d-shape-models)  
-[Planetary mapping](#2--planetary-mapping)  
+[Planetary mapping](#1--planetary-mapping)  
+[3D shape models](#2--3d-shape-models)  
 [SAMP connectivity](#3--samp-connectivity-check)  
 [Links](#links)  
 
@@ -40,36 +40,19 @@ Plotting
 
 ## Summary
 
-This tutorial describes convenient settings of VO tools for use with Solar System data.
+This tutorial describes the settings required to display planetary maps, orbital measurements, and Solar System data using standard planetary conventions.
 
 ## Introduction
 
 The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
 
-This tutorial summarizes the basic settings for adapting the display to standard planetary use. 
+This tutorial summarizes the settings required to adapt common VO tools to planetary data.
 
-## 1- 3D shape models
+## 1- Planetary mapping
 
-### 1.1- TOPCAT configuration
+### 1.1- TOPCAT
 
-
-From v4.10-3, TOPCAT supports 3D formats in a limited and exploratory form. On some TOPCAT versions, the "ver" option is not available by default when reading a file. If not, you need to enable this option by setting a system property. The simplest way is to add a line:
-
-``
-startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
-``
-
-to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exist).
-
-The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
-
-Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to optimise the display of 3D shape models.
-
-## 2- Planetary mapping
-
-### 2.1- TOPCAT
-
-TOPCAT includes several mapping tools (windows) usable to display planetary maps.
+TOPCAT includes several mapping tools (windows) that can be used to display planetary maps.
 
 #### Standard settings for planetary maps in  TOPCAT SkyPlot
 
@@ -142,11 +125,11 @@ The older PlanePlot window is still available to produce 2D cylindrical maps, an
 *Fig. 3: Cylindrical map in TOPCAT in a PlanePlot window*
  
 
-### 2.2- Aladin
+### 1.2- Aladin
 
 #### Standard settings for planetary maps and HiPS in Aladin:
 
-Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to handle Planetary data, which needs to be validated — go to Edit > User preferences and check the Planetary data box, then restart. Planetary data collections will become available from the left menu of Aladin.
+Aladin is initially a sky atlas with VO capacities. Aladin has a special mode to handle Planetary data, which needs to be activated — go to Edit > User preferences and check the Planetary data box, then restart. Planetary data collections will become available from the left menu of Aladin.
 
 
 <img src="img/Aladin_setup.png" width="300" >  
@@ -190,7 +173,7 @@ To use the new HiPS, just drop the PhobosHips directory itself on the Aladin win
 
 On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc).
 
-### 2.3- AladinLite
+### 1.3- AladinLite
 
 AladinLite has functionalities similar to Aladin but is a different software, with different Planetary data mode than Aladin Desktop:
 
@@ -205,7 +188,26 @@ For the planetary context (e.g., in the VESPA geoportal):
 
 Most planetary options are available in the [VESPA geoportal](https://github.com/epn-vespa/tutorials/blob/master/surfaces/geoportal_demo/Geoportal_demo.md)
 
-<!-- ## 3- Further topics -->
+
+
+## 2- 3D shape models
+
+### 2.1- TOPCAT configuration
+
+
+From v4.10-3, TOPCAT supports 3D formats in a limited and exploratory form. On some TOPCAT versions, the "ver" option is not available by default when reading a file. If not, you need to enable this option by setting a system property. The simplest way is to add a line:
+
+``
+startable.readers=uk.ac.starlink.table.formats.VerTableBuilder
+``
+
+to a file ~/.starjava.properties located in your home directory (add this file if it doesn't already exist).
+
+The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
+
+Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to optimise the display of 3D shape models.
+
+
 
 
 ## 3- SAMP connectivity check
@@ -217,6 +219,8 @@ SAMP is commonly used to send data from the VESPA portal to VO tools, and betwee
 Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
 
 
+
+<!-- ## 3- Further topics -->
 
 
 ## Links

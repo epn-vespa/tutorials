@@ -23,7 +23,7 @@ These tutorials provide a recommended entry point for new users:
 | 🟢    | [Simple data access](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/VESPA_access.pdf)                           | VESPA portal                                                      |
 | 🟢    | [VESPA portal walkaround](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/vespa-portal.md)                           | VESPA portal                                                      |
 | 🟢    | [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md)     | VESPA portal, TOPCAT, CASSIS, SPLAT-VO, Aladin, TAPhandle, python |
-| 🟢    | [Setting up VO tools for planetary context](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) | TOPCAT, Aladin, AladinLite                                        |
+| 🟢    | [Configuring VO tools for planetary data](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md) | TOPCAT, Aladin, AladinLite                                        |
 
 **Levels**:
 
