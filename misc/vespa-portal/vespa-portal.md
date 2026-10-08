@@ -1,32 +1,28 @@
 ## Overview of the VESPA portal
 
-* [Authors](#authors)
-* [Change log](#change-log)
-* [Summary](#Summary)
-* [Introduction](#Introduction)
 
-
-## Authors:
-
-S. Erard, C. Chauvin
+[Summary](#Summary)  
+[Introduction](#Introduction)  
+[Entry page](#Entry-page)  
+[Service Pages](#Service-Pages)  
+[To go further](#To-go-further)  
+[References](#References)  
 
 ## Change log
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
 | 0.x           | S. Erard      | on line help ~2020  |
-| 1.0           | S. Erard      | 14/11/2024  |
+| 1.0           | S. Erard, C. Chauvin      | 14/11/2024 after upgrade |
+| 1.1           | S. Erard, C. Chauvin      | 8/10/2026  |
 
 
 
 
 
-  
+## Summary
 
-
-# Summary
-
-VESPA (Virtual European Solar and Planetary Access) is an integrated system connecting many data services related to Planetary Science and solar Physics  —&nbsp;see the [main VESPA site](http://www.europlanet-vespa.eu/).
+VESPA (Virtual European Solar and Planetary Access) is an integrated system connecting many data services related to planetary science and solar physics  —&nbsp;see the [main VESPA site](http://www.europlanet-vespa.eu/).
 
 This tutorial provides an overview of the [VESPA data portal](https://vespa.obspm.fr). A shorter documentation is available in the portal from the upper right menu (*Help*> How to use)
 
@@ -37,19 +33,24 @@ VESPA is a facility for Solar System data which is intended to:
 * help users find data of interest for their research
 * help research teams make their data available directly at limited cost
 
-VESPA relies on the Virtual Observatory framework, and enlarges it to support Solar System data. It is therefore a distributed infrastructure of data servers connected through a registry. The VESPA portal is a dedicated client that allows the user to query all such data services simultaneously, to identify data of interest from science-oriented parameters, and to plot and analyze data on-line using standard techniques. 
+VESPA relies on the Virtual Observatory framework, and enlarges it to support Solar System data. It is therefore a distributed infrastructure of data servers connected through a registry. 
 
+>The VESPA portal is a dedicated client that allows the user to query all such data services simultaneously, to identify data of interest from science-oriented parameters, and to plot and analyze data on-line using standard techniques. 
 
+A one-slide presentation is available [here](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/VESPA_access.pdf)                         
 
 # Entry page
 
-The entry page is divided in 2 columns. The leftmost one is the query area, the large one is the result display area. A menu under *Help* in the upper right corner provides links to external tools and quickstart help.
+The entry page is divided in 2 columns (Fig. 1). The leftmost one is the query area, the large one is the result display area. A menu under *Help* in the upper right corner provides links to external tools and quickstart help.
 
-<img src="img/Portal_entry.png" width="500" alt="image">
+<img src="img/Portal_entry.png" width="500" >
+
+*Fig. 1: Entry page of the portal with available data services in green rows*
+
  
 ## Query Form
 
-The left area displays a form that allows the user to build his query. This consists in providing values to standard query fields. Each one acts as a filter which reduces the number of results; none is mandatory (no requested value = no filtering). Fields are grouped in thematic panels, with the "*Main parameters*" panel open by default. Contextual help is displayed when hovering the mouse over the field name for 1s. 
+The left area displays a form that allows the user to build their query. This involves providing values to standard query fields. Each one acts as a filter which reduces the number of results; none is mandatory (no requested value = no filtering). Fields are grouped in thematic panels, with the "*Main parameters*" panel open by default. Contextual help is displayed when hovering the mouse over the field name for 1s. 
 
 ### Main fields
 
@@ -57,18 +58,18 @@ The left area displays a form that allows the user to build his query. This cons
 
 **Target Name**: Start typing a Solar System object name — IAU names are expected. The quaero name resolver is available for field completion and disambiguation. If a target class is already selected, the name resolver will only look for targets in this class - uncheck this if you don't get the expected results. When using quaero, all known aliases of the target are included in the query.
 
-**Coordinates**: To search by coordinates (in "*Location*" panel) first select a spatial frame type — this will adapt the nature of coordinates to enter. 
+**Coordinates**: To search by coordinates (in the "*Location*" panel) first select a spatial frame type — this will adapt the nature of the coordinates to enter. 
 
-**Longitudes**: In body-fixed coordinates, longitudes always range from 0° to 360° eastward (IAU planetocentric convention).
+**Longitudes**: In body-fixed coordinates, EPN-TAP longitudes always range from 0° to 360° eastward (this is the IAU planetocentric convention).
 
 **Spectral range**: First select the unit (Hz, µm, or cm-1) to set the scale as frequency, wavelength, or wavenumber, then enter range.
 
 **Time\_min and Time\_max**: are entered and displayed as ISO strings in the portal (but they are encoded as Julian Days in the service table).
 
-**Measurement type** (in "*Data reference*" panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System); or have a look at a service of interest to see how your preferred value is encoded.
+**Measurement type** (in the "*Data reference*" panel) describes the physical quantities provided in the service, encoded as UCDs. An interactive resolver of IVOA UCDs is available [here](http://dc.zah.uni-heidelberg.de/ucds/ui/ui/form); a more complete list is available [here](https://www.ivoa.net/documents/UCD1+/) (including values defined for the Solar System). Or have a look at a service of interest to see how your preferred value is encoded.
 
 
-### Send Query
+### Sending a query
 To send the query, click the blue "*Submit*" button at the bottom of the column.
 
 ### ADQL queries
@@ -96,7 +97,7 @@ To issue more sophisticated queries on a single service (or to several TAP servi
 The main area displays all connected services with the number of results - by default the number of rows they contain.
 When submitting a query, the central area is rebuilt to display the number of matches in each connected service. Services containing elements matching the query are displayed first, in green. Services in error are displayed in red - usually because they are not reachable at that time (the download icon is still available to get the error message).
 
-* Use the "**Service categories**" menu to restrain display and searches to services pertaining to a science field.
+* Use the "**Service categories**" menu to restrict display and searches to services pertaining to a science field.
 * Click on a service title to access detailed content (service mode) - its results can also be downloaded or sent to TOPCAT directly.
 * The cog wheel switches to **Custom mode**, where you provide the url and schema name of any EPN-TAP service. Such services do not have to be declared in the registry (i.e., unpublished services are accessible).
 * Some EPN-TAP services are declared in the IVOA registry but not listed in the entry page of the VESPA portal — this is because they haven't passed a complete review yet. Those can be queried individually in Custom mode.
@@ -106,23 +107,28 @@ When submitting a query, the central area is rebuilt to display the number of ma
 ### Additional queries
 
 * **Results Compilation**: Below the list of services, an extra row groups the results from all services in a single table (with some limitation in result number). This table cannot be displayed in the portal but can be sent to TOPCAT, or downloaded as a VOTable.
-* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc), you have to go the "Data Sets and Information" section at the bottom of the page to see the actual results (usually on several pages). This function is only available when using the query form (not the ADQL query mode).
+* **NASA keyword search**: The user's EPN-TAP query is converted to address the NASA PDS catalogue service, which is limited to the dataset level. The link provided in the portal leads to a NASA page listing results found in both NASA and ESA PDS archives. This page starts with a list of links grouped in various categories (agency, mission, instrument, etc), go the "Data Sets and Information" section at the bottom of the page to see the actual results (usually on several pages). This function is only available when using the query form (not the ADQL query mode).
 
 
 # Service Pages
-Clicking a service row in the global result area enters the service mode: the main area now displays a table of results described by many parameters in column. By default, only the top of the table is displayed with a selection of columns. The set of buttons below the green info box are used to set the table layout (number of columns). All columns are displayed by clicking the "**Show all**" button. The exposed table can be enlarged with the "*Show xx entries*" button at the bottom left corner, and browsed with the buttons at the bottom right corner.
+Clicking a service row in the global result area enters the service mode: the main area now displays a table of results described by many parameters in columns (Fig. 2). By default, only the top of the table is displayed with a selection of columns. The set of buttons below the green info box are used to set the table layout (number of columns). 
 
-<img src="img/Service_page.png" width="500" alt="image">
+* All columns are displayed by clicking the "**Show all**" button. 
+* The exposed table can be enlarged with the "*Show xx entries*" button at the bottom left corner, and browsed with the buttons at the bottom right corner.
+
+<img src="img/Service_page.png" width="500" >
+
+*Fig. 2: Service page displaying all results as a table*
+
 
 
 * The **Title box** contains global information, including a link to the main web site of the service, if available.
-* In the default **Tabular View** a thumbnail is displayed when hovering the mouse over the table (if provided by the service). You can switch to **Gallery View** to display all thumbnails together.
+* In the default **Tabular View** a thumbnail is displayed when hovering the mouse over the table (if provided by the service). You can switch to **Gallery View** to display all thumbnails together (Fig. 3).
 
-<div style="text-align: right;"><img src="img/GalerieBASS2000.png" width="600" alt="image"  /></div>
 
 
 * The left menu is still available to change or refine your query to the service displayed. All EPN-TAP parameters, including columns specific to this service, are available from the "*Other*" panel. Click the "+" button to use several such parameters, "x" to remove one. 
-* Clicking on the table **column header** switches the spectral scale and unit between Hz, cm^-1 and µm.
+* Clicking spectral units in the **column header** switches the scale and unit between Hz, cm^-1 and µm.
 * Some values provided in table cells can be clicked:
 
 
@@ -132,12 +138,17 @@ Clicking a service row in the global result area enters the service mode: the ma
 | thumbnail\_url         | Small image of this product     |
 | external\_url         | Detailed web page for this granule    |
 | datalink        | List of related links for this granule       |
-| s\_region          | footprint as contour: copy or SAMP    |
-| coverage             | footprint as MOC: copy or SAMP      |
+| s\_region          | footprint as contour: copy or send    |
+| coverage             | footprint as MOC: copy or send      |
 
+
+<img src="img/GalerieBASS2000.png" width="600" >
+
+
+*Fig. 3: Gallery view of the service page*
 
 ## Mouse actions
-*   **Selections**: Individual results can be selected/unselected by clicking on table rows, using your system shortcuts. "*Select all*" / "*Reset*" buttons are available at the top of the table.
+*   **Selections**: In both tabular and gallery views, individual results can be selected/unselected by clicking and using your system shortcuts. "*Select all*" / "*Reset*" buttons are available at the top of the table.
 
 
 ## Data & metadata retrieval
@@ -145,13 +156,13 @@ Information can be sent to open VO applications using the local menus at the bot
 
 * **Metadata/Send table**: Send the description table to VO applications (in VOTable format, typically handled by TOPCAT).
 
-* **Data/Send** [type]: Send data file(s) with specified data type - will open in VO applications supporting this data type, e.g., images in Aladin (see "*VO tools*" under "*Help*"). Other applications supporting the SAMP protocol may accept data (e.g. ds9, ImageJ and QGIS with SAMP plugin, etc). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
+* **Data/Send** [type]: Send data file(s) with specified data type via the SAMP protocol - they will open in VO applications supporting this data type, e.g., images in Aladin (see "*VO tools*" under "*Help*"). If no such application is open, the portal will try to launch a java webstart (you'll need to launch it manually in case of failure). Other applications supporting SAMP may accept data (e.g. ds9, ImageJ, and QGIS with SAMP plugin, etc). This menu is greyed out when the data are scalars values (i.e., included in the table itself).
 
 | Data type       | Tool        |
 | ------------- |:-------------:|
 | Tables           | TOPCAT      |
 | Spectra         | CASSIS, Splat-VO     |
-| Images          | Aladin, ImageJ with SAMP plugin, possibly ds9    |
+| Images          | Aladin, ImageJ with SAMP plugin,  ds9    |
 | CDF             | TOPCAT      |
 | VIRTIS PDS Cubes        | APERICubes      |
 | Das2stream          | Autoplot      |
@@ -168,7 +179,7 @@ Information can be sent to open VO applications using the local menus at the bot
 
 The two menus at bottom right provide support functions when available:
 
-* **Footprints**: Send the footprints of selected rows to Aladin and TOPCAT if open, as contours or MOCs.
+* **Footprints**: Send the footprints of selected rows to Aladin and TOPCAT (if open), as contours or MOCs.
 * **Download thumbnails**: Will zip thumbnails of the selected rows.
 
 **In the SELECT row** at the bottom the "*Download VOtable*" icon will download all results - copying the associated link will store the complete TAP request for future use.
@@ -177,12 +188,13 @@ The two menus at bottom right provide support functions when available:
 
 More sophisticated queries can be handled from astropy, other VO libraries or TAP clients, see:
 
+* [Accessing EPN-TAP services from different tools](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md)
 * [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx) ](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)
-* [EPN-TAP services: Using TopCat as a client](https://github.com/epn-vespa/tutorials/blob/master/misc/EPN-TAP-services-Using-TopCat-as-a-client/EPN-TAP_services-Using_TopCat_as_a_client.md)
 
 # References
 
-More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
+* [VESPA tutorials](https://github.com/epn-vespa/tutorials/)
+* More information on VESPA: [http://www.europlanet-vespa.eu/](http://www.europlanet-vespa.eu/)
 
 
 
