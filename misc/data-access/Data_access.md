@@ -25,25 +25,27 @@ We're showing how to search for data in EPN-TAP data services from various envir
 
 ### Requirements and dependencies
 
+This tutorial refers to several standard concepts of the Virtual Observatory. A glossary is available [here](https://ivoa.net/astronomers/vo_glossary/).
+
 Download the lastest versions of VO tools: 
 
-TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
+* TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
 
-SPLAT-VO: [GAVO SPLAT](https://www.g-vo.org/pmwiki/About/SPLAT)     (use 4-beta at time of writing)
+* SPLAT-VO: [GAVO SPLAT](https://www.g-vo.org/pmwiki/About/SPLAT)     (use 4-beta at time of writing)
 
-CASSIS: [https://cassis.irap.omp.eu/](https://cassis.irap.omp.eu/)
+* CASSIS: [https://cassis.irap.omp.eu/](https://cassis.irap.omp.eu/)
 
-Aladin: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
+* Aladin: [https://aladin.cds.unistra.fr/AladinDesktop/](https://aladin.cds.unistra.fr/AladinDesktop/)
 
-• VESPA portal: [https://vespa.obspm.fr](https://vespa.obspm.fr)
+* VESPA portal: [https://vespa.obspm.fr](https://vespa.obspm.fr)
 
-• TAPhandle: [https://saada.unistra.fr/taphandle/](https://saada.unistra.fr/taphandle/)
+* TAPhandle: [https://saada.unistra.fr/taphandle/](https://saada.unistra.fr/taphandle/)
 
-• Astropy / pyvo: [https://www.astropy.org/](https://www.astropy.org/)
+* Astropy / pyvo: [https://www.astropy.org/](https://www.astropy.org/)
 
 ### Keywords
 
-Spectra
+Spectra;
 VO Tools
 
 ## Introduction

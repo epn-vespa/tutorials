@@ -61,7 +61,7 @@ The SkyPlot window is adapted to planetary mapping in 3D (on a rotating sphere, 
 - midLon(c1min, c1max)
 - midLat(c2min, c2max)
 
-In 3D the difference with the celestial sphere is that the planet is observed from outside, and several conventions are different. 3D mapping may be adapted to ellipsoids, as long as the body shape is reasonably regular.
+In 3D the difference with the celestial sphere is that the planet is observed from outside, and several conventions are different. Spherical mapping may be adapted to ellipsoids, as long as the body shape is reasonably regular.
 
 **• For 3D mapping on a sphere:**
 
@@ -83,7 +83,7 @@ In 3D the difference with the celestial sphere is that the planet is observed fr
 
 **• For 2D maps:**
 
-Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were always centered on (0°,0°).
+Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were usually centered on (0°,0°).
 
 (in Axes / Projection)
 
@@ -142,10 +142,16 @@ Aladin uses HiPS as basemaps - they are multiresolution maps which can be zoomed
 **• To display a HiPS:**
 
 - In the fields on top of the window, set Frame to "Planet" or "Planet deg" - this will use a grid in degrees (counted E and W from 0 - this is not the IAU convention, but this is OK).
-- Set Projection to Spheric (which is actually: orthographic), Cartesian (actually: cylindrical), or Mercator for most applications.
-- Aitoff and Mollweide both provide a complete view of the surface (similarly to historical sinusoidal maps), with lesser deformation at high latitudes than cylindrical or Mercator. Mollweide preserves areas, Aitoff doesn't. Keep them both centered on (0°,0°).
 - In properties, ".longitude" should be set to "ascending" for correct orientation.
-- The grid button is on the bottom left of the display
+- The grid button is on the bottom left of the display.
+
+Concerning projections:
+
+- Set Projection to Spheric (which is actually: orthographic), Cartesian (actually: cylindrical), or Mercator for most planetary applications.
+- Mollweide and Aitoff both provide a complete view of the surface similar to the historical NASA sinusoidal maps. They produce less deformation at high latitudes than cylindrical or Mercator. In addition Mollweide preserves areas while Aitoff does not. It is therefore preferred for surface studies. 
+- Unlike in TOPCAT, the coordinate frame can be moved and rotated (except in Cartesian projection) – but maintaining the view centered on (0°,0°) with the poles at top and bottom conforms to the planetary standard.
+- Other projections are available in Aladin, including Tangential (gnomonic), Zenital (zenithal equidistant family), or Stereographic. These may be relevant for solar disk observations or narrow fields of view. 
+
 
 <img src="img/Aladin_Ceres.png" width="500" >  
 
@@ -165,24 +171,24 @@ New HiPS can also be computed from complete image maps. This is best done in a t
 java -Xmx16g -jar Hipsgen.jar -hhhcar in=Phobos_Viking_Mosaic_40ppd_DLRcontrol.jpg out=Phobos/PhobosHips color=jpg id=yourInstitute/P/Phobos-Viking order=4 INDEX TILES
 ``
 
-You first need to identify the optimal HiPS order that preserves the map resolution —&nbsp;see [https://ivoa.net/documents/HiPS/index.html](https://ivoa.net/documents/HiPS/index.html
+You first need to identify the optimal HiPS order that preserves the map resolution —&nbsp;see [https://ivoa.net/documents/HiPS/index.html](https://ivoa.net/documents/HiPS/index.html)
 
 Also check that the HiPS is correctly oriented in Aladin. If longitudes are reversed, set ".longitude" to "descending" in properties (it may be more convenient to invert the map before conversion to HiPS).
 
 To use the new HiPS, just drop the PhobosHips directory itself on the Aladin window.
 
-On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc).
+On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc). In such cases you want to plot your data on 3D shape models - see section 2.
 
 ### 1.3- AladinLite
 
-AladinLite has functionalities similar to Aladin but is a different software, with different Planetary data mode than Aladin Desktop:
+AladinLite has functionalities similar to Aladin but is a different software, with a different Planetary data mode than Aladin Desktop:
 
 - AladinLite is typically integrated in a web page, where it provides display capacities and SAMP connectivity. 
 - Options are activated when AladinLite is installed in the web page, see the developer doc if you're concerned: [https://aladin.cds.unistra.fr/AladinLite/doc/](https://aladin.cds.unistra.fr/AladinLite/doc/)
 
 For the planetary context (e.g., in the VESPA geoportal):
  
-- The coordinate system defaults to ICRS. Although no specific planetary system is currently implemented in AladinLite, you may want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
+- The coordinate system defaults to ICRS. Although no specific planetary system is currently implemented in AladinLite, you want to set the grid to ICRSd. This will display longitudes as d:m:s (E-handed) instead of h:m:s - similar to the EPNCore standard.
 - The Simbad resolver of celestial objects is replaced by a similar functionality connected to the USGS Gazetteer of Planetary Nomenclature —&nbsp;see it here in action: [https://aladin.cds.unistra.fr/AladinLite/planets-explorer/](https://aladin.cds.unistra.fr/AladinLite/planets-explorer/)
 - The Stack menu allows the user to both display new HiPS layers or to save overlays on disk (in particular MOC footprints)
 
@@ -219,8 +225,16 @@ SAMP is commonly used to send data from the VESPA portal to VO tools, and betwee
 Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
 
 
+### 3.1- SAMP in SPLAT-VO
 
-<!-- ## 3- Further topics -->
+SPLAT-VO has a particularity regarding the SAMP setup. By default SPLAT expects to receive VOTables similar to ObsCore or EPN-TAP tables, i.e. tables describing many spectra with links to the spectral data. Such messages will open a window to browse the table and select data of interest, then extract the spectra linked under access_url —&nbsp;this is what happens when you `Send metadata as table` from the VESPA portal.
+
+If you want to send spectra directly in VOTable from other applications, you first need to check the option `Handle table.load.votable as spectra` in the Interop menu. This is sensitive, e.g., with TOPCAT. From the VESPA portal, `Send data as spectra` usually works.
+
+This doesn't affect VOTable directly opened, which are interpreted on the fly.
+
+
+<!-- ## 4- Further topics? -->
 
 
 ## Links
