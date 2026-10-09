@@ -224,8 +224,12 @@ SAMP is commonly used to send data from the VESPA portal to VO tools, and betwee
 
 Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
 
+### 3.1- SAMP from the VESPA portal
 
-### 3.1- SAMP in SPLAT-VO
+If no application supporting the data type you want to send is open, the portal will propose to launch a java webstart.
+If this is continually proposed even when the supporting application is running, try and deactivate any proxy in your browser - if all else fails, you can download the data and open it directly in the application.
+
+### 3.2- SAMP in SPLAT-VO
 
 SPLAT-VO has a particularity regarding the SAMP setup. By default SPLAT expects to receive VOTables similar to ObsCore or EPN-TAP tables, i.e. tables describing many spectra with links to the spectral data. Such messages will open a window to browse the table and select data of interest, then extract the spectra linked under access_url —&nbsp;this is what happens when you `Send metadata as table` from the VESPA portal.
 
