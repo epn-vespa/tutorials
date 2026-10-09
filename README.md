@@ -108,11 +108,10 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 
 # Reference material
 
-These tutorials focus on technical methods, coordinate systems, and reusable procedures.
+These tutorials focus on technical methods, coordinate systems, and reusable procedures. They describe Astropy procedures with planetary coordinates:
 
 * [Mars body-fixed frame and representation conversions (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/bodyfixed-frame-conversions.ipynb)
 * [Planetary images WCS manipulations (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/surfaces/astropy-planetary-coordinate-frames/planetary-images-wcs.ipynb)
-* [Astropy procedures with planetary coordinates](https://github.com/epn-vespa/tutorials/tree/master/surfaces/astropy-planetary-coordinate-frames)
 * [Manipulating fireball network data (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/fireball_networks/Fireball_networks.ipynb)
 
 ---
@@ -126,4 +125,4 @@ These videos originate from the FP7 Europlanet-RI programme (2009–2012). Some 
 * [CRISM cubes in TOPCAT and Aladin](https://github.com/epn-vespa/tutorials/blob/master/surfaces/jra-t4-EPN1-CRISM/jra-t4-EPN1-CRISM-Tutorial.md)
 * [Using QGIS plugin to obtain vector data from VO and place into QGIS](https://github.com/epn-vespa/tutorials/blob/master/surfaces/vo_qgis_plugin/vo-qgis-plugin.md)
 
-These two tutorials are based on the deprecated CRISM service at Constructor University. They still provide indications about sending VO data to the QGIS application.
+These two tutorials are based on the deprecated CRISM service at Constructor University. They still provide indications about sending VO data to the QGIS application (with dedicated plugin).
