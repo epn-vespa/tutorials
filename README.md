@@ -2,7 +2,20 @@
 
 VESPA (Virtual European Solar and Planetary Access) is an integrated system connecting many data services related to the study of the Solar System, mostly developed in the frame of the EC-funded Europlanet programmes — see the main VESPA website: https://www.europlanet-vespa.eu/
 
+**Search, visualise and analyse Solar System data from dozens of archives, in minutes, with or without code.**
+
 The VESPA team has collected a set of tutorials covering data discovery, access, visualization, scientific analysis, and publication of Solar System data services. 
+
+
+👉 **New here?** Start with [Simple data access](https://github.com/epn-vespa/tutorials/blob/master/misc/vespa-portal/VESPA_access.pdf): no installation, just a browser.
+
+👉 **Comfortable with Python?** Jump to the [Jupyter notebook examples](#advanced-access-and-workflows).
+
+👉 **Unfamiliar acronym?** See the [glossary](misc/glossary.md).
+
+&nbsp;
+
+
 
 <img src="https://vespa.obspm.fr/media/images/European-Union-Flag.svg" width="50" alt="EU flag">   Europlanet 2024 RI has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 871149.
 
