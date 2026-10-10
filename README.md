@@ -45,6 +45,8 @@ These tutorials provide a recommended entry point for new users:
 🔴 Advanced
 
 
+**[Glossary](misc/glossary.md)**
+
 
 ---
 
