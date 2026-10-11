@@ -220,6 +220,8 @@ Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surface
 
 Working with spectral data requires care with scales and units. The situation of Solar System data is more complicated than usual in astronomy, because many observations are performed in reflected light. The most common data scales are radiance, reflectance (divided by the solar flux), transmission, emissivity, and other techniques exist (Raman, etc). Some quantities can be normalized in various ways (e.g., reflectance divided by π or cos(i) ). In addition, two main spectral coordinate scales coexist (frequency/wavenumber, wavelength) which come in various units - velocity axes (km/s) are Doppler-shifted frequencies.
 
+EPN-TAP provides access to data files using several units, scales, or conventions. The spectral coverage (`spectral_range_min/max`) is always provided as frequency in Hz in the table (not necessarily in the files), and the spectral quantity is identified in `measurement_type` - but this is not necessarily reflected in the file. Tools use only the information available in the files to handle the data.
+
 - CASSIS performs a check of scales and units before plotting, possibly applying conversions. Support for reflectance may be limited, though.
 - SPLAT-VO performs no check and will happily superpose different quantities (like TOPCAT does). The user has to check plot consistency to avoid, e.g., superposing a radiance in W/m²/µm/sr with a dimensionless reflectance factor.
 - SPLAT-VO can convert units on both axes manually (View > Modify spectral coordinates / data units), but data conversions are limited to flux units.
