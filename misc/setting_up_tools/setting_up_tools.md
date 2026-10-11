@@ -5,7 +5,8 @@
 [Introduction](#introduction)  
 [Planetary mapping](#1--planetary-mapping)  
 [3D shape models](#2--3d-shape-models)  
-[SAMP connectivity](#3--samp-connectivity-check)  
+[Spectra](#3--spectra)  
+[SAMP connectivity](#4--samp-connectivity-check)  
 [Links](#links)  
 
 
@@ -215,8 +216,17 @@ Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surface
 
 
 
+## 3- Spectra
 
-## 3- SAMP connectivity check
+Working with spectral data requires care with scales and units. The situation of Solar System data is more complicated than usual in astronomy, because many observations are performed in reflected light. The most common data scales are radiance, reflectance (divided by the solar flux), transmission, emissivity, and other techniques exist (Raman, etc). Some quantities can be normalized in various ways (e.g., reflectance divided by π or cos(i) ). In addition, two main spectral coordinate scales coexist (frequency/wavenumber, wavelength) which come in various units - velocity axes (km/s) are Doppler-shifted frequencies.
+
+- CASSIS performs a check of scales and units before plotting, possibly applying conversions. Support for reflectance may be limited, though.
+- SPLAT-VO performs no check and will happily superpose different quantities (like TOPCAT does). The user has to check plot consistency to avoid, e.g., superposing a radiance in W/m²/µm/sr with a dimensionless reflectance factor.
+- SPLAT-VO can convert units on both axes manually (View > Modify spectral coordinates / data units), but data conversions are limited to flux units.
+
+
+
+## 4- SAMP connectivity check
 
 SAMP is a VO protocol to share information between applications on your machine, including web pages. It relies on the SAMP hub to exchange messages - these can point to a file or convey information such as feature coordinates. Non-VO applications may also benefit from SAMP connectivity through plugins. Beware that applications do not accept all SAMP messages, in particular not all data types (e.g., TOPCAT will only receive tables).
 
@@ -224,12 +234,12 @@ SAMP is commonly used to send data from the VESPA portal to VO tools, and betwee
 
 Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
 
-### 3.1- SAMP from the VESPA portal
+### 4.1- SAMP from the VESPA portal
 
 If no application supporting the data type you want to send is open, the portal will propose to launch a java webstart.
 If this is continually proposed even when the supporting application is running, try and deactivate any proxy in your browser - if all else fails, you can download the data and open it directly in the application.
 
-### 3.2- SAMP in SPLAT-VO
+### 4.2- SAMP in SPLAT-VO
 
 SPLAT-VO has a particularity regarding the SAMP setup. By default SPLAT expects to receive VOTables similar to ObsCore or EPN-TAP tables, i.e. tables describing many spectra with links to the spectral data. Such messages will open a window to browse the table and select data of interest, then extract the spectra linked under access_url —&nbsp;this is what happens when you `Send metadata as table` from the VESPA portal.
 
@@ -238,7 +248,7 @@ If you want to send spectra directly in VOTable from other applications, you fir
 This doesn't affect VOTable directly opened, which are interpreted on the fly.
 
 
-<!-- ## 4- Further topics? -->
+<!-- ## 5- Further topics? -->
 
 
 ## Links

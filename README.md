@@ -61,7 +61,7 @@ These tutorials illustrate advanced access to EPN-TAP services, advanced VO usag
 | 🟡    | [Accessing metadata and data of a public EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo.ipynb)          | Python, pyvo     |
 | 🟡    | [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb) | Python, pyvo     |
 | 🔴    | [Sending an EPN-TAP query to all EPN-TAP services in python and retrieving cumulative results](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)  | Python, Registry |
-| 🟡    | [Retrieving files under DataLink using TOPCAT](http://www.europlanet-vespa.eu/tutos/VES-HowtoretrievedatalinksfromaselectionofgranulesusingTOPCAT-281024-1345.pdf)                                     | TOPCAT           |
+| 🟡    | [Retrieving files under DataLink using TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/misc/datalink/DataLink.md)                                     | TOPCAT           |
 | 🔴    | [Using ST-MOC: Finding observations of Jupiter in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
 
 ---
