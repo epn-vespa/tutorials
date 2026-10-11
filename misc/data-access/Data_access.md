@@ -27,7 +27,7 @@ We're showing how to search for data in EPN-TAP data services from various envir
 
 This tutorial refers to several standard concepts of the Virtual Observatory. A glossary is available [here](https://ivoa.net/astronomers/vo_glossary/).
 
-Download the lastest versions of VO tools: 
+Download the latest versions of VO tools: 
 
 * TOPCAT: [TOPCAT](https://www.star.bristol.ac.uk/mbt/topcat/)
 

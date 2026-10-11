@@ -84,7 +84,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 
 * [Looking for and plotting Titan atmospheric profiles](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/Atmospheric-profiles/atmospheric_profiles.md)
 * [Imaging spectroscopy: walkaround VIRTIS-Venus-Express](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/EPN-TAP-services-Virtis-Venus-Express-demo/EPN-TAP-services-Virtis-Venus-Express-demo.md)
-* [Comparing vertical profiles in the atmosphere of Mars (SPICAM vs MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/README.md)
+* [Comparing vertical profiles in the atmosphere of Mars (SPICAM vs MCD)](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/profiles_Mars.md)
 * [Matisse used with VIRTIS-VEx](http://www.europlanet-vespa.eu/tutos/MATISSEforVESPAtutorial.pdf)
 
 ## Surfaces and Planetary Mapping
