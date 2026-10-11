@@ -38,6 +38,7 @@ Data
 Tools
 Mapping
 Plotting
+Spectra
 
 ## Summary
 
@@ -45,7 +46,7 @@ This tutorial describes the settings required to display planetary maps, orbital
 
 ## Introduction
 
-The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and enlarges it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
+The VESPA data infrastructure heavily relies on the Virtual Observatory (VO) framework, and extends it to support Solar System data. In particular, classic VO tools are used to provide easy display functionalities to the users. However, those are mainly aimed at plotting objects in a celestial reference frame. Although this is adapted to celestial images of planetary interest (e.g., telescopic images of asteroids or planets), this is not optimal for planetary maps or orbital measurements.
 
 This tutorial summarizes the settings required to adapt common VO tools to planetary data.
 
@@ -84,11 +85,11 @@ In 3D the difference with the celestial sphere is that the planet is observed fr
 
 **• For 2D maps:**
 
-Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimizes deformations near the poles. Sinusoidal maps were usually centered on (0°,0°).
+Two options are available for 2D/flat mapping: car (plate carrée / cylindrical) or Aitoff. The latter is similar to the sinusoidal projection used by NASA in the 90s: all the surface is visible, and it minimises deformations near the poles. Sinusoidal maps were usually centered on (0°,0°).
 
 (in Axes / Projection)
 
-- Projection = car or Aitoff (for 0° at center, range = 0-360°) — you want to use this option for Aitoff
+- Projection = car or Aitoff (for 0° at center, range = 0-360°) — preferred option for Aitoff
 - Projection = car0 or Aitoff0 (for 0° on left border)
 - In both cases, keep View Sky system = Equatorial
 
@@ -178,7 +179,7 @@ Also check that the HiPS is correctly oriented in Aladin. If longitudes are reve
 
 To use the new HiPS, just drop the PhobosHips directory itself on the Aladin window.
 
-On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerated and does not identify unique locations at the surface (e.g., Eros, 67P, etc). In such cases you want to plot your data on 3D shape models - see section 2.
+On this particular example (Phobos): Aladin assumes targets are spherical, therefore large departures from a spherical shape result in mapping errors and unusual representation in 3D. Although you probably don't want to plot Phobos as a 3D sphere, 2D maps (projections other than spheric) are acceptable and commonly used for non-spherical objects. Real problems arise when the lon/lat system is degenerate and does not identify unique locations at the surface (Eros, 67P, etc). In such cases you want to plot your data on 3D shape models - see section 2.
 
 ### 1.3- AladinLite
 
@@ -226,7 +227,18 @@ EPN-TAP provides access to data files using several units, scales, or convention
 - SPLAT-VO performs no check and will happily superpose different quantities (like TOPCAT does). The user has to check plot consistency to avoid, e.g., superposing a radiance in W/m²/µm/sr with a dimensionless reflectance factor.
 - SPLAT-VO can convert units on both axes manually (View > Modify spectral coordinates / data units), but data conversions are limited to flux units.
 
+In SPLAT-VO, you also want to change the title in order to reuse the plots
 
+- With the focus on the plot window, select File > Configure
+- Go to the Title panel
+- Replace the string 'Using default title'
+
+If you need to adjust the plot frame:
+
+- Go to the Limits panel
+- Uncheck Autoscale X/Y
+- Enter your preferred values + enter
+- Click on Draw if needed
 
 ## 4- SAMP connectivity check
 
@@ -234,7 +246,7 @@ SAMP is a VO protocol to share information between applications on your machine,
 
 SAMP is commonly used to send data from the VESPA portal to VO tools, and between VO tools. It also maintains windows synchronized among VO applications. Upon the first call, the application must be registered manually with the hub —&nbsp;a dialogue will open to authorize this.
 
-Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimize such issues. 
+Although all VO applications include a SAMP hub, these are not equivalent: some only implement a subset of the protocol. Standard VO applications display the icons of applications connected to the hub. If an expected application is not visible here, check that your application is actually connected to the SAMP hub (e.g., in Aladin, SPLAT-VO or TOPCAT, this is under the Interop menu). Starting TOPCAT usually helps minimise such issues. 
 
 ### 4.1- SAMP from the VESPA portal
 
