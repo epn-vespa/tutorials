@@ -62,7 +62,7 @@ These tutorials illustrate advanced access to EPN-TAP services, advanced VO usag
 | 🟡    | [Accessing metadata and data of a private EPN-TAP service from Jupyter notebook (VIRTIS-VEx)](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/VVEX_demo_private.ipynb) | Python, pyvo     |
 | 🔴    | [Sending an EPN-TAP query to all EPN-TAP services in python and retrieving cumulative results](https://github.com/epn-vespa/tutorials/blob/master/misc/Jupyter-notebook-access/EPN_TAP_request.ipynb)  | Python, Registry |
 | 🟡    | [Retrieving files under DataLink using TOPCAT](https://github.com/epn-vespa/tutorials/blob/master/misc/datalink/DataLink.md)                                     | TOPCAT           |
-| 🔴    | [Using ST-MOC: Finding observations of Jupiter in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/tree/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
+| 🔴    | [Using ST-MOC: Finding observations of Jupiter in telescopic archives (Jupyter notebook)](https://github.com/epn-vespa/tutorials/blob/master/misc/searching_archives/stmoc-jupiter.ipynb)                                | Python           |
 
 ---
 
@@ -111,7 +111,7 @@ The following tutorials illustrate how VESPA and VO tools can be used in various
 * [Mars Global Surveyor plasma data compared with models](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/Mars-Global-Surveyor-plasma-data-compared-with-models/Mars-Global-Surveyor-plasma-data-compared-with-models.md)
 * [Magnetodisc modelling](https://github.com/epn-vespa/tutorials/blob/master/magnetospheres/MDISC/README.md)
 * [ExPRES/MASER modelling of radio emissions](https://github.com/epn-vespa/tutorials/blob/master/exoplanets/ExPRES-tutorial/ExPRES-Tutorial.md)
-* [HAPI — heliophysics time-series](http://www.europlanet-vespa.eu/tutos/hapi-tutorial.pdf)
+<!-- * [HAPI — heliophysics time-series](http://www.europlanet-vespa.eu/tutos/hapi-tutorial.pdf) -->
 
 ## Exoplanets
 
