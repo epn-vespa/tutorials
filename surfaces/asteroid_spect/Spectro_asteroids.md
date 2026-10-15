@@ -54,17 +54,17 @@ This tutorial compares observational spectra of 4 Vesta with laboratory spectra 
 
 Open TOPCAT. 
 
-In the icon bar of the main window, click the icon: Open… SQL
+• In the icon bar of the main window, click the icon: Open… SQL
 
-In the Select service pane, type keyword = PADC
+• In the Select service pane, type keyword = PADC
 
-Select http://voparis-tap-planeto.obspm.fr/tap & click Use service - this changes pane
+• Select http://voparis-tap-planeto.obspm.fr/tap & click Use service - this changes pane
 
-In the ADQL text field, type:
+• In the ADQL text field, type:
 
 `SELECT TOP 1000 * from spectro_asteroids.epn_core where target_name = 'Vesta'` 
 
-Click Run query (Fig. 1)
+• Click Run query (Fig. 1)
 
 <img title="TOPCAT query panel" src="img/TOPCAT_query.png" alt="TOPCAT_query.png" width="493">
 
@@ -72,15 +72,15 @@ Click Run query (Fig. 1)
 
 
 
-After a few seconds, the table should be added to the table list (main window)
+After a few seconds, the table should be added to the table list of the main window
 
 • Click the Display Table cells icon to open it — this is the same table you would see in the VESPA portal, except that units are not converted (time is in JD, spectral range in Hz…).
 
-Look at column content. This service is a compilation of various spectral collections of Solar System objects, most of which are distributed by VizieR (hence the type of references in granule_gid, etc).
+Look at the first column content. This service is a compilation of various spectral collections of Solar System objects, most of which are distributed by VizieR (hence the type of references in granule_gid, etc).
 
 • With the focus on the main window and this table selected, go to the Menu : Views / Activate actions
 
-Click and select Plot table, click Invoke now…  The current spectrum should display in a plot window
+• Click and select Plot table, click Invoke now…  The current spectrum should display in a plot window
 
 Go to the table window, select another row; it should display upon selection (wait a second if the interface does not react, or try another row). You can navigate quickly in the table with the vertical arrows.
 
@@ -107,7 +107,7 @@ The SPLAT table pane should pop up
 
 these 5 spectra should load and plot in a single window 
 
-(the same thing works for the 2 spectra from Usui et al; however, you need to send them separately because of different unit/scale; the 4 fits spectra won't plot in SPLAT for formatting reasons)
+> The same thing works for the two spectra from Usui et al; however, you need to send them separately because of different unit/scale; the four fits spectra won't plot in SPLAT for formatting reasons.
 
 • Identify your preferred spectrum of Vesta in the NIR range.
 
@@ -151,7 +151,7 @@ The actual ADQL query is displayed below the table (it can be used in TOPCAT, CA
 
 The VESPA portal hides the technicalities of ADQL queries behind a user-friendly interface.
 
-• With TOPCAT and SPLAT-VO still open, click All metadata / Send Table (not spectra)
+• With TOPCAT and SPLAT-VO still open, click All metadata / Send Table (not Spectra)
 
 The result table will be added to the Table list of TOPCAT
 
@@ -159,7 +159,7 @@ The result table will be added to the Table list of TOPCAT
 
 ### 2- Display and compare spectra in SPLAT-VO
 
-In SPLAT-VO the table pane opens and lists the table sent via SAMP (this pane is actually the ObsCore query window, which can display EPNCore tables).
+In SPLAT-VO the table pane opens and lists the table sent via SAMP (this panel is actually the ObsCore query window, which can display EPNCore tables as well).
 
 • Click display all. All spectra (which are linked under access_url) will plot in a single window
 
