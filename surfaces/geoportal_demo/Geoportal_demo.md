@@ -1,19 +1,18 @@
-*S. Erard, Astro-CC Scientific training event, Strasbourg 1/10/2026*
-
-&nbsp;
-&nbsp;
- 
 # Spatial searches — VESPA geoportal demo
 
+### Change log
 
+| Version | Author   | Notes     |
+| ------- | -------- | --------- |
+| 1.0     | S. Erard | 1/10/2026 |
+
+• Demonstration during the **Astro-CC Scientific Training event,** Strasbourg 1/10/2026 
 
 
 
 The VESPA geoportal is a web-based discovery and visualization environment for planetary data. It is intended to find observations, measurements, or catalogues entries georeferenced on a planetary surface.
 
 Its functionalities are therefore similar to GIS (Geographic Information System) commonly used in planetary science, such as JMars. Unlike traditional GIS, it relies entirely only VO standards and protocols, and is interfaced with EPN-TAP data services. Because the Geoportal relies on a local metadata database harvested from EPN-TAP services, spatial searches usually remain interactive even when many services are involved.
-
-
 
 ## Preliminaries - Setting up VO tools
 
@@ -22,7 +21,6 @@ VO tools default to standard celestial conventions, which differ from those used
 See here to setup TOPCAT and Aladin: [https://github.com/epn-vespa/tutorials/blob/master/misc/setting\_up\_tools/setting\_up\_tools.md](https://github.com/epn-vespa/tutorials/blob/master/misc/setting_up_tools/setting_up_tools.md)
 
 We will use HiPS (multiresolution maps) and MOC (healpix-based footprints). See here how they work: [https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin\_Hips\_MOC/Images\_Aladin.md](https://github.com/epn-vespa/tutorials/tree/master/surfaces/Aladin_Hips_MOC/Images_Aladin.md)
-
 
 ## Selecting craters in a region of interest
 
@@ -38,8 +36,6 @@ Notice the number of data elements found in EPN-TAP services (top right in the g
 
 Use the grid and the resolver in AladinLite (relying on the USGS gazetteer of nomenclature)
 
-
-
 ### Hand-drawn MOC
 
 Draw a region of interest from the menu Draw a MOC. The region of valleys NE of Valles Marineris is fine, size ~ 20 ° x 20° 
@@ -48,15 +44,11 @@ Draw a region of interest from the menu Draw a MOC. The region of valleys NE of 
 
 - Notice how the number of data elements reduces - it now only returns data elements within the drawn MOC.
 
-
-
 In the filter panel on the right, select service\_title = mars\_craters\_lagain 
 
 Click Submit below the filters
 
 - Notice how the number of data elements reduces again (only returns craters within the MOC)
-
-
 
 <img title="Geoportal Mars" src="img/Geoportal_Mars2.png" alt="Geoportal_Mars2.png"  width="600" data-align="center">
 
@@ -71,8 +63,6 @@ Open the table area below the display if you've minimized it. In the result tabl
 Click on the MOC buttan at the left of the table to display selected crater MOC
 
 Click Download VOTable (the big black arrow in the table header) to save it on your disk
-
-
 
 ### Display in TOPCAT
 
@@ -96,8 +86,6 @@ Click Plane plot to display
 
 - Click the Stat Icon (big Sigma) to get the mean and std-dev crater size.
 
-
-
 ### HiPS cutouts
 
 You can also display a small area around the feature of interest, which helps visual inspection of individual features.  In the main window, select the crater table, then select Views > Activate Actions from the menu
@@ -112,9 +100,7 @@ You can also display a small area around the feature of interest, which helps vi
 
 (alternatively, you can send the table via SAMP to Aladin Desktop, and load a HiPS of the planet. Double-clicking on the table will  plot crater centres. When clicking a feature in any window/table, all other displays will remain synchronized).
 
-
 <img title="TOPCAT Mars" src="img/TOPCAT_cutout.png" alt="TOPCAT_cutout.png"  width="600" data-align="center">
-
 
 ## Creating a MOC from a quantitative map
 
@@ -136,14 +122,11 @@ These regions are very small and are plotted on a dark background, you need to z
 
 If you're lost: in this case go to the Jezero area (NE of Syrtis Major ~ 78° E / 21°N, see image below).
 
-
 You can save the current session from the Session menu. You will be able to reload it later from the target selection page.
-
 
 <img title="Mars olivine" src="img/Mars_olivine.png" alt="Mars_olivine.png"  width="600" data-align="center">
 
-
-## Advanced use case — Importing external GIS products 
+## Advanced use case — Importing external GIS products
 
 We're now working with morphological units on Mercury.
 
@@ -157,11 +140,7 @@ Use the file Shapefile\_vent\_327\_deposit.shp, a deposit straddling a small cra
 
 - Drop it on the AladinLite display of the geoportal page. Select order = 12 & mode = union in the popup window
 
-
-
 [this use case makes full sense when using individual spectra from MESSENGER - today we'll use craters instead]
-
-
 
 In the filter section on the right, select the Mercury\_craters service and click Submit
 
@@ -171,11 +150,7 @@ In the filter section on the right, select the Mercury\_craters service and clic
 
 - Again, you can plot their MOC from the left side button of the table
 
-
-
-
 <img title="Geoportal Mercury" src="img/Geoportail_Mercury.png" alt="Geoportal_Mercury.png"  width="600" data-align="center">
-
 
 From the AladinLite Stack menu / Overlays you can save all displayed MOC on disk. The converted shapefile will be saved as an ascii MOC in json format.
 
@@ -185,12 +160,9 @@ By double-clicking on the result table in Aladin, it would open in the drawer be
 
 (the crater centres will plot immediately, but you need to use a filter to draw the contour on this particular planet. You can load it from Catalogue > Create a filter then Advanced mode - use [this file](img/mercury_craters.ajs)). 
 
-
 <img title="Aladin Mercury" src="img/Aladin_Mercury.png" alt="Aladin_Mercury.png"  width="600" data-align="center">
 
-
 A natural application is to rapidly identify spectra within morphological surface units, compute their mean and standard deviation, and browse them to check the homogeneity of spectral properties (or not). This is currently feasible in python; such a functionality in VO tools would make it even more convenient.
-
 
 ## Conclusion
 
@@ -201,5 +173,13 @@ The VESPA Geoportal enables spatial searches across the complete EPN-TAP environ
 **Note**
 
 To ensure interactive performance, the Geoportal relies on a local metadata database periodically harvested from EPN-TAP services worldwide. As a consequence, newly published metadata may not be visible immediately. Most spatial searches remain available even when individual services are temporarily offline, but operations requiring access to the original data products still depend on the corresponding EPN-TAP services (storing the result VOTable & visualizing granules in the VESPA portal).
+
+
+
+---
+
+ This presentation was made during the [OSCARS / Astro-CC Scientific Training event](https://indico.in2p3.fr/event/38575/overview), Strasbourg 1/10/2026 
+
+![](https://indico.in2p3.fr/event/38575/logo-1219911700.png)
 
 

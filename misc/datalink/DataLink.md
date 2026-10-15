@@ -1,24 +1,16 @@
-## How to retrieve DataLinks from a selection of granules using TOPCAT
+## Retrieving DataLinks from a selection of granules using TOPCAT
 
 
 
 [Use Case](#use-case)
-
-[Introduction](#Introduction)  
-
-[Load a subset of your EPN-TAP service in TOPCAT](#Load-a-subset-of-your-EPN-TAP-service-in-TOPCAT)
-
-[Using TOPCAT TAP access](#Using-TOPCAT-TAP-access)
-
-[Using the VESPA portal](#Using-the-VESPA-portal)
-
-[Using the datalink service](#Using-the-datalink-service)
-
-[Use the datalink service on one row](#Use-the-datalink-service-on-one-row)
-
-[Use the datalink service in bulk](#Use-the-datalink-service-in-bulk)
-
-[To go further](#To-go-further)
+[Introduction](#introduction)  
+[Load a subset of your EPN-TAP service in TOPCAT](#load-a-subset-of-your-epn-tap-service-in-topcat)
+[Using TOPCAT TAP access](#using-topcat-tap-access)
+[Using the VESPA portal](#using-the-vespa-portal)
+[Using the datalink service](#using-the-datalink-service)
+[Use the datalink service on one row](#use-the-datalink-service-on-one-row)
+[Use the datalink service in bulk](#use-the-datalink-service-in-bulk)
+[To go further](#to-go-further)
 
 
 
@@ -52,13 +44,14 @@ subsection of the EPN-TAP service 'SPICAM' using TOPCAT.
 
 ## Introduction
 
-DataLink is a VO standard used to both attach associated data or documents, or call a service on the server side (e.g., ephemeris, cutout).
-Datalink actually points to an associated table providing various entries.
+DataLink is a VO standard used both to attach associated data or documents, and to call a service on the server side (e.g., ephemeris, cutout).
+Datalink actually points to an associated table providing various entries, one set of links for each row of the main table. Here we focus on retrieving data files provided this way.
 
-Here we focus on retrieving data files provided this way.
+The first example in this tutorial shows how to access additional data files provided through datalink. We focus on the SPICAM EPN-TAP service of Martian atmospheric profiles. The main product for each row (under access\_url) is a measurement, it is associated with a series of profiles modelled according to various scenarios in the Mars Climate Database (under datalink_url). These links have selected during ingestion of the service to facilitate cross-matching. See [this other tutorial](https://github.com/epn-vespa/tutorials/blob/master/atmospheres/SPICAM_vs_MCD/profiles_Mars.md) for details.
 
-It is important to notice that we can only gather datalinks with a common name at a time.
+TOPCAT makes it easy to gather such files from a collection of selected rows. It is important to notice that we can only gather datalinks with the same ID at a time.
 
+A second example deals with the HST_planeto service. As in several services sharing telescopic observations, each row provides calls to the Miriade ephemeris service using the current target name and time. These return either a table, a web page, or a configuration image of the target.
 
 
 ## Load a subset of your EPN-TAP service in TOPCAT
@@ -139,8 +132,8 @@ Now, to interrogate the datalink service :
 - Click on one row of the epn_core table, the datalink table will be
   displayed
 
-- In this service, the datalink service is  a list of links that point
-  to VOTables, you can click on a type of datalink in the list. For
+- In this service, the DataLink response lists links to VOTables. 
+  You can click on a type of datalink in the list. For
   this example, we will use the ``coldmin`` type of link. Then, select
   the action you want to do with this link. In this case, we want to
   load the VOTable.

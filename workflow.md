@@ -1,62 +1,140 @@
-## Tutorial authoring
+# Contributor guide
 
-### tutorial naming
-Each tutorial is in a directory, optimally with strings indicating:
+This document describes how to write, structure, and maintain a tutorial in the VESPA tutorials repository. 
 
-* topical area (e.g. ```surf```)
-* body (e.g. ```mars```)
-* experiment(s) (e.g. ```HRSC```)
+[Summary](#summary)  
+[Before you start](#before-you-start)  
+[Naming and directories](#naming-and-directories)  
+[Tutorial structure](#tutorial-structure)  
+[Images](#images)  
+[Videos](#videos)  
+[Writing style](#writing-style)  
+[Versioning and change log](#versioning-and-change-log)  
+[Updating content](#updating-content)  
+[Repository and support](#repository-and-support)
 
-Available prefixes include:
+## Summary
 
-* sshd (sshade) - for [Task3: sshade](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+3.+SSHADE)
-* surf (surfaces) - for [Task4: surfaces](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+4.+Surfaces)
-* magn (magnetospheres) - for [Task5: magnetospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+5.+Magnetospheres)
-* smbd (small bodies) - for [Task6: small bodies](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+6.+Small+bodies)
-* atmo (atmospheres) - for [Task 7: atmospheres](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+7.+Atmospheres)
-* exop (explanets) - for [Task 8: exoplanets](https://voparis-confluence.obspm.fr/display/VES/JRA-Task+8.+Exoplanets)
-* misc (miscelaneous) - for content that doesn't particularly fit the above categories
+How to contribute a tutorial: naming conventions, mandatory document structure, image handling, writing style, and the update procedure.
 
-examples tutorial names:
+## Introduction
 
-* surf_mars_crism
-* magn_saturn_cassini
-* surf_moon_craters
-* atmo_titan_vims
+VESPA tutorials are distributed on GitHub as markdown files. They are available here:
 
-## Naming of tutorial directory
+[https://github.com/epn-vespa/tutorials/](https://github.com/epn-vespa/tutorials/)
 
-The directory name of each tutorial should be easy, self-explanatotory and without space, e.g. [cassini-titan-flyby](https://github.com/epn-vespa/tutorials/tree/master/misc/cassini-titan-flyby)
+Typical VESPA tutorials describe a workflow for a certain type of data, using the Virtual Observatory environment. They are intended to introduce the user to this environment while addressing science questions.
 
-## Creation / migration of content 
+## Before you start
 
-Please follow the template on [template](template) and use simple, meaningful image names without spaces in the filename.
+- Browse the [repository](https://github.com/epn-vespa/tutorials) and read 2 or 3 recent tutorials to get the tone and structure (start with the README list of "main" tutorials).
+- Check whether a tutorial already covers your topic — prefer extending or cross-linking an existing one over creating a near-duplicate.
+- Do not convert old PDF/PPT material verbatim, rewrite the content as a step-by-step narrative instead. Keep the old file only as "original version (old)" link if useful.
 
-A [sample](sample) formatted tutorial based on the existing one on the [VESPA wiki](https://voparis-confluence.obspm.fr/pages/viewpage.action?pageId=564111)
+## Naming and directories
 
-* [Embedding content](#embedding-content)
-  * [Images](#images)
-  * [Videos](#videos)
-* [GitHub & VESPA wiki](#github--vespa-wiki)
+Each tutorial lives in its own directory under a topical area:
 
-## Update of content
+* `atmospheres`
+* `exoplanets`
+* `magnetospheres`
+* `misc` (miscellaneous)
+* `surfaces`
 
-Once a tutorial exists, can be updated either directly (if added to the right team, please get in touch with [@arosp](https://github.com/aprossi). Or, you could fork the repository, make your changes and create a pull request. The procedure is described in several tutorials on the internet, e.g. [GitHub's creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
+Directory names: short, self-explanatory, no spaces — e.g. `titan_vims`, `mars_craters`.
 
-##  Embedding content
-Images embedded in a tutorial should be in the [img][template/img] subdirectory of each tutorial.
+Inside the tutorial directory:
 
-### Images
-* Images should be embedde with meaningful, short names and no spaces in the filename. Format preferably PNG or JPEG. 
-* If too big (larger than ~400 px) please resize embedding the full path ("download", not url of location in repo), i.e.
+* the tutorial file: same name as the directory, `tuto_name.md`
+* images: in an `img/` subdirectory (see [Images](#images))
+
+## Tutorial structure
+
+All tutorials follow the same skeleton (use the [template](/template/template.md) as a starting point):
+
+```markdown
+## <Title>
+
+<One-paragraph Summary: what the reader will learn.>
+
+[Table of contents with anchor links]
+
+### Change log
+| Version | Author | Notes |
+| ------- | ------ | ----- |
+| 1.0     | ...    | date  |
+
+### Requirements and dependencies
+<Tools to download, with links; minimal versions if relevant.>
+
+### Keywords
+<Short list, semicolon or line separated.>
+
+## Introduction
+<Context and motivation; what data/services are used.>
+
+## 1- <First step or section>
+...
+
+## To go further
+<Cross-links to related tutorials, references, support contact.>
+```
+
+Rules:
+
+* **Table of contents**: anchors are case-sensitive on GitHub — always use lowercase anchors matching the auto-generated heading ids (e.g. heading `## 1- VESPA portal` → anchor `#1--vespa-portal`). Check every TOC link after the first render.
+* **Summary first**: the reader must know what the tutorial does before any requirement.
+* **Sections**: use numbered top-level sections (`## 1- ...`); keep short, logical steps. Put alternatives and side notes in blockquotes (`> Alternative: ...`).
+* **End every tutorial with "To go further"**: link related tutorials in the repository (relative links), the VESPA portal, and the support contact (support.vespa@obspm.fr). Cross-link both ways: if tutorial A cites tutorial B, B should cite A where relevant.
+* **References**: cite the original material (PDF, paper) with a link, and credit converters/editors in the change log.
+
+## Images
+
+* Store all images in the tutorial's `img/` subdirectory, committed to the repository — never hotlink third-party sites or personal forks (links rot, and the tutorial must remain self-contained).
+* Meaningful, short filenames, no spaces: `TOPCAT_query.png`, not `capture d'écran 2.PNG`. Simple sequential names (`1.png`, `2.png`) are fine and encouraged for step-by-step screenshots.
+* Format: PNG or JPEG, reasonably small file size.
+* Embed with a width setting and a caption, numbered through the whole document:
 
 ```html
-<img src="https://raw.githubusercontent.com/epn-vespa/tutorials/master/template/img/1.png" width="400">
+<img src="img/TOPCAT_query.png" width="600" alt="TOPCAT query">
+
+*Figure 3. TOPCAT: TAP query window.*
 ```
-* In any case, please keep image/screenshot file size reasonably small.
 
-### Videos 
-* Videos can be linked from YouTube/Vimeo or similar video streaming, preferably with a placeholder screenshot, e.g. as described [here](http://stackoverflow.com/questions/4279611/how-to-embed-a-video-into-github-readme-md).
+* Use relative paths (`img/...`) — not absolute URLs to the repository.
+* Prefer fresh screenshots over recycled ones: re-capture when the interface has evolved.
 
-## GitHub & VESPA wiki
-* the working copy of each tutorial is on the [VESPA Tutorial repository](https://github.com/epn-vespa/tutorials). The README.md of each is linked on the [VESPA wiki](http://discussions.europlanet-vespa.eu/) and the level of maturity (draft, final, updated, etc.) is indicated in both the Changes log (e.g. [change log on the sample tutorial](https://github.com/epn-vespa/tutorials/tree/master/template#change-log)) and on the wiki.
+## Videos
+
+Videos can be linked from YouTube/Vimeo or similar, preferably with a placeholder screenshot, e.g. as described [here](http://stackoverflow.com/questions/4279611/how-to-embed-a-video-into-github-readme-md).
+
+## Writing style
+
+* **English**: Keep UK spelling (optimise, colour) as the baseline, but stay consistent within a document — do not mix UK and US spelling in the same tutorial. Tutorials in other languages may be linked as external resources.
+* **Prose, not captions**: never publish a gallery of screenshots without text. A reader must be able to follow the reasoning without guessing from images.
+* **Reproducible steps**: exact menu paths (`VO > EPN-TAP Query`), exact button names, exact ADQL queries in fenced code blocks.
+* **Metadata conventions**: EPNCore columns and parameter names in backticks (`` `access_url` ``, `` `measurement_type` ``); UI elements in plain text with the exact label.
+* **Verify factual claims on screen**: run every step against the current tools before publishing. Check figure captions against what the figure actually shows (a mislabeled figure is worse than no figure).
+* **State limitations honestly**: if a tool does not support something, say so — the collection's value comes from tested, honest content.
+
+## Versioning and change log
+
+* `1.0` — first release of a new tutorial.
+* `1.x` — corrections, additions of steps or figures, updates after re-testing.
+* `2.0` — restructuration (merge with another tutorial, change of scope).
+* One line in the change log per version: date, author, and what changed. The change log is the only place where document maturity is tracked — keep it accurate.
+
+## Updating content
+
+Once a tutorial exists, it can be updated either:
+
+* directly — if you are in charge of the current version
+* by forking the repository, making your changes, and creating a pull request — see [GitHub's creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
+
+When updating, re-test the modified steps on screen and increment the change log. Do not rewrite frozen tutorials in passing: if you spot issues in a tutorial you are not updating, open an issue or contact the author instead of mixing unrelated changes into your pull request.
+
+## Repository and support
+
+* The working copy of each tutorial is in the [VESPA tutorials repository](https://github.com/epn-vespa/tutorials). The README lists the tutorials and is the single point of entry.
+* Markdown is authoritative: old PDF/PPT versions remain available as historical references, but only the .md files are maintained.
+* For any question about the collection, contact the VESPA team: [support.vespa@obspm.fr](mailto:support.vespa@obspm.fr) — use this address in tutorials and documentation instead of personal or older project addresses.

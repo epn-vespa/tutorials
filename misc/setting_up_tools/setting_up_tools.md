@@ -257,9 +257,9 @@ If this is continually proposed even when the supporting application is running,
 
 SPLAT-VO has a particularity regarding the SAMP setup. By default SPLAT expects to receive VOTables similar to ObsCore or EPN-TAP tables, i.e. tables describing many spectra with links to the spectral data. Such messages will open a window to browse the table and select data of interest, then extract the spectra linked under access_url —&nbsp;this is what happens when you `Send metadata as table` from the VESPA portal.
 
-If you want to send spectra directly in VOTable from other applications, you first need to check the option `Handle table.load.votable as spectra` in the Interop menu. This is sensitive, e.g., with TOPCAT. From the VESPA portal, `Send data as spectra` usually works.
+If you want to send spectra directly in VOTable from other applications, you first need to check the option `Handle table.load.votable as spectra` in the Interop menu. This is sensitive, e.g., with TOPCAT. From the VESPA portal, `Send data as spectra` usually works. This doesn't affect VOTable directly opened, which are interpreted on the fly.
 
-This doesn't affect VOTable directly opened, which are interpreted on the fly.
+You have to uncheck this box to revert to the default functioning (i.e., to interpret correctly EPNCore tables received via SAMP).
 
 
 <!-- ## 5- Further topics? -->
