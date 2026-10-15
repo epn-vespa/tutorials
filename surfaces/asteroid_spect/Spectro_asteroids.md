@@ -104,15 +104,15 @@ Open the VESPA portal
 
 • Go to the Relab service — this is a VO interface on a large spectral database of mineral samples in reflectance.
 
-This service is currently under validation, so:
+<!-- This service is currently under validation, so:
 
-select Custom mode under the cog wheel, then type 
+select Custom mode under the cog wheel, then type
 
-Service URL = http://voparis-tap-sandbox.obspm.fr/tap
+Service URL = http://voparis-tap-planeto.obspm.fr/tap
 
-Schema Name = relab (lower case)
+Schema Name = relab (lower case) -->
 
-Click on the single green row, that will open the service table 
+Click on the green row mentioning RELAB, that will open the service table 
 
 • We're looking for possible analogues to Vespa surface materials. Here we are testing pyroxenes fractions from Martian meteorites (which are basaltic materials like Vesta surface).
 
@@ -128,13 +128,13 @@ click Submit
 
 • The result table displays only 13 rows matching the query: SNC meteorites, pyroxene fraction only.
 
-The actual ADQL query is displayed below the table (it can be used in TOPCAT, CASSIS or SPLAT-VO):
+The actual ADQL query is displayed below the table (it can be used in TOPCAT, CASSIS or SPLAT-VO when querying the server at  http://voparis-tap-planeto.obspm.fr/tap):
 
 `SELECT * FROM relab.epn_core WHERE spectral_range_min >= 99930819333333.33 AND spectral_range_max <= 999308193333333.4 AND "sample_classification" LIKE '%mars-met%'`
 
 (the spectral range is converted to Hz as per EPN-TAP standard)
 
-Using the VESPA portal is a simple solution to get around the technicity of ADQL queries.
+The VESPA portal hides the technicalities of ADQL queries behind a user-friendly interface.
 
 • With TOPCAT and SPLAT-VO still open, click All metadata / Send Table (not spectra)
 
