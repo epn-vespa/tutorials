@@ -1,9 +1,9 @@
 ## Comparing vertical profiles in the atmosphere of Mars
 
-[Use case](#use-case) 
-[Summary](#summary) 
-[Introduction](#introduction) 
-[To go further](#To-go-further) 
+[Use case](#use-case)  
+[Summary](#summary)  
+[Introduction](#introduction)  
+[To go further](#To-go-further)  
 
 
 ## Change log
