@@ -1,6 +1,18 @@
 ## Planetary spectra in VO tools
 
 
+
+| [Use case](#use-case) | 
+| [Summary](#summary) |
+| [Spectra of asteroid 4 Vesta](#spectra-of-asteroid-4-vesta) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in TOPCAT](#1--search-spectra-in-topcat) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[2– Display spectra in SPLAT-VO](#2--display-spectra-in-splat-vo) |
+| [Experimental spectra](#experimental-spectra) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in the VESPA portal](#1--search-spectra-in-the-vespa-portal) |
+| &nbsp;&nbsp;&nbsp;&nbsp;[2– Display and compare spectra in SPLAT-VO](#2--display-and-compare-spectra-in-splat-vo) |
+| [To go further](#to-go-further) |
+
+
 ### Change log
 
 | Version | Author   | Notes     |
@@ -60,7 +72,7 @@ Click Run query (Fig. 1)
 
 
 
-After a few sec, the table should be added to the table list (main window)
+After a few seconds, the table should be added to the table list (main window)
 
 • Click the Display Table cells icon to open it — this is the same table you would see in the VESPA portal, except that units are not converted (time is in JD, spectral range in Hz…).
 
@@ -117,7 +129,7 @@ Schema Name = relab (lower case) -->
 
 • Click the green row mentioning RELAB, that will open the service table 
 
-We're looking for possible analogues to Vespa surface materials. Here we are testing pyroxenes fractions from Martian meteorites (which are basaltic materials like Vesta surface).
+We're looking for possible analogues to Vesta surface materials. Here we are testing pyroxenes fractions from Martian meteorites (which are basaltic materials like Vesta surface).
 
 • In the form fields at the left of the interface, 
 
@@ -141,7 +153,7 @@ The VESPA portal hides the technicalities of ADQL queries behind a user-friendly
 
 • With TOPCAT and SPLAT-VO still open, click All metadata / Send Table (not spectra)
 
-The result table will be added in the Table list of TOPCAT
+The result table will be added to the Table list of TOPCAT
 
 
 
@@ -161,7 +173,7 @@ Identify the best matches visually from the SNC meteorites
 
 <img title="" src="img/SNC_plus_Vesta.png" alt="" width="493">
 
-*Fig. 3: reflectance spectra of SNC meteorite samples and Vesta in SPLAT-VO*
+*Fig. 3: Reflectance spectra of SNC meteorite samples and Vesta in SPLAT-VO*
 
 
 Compute the ratio between the Vesta spectrum and the best meteoritic match (icon Add… two spectra). Try several solutions to minimize the residuals. Notice the limitations of this procedure.
@@ -173,6 +185,6 @@ Compute the ratio between the Vesta spectrum and the best meteoritic match (icon
 
 ## To go further
 
-Going further (e.g., determining the best fit, extracting absorption band parameters, etc) requires command line processing under python or another language.
+Going further (e.g., determining the best fit, extracting absorption band parameters, etc) requires command line processing under python or another language. See [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/misc/data-access/Data_access.md) for basic python access.
 
 The simplest solution to exchange data is to store your intermediate results as VOTable or fits files (supported by astropy in python). If you are using another language than python, remember that VOTable is not often supported (ascii or fits may provide a better solution).
