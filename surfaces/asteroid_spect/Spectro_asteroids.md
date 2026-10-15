@@ -2,15 +2,15 @@
 
 
 
-| [Use case](#use-case) |  
-| [Summary](#summary) |  
-| [Spectra of asteroid 4 Vesta](#spectra-of-asteroid-4-vesta) |  
-| &nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in TOPCAT](#1--search-spectra-in-topcat) |  
-| &nbsp;&nbsp;&nbsp;&nbsp;[2– Display spectra in SPLAT-VO](#2--display-spectra-in-splat-vo) |  
-| [Experimental spectra](#experimental-spectra) |  
-| &nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in the VESPA portal](#1--search-spectra-in-the-vespa-portal) |  
-| &nbsp;&nbsp;&nbsp;&nbsp;[2– Display and compare spectra in SPLAT-VO](#2--display-and-compare-spectra-in-splat-vo) |  
-| [To go further](#to-go-further) |
+[Use case](#use-case)   
+[Summary](#summary)   
+[Spectra of asteroid 4 Vesta](#spectra-of-asteroid-4-vesta)   
+&nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in TOPCAT](#1--search-spectra-in-topcat)   
+&nbsp;&nbsp;&nbsp;&nbsp;[2– Display spectra in SPLAT-VO](#2--display-spectra-in-splat-vo)   
+[Experimental spectra](#experimental-spectra)   
+&nbsp;&nbsp;&nbsp;&nbsp;[1– Search spectra in the VESPA portal](#1--search-spectra-in-the-vespa-portal)   
+&nbsp;&nbsp;&nbsp;&nbsp;[2– Display and compare spectra in SPLAT-VO](#2--display-and-compare-spectra-in-splat-vo)   
+[To go further](#to-go-further) 
 
 
 ### Change log
