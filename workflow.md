@@ -1,6 +1,6 @@
 # Contributor guide
 
-This document describes how to write, structure, and maintain a tutorial in the VESPA tutorials repository. 
+This document describes how to write, structure, and maintain a tutorial in the VESPA tutorials repository (2026 version)
 
 [Summary](#summary)  
 [Before you start](#before-you-start)  
@@ -12,6 +12,17 @@ This document describes how to write, structure, and maintain a tutorial in the 
 [Versioning and change log](#versioning-and-change-log)  
 [Updating content](#updating-content)  
 [Repository and support](#repository-and-support)
+
+
+
+## Change log
+
+| Version       | Author        | Notes  |
+| ------------- |:-------------:| -----: |
+| 1.0             | A. P Rossi      |  4/10/2015      |
+| 1.1             | M. Ganglof      |  28/09/2018  |
+| 1.2             | S. Erard      |  10/10/2026  |
+
 
 ## Summary
 
