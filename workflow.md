@@ -19,7 +19,7 @@ This document describes how to write, structure, and maintain a tutorial in the 
 
 | Version       | Author        | Notes  |
 | ------------- |:-------------:| -----: |
-| 1.0             | A. P Rossi      |  4/10/2015      |
+| 1.0             | A. P. Rossi      |  4/10/2015      |
 | 1.1             | M. Ganglof      |  28/09/2018  |
 | 1.2             | S. Erard      |  10/10/2026  |
 
