@@ -2,15 +2,15 @@
 
 
 
-[Use Case](#use-case)
+[Use Case](#use-case) 
 [Introduction](#introduction)  
-[Load a subset of your EPN-TAP service in TOPCAT](#load-a-subset-of-your-epn-tap-service-in-topcat)
-[Using TOPCAT TAP access](#using-topcat-tap-access)
-[Using the VESPA portal](#using-the-vespa-portal)
-[Using the datalink service](#using-the-datalink-service)
-[Use the datalink service on one row](#use-the-datalink-service-on-one-row)
-[Use the datalink service in bulk](#use-the-datalink-service-in-bulk)
-[To go further](#to-go-further)
+[Load a subset of your EPN-TAP service in TOPCAT](#load-a-subset-of-your-epn-tap-service-in-topcat) 
+[Using TOPCAT TAP access](#using-topcat-tap-access) 
+[Using the VESPA portal](#using-the-vespa-portal) 
+[Using the datalink service](#using-the-datalink-service) 
+[Use the datalink service on one row](#use-the-datalink-service-on-one-row) 
+[Use the datalink service in bulk](#use-the-datalink-service-in-bulk) 
+[To go further](#to-go-further) 
 
 
 
