@@ -149,3 +149,4 @@ When updating, re-test the modified steps on screen and increment the change log
 * The working copy of each tutorial is in the [VESPA tutorials repository](https://github.com/epn-vespa/tutorials). The README lists the tutorials and is the single point of entry.
 * Markdown is authoritative: old PDF/PPT versions remain available as historical references, but only the .md files are maintained.
 * For any question about the collection, contact the VESPA team: [support.vespa@obspm.fr](mailto:support.vespa@obspm.fr) — use this address in tutorials and documentation instead of personal or older project addresses.
+* Before committing, always review the list of modified files (`git status`) — never run `git add -A` blindly. Sync-conflict files (e.g., `_BACKUP_`, `_BASE_`, `_REMOTE_` copies created by Syncthing or similar tools when the repository is edited from a synchronized folder) must not be committed; remove them and keep a single editing path for the repository.

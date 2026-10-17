@@ -1,11 +1,15 @@
 ## <Title>
 
-<One-paragraph summary: what the reader will learn and do.>
+
+< One-paragraph summary: what the reader will learn and do.>
+
+<!-- Anchors: lowercase, spaces → hyphens, drop < > and punctuation.
+     "## 1- Search spectra" → "1--search-spectra -->
 
 [Summary](#summary)  
 [Introduction](#introduction)  
-[1- <First section>](#1--<first-section>)  
-[2- <Second section>](#2--<second-section>)  
+[1- <First section>](#1--first-section)  
+[2- <Second section>](#2--second-section)  
 [To go further](#to-go-further)
 
 ### Change log
@@ -25,6 +29,10 @@
 
 <short>; <list>; <of>; <keywords>
 
+## Summary
+
+< Possibly include a short summary with use case and mention of tools or methods involved.>
+
 ## Introduction
 
 <Context and motivation: what data, services, or scientific question this tutorial addresses.>
@@ -35,7 +43,7 @@
 
 <img src="img/1.png" width="600" alt="<short description>">
 
-*Figure 1. <Caption: what the reader should see on screen.>*
+*Fig. 1: <Caption: what the reader should see on screen.>*
 
 > Alternative: <side note or variant of the procedure, if any.>
 

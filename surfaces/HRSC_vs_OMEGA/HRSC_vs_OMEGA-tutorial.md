@@ -1,10 +1,9 @@
 ## Cross-matching spatially overlapping observations from EPN-TAP services
 
-[Use case](#use-case)  
-[Authors](#author)  
 [Summary](#summary)  
 [Introduction](#introduction)  
 [Tutorial](#tutorial)  
+[To go further](#to-go-further)  
 [Links](#links)  
 
 

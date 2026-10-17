@@ -1,7 +1,7 @@
 ## Finding spectra of TNOs through service cross-matching
 
 
-[Use case](#Use_case)  
+[Use case](#use-case)  
 [Summary](#summary)  
 [Introduction](#introduction)  
 

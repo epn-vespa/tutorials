@@ -227,7 +227,7 @@ EPN-TAP provides access to data files using several units, scales, or convention
 - SPLAT-VO performs no check and will happily superpose different quantities (like TOPCAT does). The user has to check plot consistency to avoid, e.g., superposing a radiance in W/m²/µm/sr with a dimensionless reflectance factor.
 - SPLAT-VO can convert units on both axes manually (View > Modify spectral coordinates / data units), but data conversions are limited to flux units.
 
-In SPLAT-VO, you also want to change the title in order to reuse the plots
+In SPLAT-VO, the plot title is updated only in some configurations, and the default value is obscure. You may need to change it in order to reuse the plots:
 
 - With the focus on the plot window, select File > Configure
 - Go to the Title panel
@@ -235,7 +235,7 @@ In SPLAT-VO, you also want to change the title in order to reuse the plots
 
 If you need to adjust the plot frame:
 
-- Go to the Limits panel
+- In the same Configure window, go to the Limits panel
 - Uncheck Autoscale X/Y
 - Enter your preferred values + enter
 - Click on Draw if needed
