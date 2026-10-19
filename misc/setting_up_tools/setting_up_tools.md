@@ -213,7 +213,11 @@ to a file ~/.starjava.properties located in your home directory (add this file i
 
 The "ver" option will become available in the Format field of the Load new table dialogue, which allows reading several flavors of vertex files. 
 
-Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md) to optimise the display of 3D shape models.
+**Graphical settings:**
+
+The most important setting is to impose the same axis scale in all dimensions: go to Axes > Coords and check the "Isometric" box
+
+Check [this tutorial](https://github.com/epn-vespa/tutorials/blob/master/surfaces/shape_models/shape_models.md), section 1, to optimise the display of 3D shape models.
 
 
 
@@ -251,7 +255,7 @@ Although all VO applications include a SAMP hub, these are not equivalent: some 
 ### 4.1- SAMP from the VESPA portal
 
 If no application supporting the data type you want to send is open, the portal will propose to launch a java webstart.
-If this is continually proposed even when the supporting application is running, try and deactivate any proxy in your browser - if all else fails, you can download the data and open it directly in the application.
+If this is continually proposed even when the supporting application is running, try and deactivate any proxy in your browser - if all else fails, you can still download the data and open it directly in the application.
 
 ### 4.2- SAMP in SPLAT-VO
 
